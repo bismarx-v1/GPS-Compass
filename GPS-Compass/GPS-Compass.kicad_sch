@@ -1,0 +1,204 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "944f168e-b689-4be9-b5f1-4ef8c625b176")
+	(paper "A4")
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 93.98 35.56) (xy 154.94 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "016481bd-f817-4bcf-a591-8cbf2a5a0ba6")
+	)
+	(polyline
+		(pts
+			(xy 124.46 22.86) (xy 124.46 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49f545ed-83c9-4c12-b385-d65a9e679deb")
+	)
+	(sheet
+		(at 93.98 22.86)
+		(size 60.96 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "04a74945-15e7-4e3c-a4fc-d06279a86d77")
+		(property "Sheetname" "POWER"
+			(at 124.46 35.56 0)
+			(effects
+				(font
+					(size 4 4)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Sheetfile" "POWER.kicad_sch"
+			(at 93.98 48.8446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GPS-Compass"
+				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 22.86)
+		(size 62.23 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "17c05f7d-7f20-4786-a77d-50c254f31234")
+		(property "Sheetname" "MCU"
+			(at 52.07 37.465 0)
+			(effects
+				(font
+					(size 4 4)
+					(color 0 0 0 1)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 22.86 48.8446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GPS-Compass"
+				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 93.98 53.34)
+		(size 60.96 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "39b04b12-0552-410c-9fc8-4d9708a4bc35")
+		(property "Sheetname" "MECHANICAL"
+			(at 124.46 66.04 0)
+			(effects
+				(font
+					(size 4 4)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Sheetfile" "MECHANICAL.kicad_sch"
+			(at 93.98 79.3246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GPS-Compass"
+				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 162.56 22.86)
+		(size 62.23 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "c90f2168-1fbd-412f-9fb8-d721c8c075be")
+		(property "Sheetname" "POINTER"
+			(at 194.945 37.465 0)
+			(effects
+				(font
+					(size 4 4)
+					(color 0 0 0 1)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Sheetfile" "POINTER.kicad_sch"
+			(at 162.56 48.8446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GPS-Compass"
+				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
