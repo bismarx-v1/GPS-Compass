@@ -4,10 +4,167 @@
 	(generator_version "9.0")
 	(uuid "944f168e-b689-4be9-b5f1-4ef8c625b176")
 	(paper "A4")
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 95.25 146.685)
+		(end 160.02 192.405)
+		(stroke
+			(width 0)
+			(type dash)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 1bbc4df3-8840-456a-b181-e591ca4989cb)
+	)
+	(text "ART"
+		(exclude_from_sim no)
+		(at 95.25 146.685 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 5 5)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec2ab4b1-a4c1-413e-94eb-2e8303c1b00f")
+	)
+	(junction
+		(at 127 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "81c685b0-139a-40c4-af63-39eee39249f7")
+	)
+	(junction
+		(at 123.19 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c93eb927-4d5f-4569-92fb-b670689018dc")
+	)
+	(junction
+		(at 130.81 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2eb0f16-ddf0-47db-a1de-caccdf046c7e")
+	)
+	(no_connect
+		(at 123.19 175.26)
+		(uuid "10b150e5-b7f0-4f1f-a85d-c6e9e57efca2")
+	)
 	(polyline
 		(pts
-			(xy 93.98 35.56) (xy 154.94 35.56)
+			(xy 104.14 40.64) (xy 165.1 40.64)
 		)
 		(stroke
 			(width 0)
@@ -15,9 +172,29 @@
 		)
 		(uuid "016481bd-f817-4bcf-a591-8cbf2a5a0ba6")
 	)
+	(wire
+		(pts
+			(xy 123.19 171.45) (xy 123.19 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "278a9fa8-d9f7-4dac-a1fd-0c4532428c85")
+	)
+	(wire
+		(pts
+			(xy 134.62 168.91) (xy 134.62 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d6ee36b-8252-411e-b6c4-bf4f4ce32065")
+	)
 	(polyline
 		(pts
-			(xy 124.46 22.86) (xy 124.46 48.26)
+			(xy 134.62 27.94) (xy 134.62 53.34)
 		)
 		(stroke
 			(width 0)
@@ -25,8 +202,344 @@
 		)
 		(uuid "49f545ed-83c9-4c12-b385-d65a9e679deb")
 	)
+	(wire
+		(pts
+			(xy 134.62 171.45) (xy 130.81 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5978537c-d4c9-4b37-ae51-7e081603562a")
+	)
+	(wire
+		(pts
+			(xy 127 171.45) (xy 130.81 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e1f52a5-79d0-4f6b-b769-a320d5ab6d0c")
+	)
+	(wire
+		(pts
+			(xy 123.19 171.45) (xy 127 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90ade613-8218-4314-aaf4-d7417e5db0f6")
+	)
+	(wire
+		(pts
+			(xy 130.81 168.91) (xy 130.81 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7254324-1cc6-4544-83fd-6bac3e28eedb")
+	)
+	(wire
+		(pts
+			(xy 127 171.45) (xy 127 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d71cc557-b445-4467-b96f-8684f238184c")
+	)
+	(wire
+		(pts
+			(xy 123.19 168.91) (xy 123.19 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcdbad06-e158-4451-aade-e6c81132b7eb")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 127 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac7e0eae-3cf2-4518-a7ee-b2d391179067")
+		(property "Reference" "TP2"
+			(at 129.54 164.3379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 129.54 166.8779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "sumec_graphic:SCHRACK_LOGO_IMG"
+			(at 132.08 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 127 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7a77467-c3b8-47a1-ac35-2f7c448abd25")
+		)
+		(instances
+			(project "GPS-Compass"
+				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 134.62 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be47f529-cd84-4ee1-80f3-b1ff9e484aa7")
+		(property "Reference" "TP4"
+			(at 137.16 164.3379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 137.16 166.8779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "sumec_graphic:BOCCHI_IMG"
+			(at 139.7 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 134.62 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "952c8ad5-df99-4ff1-a242-f7827436d3aa")
+		)
+		(instances
+			(project "GPS-Compass"
+				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 130.81 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1787fc0-0c86-4b50-837c-6a6e7ee37484")
+		(property "Reference" "TP3"
+			(at 133.35 164.3379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 133.35 166.8779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "sumec_graphic:BRAND_BERSERK"
+			(at 135.89 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 130.81 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "944f4412-6d7a-48c4-afb3-63d6dcc8b04a")
+		)
+		(instances
+			(project "GPS-Compass"
+				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 123.19 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f762a290-1d3c-42e4-9867-faa445e5c67c")
+		(property "Reference" "TP1"
+			(at 125.73 164.3379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 125.73 166.8779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "sumec_graphic:SPS_LOGO_IMG"
+			(at 128.27 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 123.19 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "79ff75c8-3a0c-402c-9d0e-6e76b73c003b")
+		)
+		(instances
+			(project "GPS-Compass"
+				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
-		(at 93.98 22.86)
+		(at 104.14 27.94)
 		(size 60.96 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -42,7 +555,7 @@
 		)
 		(uuid "04a74945-15e7-4e3c-a4fc-d06279a86d77")
 		(property "Sheetname" "POWER"
-			(at 124.46 35.56 0)
+			(at 134.62 40.64 0)
 			(effects
 				(font
 					(size 4 4)
@@ -51,7 +564,7 @@
 			)
 		)
 		(property "Sheetfile" "POWER.kicad_sch"
-			(at 93.98 48.8446 0)
+			(at 104.14 53.9246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -68,7 +581,49 @@
 		)
 	)
 	(sheet
-		(at 22.86 22.86)
+		(at 33.02 58.42)
+		(size 62.23 25.654)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "0aad3261-c094-4bf1-9fec-3a43dc3d3afb")
+		(property "Sheetname" "DEBUG"
+			(at 63.5 71.12 0)
+			(effects
+				(font
+					(size 4 4)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Sheetfile" "DEBUG.kicad_sch"
+			(at 33.02 84.4046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GPS-Compass"
+				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 33.02 27.94)
 		(size 62.23 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -84,7 +639,7 @@
 		)
 		(uuid "17c05f7d-7f20-4786-a77d-50c254f31234")
 		(property "Sheetname" "MCU"
-			(at 52.07 37.465 0)
+			(at 62.23 42.545 0)
 			(effects
 				(font
 					(size 4 4)
@@ -94,7 +649,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 22.86 48.8446 0)
+			(at 33.02 53.9246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -111,7 +666,7 @@
 		)
 	)
 	(sheet
-		(at 93.98 53.34)
+		(at 104.14 58.42)
 		(size 60.96 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -127,7 +682,7 @@
 		)
 		(uuid "39b04b12-0552-410c-9fc8-4d9708a4bc35")
 		(property "Sheetname" "MECHANICAL"
-			(at 124.46 66.04 0)
+			(at 134.62 71.12 0)
 			(effects
 				(font
 					(size 4 4)
@@ -136,7 +691,7 @@
 			)
 		)
 		(property "Sheetfile" "MECHANICAL.kicad_sch"
-			(at 93.98 79.3246 0)
+			(at 104.14 84.4046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -153,7 +708,49 @@
 		)
 	)
 	(sheet
-		(at 162.56 22.86)
+		(at 172.72 58.42)
+		(size 62.23 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "3e5527d0-fa05-4530-97e3-c5a1a20bdce1")
+		(property "Sheetname" "7SEG"
+			(at 203.2 71.12 0)
+			(effects
+				(font
+					(size 4 4)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Sheetfile" "SEVEN_SEG.kicad_sch"
+			(at 172.72 84.4046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GPS-Compass"
+				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 172.72 27.94)
 		(size 62.23 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -169,7 +766,7 @@
 		)
 		(uuid "c90f2168-1fbd-412f-9fb8-d721c8c075be")
 		(property "Sheetname" "POINTER"
-			(at 194.945 37.465 0)
+			(at 205.105 42.545 0)
 			(effects
 				(font
 					(size 4 4)
@@ -179,7 +776,7 @@
 			)
 		)
 		(property "Sheetfile" "POINTER.kicad_sch"
-			(at 162.56 48.8446 0)
+			(at 172.72 53.9246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -191,6 +788,48 @@
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 33.02 91.44)
+		(size 62.23 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "e843f21b-c115-48a1-bb21-8fc7f4506941")
+		(property "Sheetname" "GNSS"
+			(at 63.5 104.14 0)
+			(effects
+				(font
+					(size 4 4)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Sheetfile" "GNSS.kicad_sch"
+			(at 33.02 117.4246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GPS-Compass"
+				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
+					(page "8")
 				)
 			)
 		)
