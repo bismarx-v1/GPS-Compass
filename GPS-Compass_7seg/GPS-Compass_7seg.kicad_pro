@@ -48,10 +48,16 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -179,7 +185,10 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.25
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -206,7 +215,16 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.7,
+          "drill": 0.3
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -408,52 +426,48 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
-      "endpoint_off_grid": "error",
+      "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "footprint_filter": "warning",
+      "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
-      "global_label_dangling": "error",
+      "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "ignore",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
       "missing_unit": "warning",
       "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
-      "no_connect_connected": "error",
+      "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
-      "similar_label_and_power": "error",
-      "similar_labels": "error",
-      "similar_power": "error",
+      "similar_label_and_power": "warning",
+      "similar_labels": "warning",
+      "similar_power": "warning",
       "simulation_model_issue": "ignore",
-      "single_global_label": "error",
+      "single_global_label": "ignore",
       "unannotated": "error",
-      "unconnected_wire_endpoint": "error",
+      "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [
-      "gps-compass_brd"
-    ],
-    "pinned_symbol_libs": [
-      "gps-compass_sch"
-    ]
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "GPS-Compass.kicad_pro",
+    "filename": "GPS-Compass_7seg.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -613,36 +627,8 @@
   },
   "sheets": [
     [
-      "944f168e-b689-4be9-b5f1-4ef8c625b176",
+      "4bca8f90-4150-41f0-a662-0d11f178f1b3",
       "Root"
-    ],
-    [
-      "17c05f7d-7f20-4786-a77d-50c254f31234",
-      "MCU"
-    ],
-    [
-      "04a74945-15e7-4e3c-a4fc-d06279a86d77",
-      "POWER"
-    ],
-    [
-      "c90f2168-1fbd-412f-9fb8-d721c8c075be",
-      "POINTER"
-    ],
-    [
-      "39b04b12-0552-410c-9fc8-4d9708a4bc35",
-      "MECHANICAL"
-    ],
-    [
-      "0aad3261-c094-4bf1-9fec-3a43dc3d3afb",
-      "DEBUG"
-    ],
-    [
-      "e843f21b-c115-48a1-bb21-8fc7f4506941",
-      "GNSS"
-    ],
-    [
-      "bcb9a85f-0a4b-40b1-ac4f-cb54b4755a67",
-      "DRAWING"
     ]
   ],
   "text_variables": {}

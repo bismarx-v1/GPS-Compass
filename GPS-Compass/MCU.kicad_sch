@@ -2490,6 +2490,30 @@
 			)
 		)
 	)
+	(global_label "GNSS_WKP"
+		(shape input)
+		(at 144.78 118.11 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify right)
+		)
+		(uuid "8a8c7418-9539-4061-890a-dcb3ec2dcde3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 135.4533 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SDA"
 		(shape bidirectional)
 		(at 215.9 110.49 0)
@@ -2625,6 +2649,30 @@
 		(uuid "f4fedaf1-256e-4a82-996c-99a16a6a4abc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 229.0586 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SNS_MCU"
+		(shape input)
+		(at 153.67 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "fd96e20a-671a-4fe8-b9ef-4b8b0e6cd8e6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.9904 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2791,7 +2839,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 216.408 105.41 90)
 			(effects
 				(font
@@ -3296,7 +3344,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 224.028 105.41 90)
 			(effects
 				(font
