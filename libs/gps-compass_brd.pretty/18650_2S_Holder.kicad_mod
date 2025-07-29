@@ -57,24 +57,24 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -50.5 9.4)
-		(end -48 9.4)
+		(start -44.938 -4.572)
+		(end -42.438 -4.572)
 		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "93e39ea0-3853-474e-8d3a-cd49b37b3f62")
-	)
-	(fp_line
-		(start -50.1 -9.4)
-		(end -47.6 -9.4)
-		(stroke
-			(width 0.12)
+			(width 0.5)
 			(type solid)
 		)
 		(layer "F.SilkS")
 		(uuid "b43b8338-d1cc-49dc-ac2b-72eec14e3c9d")
+	)
+	(fp_line
+		(start -44.938 13.97)
+		(end -42.438 13.97)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "93e39ea0-3853-474e-8d3a-cd49b37b3f62")
 	)
 	(fp_line
 		(start -6.45 -5.8)
@@ -137,44 +137,44 @@
 		(uuid "195bbc7f-8b5c-49cc-89f4-616535645c97")
 	)
 	(fp_line
-		(start 46.15 9.4)
-		(end 48.65 9.4)
+		(start 42.438 -3.81)
+		(end 44.938 -3.81)
 		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "f21f3ff2-792a-44fc-8080-7f8d3bdc4b69")
-	)
-	(fp_line
-		(start 46.55 -9.4)
-		(end 49.05 -9.4)
-		(stroke
-			(width 0.12)
+			(width 0.5)
 			(type solid)
 		)
 		(layer "F.SilkS")
 		(uuid "c21e3855-64ca-4eac-bc38-3be0457c894c")
 	)
 	(fp_line
-		(start 47.4 10.65)
-		(end 47.4 8.15)
+		(start 42.438 15.006)
+		(end 44.938 15.006)
 		(stroke
-			(width 0.12)
+			(width 0.5)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "80b72db6-06df-4ce9-8096-8a2276182c0e")
+		(uuid "10256c30-1fd3-41d2-ae29-a2b361f80292")
 	)
 	(fp_line
-		(start 47.8 -8.15)
-		(end 47.8 -10.65)
+		(start 43.688 -2.56)
+		(end 43.688 -5.06)
 		(stroke
-			(width 0.12)
+			(width 0.5)
 			(type solid)
 		)
 		(layer "F.SilkS")
 		(uuid "65ff2da8-191e-4786-a68b-78e19f1a4015")
+	)
+	(fp_line
+		(start 43.688 16.256)
+		(end 43.688 13.756)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6e2559f2-d39f-4ce7-93c8-f03bed26f31c")
 	)
 	(fp_rect
 		(start -41.7 -20.005)
@@ -401,7 +401,7 @@
 		)
 	)
 	(fp_text user "4"
-		(at 42.8 5.6 0)
+		(at -44.45 5.842 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "e45a43b3-9efa-4a42-8954-86f9a57d428d")
