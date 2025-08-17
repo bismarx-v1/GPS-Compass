@@ -21699,7 +21699,7 @@
 			(at 133.35 175.7679 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 				(hide yes)
@@ -21709,7 +21709,7 @@
 			(at 133.35 178.3079 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 				(hide yes)
@@ -21768,7 +21768,7 @@
 			(at 140.97 175.7679 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 				(hide yes)
@@ -21778,7 +21778,7 @@
 			(at 140.97 178.3079 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 				(hide yes)
@@ -21837,7 +21837,7 @@
 			(at 137.16 175.7679 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 				(hide yes)
@@ -21847,7 +21847,7 @@
 			(at 137.16 178.3079 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 				(hide yes)
@@ -21906,7 +21906,7 @@
 			(at -63.5 49.5299 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -21915,7 +21915,7 @@
 			(at -63.5 52.0699 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -21973,7 +21973,7 @@
 			(at 129.54 175.7679 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 				(hide yes)
@@ -21983,7 +21983,7 @@
 			(at 129.54 178.3079 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 				(hide yes)

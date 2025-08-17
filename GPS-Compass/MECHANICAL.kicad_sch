@@ -3815,7 +3815,7 @@
 		)
 	)
 	(global_label "D- IN"
-		(shape output)
+		(shape input)
 		(at 96.52 49.53 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3858,6 +3858,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D+ IN"
+		(shape input)
+		(at 135.89 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify right)
+		)
+		(uuid "3a2276cf-95fd-4e7f-8f34-7e26628b4c74")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.0783 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3935,7 +3959,7 @@
 		)
 	)
 	(global_label "D+ IN"
-		(shape output)
+		(shape input)
 		(at 134.62 49.53 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3959,8 +3983,8 @@
 		)
 	)
 	(global_label "D-"
-		(shape output)
-		(at 187.96 63.5 0)
+		(shape input)
+		(at 187.96 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3972,7 +3996,7 @@
 		)
 		(uuid "58e769ac-bfcb-480d-8a5f-9909c3ce53fb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.7248 63.5 0)
+			(at 191.7248 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4030,6 +4054,30 @@
 			)
 		)
 	)
+	(global_label "D- IN"
+		(shape input)
+		(at 135.89 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify right)
+		)
+		(uuid "9fbbf4b4-87a3-4511-a132-b1951b94555b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.0783 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USB_VBUS"
 		(shape input)
 		(at 189.23 50.8 0)
@@ -4079,7 +4127,7 @@
 		)
 	)
 	(global_label "D- IN"
-		(shape output)
+		(shape input)
 		(at 134.62 52.07 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4103,7 +4151,7 @@
 		)
 	)
 	(global_label "D+ IN"
-		(shape output)
+		(shape input)
 		(at 96.52 52.07 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4127,8 +4175,8 @@
 		)
 	)
 	(global_label "D+"
-		(shape output)
-		(at 187.96 38.1 0)
+		(shape input)
+		(at 187.96 63.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4140,7 +4188,7 @@
 		)
 		(uuid "d708a9f9-dbcd-4b75-9c4a-87d0cd8d5e24")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.7932 38.1 0)
+			(at 191.7932 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4151,7 +4199,7 @@
 		)
 	)
 	(global_label "USB_VBUS"
-		(shape output)
+		(shape input)
 		(at 90.17 41.91 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4174,54 +4222,6 @@
 			)
 		)
 	)
-	(global_label "D- IN"
-		(shape input)
-		(at 135.89 63.5 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "e0d6329c-6aca-43f6-ba11-3c70046328c5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.0783 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "D+ IN"
-		(shape input)
-		(at 135.89 38.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "e583bc36-fd25-4781-949e-d70000ef63c1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.0783 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 127 147.32 0)
@@ -4235,7 +4235,7 @@
 			(at 128.778 142.748 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -4244,12 +4244,12 @@
 			(at 128.778 145.288 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 132.08 147.32 0)
 			(effects
 				(font
@@ -4301,7 +4301,7 @@
 			(at 114.3 147.32 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -4310,7 +4310,7 @@
 			(at 113.03 153.035 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -4368,7 +4368,7 @@
 			(at 166.37 31.75 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -4376,7 +4376,7 @@
 			(at 166.37 34.29 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -4580,7 +4580,7 @@
 			(at 97.79 73.66 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -4589,7 +4589,7 @@
 			(at 97.155 71.12 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify right)
 				(hide yes)
@@ -4648,7 +4648,7 @@
 			(at 187.96 64.77 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -4657,7 +4657,7 @@
 			(at 187.325 62.23 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify right)
 				(hide yes)
@@ -4715,7 +4715,7 @@
 			(at 66.04 113.03 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -4724,7 +4724,7 @@
 			(at 66.675 114.935 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -4787,7 +4787,7 @@
 			(at 24.13 107.95 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -4796,7 +4796,7 @@
 			(at 25.4 107.95 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -4855,7 +4855,7 @@
 			(at 154.178 142.748 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -4864,12 +4864,12 @@
 			(at 154.178 145.288 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 157.48 147.32 0)
 			(effects
 				(font
@@ -4921,7 +4921,7 @@
 			(at 139.065 33.655 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify right)
 			)
@@ -4930,7 +4930,7 @@
 			(at 139.065 35.56 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify right)
 			)
@@ -4991,7 +4991,7 @@
 			(at 138.43 50.8 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5000,7 +5000,7 @@
 			(at 140.97 50.165 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify right)
 				(hide yes)
@@ -5059,7 +5059,7 @@
 			(at 132.08 90.17 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5068,7 +5068,7 @@
 			(at 134.62 82.55 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -5128,7 +5128,7 @@
 			(at 41.91 104.14 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5137,7 +5137,7 @@
 			(at 48.26 98.425 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -5196,7 +5196,7 @@
 			(at 43.815 157.48 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -5204,7 +5204,7 @@
 			(at 48.26 153.67 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5261,7 +5261,7 @@
 			(at 67.31 103.505 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -5269,7 +5269,7 @@
 			(at 67.31 104.14 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5331,7 +5331,7 @@
 			(at 104.14 115.57 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5340,7 +5340,7 @@
 			(at 104.14 113.03 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5397,7 +5397,7 @@
 			(at 141.478 142.748 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -5406,12 +5406,12 @@
 			(at 141.478 145.288 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 144.78 147.32 0)
 			(effects
 				(font
@@ -5463,7 +5463,7 @@
 			(at 36.83 103.505 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -5471,7 +5471,7 @@
 			(at 36.83 104.14 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5533,7 +5533,7 @@
 			(at 104.14 100.33 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5542,7 +5542,7 @@
 			(at 104.14 97.79 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5600,7 +5600,7 @@
 			(at 54.61 107.95 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5609,7 +5609,7 @@
 			(at 55.88 107.95 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5668,7 +5668,7 @@
 			(at 191.135 104.14 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -5676,7 +5676,7 @@
 			(at 193.675 100.33 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5736,7 +5736,7 @@
 			(at 43.815 151.13 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -5744,7 +5744,7 @@
 			(at 48.26 147.32 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5801,7 +5801,7 @@
 			(at 135.255 88.9 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -5809,7 +5809,7 @@
 			(at 135.255 90.805 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -5869,7 +5869,7 @@
 			(at 86.995 62.23 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -5878,7 +5878,7 @@
 			(at 84.455 64.135 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -5941,7 +5941,7 @@
 			(at 116.078 142.748 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -5950,12 +5950,12 @@
 			(at 116.078 145.288 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 119.38 147.32 0)
 			(effects
 				(font
@@ -6007,7 +6007,7 @@
 			(at 119.38 90.17 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -6016,7 +6016,7 @@
 			(at 116.205 82.55 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -6076,7 +6076,7 @@
 			(at 125.73 90.17 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -6085,7 +6085,7 @@
 			(at 128.27 82.55 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -6144,7 +6144,7 @@
 			(at 79.375 62.23 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -6152,7 +6152,7 @@
 			(at 79.0575 63.8175 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -6214,7 +6214,7 @@
 			(at 139.065 59.055 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify right)
 			)
@@ -6223,7 +6223,7 @@
 			(at 139.065 60.96 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify right)
 			)
@@ -6284,7 +6284,7 @@
 			(at 75.565 102.87 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -6292,7 +6292,7 @@
 			(at 75.565 104.775 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -6353,7 +6353,7 @@
 			(at 66.04 165.1 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -6362,7 +6362,7 @@
 			(at 66.04 162.56 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -6419,7 +6419,7 @@
 			(at 43.815 144.78 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -6427,12 +6427,12 @@
 			(at 48.26 140.97 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
 			(at 49.53 144.78 0)
 			(effects
 				(font
@@ -6484,7 +6484,7 @@
 			(at 43.815 138.43 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -6492,12 +6492,12 @@
 			(at 48.26 134.62 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
 			(at 49.53 138.43 0)
 			(effects
 				(font
@@ -6549,7 +6549,7 @@
 			(at 103.378 142.748 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -6558,12 +6558,12 @@
 			(at 103.378 145.288 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 106.68 147.32 0)
 			(effects
 				(font
@@ -6616,7 +6616,7 @@
 			(at 72.39 104.14 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -6625,7 +6625,7 @@
 			(at 78.74 98.425 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -6684,7 +6684,7 @@
 			(at 190.5 53.975 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -6693,7 +6693,7 @@
 			(at 190.5 55.88 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -6753,7 +6753,7 @@
 			(at 122.555 88.9 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -6761,7 +6761,7 @@
 			(at 122.555 90.805 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -6821,7 +6821,7 @@
 			(at 113.03 104.775 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -6829,7 +6829,7 @@
 			(at 113.03 105.41 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -6891,7 +6891,7 @@
 			(at 191.135 95.25 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -6899,7 +6899,7 @@
 			(at 193.675 91.44 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -6959,7 +6959,7 @@
 			(at 128.905 88.9 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -6967,7 +6967,7 @@
 			(at 128.905 90.805 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -7026,7 +7026,7 @@
 			(at 104.14 107.95 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -7035,7 +7035,7 @@
 			(at 104.14 105.41 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -7093,7 +7093,7 @@
 			(at 115.57 34.925 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -7101,7 +7101,7 @@
 			(at 115.57 37.465 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -7324,7 +7324,7 @@
 			(at 101.6 147.32 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -7333,7 +7333,7 @@
 			(at 98.425 153.035 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -7389,7 +7389,7 @@
 			(at 113.03 89.535 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -7397,7 +7397,7 @@
 			(at 113.03 90.17 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -7460,7 +7460,7 @@
 			(at 45.085 102.87 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -7468,7 +7468,7 @@
 			(at 45.085 104.775 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -7529,7 +7529,7 @@
 			(at 35.56 113.03 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -7538,7 +7538,7 @@
 			(at 36.195 114.935 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left)
 			)
@@ -7600,7 +7600,7 @@
 			(at 113.03 97.155 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -7608,7 +7608,7 @@
 			(at 113.03 97.79 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
