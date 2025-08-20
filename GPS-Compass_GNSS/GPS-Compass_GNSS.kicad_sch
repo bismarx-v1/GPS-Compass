@@ -8526,54 +8526,6 @@
 			)
 		)
 	)
-	(global_label "GNSS_TX"
-		(shape input)
-		(at 220.98 116.84 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "126d35ad-91a6-470d-a1e7-61778dc64648")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 228.8402 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GNSS_RX"
-		(shape input)
-		(at 220.98 119.38 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "17e594a7-41ed-4a93-81fe-8592b9753f44")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.0386 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SCL"
 		(shape input)
 		(at 166.37 52.07 180)
@@ -8613,30 +8565,6 @@
 		(uuid "349186f0-87a3-43f5-b1ed-34a8b2f59435")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 246.2618 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SCL"
-		(shape input)
-		(at 220.98 111.76 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "3fc596b1-ea13-475c-9540-2676907e21f4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 225.6436 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8790,9 +8718,9 @@
 			)
 		)
 	)
-	(global_label "GNSS_WKP"
+	(global_label "GNSS_RST"
 		(shape input)
-		(at 220.98 121.92 0)
+		(at 213.36 129.54 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8802,9 +8730,9 @@
 			)
 			(justify left)
 		)
-		(uuid "76ec2fee-eb2c-46ca-b3e3-1c2fe7214318")
+		(uuid "7956417f-47bf-4a14-8893-1c9eaecbc77d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 230.3067 121.92 0)
+			(at 222.1318 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8862,6 +8790,30 @@
 			)
 		)
 	)
+	(global_label "GNSS_WKP"
+		(shape input)
+		(at 213.36 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "92398d83-f56f-47a8-ac32-46fab9a758c3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.6867 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GNSS_ANT"
 		(shape input)
 		(at 26.67 63.5 0)
@@ -8877,6 +8829,30 @@
 		(uuid "941247bb-abcf-4dbd-96da-8d8ccc6cac2e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 35.6352 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GNSS_TX"
+		(shape input)
+		(at 213.36 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "95f6681e-3754-47ea-8207-c6fcfd32fbb0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 221.2202 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8910,9 +8886,9 @@
 			)
 		)
 	)
-	(global_label "SDA"
+	(global_label "GNSS_RX"
 		(shape input)
-		(at 220.98 114.3 0)
+		(at 213.36 119.38 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8922,9 +8898,9 @@
 			)
 			(justify left)
 		)
-		(uuid "a9e56f7d-6c2e-448c-bc59-9fe3ebcdda70")
+		(uuid "aba830cf-4a81-428f-b49f-e51d5b378eea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 225.7862 114.3 0)
+			(at 221.4186 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8954,6 +8930,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 213.36 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "df122101-19e4-4756-b260-1b8b43c4aa62")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.0236 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -9054,9 +9054,9 @@
 			)
 		)
 	)
-	(global_label "GNSS_RST"
+	(global_label "SDA"
 		(shape input)
-		(at 220.98 124.46 0)
+		(at 213.36 124.46 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9066,9 +9066,9 @@
 			)
 			(justify left)
 		)
-		(uuid "f90c2e41-e5e1-4f30-9c13-eeaf533cd6fd")
+		(uuid "ff40b4c6-7b8a-41a6-a614-df4833e903dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.7518 124.46 0)
+			(at 218.1662 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9614,7 +9614,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 220.98 109.22 270)
+		(at 213.36 114.3 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9623,7 +9623,7 @@
 		(dnp no)
 		(uuid "3210a76a-d981-4110-a040-41d0d9bfa24f")
 		(property "Reference" "#PWR06"
-			(at 217.17 109.22 0)
+			(at 209.55 114.3 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9632,7 +9632,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 224.155 109.22 90)
+			(at 216.535 114.3 90)
 			(effects
 				(font
 					(size 1 1)
@@ -9641,7 +9641,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 109.22 0)
+			(at 213.36 114.3 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9650,7 +9650,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 109.22 0)
+			(at 213.36 114.3 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9659,7 +9659,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 220.98 109.22 0)
+			(at 213.36 114.3 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9681,7 +9681,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x08_Socket")
-		(at 215.9 114.3 0)
+		(at 208.28 121.92 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9690,7 +9690,7 @@
 		(dnp no)
 		(uuid "351c185a-2859-4ce5-8e34-cdd3fe13691d")
 		(property "Reference" "J1"
-			(at 214.63 114.2999 0)
+			(at 207.01 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9699,7 +9699,7 @@
 			)
 		)
 		(property "Value" "Conn_01x08_Socket"
-			(at 214.63 116.8399 0)
+			(at 207.01 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9709,7 +9709,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Horizontal"
-			(at 215.9 114.3 0)
+			(at 208.28 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9718,7 +9718,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 114.3 0)
+			(at 208.28 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9727,7 +9727,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 215.9 114.3 0)
+			(at 208.28 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10787,17 +10787,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 220.98 106.68 90)
-		(mirror x)
+		(at 213.36 132.08 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7884c4a7-5074-457c-afe2-4ef64524f880")
 		(property "Reference" "#PWR07"
-			(at 227.33 106.68 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10806,7 +10804,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 226.06 106.68 0)
+			(at 218.44 132.08 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10815,7 +10813,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 106.68 0)
+			(at 213.36 132.08 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10824,7 +10822,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 106.68 0)
+			(at 213.36 132.08 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10833,7 +10831,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 220.98 106.68 0)
+			(at 213.36 132.08 0)
 			(effects
 				(font
 					(size 1 1)
