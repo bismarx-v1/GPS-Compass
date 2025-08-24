@@ -20535,7 +20535,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a569cd4-83b1-4a10-969c-1cd49ebaada9")
-		(property "Reference" "C31"
+		(property "Reference" "C4"
 			(at 169.545 59.055 0)
 			(effects
 				(font
@@ -20589,7 +20589,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "C31")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -20604,7 +20604,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "13427fa0-9747-487f-b820-55031a9719a4")
-		(property "Reference" "TP4"
+		(property "Reference" "TP1"
 			(at 218.44 117.475 0)
 			(effects
 				(font
@@ -20656,7 +20656,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "TP4")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -20672,7 +20672,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1499ef45-e22b-40aa-8a67-cfcde4e02793")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR08"
 			(at 134.62 71.12 0)
 			(effects
 				(font
@@ -20723,7 +20723,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR081")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -20740,7 +20740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17cb9c6b-8e01-4310-a859-bbeaf362b2b7")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR019"
 			(at 214.63 105.41 0)
 			(effects
 				(font
@@ -20791,7 +20791,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR010")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -20806,7 +20806,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "186d1943-2be7-4c70-b7ea-4f0570608503")
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 63.5 73.025 0)
 			(effects
 				(font
@@ -20858,7 +20858,7 @@
 		(instances
 			(project ""
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -20866,15 +20866,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 113.03 90)
+		(at 149.86 115.57 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "19e97fd2-b3f0-461b-a3f4-faa65f5e833d")
-		(property "Reference" "#PWR09"
-			(at 156.21 113.03 0)
+		(property "Reference" "#PWR010"
+			(at 156.21 115.57 0)
 			(effects
 				(font
 					(size 1 1)
@@ -20883,7 +20884,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 154.94 113.03 0)
+			(at 154.94 115.57 0)
 			(effects
 				(font
 					(size 1 1)
@@ -20892,7 +20893,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 113.03 0)
+			(at 149.86 115.57 0)
 			(effects
 				(font
 					(size 1 1)
@@ -20901,7 +20902,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 113.03 0)
+			(at 149.86 115.57 0)
 			(effects
 				(font
 					(size 1 1)
@@ -20910,7 +20911,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 113.03 0)
+			(at 149.86 115.57 0)
 			(effects
 				(font
 					(size 1 1)
@@ -20924,7 +20925,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR09")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -21136,7 +21137,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1a9b029d-0b96-449e-88ba-5bf7c2d8f86b")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR020"
 			(at 229.87 95.25 0)
 			(effects
 				(font
@@ -21187,7 +21188,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR012")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -21203,7 +21204,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c365ee5-9cc6-4731-ade1-e8d08264305c")
-		(property "Reference" "JP1"
+		(property "Reference" "JP3"
 			(at 231.14 63.5 0)
 			(effects
 				(font
@@ -21256,7 +21257,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "JP1")
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -21271,7 +21272,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2e0d9b5d-e58e-4592-8537-859912017556")
-		(property "Reference" "C29"
+		(property "Reference" "C2"
 			(at 98.425 51.435 0)
 			(effects
 				(font
@@ -21325,7 +21326,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "C29")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -21333,16 +21334,15 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 149.86 115.57 270)
-		(mirror x)
+		(at 149.86 113.03 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "3210a76a-d981-4110-a040-41d0d9bfa24f")
-		(property "Reference" "#PWR06"
-			(at 146.05 115.57 0)
+		(property "Reference" "#PWR09"
+			(at 146.05 113.03 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21351,7 +21351,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 153.035 115.57 90)
+			(at 153.035 113.03 90)
 			(effects
 				(font
 					(size 1 1)
@@ -21360,7 +21360,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 115.57 0)
+			(at 149.86 113.03 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21369,7 +21369,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 115.57 0)
+			(at 149.86 113.03 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21378,7 +21378,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 115.57 0)
+			(at 149.86 113.03 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21392,7 +21392,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR06")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -21408,7 +21408,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b532ef0-bd13-4843-b148-48bdd8c56a6e")
-		(property "Reference" "JP6"
+		(property "Reference" "JP2"
 			(at 171.45 49.53 0)
 			(effects
 				(font
@@ -21461,7 +21461,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "JP6")
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -21476,7 +21476,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e2131b7-47a8-4fdb-80b6-c77f125a6007")
-		(property "Reference" "C15"
+		(property "Reference" "C8"
 			(at 257.175 66.675 0)
 			(effects
 				(font
@@ -21530,7 +21530,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "C15")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -21546,7 +21546,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "408b34bb-c4f0-465e-ae16-058240753674")
-		(property "Reference" "U10"
+		(property "Reference" "U1"
 			(at 83.82 41.91 0)
 			(effects
 				(font
@@ -21731,7 +21731,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "U10")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -21746,7 +21746,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "430ceaf5-00cc-4a7e-a946-2d2afd296163")
-		(property "Reference" "TP1"
+		(property "Reference" "TP2"
 			(at 226.06 117.475 0)
 			(effects
 				(font
@@ -21798,7 +21798,7 @@
 		(instances
 			(project ""
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "TP1")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -21814,7 +21814,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "43614dee-ace4-474a-a8e2-e03a4e84ecda")
-		(property "Reference" "JP7"
+		(property "Reference" "JP4"
 			(at 236.22 50.165 0)
 			(effects
 				(font
@@ -21867,7 +21867,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "JP7")
+					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -21942,6 +21942,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 200.66 149.86 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d4e9f9d-7df6-4091-8728-e45d53dc7825")
+		(property "Reference" "#PWR018"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 154.94 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 149.86 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 149.86 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 149.86 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e58b1b00-942e-4201-890e-c76de72c24b0")
+		)
+		(instances
+			(project "GPS-Compass_GNSS"
+				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 257.81 64.77 270)
 		(mirror x)
@@ -21951,7 +22019,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e20d46d-d0a0-4122-bedc-ec90bb775178")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR026"
 			(at 254 64.77 0)
 			(effects
 				(font
@@ -22002,7 +22070,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR088")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -22018,7 +22086,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4f2d29cd-299b-4e69-8c74-95621fda35c5")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR01"
 			(at 63.5 104.14 0)
 			(effects
 				(font
@@ -22069,7 +22137,75 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR070")
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 190.5 149.86 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5af94a01-120c-4774-b4ac-6d4a99b8c26c")
+		(property "Reference" "#PWR016"
+			(at 190.5 156.21 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 154.94 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 149.86 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 149.86 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 149.86 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c49f4c3-ade1-46d5-8f00-860bf78f2f24")
+		)
+		(instances
+			(project "GPS-Compass_GNSS"
+				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -22077,7 +22213,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 201.93 158.75 0)
+		(at 200.66 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -22086,7 +22222,7 @@
 		(fields_autoplaced yes)
 		(uuid "65803f8c-b339-450a-b041-90683075e394")
 		(property "Reference" "H4"
-			(at 204.47 156.2099 0)
+			(at 203.2 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22095,7 +22231,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 204.47 158.7499 0)
+			(at 203.2 147.3199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22104,8 +22240,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 201.93 158.75 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 200.66 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22114,7 +22250,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 158.75 0)
+			(at 200.66 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22123,7 +22259,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 201.93 158.75 0)
+			(at 200.66 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22152,7 +22288,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "65980831-d3cc-4455-8a46-4506df9a2ad3")
-		(property "Reference" "TP3"
+		(property "Reference" "TP4"
 			(at 241.3 117.475 0)
 			(effects
 				(font
@@ -22204,7 +22340,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "TP3")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -22219,7 +22355,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6664185f-c426-47c5-9e80-8f1846af3fd2")
-		(property "Reference" "R2"
+		(property "Reference" "R6"
 			(at 257.81 58.42 0)
 			(effects
 				(font
@@ -22271,7 +22407,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "R2")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -22288,7 +22424,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6edac899-52e9-4dc4-badb-b0ce85eda540")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR025"
 			(at 255.27 76.2 0)
 			(effects
 				(font
@@ -22339,7 +22475,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR05")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -22356,7 +22492,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6eeb9b09-6771-4de1-bb6c-39bd285cea85")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR013"
 			(at 171.45 68.58 0)
 			(effects
 				(font
@@ -22407,7 +22543,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR083")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -22422,7 +22558,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ff2b698-1d2b-403d-a869-f0efea01c93b")
-		(property "Reference" "C28"
+		(property "Reference" "C1"
 			(at 59.69 52.07 90)
 			(effects
 				(font
@@ -22474,7 +22610,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "C28")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -22491,7 +22627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "709d5e20-42d0-427f-9ad0-44e85639bbc5")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR023"
 			(at 240.03 76.2 0)
 			(effects
 				(font
@@ -22542,7 +22678,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR086")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -22557,7 +22693,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "769222b7-c8e9-4481-a201-77029c376993")
-		(property "Reference" "R41"
+		(property "Reference" "R4"
 			(at 161.925 69.85 0)
 			(effects
 				(font
@@ -22609,7 +22745,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "R41")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -22624,7 +22760,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7884c4a7-5074-457c-afe2-4ef64524f880")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR011"
 			(at 156.21 135.89 0)
 			(effects
 				(font
@@ -22675,7 +22811,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR07")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -22691,7 +22827,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d83d150-d19c-4d7d-b64b-3dba832a01c7")
-		(property "Reference" "Q4"
+		(property "Reference" "Q1"
 			(at 66.04 118.1099 0)
 			(effects
 				(font
@@ -22750,75 +22886,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 191.77 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "81be2bd2-475e-41b6-bbbe-29d4999e5085")
-		(property "Reference" "H1"
-			(at 194.31 147.3199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 194.31 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
-			(at 191.77 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 191.77 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 191.77 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4797a6da-7ddc-496c-803e-596e2c856c85")
-		)
-		(instances
-			(project ""
-				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "H1")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -22834,7 +22902,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "875ec307-7c9c-462c-9f3e-9f78f6e1af99")
-		(property "Reference" "J3"
+		(property "Reference" "J2"
 			(at 143.51 123.19 0)
 			(effects
 				(font
@@ -22913,7 +22981,7 @@
 		(instances
 			(project ""
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "J3")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -22929,7 +22997,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87ecc675-8351-4d30-8ea1-acdc46babbf7")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR05"
 			(at 82.55 120.65 0)
 			(effects
 				(font
@@ -22980,7 +23048,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR04")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -22995,7 +23063,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8ad9c55d-10d6-4a15-9f67-acccc06de39e")
-		(property "Reference" "C32"
+		(property "Reference" "C6"
 			(at 241.935 66.675 0)
 			(effects
 				(font
@@ -23049,7 +23117,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "C32")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -23065,7 +23133,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c176a2d-5522-4595-b9a1-63b4c5071855")
-		(property "Reference" "U11"
+		(property "Reference" "U2"
 			(at 203.2 42.545 0)
 			(effects
 				(font
@@ -23165,7 +23233,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "U11")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -23182,7 +23250,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8cc982ef-7dc0-4aaa-9e12-abca80c6e3c6")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR024"
 			(at 247.65 76.2 0)
 			(effects
 				(font
@@ -23233,7 +23301,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR087")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -23241,7 +23309,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 191.77 158.75 0)
+		(at 190.5 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -23249,8 +23317,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90753ef0-7be5-4335-9bf4-e664b24a1f6a")
-		(property "Reference" "H3"
-			(at 194.31 156.2099 0)
+		(property "Reference" "H2"
+			(at 193.04 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23259,7 +23327,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 194.31 158.7499 0)
+			(at 193.04 147.3199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23268,8 +23336,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
-			(at 191.77 158.75 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 190.5 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23278,7 +23346,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 191.77 158.75 0)
+			(at 190.5 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23287,7 +23355,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 191.77 158.75 0)
+			(at 190.5 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23301,7 +23369,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "H3")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -23317,7 +23385,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91f24134-e8ff-4df2-bd40-7f3bfa02e744")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR07"
 			(at 97.79 72.39 0)
 			(effects
 				(font
@@ -23368,7 +23436,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR080")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -23384,7 +23452,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "93933e0d-ec09-4bb1-9788-abd5454773ea")
-		(property "Reference" "JP5"
+		(property "Reference" "JP1"
 			(at 171.45 47.625 0)
 			(effects
 				(font
@@ -23437,7 +23505,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "JP5")
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -23454,7 +23522,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9eeda01e-1197-4fa0-8b15-69cf960292f1")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR022"
 			(at 237.49 52.07 0)
 			(effects
 				(font
@@ -23505,7 +23573,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR085")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -23521,7 +23589,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a1f563ce-ee95-4b05-a4cb-6182a0b42183")
-		(property "Reference" "R33"
+		(property "Reference" "R2"
 			(at 67.31 109.22 0)
 			(effects
 				(font
@@ -23573,7 +23641,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "R33")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -23589,7 +23657,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad0abffc-7650-44ee-afbe-1996851ea503")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR04"
 			(at 82.55 105.41 0)
 			(effects
 				(font
@@ -23640,7 +23708,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR03")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -23657,7 +23725,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b23b981e-4e4c-4194-9ab1-53bbfc88041f")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR012"
 			(at 165.1 77.47 0)
 			(effects
 				(font
@@ -23708,7 +23776,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR082")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -23725,7 +23793,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b23cc2db-11b3-4e28-b0c0-c40d93b8e18c")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR021"
 			(at 229.87 113.03 0)
 			(effects
 				(font
@@ -23776,7 +23844,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR011")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -23791,7 +23859,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b9cfe5bf-bd5a-4b64-a396-8c18730caab3")
-		(property "Reference" "C30"
+		(property "Reference" "C3"
 			(at 134.62 53.34 90)
 			(effects
 				(font
@@ -23843,7 +23911,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "C30")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -23859,7 +23927,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be3a2b08-08ca-4697-8c23-124073f8c8e7")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR027"
 			(at 260.35 58.42 0)
 			(effects
 				(font
@@ -23910,7 +23978,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR02")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -23993,7 +24061,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6d0e632-cdf1-40d1-b082-993b0d52bd8d")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR06"
 			(at 96.52 60.96 0)
 			(effects
 				(font
@@ -24044,7 +24112,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR079")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -24059,7 +24127,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cbfde5bc-c741-448a-a309-7845aa53b46f")
-		(property "Reference" "C33"
+		(property "Reference" "C7"
 			(at 249.555 66.675 0)
 			(effects
 				(font
@@ -24113,7 +24181,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "C33")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -24129,7 +24197,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cf97fa2c-0cd8-489e-981b-59cbe68daffd")
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at 84.455 104.14 90)
 			(effects
 				(font
@@ -24192,7 +24260,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -24208,7 +24276,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1e4fbd8-0bda-438a-ad31-5172e6e31c9f")
-		(property "Reference" "JP8"
+		(property "Reference" "JP5"
 			(at 236.22 52.07 0)
 			(effects
 				(font
@@ -24261,7 +24329,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "JP8")
+					(reference "JP5")
 					(unit 1)
 				)
 			)
@@ -24277,7 +24345,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df50c7d2-9b34-428d-b7eb-f2e7954dd51d")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR03"
 			(at 67.31 76.2 0)
 			(effects
 				(font
@@ -24328,7 +24396,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR08")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -24343,7 +24411,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e7db06a8-ec08-4c7e-9a48-99813905f0e8")
-		(property "Reference" "C1"
+		(property "Reference" "C5"
 			(at 231.775 102.235 0)
 			(effects
 				(font
@@ -24397,7 +24465,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "C1")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -24413,7 +24481,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e8e0f581-0d76-48ac-8a0d-0dc513ab2782")
-		(property "Reference" "L5"
+		(property "Reference" "L2"
 			(at 244.475 60.96 90)
 			(effects
 				(font
@@ -24465,7 +24533,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "L5")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -24482,7 +24550,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec344462-7b4f-4752-a529-c9cd711298a9")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR014"
 			(at 173.99 81.28 0)
 			(effects
 				(font
@@ -24533,7 +24601,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR084")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -24549,7 +24617,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "edc291ce-fc85-44e9-8975-804a5328920f")
-		(property "Reference" "R4"
+		(property "Reference" "R5"
 			(at 232.2189 96.2476 0)
 			(effects
 				(font
@@ -24601,7 +24669,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "R4")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -24616,7 +24684,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "efe3f51f-f7ea-406d-b8e4-cfa765e2365f")
-		(property "Reference" "TP2"
+		(property "Reference" "TP3"
 			(at 233.68 117.475 0)
 			(effects
 				(font
@@ -24668,7 +24736,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "TP2")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -24684,7 +24752,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f030298a-788b-4fe4-8ae7-08b5bf5a7a38")
-		(property "Reference" "D6"
+		(property "Reference" "D1"
 			(at 65.405 102.87 90)
 			(effects
 				(font
@@ -24747,7 +24815,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "D6")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -24762,7 +24830,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f155bb61-cbaa-4357-8f02-5fc8038d8759")
-		(property "Reference" "R29"
+		(property "Reference" "R1"
 			(at 52.07 115.57 90)
 			(effects
 				(font
@@ -24814,7 +24882,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "R29")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -24829,7 +24897,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f7c1a63f-1580-4c28-83e9-a4785a635fc0")
-		(property "Reference" "L4"
+		(property "Reference" "L1"
 			(at 67.31 53.34 90)
 			(effects
 				(font
@@ -24881,7 +24949,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "L4")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -24897,7 +24965,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f86923a9-8545-4105-9167-ad359f8dcd9f")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR02"
 			(at 63.5 132.08 0)
 			(effects
 				(font
@@ -24948,75 +25016,7 @@
 		(instances
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR071")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 201.93 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f9549e75-8362-4232-acee-1fb92981122b")
-		(property "Reference" "H2"
-			(at 204.47 147.3199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 204.47 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
-			(at 201.93 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 201.93 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 201.93 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "124e2402-5ddf-4cfe-8c57-fb79fa3a51f6")
-		)
-		(instances
-			(project "GPS-Compass_GNSS"
-				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "H2")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
