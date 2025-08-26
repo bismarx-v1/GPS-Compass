@@ -13,7 +13,7 @@
 		(comment 2 "GNSS module for GPS Compass project")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x10_Socket"
+		(symbol "Connector:Conn_01x10_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -29,7 +29,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x10_Socket"
+			(property "Value" "Conn_01x10_Pin"
 				(at 0 -15.24 0)
 				(effects
 					(font
@@ -90,22 +90,120 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x10_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 10.16) (xy -0.508 10.16)
-					)
+			(symbol "Conn_01x10_Pin_1_1"
+				(rectangle
+					(start 0.8636 10.287)
+					(end 0 10.033)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 7.747)
+					(end 0 7.493)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -10.033)
+					(end 0 -10.287)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -12.573)
+					(end 0 -12.827)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy -1.27 7.62) (xy -0.508 7.62)
+						(xy 1.27 10.16) (xy 0.8636 10.16)
 					)
 					(stroke
 						(width 0.1524)
@@ -117,7 +215,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 5.08) (xy -0.508 5.08)
+						(xy 1.27 7.62) (xy 0.8636 7.62)
 					)
 					(stroke
 						(width 0.1524)
@@ -129,7 +227,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
+						(xy 1.27 5.08) (xy 0.8636 5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -141,7 +239,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 0) (xy -0.508 0)
+						(xy 1.27 2.54) (xy 0.8636 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -153,7 +251,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
+						(xy 1.27 0) (xy 0.8636 0)
 					)
 					(stroke
 						(width 0.1524)
@@ -165,7 +263,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -5.08) (xy -0.508 -5.08)
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -177,7 +275,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -7.62) (xy -0.508 -7.62)
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -189,7 +287,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -10.16) (xy -0.508 -10.16)
+						(xy 1.27 -7.62) (xy 0.8636 -7.62)
 					)
 					(stroke
 						(width 0.1524)
@@ -201,7 +299,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -12.7) (xy -0.508 -12.7)
+						(xy 1.27 -10.16) (xy 0.8636 -10.16)
 					)
 					(stroke
 						(width 0.1524)
@@ -211,118 +309,10 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 9.652)
-					(mid -0.5058 10.16)
-					(end 0 10.668)
-					(stroke
-						(width 0.1524)
-						(type default)
+				(polyline
+					(pts
+						(xy 1.27 -12.7) (xy 0.8636 -12.7)
 					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 7.112)
-					(mid -0.5058 7.62)
-					(end 0 8.128)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 4.572)
-					(mid -0.5058 5.08)
-					(end 0 5.588)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 2.032)
-					(mid -0.5058 2.54)
-					(end 0 3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -3.048)
-					(mid -0.5058 -2.54)
-					(end 0 -2.032)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -5.588)
-					(mid -0.5058 -5.08)
-					(end 0 -4.572)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -8.128)
-					(mid -0.5058 -7.62)
-					(end 0 -7.112)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -10.668)
-					(mid -0.5058 -10.16)
-					(end 0 -9.652)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -13.208)
-					(mid -0.5058 -12.7)
-					(end 0 -12.192)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -332,7 +322,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 10.16 0)
+					(at 5.08 10.16 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -350,7 +340,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 7.62 0)
+					(at 5.08 7.62 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -368,7 +358,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at 5.08 5.08 180)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -386,7 +376,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -404,7 +394,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -422,7 +412,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at 5.08 -2.54 180)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -440,7 +430,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at 5.08 -5.08 180)
 					(length 3.81)
 					(name "Pin_7"
 						(effects
@@ -458,7 +448,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -7.62 0)
+					(at 5.08 -7.62 180)
 					(length 3.81)
 					(name "Pin_8"
 						(effects
@@ -476,7 +466,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -10.16 0)
+					(at 5.08 -10.16 180)
 					(length 3.81)
 					(name "Pin_9"
 						(effects
@@ -494,7 +484,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -12.7 0)
+					(at 5.08 -12.7 180)
 					(length 3.81)
 					(name "Pin_10"
 						(effects
@@ -3592,7 +3582,7 @@
 		(uuid "be87ee8e-ebbc-4c89-8c2c-d03d0304daeb")
 	)
 	(junction
-		(at 129.54 123.19)
+		(at 133.35 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f00873dd-5f28-45c1-acc7-8eb8230fcce3")
@@ -3759,7 +3749,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 123.19) (xy 129.54 123.19)
+			(xy 123.19 123.19) (xy 133.35 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3889,7 +3879,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 120.65) (xy 129.54 123.19)
+			(xy 133.35 120.65) (xy 133.35 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3949,7 +3939,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 120.65) (xy 129.54 120.65)
+			(xy 123.19 120.65) (xy 133.35 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3979,7 +3969,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 102.87) (xy 119.38 102.87)
+			(xy 133.35 102.87) (xy 123.19 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4089,7 +4079,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 124.46) (xy 129.54 123.19)
+			(xy 133.35 124.46) (xy 133.35 123.19)
 		)
 		(stroke
 			(width 0)
@@ -21614,7 +21604,7 @@
 	)
 	(global_label "GNSS_RST"
 		(shape input)
-		(at 119.38 105.41 0)
+		(at 123.19 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21626,7 +21616,7 @@
 		)
 		(uuid "20066918-bed9-45ad-8c60-2404fe1fc0c9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.1518 105.41 0)
+			(at 131.9618 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21686,7 +21676,7 @@
 	)
 	(global_label "SCL"
 		(shape input)
-		(at 119.38 115.57 0)
+		(at 123.19 115.57 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21698,7 +21688,7 @@
 		)
 		(uuid "4612dd02-baab-431f-b9e2-5723a394a135")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.0436 115.57 0)
+			(at 127.8536 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21734,7 +21724,7 @@
 	)
 	(global_label "GNSS_RX"
 		(shape input)
-		(at 119.38 110.49 0)
+		(at 123.19 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21746,7 +21736,7 @@
 		)
 		(uuid "5319b2ec-879a-4dec-a31f-eecb90f24782")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.4386 110.49 0)
+			(at 131.2486 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21758,7 +21748,7 @@
 	)
 	(global_label "GNSS_TX"
 		(shape input)
-		(at 119.38 113.03 0)
+		(at 123.19 113.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21770,7 +21760,7 @@
 		)
 		(uuid "55329790-9b87-4acf-aa6a-ad9eccd6db18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.2402 113.03 0)
+			(at 131.0502 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21782,7 +21772,7 @@
 	)
 	(global_label "GNSS_WKP"
 		(shape input)
-		(at 119.38 107.95 0)
+		(at 123.19 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21794,7 +21784,7 @@
 		)
 		(uuid "553ccc17-5ac3-4db3-bc06-6c0e595183d2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.7067 107.95 0)
+			(at 132.5167 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22142,7 +22132,7 @@
 	)
 	(global_label "SDA"
 		(shape input)
-		(at 119.38 118.11 0)
+		(at 123.19 118.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22154,7 +22144,7 @@
 		)
 		(uuid "f8540ef9-a13c-400c-aea8-6b5305cfcf8a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.1862 118.11 0)
+			(at 127.9962 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22506,7 +22496,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 129.54 102.87 0)
+		(at 133.35 102.87 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22515,7 +22505,7 @@
 		(dnp no)
 		(uuid "19e97fd2-b3f0-461b-a3f4-faa65f5e833d")
 		(property "Reference" "#PWR010"
-			(at 129.54 109.22 0)
+			(at 133.35 109.22 0)
 			(effects
 				(font
 					(size 1 1)
@@ -22524,7 +22514,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 107.95 0)
+			(at 133.35 107.95 0)
 			(effects
 				(font
 					(size 1 1)
@@ -22533,7 +22523,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 102.87 0)
+			(at 133.35 102.87 0)
 			(effects
 				(font
 					(size 1 1)
@@ -22542,7 +22532,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 102.87 0)
+			(at 133.35 102.87 0)
 			(effects
 				(font
 					(size 1 1)
@@ -22551,7 +22541,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 129.54 102.87 0)
+			(at 133.35 102.87 0)
 			(effects
 				(font
 					(size 1 1)
@@ -22905,7 +22895,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 119.38 100.33 270)
+		(at 123.19 100.33 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22913,7 +22903,7 @@
 		(dnp no)
 		(uuid "3210a76a-d981-4110-a040-41d0d9bfa24f")
 		(property "Reference" "#PWR09"
-			(at 115.57 100.33 0)
+			(at 119.38 100.33 0)
 			(effects
 				(font
 					(size 1 1)
@@ -22922,7 +22912,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 122.555 100.33 90)
+			(at 126.365 100.33 90)
 			(effects
 				(font
 					(size 1 1)
@@ -22931,7 +22921,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 100.33 0)
+			(at 123.19 100.33 0)
 			(effects
 				(font
 					(size 1 1)
@@ -22940,7 +22930,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 100.33 0)
+			(at 123.19 100.33 0)
 			(effects
 				(font
 					(size 1 1)
@@ -22949,7 +22939,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 100.33 0)
+			(at 123.19 100.33 0)
 			(effects
 				(font
 					(size 1 1)
@@ -24323,7 +24313,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 129.54 124.46 0)
+		(at 133.35 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24331,7 +24321,7 @@
 		(dnp no)
 		(uuid "7884c4a7-5074-457c-afe2-4ef64524f880")
 		(property "Reference" "#PWR011"
-			(at 129.54 130.81 0)
+			(at 133.35 130.81 0)
 			(effects
 				(font
 					(size 1 1)
@@ -24340,7 +24330,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 129.54 0)
+			(at 133.35 129.54 0)
 			(effects
 				(font
 					(size 1 1)
@@ -24349,7 +24339,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1 1)
@@ -24358,7 +24348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1 1)
@@ -24367,7 +24357,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 129.54 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1 1)
@@ -24382,101 +24372,6 @@
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x10_Socket")
-		(at 114.3 110.49 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "875ec307-7c9c-462c-9f3e-9f78f6e1af99")
-		(property "Reference" "J2"
-			(at 113.03 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x10_Socket"
-			(at 113.03 113.0299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Horizontal"
-			(at 114.3 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x10, script generated"
-			(at 114.3 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "10"
-			(uuid "8f44a3da-a2a7-4124-9517-f793535ea3e1")
-		)
-		(pin "1"
-			(uuid "1a18593c-91cf-4570-a112-3b5429a611fc")
-		)
-		(pin "7"
-			(uuid "834b51f2-3749-4c6e-bbe1-30a1b7aa3588")
-		)
-		(pin "9"
-			(uuid "47d2d678-ac44-4216-b651-bac3e89756e1")
-		)
-		(pin "3"
-			(uuid "7a1efe5c-eec7-4c0a-a5af-5fd558f9c53d")
-		)
-		(pin "4"
-			(uuid "03c8b637-045a-4880-9eb0-92c77c774476")
-		)
-		(pin "5"
-			(uuid "e2b105a2-6f49-446e-ba4e-f6efd6c742ae")
-		)
-		(pin "6"
-			(uuid "0ad14559-bbf0-4424-93c2-c45e83b0a4fe")
-		)
-		(pin "2"
-			(uuid "ffae2c5c-e148-4d0e-a4d8-212fcb395bf5")
-		)
-		(pin "8"
-			(uuid "550b0a29-e207-4426-bbec-3e21504ddd62")
-		)
-		(instances
-			(project ""
-				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -26453,6 +26348,98 @@
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x10_Pin")
+		(at 118.11 113.03 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f67b16c4-e666-4747-b429-866588e13d44")
+		(property "Reference" "J3"
+			(at 116.205 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "01x10"
+			(at 114.3 113.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Horizontal"
+			(at 118.11 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x10, script generated"
+			(at 118.11 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "c1c5d670-a449-475a-9499-67503f02716a")
+		)
+		(pin "7"
+			(uuid "d731f34b-18a4-4f1d-acdd-9ec636026b0b")
+		)
+		(pin "3"
+			(uuid "64aca89f-367b-4590-8a24-f8f5745c30df")
+		)
+		(pin "1"
+			(uuid "f3eefd42-b05b-447e-b1b5-94118340e3b7")
+		)
+		(pin "6"
+			(uuid "eefc98f9-52ae-4f85-9706-ddd28650e36d")
+		)
+		(pin "9"
+			(uuid "b8a81ba7-5155-4df2-ac24-08ea6b1fd83b")
+		)
+		(pin "10"
+			(uuid "0e74e645-a62d-45a2-b645-a9a0a0e31634")
+		)
+		(pin "8"
+			(uuid "95a05015-8e40-4385-9aae-069cd99d6d89")
+		)
+		(pin "4"
+			(uuid "a5cc2b50-deb2-4568-8a34-ec87fe7d348c")
+		)
+		(pin "2"
+			(uuid "2a99e081-b0b7-4b87-a55c-92d0bf7ac35a")
+		)
+		(instances
+			(project "GPS-Compass_GNSS"
+				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
+					(reference "J3")
 					(unit 1)
 				)
 			)
