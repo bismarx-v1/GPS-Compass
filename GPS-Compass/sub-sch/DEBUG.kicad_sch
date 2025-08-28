@@ -3233,7 +3233,7 @@
 			(uuid "0e5d6638-0ade-4021-9377-02b7f196f617")
 		)
 		(instances
-			(project ""
+			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176/0aad3261-c094-4bf1-9fec-3a43dc3d3afb"
 					(reference "BZ1")
 					(unit 1)

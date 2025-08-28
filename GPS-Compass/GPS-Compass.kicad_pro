@@ -859,30 +859,6 @@
       "Root"
     ],
     [
-      "17c05f7d-7f20-4786-a77d-50c254f31234",
-      "MCU"
-    ],
-    [
-      "04a74945-15e7-4e3c-a4fc-d06279a86d77",
-      "POWER"
-    ],
-    [
-      "c90f2168-1fbd-412f-9fb8-d721c8c075be",
-      "POINTER"
-    ],
-    [
-      "39b04b12-0552-410c-9fc8-4d9708a4bc35",
-      "MECHANICAL"
-    ],
-    [
-      "0aad3261-c094-4bf1-9fec-3a43dc3d3afb",
-      "DEBUG"
-    ],
-    [
-      "e843f21b-c115-48a1-bb21-8fc7f4506941",
-      "GNSS"
-    ],
-    [
       "bcb9a85f-0a4b-40b1-ac4f-cb54b4755a67",
       "DRAWING"
     ]

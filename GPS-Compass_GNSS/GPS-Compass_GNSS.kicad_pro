@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.25,
-          "width": 0.25
+          "height": 0.64,
+          "width": 0.54
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -69,6 +69,10 @@
         ],
         [
           "clearance|111414668|109175000|55364e0f-d45b-4512-bdbe-aa527c486836|968c64d7-2241-4615-af2e-5cc21acbb6ca",
+          ""
+        ],
+        [
+          "clearance|111664668|108650000|28937086-57ed-44d3-89e4-4596f69da41a|c15260d7-d59d-4397-b458-979e73e462db",
           ""
         ],
         [
@@ -104,11 +108,7 @@
           ""
         ],
         [
-          "clearance|112064668|108925000|28937086-57ed-44d3-89e4-4596f69da41a|dc7fd618-c8af-48c9-8a28-3d8221b5a967",
-          ""
-        ],
-        [
-          "clearance|112064668|109325000|683ac7b0-4f9e-49db-b442-2d2dc81d3d28|9061728d-304b-4581-a5b5-8481ebdba03c",
+          "clearance|112064668|108775000|7ebb3696-f76c-48be-95fc-5a503094f027|9061728d-304b-4581-a5b5-8481ebdba03c",
           ""
         ],
         [
