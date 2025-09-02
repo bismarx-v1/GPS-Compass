@@ -9567,7 +9567,7 @@
 		(uuid 98ea93ac-6645-44fa-8261-b13592693dc5)
 	)
 	(rectangle
-		(start 42.545 242.57)
+		(start 40.005 242.57)
 		(end 94.615 271.145)
 		(stroke
 			(width 0)
@@ -10160,7 +10160,7 @@
 	)
 	(text "7SEG. CONN"
 		(exclude_from_sim no)
-		(at 42.545 243.205 0)
+		(at 40.005 243.205 0)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -10543,7 +10543,7 @@
 		(uuid "ac750223-e577-4270-acf7-e082e1a932a5")
 	)
 	(junction
-		(at 80.01 261.62)
+		(at 73.66 261.62)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "adcee965-ff80-4adb-892c-75708b43fcaa")
@@ -10609,7 +10609,7 @@
 		(uuid "c729ed42-34aa-4436-88c3-0b82ed1ef72b")
 	)
 	(junction
-		(at 77.47 261.62)
+		(at 71.12 261.62)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9d1a06b-5a41-4863-b265-9683a20151c9")
@@ -10685,19 +10685,19 @@
 		(uuid "2d5a4e29-05b9-4032-afb2-6f32eebb13a3")
 	)
 	(no_connect
-		(at 52.07 260.35)
+		(at 45.72 260.35)
 		(uuid "353661ac-563a-4f90-b404-6f8b782a312c")
 	)
 	(no_connect
-		(at 143.51 260.35)
+		(at 140.97 260.35)
 		(uuid "5cfdab7f-7a7b-4356-85fe-4d979cb53114")
 	)
 	(no_connect
-		(at 54.61 260.35)
+		(at 48.26 260.35)
 		(uuid "614c6d01-2d56-49c1-aaaf-d071d23c30bf")
 	)
 	(no_connect
-		(at 85.09 260.35)
+		(at 78.74 260.35)
 		(uuid "6b9cdacc-1316-4d04-af92-f48fef26e56c")
 	)
 	(no_connect
@@ -10709,7 +10709,7 @@
 		(uuid "6e4fc7b1-779a-4780-9673-9be3266deda6")
 	)
 	(no_connect
-		(at 57.15 260.35)
+		(at 50.8 260.35)
 		(uuid "893f1106-bde5-47d0-8157-a015188d11c2")
 	)
 	(no_connect
@@ -10815,16 +10815,6 @@
 			(type default)
 		)
 		(uuid "066da6ed-907f-4a20-9be5-c9e5ea338436")
-	)
-	(wire
-		(pts
-			(xy 212.09 71.12) (xy 217.17 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0683cc06-89c8-4107-8528-e6c22d1f8a30")
 	)
 	(wire
 		(pts
@@ -11109,16 +11099,6 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 69.85) (xy 264.16 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b77e271-744e-46c3-b462-9fef0f4ea90d")
-	)
-	(wire
-		(pts
 			(xy 271.78 187.96) (xy 267.97 187.96)
 		)
 		(stroke
@@ -11199,7 +11179,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 266.7) (xy 115.57 260.35)
+			(xy 113.03 266.7) (xy 113.03 260.35)
 		)
 		(stroke
 			(width 0)
@@ -11219,7 +11199,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 265.43) (xy 113.03 260.35)
+			(xy 110.49 265.43) (xy 110.49 260.35)
 		)
 		(stroke
 			(width 0)
@@ -11249,7 +11229,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 266.7) (xy 125.73 260.35)
+			(xy 123.19 266.7) (xy 123.19 260.35)
 		)
 		(stroke
 			(width 0)
@@ -11339,17 +11319,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 71.12) (xy 260.35 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30511407-6470-4b94-9cae-af78501efdc1")
-	)
-	(wire
-		(pts
-			(xy 133.35 265.43) (xy 133.35 260.35)
+			(xy 130.81 265.43) (xy 130.81 260.35)
 		)
 		(stroke
 			(width 0)
@@ -11409,7 +11379,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 266.7) (xy 135.89 260.35)
+			(xy 133.35 266.7) (xy 133.35 260.35)
 		)
 		(stroke
 			(width 0)
@@ -11459,7 +11429,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 266.7) (xy 67.31 260.35)
+			(xy 60.96 266.7) (xy 60.96 260.35)
 		)
 		(stroke
 			(width 0)
@@ -11499,16 +11469,6 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 71.12) (xy 266.7 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38073a99-5ce5-4fe7-948a-7c0083a9889f")
-	)
-	(wire
-		(pts
 			(xy 157.48 100.33) (xy 157.48 99.06)
 		)
 		(stroke
@@ -11539,7 +11499,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 266.7) (xy 110.49 260.35)
+			(xy 107.95 266.7) (xy 107.95 260.35)
 		)
 		(stroke
 			(width 0)
@@ -11569,7 +11529,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 266.7) (xy 138.43 260.35)
+			(xy 135.89 266.7) (xy 135.89 260.35)
 		)
 		(stroke
 			(width 0)
@@ -12601,7 +12561,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 266.7) (xy 130.81 260.35)
+			(xy 128.27 266.7) (xy 128.27 260.35)
 		)
 		(stroke
 			(width 0)
@@ -12611,7 +12571,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 261.62) (xy 74.93 260.35)
+			(xy 68.58 261.62) (xy 68.58 260.35)
 		)
 		(stroke
 			(width 0)
@@ -12762,7 +12722,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 266.7) (xy 62.23 260.35)
+			(xy 55.88 266.7) (xy 55.88 260.35)
 		)
 		(stroke
 			(width 0)
@@ -12822,7 +12782,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 261.62) (xy 80.01 260.35)
+			(xy 73.66 261.62) (xy 73.66 260.35)
 		)
 		(stroke
 			(width 0)
@@ -12952,7 +12912,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 69.85) (xy 208.28 69.85)
+			(xy 213.36 71.12) (xy 217.17 71.12)
 		)
 		(stroke
 			(width 0)
@@ -13192,7 +13152,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 266.7) (xy 128.27 260.35)
+			(xy 125.73 266.7) (xy 125.73 260.35)
 		)
 		(stroke
 			(width 0)
@@ -13300,16 +13260,6 @@
 			(type default)
 		)
 		(uuid "c239cd98-62f8-4ff3-a111-492004727a1f")
-	)
-	(wire
-		(pts
-			(xy 212.09 71.12) (xy 212.09 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2993b75-f144-4aa6-b326-2ee283003b64")
 	)
 	(wire
 		(pts
@@ -13484,6 +13434,16 @@
 	)
 	(wire
 		(pts
+			(xy 269.24 71.12) (xy 266.7 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0b606a4-0557-4b11-8029-ec97237b7305")
+	)
+	(wire
+		(pts
 			(xy 104.14 208.28) (xy 118.11 208.28)
 		)
 		(stroke
@@ -13554,7 +13514,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 266.7) (xy 123.19 260.35)
+			(xy 120.65 266.7) (xy 120.65 260.35)
 		)
 		(stroke
 			(width 0)
@@ -13564,7 +13524,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 261.62) (xy 77.47 260.35)
+			(xy 71.12 261.62) (xy 71.12 260.35)
 		)
 		(stroke
 			(width 0)
@@ -13715,7 +13675,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 266.7) (xy 72.39 260.35)
+			(xy 66.04 266.7) (xy 66.04 260.35)
 		)
 		(stroke
 			(width 0)
@@ -13795,7 +13755,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 261.62) (xy 77.47 261.62)
+			(xy 73.66 261.62) (xy 71.12 261.62)
 		)
 		(stroke
 			(width 0)
@@ -13895,7 +13855,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 262.89) (xy 80.01 261.62)
+			(xy 73.66 262.89) (xy 73.66 261.62)
 		)
 		(stroke
 			(width 0)
@@ -13925,7 +13885,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 261.62) (xy 74.93 261.62)
+			(xy 71.12 261.62) (xy 68.58 261.62)
 		)
 		(stroke
 			(width 0)
@@ -13965,7 +13925,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 266.7) (xy 120.65 260.35)
+			(xy 118.11 266.7) (xy 118.11 260.35)
 		)
 		(stroke
 			(width 0)
@@ -15073,6 +15033,42 @@
 			"1AA3B4AAAAAAAAAAABoh01EAAAAAUASSvsIBAAD/IPfUADgHgHR1xI1uw6kga3VyesOtdmEAAAAA"
 			"AAAAAPEg9dQAOQeABgAAABAAAABQJcr//////wAAAAAAAAAA8yD71AA6B4BGZXR0IEt1cnNpdgAA"
 			"AAAAAAAAAAAAAAD1IPnUADsHgExpaGF2b2l0dSBLdXJzaXZvaQAAAAAAAPcg/wAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -16249,7 +16245,43 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAA=="
+			"AAAAAAAAAEFBQURRc2VtalJnSUFBTkJqNmFOR0FnQUF4UFVUQUdoREJBQUZBQUFBQUFBQUFOQmo2"
+			"YU5HQWdBQWdESFNvMFlDQUFERTlSTUFhRU1FQUFFQUFBQUFBQUFBZ0RIU28wWUNBQUNBTWRLalJn"
+			"SUFBQ2pFRXdCb1F3UUFBUUFBQUFBQUFBRDJBbVJlQUFBQUFGQnNyeU9hQVFBQStFODh2UUQ4QllB"
+			"QUFBQUFBQUFBQUJqQnRhZ0FBQUFBa0d5dkk1b0JBQURtVHo2OUFQMEZnRlJsY20xcGJtRnNBQUFB"
+			"QUFBQUFBQUFBQUFBQUFBQUFPUlBJTDBBL2dXQUJnQUFBQkFBQUFEUVpiTC8vLy8vL3dBQUFBQUFB"
+			"QUFBNGs4aXZRRC9CWUFBQUFBQUFBQUFBR1Z2VkFzQUFBQUFFR3F2STVvQkFBRGdUeVM5QUFBR2dB"
+			"QUFBQUFBQUFBQUtMM2UyQUFBQUFDUWRhOGptZ0VBQU81UEpyMEFBUWFBVFdsdVpXTnlZV1owQUFB"
+			"QUFBQUFBQUFBQUFBQUFBQUE3RThvdlFBQ0JvQUdBQUFBRUFBQUFNQktzdi8vLy8vL0FBQUFBQUFB"
+			"QUFEcVR5cTlBQU1HZ0FZQUFBQVFBQUFBVUdleS8vLy8vLzhBQUFBQUFBQUFBT2hQTEwwQUJBYUFW"
+			"Mmx1WjJScGJtZHpBQUFBQUFBQUFBQUFBQUFBQUFBQTFrOHV2UUFGQm9CU1lXNTVaWE5yYVFBQUFB"
+			"QUFBQUFBQUFBQUFBQUFBQURVVHhDOUFBWUdnQVlBQUFBUUFBQUFVRzJ5Ly8vLy8vOEFBQUFBQUFB"
+			"QUFOSlBFcjBBQndhQUFBQUFBQUFBQUFBczE4N0lBQUFBQUpCeXJ5T2FBUUFBMEU4VXZRQUlCb0FB"
+			"QUFBQUFBQUFBSU1HWVZzQUFBQUFzSFN2STVvQkFBRGVUeGE5QUFrR2dBWUFBQUFRQUFBQVVGR3kv"
+			"Ly8vLy84QUFBQUFBQUFBQU54UEdMMEFDZ2FBVTI5amFXRnNJRk5vWVhCbGN3QUFBQUFBQUFBQUFB"
+			"QUEyazhhdlFBTEJvQk1hV2RvZEc1cGJtY2dRbTlzZEFBQUFBQUFBQUFBQUFEWVR4eTlBQXdHZ0FB"
+			"QUFBQUFBQUFBT2tjRjZnQUFBQUN3Y2E4am1nRUFBTVpQSHIwQURRYUFBQUFBQUFBQUFBQUhERTVE"
+			"QUFBQUFEQnlyeU9hQVFBQXhFOEF2UUFPQm9CVGRHRnVaR0ZoY21RQUFBQUFBQUFBQUFBQUFBQUFB"
+			"QURDVHdLOUFBOEdnQVlBQUFBUUFBQUFRRnl5Ly8vLy8vOEFBQUFBQUFBQUFNQlBCTDBBRUFhQVRX"
+			"OWtaWEp1SUVGblpRQUFBQUFBQUFBQUFBQUFBQUFBems4R3ZRQVJCb0JPYjNKdHc2RnNibVVBQUFB"
+			"QUFBQUFBQUFBQUFBQUFBRE1Ud2k5QUJJR2dHOWllY1NOWldwdXc2a0FBQUFBQUFBQUFBQUFBQUFB"
+			"QU1wUENyMEFFd2FBVTNSaGJtUmhZWEprQUFBQUFBQUFBQUFBQUFBQUFBQUF5RThNdlFBVUJvQUFB"
+			"QUFBQUFBQUFFaE05Z2tBQUFBQUVIU3ZJNW9CQUFDMlR3NjlBQlVHZ0FZQUFBQVFBQUFBOEZHeS8v"
+			"Ly8vLzhBQUFBQUFBQUFBTFJQY0wwQUZnYUFBQUFBQUFBQUFBQnVHTjlTQUFBQUFKQjNyeU9hQVFB"
+			"QXNrOXl2UUFYQm9BQUFBQUFBQUFBQU9DbWN6QUFBQUFBa0hTdkk1b0JBQUN3VDNTOUFCZ0dnRVp5"
+			"Wlc1amFFUnBjMk52QUFBQUFBQUFBQUFBQUFBQUFMNVBkcjBBR1FhQUJnQUFBQkFBQUFCd1FMTC8v"
+			"Ly8vL3dBQUFBQUFBQUFBdkU5NHZRQWFCb0FHQUFBQUVBQUFBT0Jyc3YvLy8vLy9BQUFBQUFBQUFB"
+			"QzZUM3E5QUJzR2dBWUFBQUFRQUFBQThBQUFBQUFBQUFEQVB1dVExUUlBQUFFQUFBQUFBQUFBQUFB"
+			"QUFBQUFBQUJhcUYvUEFCVUVnSERMNnBEVkFnQUFBd0FBQUFBQUFBRFFqOHVRMVFJQUFBRUFBQUFB"
+			"QUFBQUFBQUFBQUFBQUFCWnFFRFBBQllFZ0FBQUFBQUFBQUFBQXdBQUFBQUFBQUJ3aTh1UTFRSUFB"
+			"QUVBQUFBQUFBQUFBQUFBQUFBQUFBQmNxRVhQQUJjRWdOREY2cERWQWdBQUF3QUFBQUFBQUFCZ091"
+			"dVExUUlBQUFFQUFBQUFBQUFBQUFBQUFBQUFBQUJUcUViUEFCZ0VnRU02TDFkSlRrUlBWMU12Wm05"
+			"dWRITmNSMDlWUkU5VFNTNVVWRVlBQUFBQUFBQUFBQUFBQUFCV3FFdlBBQmtFZ0lERTZwRFZBZ0FB"
+			"QXdBQUFBQUFBQUF3aTh1UTFRSUFBQUVBQUFBQUFBQUFBQUFBQUFBQUFBQlZxRXpQQUJvRWdLREM2"
+			"cERWQWdBQUF3QUFBQUFBQUFBQVBPdVExUUlBQUFFQUFBQUFBQUFBQUFBQUFBQUFBQUJvcUhIUEFC"
+			"c0VnQUFBQUFBQUFBQUFBd0FBQUFBQUFBQlF3ZXFRMVFJQUFBRUFBQUFBQUFBQUFBQUFBQUFBQUFC"
+			"dnFITFBBQndFZ0VNNkwxZEpUa1JQVjFNdlptOXVkSE5jU0VGU1RFOVhVMGt1VkZSR0FBQUFBQUFB"
+			"QUFBQUFBQg=="
 		)
 	)
 	(image
@@ -17800,6 +17832,42 @@
 			"0MWs0MWs0MWs0MWs0MWs0MWs0MWs0MWs0MWs0MWs0MWs0MWs0MWs0MWs0MWseHNoMzMzMzMzMzMz"
 			"MzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMz"
 			"MzMzPj4+VFRUVFRUVFRUVFRUVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -19565,7 +19633,43 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFY2cGRDaTVKa3FUbmFZ"
+			"Zm9NSTRJd3lSenhuSEFxMDRqMjNQUDlsV3YxN2w5NnlaLyt1cVBmUHYxbjdoMTZ3YjErcTRWaVp2"
+			"QUV2QVQ4Q2ZnRnA1RDNUTXllejBBN2FpWXBIUGdMTEFBakFEWjNmakUxV3FWSzVjdmswcWxHQm9h"
+			"WW14MGxHTVRFK1J5T1lPMEpFbVNYcWpkMlR1S1krSW8zcXBTODhwaEd0Z3VhTWR4VEtOUlozRnhn"
+			"U3RYTHZQbGYvMG5QLzEwbFdxdHRxTmpmNEVtTUEvTWtPeWh0akxkUTZ4UTk1WVVNQUNNQWhNazFl"
+			"ckNibnppS0lxb1ZxdlU2dzB5bVF6NWZKNkJ3VUVHQmdaSXB4OS9tN1dYM2hpeUpVbVM5S1JrejNR"
+			"VXhZUlJSTFFWTzE5MjN0ZzV6d3hJS3RPdFZvc0g5Kzl6NGMvZjhvY3ZmOC8zMzMvSHd2emNiaTMx"
+			"YnF1UVZLZS9BLzVDVXEzZWxYNUhldk9zVVBlV21HUmZ4bTNnSWJ2YzdDQ0tJcGFYbC9qenQ5OFFB"
+			"TGxzbGtJK3orallLTmxzamxRcVpaQ1dKRW5TTDRwamlNS0l1SXU0MlRuUGpLS0lacVBKeXZJU2x5"
+			"OWQ0dC8vN1YvNS9zS2ZXVnBjMnUwd0RjbWMvQ0Z3aDZRcG1SWHFIbUtGdXZlRUpJdGNUZ0R2QThP"
+			"NytzbkRrR3ExU3FXeVNhMWVveFcyS0JTSzlQZjNrODFtbnppaitwZWFsUm02SlVtU0RwZjJjdTl3"
+			"dXpyOWVMMTM4TVRIL2ZMOE1RaUM3Yk9tcTVVS2QrL2U1dXV2ditMTC8vby9YTGp3SGZmdnoxS3JW"
+			"bmZuSC9Ta0JlQkw0QS9BSTVJbDRJYnFIbUdGdXJmRUpGMERId0wzU1phVFRBSTV1bW1OMklVb2l0"
+			"amNySERuemgwcWxRckx5OHMwR2czQ01HUmlZb0srL241eXVSenBkTnJnTEVtU3BPMU8zdEhXY3U4"
+			"a1REKzd0L2Z6NW8rdFZvdG1zOG5HUnBtNVI0KzQ4T2R2K2JkLy9mLzQ4Y3BsRmhjWHFkV3F1MzM2"
+			"VEV4U25WNGltWnMvSWxuK3JSNWloYm8zQmNCUjRCUkpZN0lTdS9xMWptazJtMVFxRmNvYkc2eXZy"
+			"Ykd5dk16R3hnWnhIRk1xRmlrVWk2VFQ2U2VXZ1hlK1FIclVsaVJKMHVFUlJSQ0cwWGFnanA5UndP"
+			"MmNNN2FyMGUwcmptUFcxOWU1ZGZNRzMzOS9nYS8rOENWZi9mRVAvSGpsTW5OemozYXpvM2VuRmpB"
+			"SFhBRytBcTRCamIwWWlONGNLOVM5cVVWeUIreEhrZ3IxS0x2VTdidFRvOUhnMGNPSHJLK3RjZnZX"
+			"TFc3ZXVzVm5uejJpWEM1ejh1UkordnI2eU9YelpESVpNcG5NRXkrS3FTRG9zcVdqSkVtU0RwS2tR"
+			"QjF0UitoMllINzZZK0lvSW80aW9xMGp0Y0l3cE5WcTBxZzMyS3hzY245Mmxrc1hmK0NIN3kvdzQ1"
+			"WExQSHI0a0dxMVFxdlYydVYvMGJZR1NXZnZIMG5tNW5zMkVMMDVCdXJlRkFJUGdJdkFPZUE5b0c4"
+			"dkJ0SnNObGxiVzZQUmFGQ3IxWmg3OUlpclAvN0lpWk1uT1g3OE9CTVRreHc5ZG95UmtSSDYrL3Nw"
+			"Rll2azgva2thS2ZUTElBN2dRQUFCdFZKUkVGVUJJRWJUQ1JKa25wVis1aXNLSVowQ29JZ0p0VTUr"
+			"UXNDNGpnbWJMVm9ObHZVRzNXcTFRcWJHeHVzcnF5eXNERFBvN2xIekQxOHlQM1pHZTdkdTh2TXpB"
+			"enpjNCtvN2U3UldNOVNJemx6K2lMSjNOeXpwM3VRZ2JvM1JjQWk4RFBKazNnRkdHSVBsL2pYYWpW"
+			"bVptWjROUGVJSzFldU1ENCt6dlQwTktkUG4rSFU5RFRIamgxalpIaVlnWUVCaXFVU3hXSnh1NG5a"
+			"czViOFNKSWs2ZUNMb3ExanNzS0lNSXEzOTFNbmtpcDFIRWMwbTAxcXRSclZTb1dOalRLcnE2dk16"
+			"ODB4TTNPUHUzZnZNRHR6ajZYRlJhclZLczFtY3k4NmVUK3RSVElIdjBseVZOWWlIcFhWa3d6VXZT"
+			"a211U00yVDNLRTFnMlM4Nm5IMktOUUhjY3hyVmFMVnF0RnRWS2xVcW13dHJyS3ZYdjNHQjRlcHIr"
+			"dm4wS3hTRDZmSTV2TmtzbGtTYWM5Wmt1U0pLbVh0U3ZVY1p5RTZhY0xLY0hXeHlUTHU1T21ZNDFH"
+			"blZxMXh1Ym1CbXVyYTZ5dXJiQyt0cllmS3RKdExaSUFmWjFrTHI1SU1qZFhEekpROTZiMksxR0Zw"
+			"RUw5QThrKzZnR2d1RmVENmxTdjFaaXYxMWxjWE56ZU45MjVYOFlnTFVtU2RIaThjRDNpVnNQYTdl"
+			"QWRSOFJ4VEJSRlJGRzAzeHJhTm9DN3dQY2tnYnFDdXhoN2xvRzZ0elZJbnNSZms1eExmWlo5RXFq"
+			"anJUdVJVZVRLRjBtU0pQV1VDa2xINzY5SjV1SjI5dTVoSHB2VjI5cEx2NXZBT0hDU3BFcWRaWmZP"
+			"cFpZa1NaSU9pWmdrVE44Qi9oUDRMNUptWkhiMzdtRUc2dDRYYlYwbGtqQTlCQXpqMTE2U0pFbmFT"
+			"VTJTTVAwbjRJL0FUOERtWGc1SWI1Nmg2bkNJU1VKMWlxUXgyUVJRd0NxMQ=="
 		)
 	)
 	(label "M0"
@@ -19629,7 +19733,7 @@
 		(uuid "13b08a02-a739-4aae-9eb2-da78f8cb4159")
 	)
 	(label "LED_EXT1"
-		(at 110.49 266.7 90)
+		(at 107.95 266.7 90)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -19665,7 +19769,7 @@
 		(uuid "1b923745-6ad3-4e44-95b2-46fa676d0ebd")
 	)
 	(label "GNSS_RST"
-		(at 135.89 266.7 90)
+		(at 133.35 266.7 90)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -19677,7 +19781,7 @@
 		(uuid "1c53f28d-5ff1-40a6-aca8-784a8c76a3d3")
 	)
 	(label "~{CS}"
-		(at 62.23 266.7 90)
+		(at 55.88 266.7 90)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -19701,7 +19805,7 @@
 		(uuid "247f3a30-fffa-4576-961f-705c47ebe2cb")
 	)
 	(label "EXT2"
-		(at 128.27 266.7 90)
+		(at 125.73 266.7 90)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -19797,7 +19901,7 @@
 		(uuid "3960605e-6fe6-4c85-95c9-c9c64f995c89")
 	)
 	(label "MOSI"
-		(at 72.39 266.7 90)
+		(at 66.04 266.7 90)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -19869,7 +19973,7 @@
 		(uuid "4ed1de07-9c5a-4f3e-b4aa-090250f7ffe1")
 	)
 	(label "MSW_ON"
-		(at 138.43 266.7 90)
+		(at 135.89 266.7 90)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -19929,7 +20033,7 @@
 		(uuid "76d55dc4-93aa-47fc-b9fe-93d3bfbf4cd8")
 	)
 	(label "EXT0"
-		(at 115.57 266.7 90)
+		(at 113.03 266.7 90)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -19940,8 +20044,20 @@
 		)
 		(uuid "7b58ddb3-79a7-4d29-adb9-a77945626a10")
 	)
+	(label "D+"
+		(at 269.24 71.12 180)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "87975ceb-f055-4ec0-8da5-39e5da3bb01c")
+	)
 	(label "LED_EXT0"
-		(at 123.19 266.7 90)
+		(at 120.65 266.7 90)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -20085,7 +20201,7 @@
 		(uuid "a66be664-88d4-420b-a38b-a375f3156368")
 	)
 	(label "CLK"
-		(at 67.31 266.7 90)
+		(at 60.96 266.7 90)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -20144,7 +20260,7 @@
 		)
 		(uuid "bad6d871-a695-4941-9936-e6eef292addb")
 	)
-	(label "DN_IN"
+	(label "DP_IN"
 		(at 214.63 54.61 180)
 		(effects
 			(font
@@ -20193,7 +20309,7 @@
 		(uuid "c43ea2bd-015e-4115-9703-42c0c16e75fb")
 	)
 	(label "EN"
-		(at 130.81 266.7 90)
+		(at 128.27 266.7 90)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -20205,7 +20321,7 @@
 		(uuid "cb409afa-3e7f-4930-b77e-d19654c35c83")
 	)
 	(label "EXT1"
-		(at 120.65 266.7 90)
+		(at 118.11 266.7 90)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -20252,18 +20368,6 @@
 		)
 		(uuid "dd11c916-4244-43c0-9ac9-825f44640d5f")
 	)
-	(label "D+"
-		(at 264.16 69.85 180)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "e11cff5c-8fda-4533-bcb1-b4641ddd55d2")
-	)
 	(label "M1"
 		(at 54.61 193.04 0)
 		(effects
@@ -20277,7 +20381,7 @@
 		(uuid "e1ae83d8-b376-469e-8e4a-0f0de78d99e6")
 	)
 	(label "CRD_RST"
-		(at 125.73 266.7 90)
+		(at 123.19 266.7 90)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -20433,7 +20537,7 @@
 		(uuid "fd5657d9-2dec-4803-b762-fd387045c2f0")
 	)
 	(label "DP_IN"
-		(at 208.28 69.85 0)
+		(at 213.36 71.12 0)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -20529,7 +20633,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "06ab4caa-c462-4259-96f0-2d0cdf2b56ac")
-		(property "Reference" "#PWR0105"
+		(property "Reference" "#PWR096"
 			(at 386.08 54.61 0)
 			(effects
 				(font
@@ -20579,7 +20683,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0105")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -20595,7 +20699,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "086b8522-6eac-415d-9dea-ecc2fd8a69e7")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR0104"
 			(at 415.29 257.81 0)
 			(effects
 				(font
@@ -20646,7 +20750,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0113")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -20662,7 +20766,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "087b6359-dc66-498b-b22f-cbf6d686a135")
-		(property "Reference" "C3"
+		(property "Reference" "C2"
 			(at 89.535 104.775 0)
 			(effects
 				(font
@@ -20716,7 +20820,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C3")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -20731,7 +20835,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "095171db-bb93-4598-8389-345f55ced668")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR014"
 			(at 105.41 222.25 0)
 			(effects
 				(font
@@ -20782,7 +20886,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR017")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -20790,7 +20894,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 260.35 0)
+		(at 53.34 260.35 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20799,8 +20903,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b3eda7f-4145-4a29-b503-77675fd17af2")
-		(property "Reference" "#PWR07"
-			(at 59.69 266.7 0)
+		(property "Reference" "#PWR03"
+			(at 53.34 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20809,7 +20913,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 265.43 0)
+			(at 53.34 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20818,7 +20922,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 260.35 0)
+			(at 53.34 260.35 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -20828,7 +20932,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 260.35 0)
+			(at 53.34 260.35 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -20838,7 +20942,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 260.35 0)
+			(at 53.34 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20852,7 +20956,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR07")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -20934,7 +21038,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0cd3ffb3-7e31-4e0d-832d-3bf867219bb6")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR063"
 			(at 276.86 115.57 0)
 			(effects
 				(font
@@ -20985,7 +21089,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR069")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -21218,7 +21322,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "100d04a3-7c72-4300-bcfa-ac87233b6527")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR033"
 			(at 157.48 102.87 0)
 			(effects
 				(font
@@ -21268,7 +21372,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR036")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -21283,7 +21387,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "104f0087-a246-4629-a04c-0a7c99057ed4")
-		(property "Reference" "R38"
+		(property "Reference" "R30"
 			(at 394.335 186.055 90)
 			(effects
 				(font
@@ -21370,7 +21474,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R38")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -21386,7 +21490,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1128cf1a-0b4d-4e78-9ac3-1a57a7d8a059")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR038"
 			(at 186.69 265.43 0)
 			(effects
 				(font
@@ -21437,7 +21541,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR073")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -21452,7 +21556,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "114ee392-e1a3-46ee-a6f6-c3de3b2d2658")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR083"
 			(at 350.52 226.06 0)
 			(effects
 				(font
@@ -21502,7 +21606,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR092")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -21518,7 +21622,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "11efe2db-723e-4c0c-8154-2ce4fb581448")
-		(property "Reference" "C13"
+		(property "Reference" "C10"
 			(at 212.725 178.435 0)
 			(effects
 				(font
@@ -21572,7 +21676,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C13")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -21588,7 +21692,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1285ee2c-f4f1-4b17-9e6a-057dca7529bf")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR089"
 			(at 368.3 132.08 0)
 			(effects
 				(font
@@ -21639,7 +21743,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR098")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -21865,7 +21969,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1326206b-4f72-41f3-ba1c-172a7433213f")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR02"
 			(at 53.34 224.79 0)
 			(effects
 				(font
@@ -21916,7 +22020,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR03")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -21932,7 +22036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13b470b8-af65-4436-8495-9bb7cd1d7dde")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR037"
 			(at 173.99 78.74 0)
 			(effects
 				(font
@@ -21984,7 +22088,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR041")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -21999,7 +22103,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15a44663-7a85-4071-9cef-7c09b830a82c")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR077"
 			(at 332.74 226.06 0)
 			(effects
 				(font
@@ -22049,7 +22153,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR086")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -22064,7 +22168,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "17a1a35a-5c37-42cf-aded-22a4660159e4")
-		(property "Reference" "R40"
+		(property "Reference" "R32"
 			(at 391.795 114.3 0)
 			(effects
 				(font
@@ -22151,7 +22255,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R40")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -22167,7 +22271,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "180090bf-18c0-4f88-b7a9-d332429b01b4")
-		(property "Reference" "R28"
+		(property "Reference" "R20"
 			(at 327.66 121.92 90)
 			(effects
 				(font
@@ -22219,7 +22323,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R28")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -22234,7 +22338,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "181f138a-c287-4bba-a5cb-57ae56ef986e")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR020"
 			(at 120.65 55.88 0)
 			(effects
 				(font
@@ -22284,7 +22388,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR022")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -22364,7 +22468,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "19a052cd-9a66-4389-b734-839fc230b502")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR026"
 			(at 139.7 118.11 0)
 			(effects
 				(font
@@ -22415,7 +22519,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR029")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -22431,7 +22535,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c16468e-cd88-4c08-a79d-36b10b70a423")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR044"
 			(at 214.63 114.3 0)
 			(effects
 				(font
@@ -22482,7 +22586,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR048")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -22498,7 +22602,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d5083a7-c676-4add-ba69-2d81a87d5f94")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR060"
 			(at 267.97 71.12 0)
 			(effects
 				(font
@@ -22550,7 +22654,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR066")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -22565,7 +22669,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1f20ed5c-97de-4250-b4e9-17c4e6215650")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR042"
 			(at 210.82 177.8 0)
 			(effects
 				(font
@@ -22615,7 +22719,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR046")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -22630,7 +22734,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "22e69a3b-ebee-42f8-a1d7-ea38611c6379")
-		(property "Reference" "C6"
+		(property "Reference" "C4"
 			(at 112.395 186.69 90)
 			(effects
 				(font
@@ -22684,7 +22788,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C6")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -22699,7 +22803,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25bcae7f-6322-4247-9911-60fb4ee835f6")
-		(property "Reference" "R25"
+		(property "Reference" "R17"
 			(at 324.485 186.055 90)
 			(effects
 				(font
@@ -22786,7 +22890,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R25")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -22802,7 +22906,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "298aee66-7a7a-4a80-b440-3f372d18a556")
-		(property "Reference" "C12"
+		(property "Reference" "C9"
 			(at 168.275 67.945 0)
 			(effects
 				(font
@@ -22880,7 +22984,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C12")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -22896,7 +23000,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2a6f1966-1b7b-48e1-8dcd-782c862c6132")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR045"
 			(at 214.63 187.96 0)
 			(effects
 				(font
@@ -22947,7 +23051,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR049")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -22963,7 +23067,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b3d3be1-c70e-4f60-bff4-673999ab2787")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR064"
 			(at 284.48 115.57 0)
 			(effects
 				(font
@@ -23014,7 +23118,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR070")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -23246,7 +23350,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "311c0ef5-4d10-4e40-826e-1e0c693d5f04")
-		(property "Reference" "C7"
+		(property "Reference" "C5"
 			(at 124.46 177.165 0)
 			(effects
 				(font
@@ -23300,7 +23404,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C7")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -23391,7 +23495,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35eb20f9-9804-4c64-936b-e0d4162bbf17")
-		(property "Reference" "R32"
+		(property "Reference" "R24"
 			(at 360.045 186.055 90)
 			(effects
 				(font
@@ -23478,7 +23582,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R32")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -23632,7 +23736,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "37264d71-712d-4225-945d-c128ebc2066d")
-		(property "Reference" "R21"
+		(property "Reference" "R13"
 			(at 220.98 41.275 90)
 			(effects
 				(font
@@ -23684,7 +23788,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R21")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -23699,7 +23803,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "37863213-ab24-4d40-ae3a-69fbb8b4b808")
-		(property "Reference" "R34"
+		(property "Reference" "R26"
 			(at 367.03 266.065 90)
 			(effects
 				(font
@@ -23784,7 +23888,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R34")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -23876,7 +23980,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38d0fa94-252d-4eb8-8f43-55008cce2e7f")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR0105"
 			(at 415.29 270.51 0)
 			(effects
 				(font
@@ -23927,7 +24031,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0114")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -23943,7 +24047,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38e68250-08aa-4b7e-956d-8bb985b43fb8")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR034"
 			(at 163.83 66.04 0)
 			(effects
 				(font
@@ -23995,7 +24099,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR038")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -24011,7 +24115,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "394da9af-4b3a-41d3-bd22-3b57493115fb")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR049"
 			(at 223.52 64.77 0)
 			(effects
 				(font
@@ -24063,7 +24167,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR052")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -24078,7 +24182,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3a6735ac-fa42-4b0c-a897-c5333b369419")
-		(property "Reference" "C29"
+		(property "Reference" "C26"
 			(at 376.555 102.235 0)
 			(effects
 				(font
@@ -24132,7 +24236,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C29")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -24148,7 +24252,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3ab558f2-8bd3-4895-8e7c-a186cf86f528")
-		(property "Reference" "R29"
+		(property "Reference" "R21"
 			(at 337.82 184.15 0)
 			(effects
 				(font
@@ -24235,7 +24339,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R29")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -24250,7 +24354,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3bf21b29-1beb-4fc5-a263-3d5809f3d73f")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR018"
 			(at 114.3 118.11 0)
 			(effects
 				(font
@@ -24301,7 +24405,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR021")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -24317,7 +24421,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3bf62422-de98-4b2a-b6a5-2dde77d30962")
-		(property "Reference" "R35"
+		(property "Reference" "R27"
 			(at 373.38 184.15 0)
 			(effects
 				(font
@@ -24404,7 +24508,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R35")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -24419,7 +24523,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e2131b7-47a8-4fdb-80b6-c77f125a6007")
-		(property "Reference" "C25"
+		(property "Reference" "C22"
 			(at 361.315 122.555 0)
 			(effects
 				(font
@@ -24473,7 +24577,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C25")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -24556,7 +24660,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "411cb5db-dff9-48a7-84a0-30b878ce18d2")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR027"
 			(at 143.51 184.15 0)
 			(effects
 				(font
@@ -24607,7 +24711,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR030")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -24622,7 +24726,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "416beaae-a2ac-475d-b304-ad199e8dc1fc")
-		(property "Reference" "C17"
+		(property "Reference" "C14"
 			(at 260.985 107.315 0)
 			(effects
 				(font
@@ -24676,7 +24780,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C17")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -24749,15 +24853,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 118.11 260.35 0)
+		(at 115.57 260.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "42199b38-6467-4c16-afc4-b24177fb5843")
-		(property "Reference" "#PWR027"
-			(at 118.11 266.7 0)
+		(property "Reference" "#PWR019"
+			(at 115.57 266.7 0)
 			(effects
 				(font
 					(size 1 1)
@@ -24766,7 +24870,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 118.11 265.43 90)
+			(at 115.57 265.43 90)
 			(effects
 				(font
 					(size 1 1)
@@ -24775,7 +24879,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 260.35 0)
+			(at 115.57 260.35 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -24785,7 +24889,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 260.35 0)
+			(at 115.57 260.35 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -24795,7 +24899,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 118.11 260.35 0)
+			(at 115.57 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24809,7 +24913,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR027")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -24825,7 +24929,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4324f212-6044-4825-b114-403d41efefb7")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR061"
 			(at 269.24 115.57 0)
 			(effects
 				(font
@@ -24876,7 +24980,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR067")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -24891,7 +24995,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "45c7277e-0eef-4115-8e04-0b5bdba1e8d0")
-		(property "Reference" "R15"
+		(property "Reference" "R9"
 			(at 170.18 61.595 90)
 			(effects
 				(font
@@ -24943,7 +25047,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R15")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -24958,7 +25062,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "480934c5-5b68-4c9a-a0c0-c4eccc931a91")
-		(property "Reference" "R33"
+		(property "Reference" "R25"
 			(at 367.03 253.365 90)
 			(effects
 				(font
@@ -25043,7 +25147,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R33")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -25192,7 +25296,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "493f3ac8-1489-4371-af38-dbaca9874c8a")
-		(property "Reference" "SW8"
+		(property "Reference" "SW1"
 			(at 226.06 251.46 0)
 			(effects
 				(font
@@ -25246,7 +25350,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "SW8")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -25262,7 +25366,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49c4235f-6515-409d-888b-0e48998acc8e")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR071"
 			(at 322.58 132.08 0)
 			(effects
 				(font
@@ -25313,7 +25417,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR080")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -25395,7 +25499,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b3a26b5-4e11-452a-abb6-084bd1f40a38")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR048"
 			(at 222.25 187.96 0)
 			(effects
 				(font
@@ -25446,7 +25550,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR051")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -25462,7 +25566,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b538df7-2d66-4fc8-a05a-deb397990f53")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR058"
 			(at 264.16 254 0)
 			(effects
 				(font
@@ -25514,7 +25618,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR064")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -25530,7 +25634,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4bcb74ff-b400-4002-9339-a33c8bca2ac0")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR055"
 			(at 250.19 118.11 0)
 			(effects
 				(font
@@ -25581,7 +25685,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR060")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -25597,7 +25701,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "51423801-8652-4d8b-93b7-9df55dcda53d")
-		(property "Reference" "R31"
+		(property "Reference" "R23"
 			(at 356.8619 113.9899 90)
 			(effects
 				(font
@@ -25649,7 +25753,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R31")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -25664,7 +25768,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "516ead3c-e8c2-49c7-88cf-d0cd93521068")
-		(property "Reference" "R41"
+		(property "Reference" "R33"
 			(at 396.24 253.365 90)
 			(effects
 				(font
@@ -25749,7 +25853,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R41")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -25764,7 +25868,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5195d98a-0546-4226-b3d2-1e4f9ac1a19a")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR029"
 			(at 147.32 114.3 0)
 			(effects
 				(font
@@ -25815,7 +25919,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR032")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -25830,7 +25934,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "51ebbae5-66dc-4ba4-86cb-b80321d4ff9f")
-		(property "Reference" "R36"
+		(property "Reference" "R28"
 			(at 377.825 54.61 0)
 			(effects
 				(font
@@ -25915,7 +26019,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R36")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -26006,7 +26110,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "554d8fad-ca0b-4c91-bbad-b23e8a8c7f39")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR022"
 			(at 130.81 64.77 0)
 			(effects
 				(font
@@ -26056,7 +26160,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR024")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -26071,7 +26175,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "564eecae-5591-4680-ae3e-89bcccf99a95")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR065"
 			(at 289.56 104.14 0)
 			(effects
 				(font
@@ -26121,7 +26225,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR071")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -26137,7 +26241,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "586f883e-b561-4fb7-bf66-8b8972ccd31d")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR074"
 			(at 326.39 111.76 0)
 			(effects
 				(font
@@ -26188,7 +26292,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR083")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -26337,7 +26441,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c408d02-ffa4-4788-8d40-67ce8825aa98")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR087"
 			(at 365.76 119.38 0)
 			(effects
 				(font
@@ -26388,7 +26492,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR096")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -26403,7 +26507,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5dd43b3f-6c47-4e65-8060-0a9112c6cb1c")
-		(property "Reference" "J3"
+		(property "Reference" "J2"
 			(at 117.475 195.58 0)
 			(effects
 				(font
@@ -26419,7 +26523,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 115.57 195.58 0)
 			(effects
 				(font
@@ -26461,7 +26565,7 @@
 		(instances
 			(project ""
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "J3")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -26574,7 +26678,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "63797e58-8ef0-4473-914c-02ce09800c91")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR051"
 			(at 234.95 271.78 0)
 			(effects
 				(font
@@ -26627,7 +26731,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR055")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -26635,7 +26739,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Stepper_Motor_bipolar")
-		(at 63.5 349.25 0)
+		(at 187.96 304.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26644,7 +26748,7 @@
 		(fields_autoplaced yes)
 		(uuid "648989e1-6338-4b24-9215-0ac59a9d549e")
 		(property "Reference" "M1"
-			(at 68.58 347.129 0)
+			(at 193.04 302.679 0)
 			(effects
 				(font
 					(size 1 1)
@@ -26653,7 +26757,7 @@
 			)
 		)
 		(property "Value" "Stepper_Motor_bipolar"
-			(at 68.58 349.669 0)
+			(at 193.04 305.219 0)
 			(effects
 				(font
 					(size 1 1)
@@ -26662,7 +26766,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.754 349.504 0)
+			(at 188.214 305.054 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26671,7 +26775,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.aliexpress.com/item/4000071038558.html?spm=a2g0o.productlist.main.1.5f8568c0EyC2Q6&algo_pvid=57fd9864-5316-45d6-a94f-57ca6babef74&algo_exp_id=57fd9864-5316-45d6-a94f-57ca6babef74-0&pdp_ext_f=%7B\"order\"%3A\"67\"%2C\"eval\"%3A\"1\"%7D&pdp_npi=4%40dis%21USD%2112.16%2111.45%21%21%2112.16%2111.45%21%402140f54217525307521582520ee170%2112000040725078791%21sea%21CZ%216186796272%21X&curPageLogUid=LvOGQZk4Yj8j&utparam-url=scene%3Asearch%7Cquery_from%3A"
-			(at 63.754 349.504 0)
+			(at 188.214 305.054 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26680,7 +26784,7 @@
 			)
 		)
 		(property "Description" "4-wire bipolar stepper motor"
-			(at 63.5 349.25 0)
+			(at 187.96 304.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26718,7 +26822,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "65163289-c090-439f-a9a4-ee9600dcd7ea")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR088"
 			(at 363.22 107.95 0)
 			(effects
 				(font
@@ -26768,7 +26872,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR097")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -26784,7 +26888,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6556e03b-d0b9-419c-8a74-c8c159957876")
-		(property "Reference" "R45"
+		(property "Reference" "R37"
 			(at 407.67 184.15 0)
 			(effects
 				(font
@@ -26871,7 +26975,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R45")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -26886,7 +26990,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "661c1e15-41da-4f5b-99e5-f10825dbe9ef")
-		(property "Reference" "R42"
+		(property "Reference" "R34"
 			(at 396.24 266.065 90)
 			(effects
 				(font
@@ -26971,7 +27075,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R42")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -27053,7 +27157,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a8940ee-53e6-4b02-8f8f-a86a028fd31b")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR050"
 			(at 234.95 254 0)
 			(effects
 				(font
@@ -27105,7 +27209,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR054")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -27113,15 +27217,15 @@
 	)
 	(symbol
 		(lib_id "gps-compass_sch:FFC2B28-12-G")
-		(at 67.31 250.19 90)
+		(at 60.96 250.19 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "6d3105b5-1310-4130-b2f6-43d4ef9d463a")
-		(property "Reference" "J2"
-			(at 87.63 267.97 0)
+		(property "Reference" "J1"
+			(at 83.185 250.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27129,7 +27233,7 @@
 			)
 		)
 		(property "Value" "FFC2B28-12-G"
-			(at 89.535 261.62 0)
+			(at 85.725 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27137,7 +27241,7 @@
 			)
 		)
 		(property "Footprint" "gps-compass_brd:GCT_FFC2B28-12-G"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27147,7 +27251,7 @@
 			)
 		)
 		(property "Datasheet" "https://cz.mouser.com/ProductDetail/GCT/FFC2B28-12-G?qs=KUoIvG%2F9Ilb3Lmj8zxhxfA%3D%3D"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27156,7 +27260,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27165,7 +27269,7 @@
 			)
 		)
 		(property "MF" "Global Connector Technology"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27175,7 +27279,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.75mm"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27185,7 +27289,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27195,7 +27299,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27205,7 +27309,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/FFC2B28-12-G/Global+Connector+Technology/view-part/?ref=eda"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27215,7 +27319,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27225,7 +27329,7 @@
 			)
 		)
 		(property "PARTREV" "A"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27235,7 +27339,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/FFC2B28-12-G/Global+Connector+Technology/view-part/?ref=snap"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27245,7 +27349,7 @@
 			)
 		)
 		(property "MP" "FFC2B28-12-G"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27255,7 +27359,7 @@
 			)
 		)
 		(property "Description_1" "12 Position FFC, FPC Connector Contacts, Top and Bottom 0.020 (0.50mm) Surface Mount, Right Angle"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27265,7 +27369,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27275,7 +27379,7 @@
 			)
 		)
 		(property "MANUFACTURER" "GCT"
-			(at 67.31 250.19 0)
+			(at 60.96 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27329,7 +27433,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -27344,7 +27448,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6e4fc3ea-085a-4dee-afd6-ad5ea27746a6")
-		(property "Reference" "R9"
+		(property "Reference" "R5"
 			(at 121.92 55.88 0)
 			(effects
 				(font
@@ -27422,7 +27526,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R9")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -27504,7 +27608,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6fb4b6d5-f629-456b-89bd-e2f1c2638793")
-		(property "Reference" "R27"
+		(property "Reference" "R19"
 			(at 323.85 114.3 0)
 			(effects
 				(font
@@ -27556,7 +27660,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R27")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -27571,7 +27675,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ff69399-ab3e-4147-b34e-b8b526a1ccfb")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR024"
 			(at 133.35 215.9 0)
 			(effects
 				(font
@@ -27621,7 +27725,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR025")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -27636,7 +27740,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7241fb57-2d43-4075-af08-e1be05419a8b")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR032"
 			(at 154.94 114.3 0)
 			(effects
 				(font
@@ -27687,7 +27791,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR035")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -27703,7 +27807,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75eb808e-ba60-446f-8b94-ce883203be56")
-		(property "Reference" "#PWR0104"
+		(property "Reference" "#PWR095"
 			(at 386.08 270.51 0)
 			(effects
 				(font
@@ -27754,7 +27858,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0104")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -27769,7 +27873,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "76d49699-3612-40c4-b7fd-48b61c852307")
-		(property "Reference" "R43"
+		(property "Reference" "R35"
 			(at 400.685 54.61 0)
 			(effects
 				(font
@@ -27854,7 +27958,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R43")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -27862,15 +27966,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 80.01 262.89 180)
+		(at 73.66 262.89 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "7bdef754-6473-4f2c-b398-4a44c9efe81d")
-		(property "Reference" "#PWR014"
-			(at 80.01 259.08 0)
+		(property "Reference" "#PWR09"
+			(at 73.66 259.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27879,7 +27983,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 80.01 266.7 0)
+			(at 73.66 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27887,7 +27991,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 262.89 0)
+			(at 73.66 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27896,7 +28000,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 262.89 0)
+			(at 73.66 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27905,7 +28009,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 80.01 262.89 0)
+			(at 73.66 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27919,7 +28023,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR014")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -27999,7 +28103,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7dc551e5-f795-401b-81ce-58cdd93bbc10")
-		(property "Reference" "C19"
+		(property "Reference" "C16"
 			(at 269.875 61.595 0)
 			(effects
 				(font
@@ -28077,7 +28181,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C19")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -28092,7 +28196,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7ed44116-86bc-475b-a27f-68d6d97c5975")
-		(property "Reference" "C26"
+		(property "Reference" "C23"
 			(at 367.665 111.125 0)
 			(effects
 				(font
@@ -28146,7 +28250,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C26")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -28161,7 +28265,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7f5bbf65-8829-4d5e-996e-dfff76769fda")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR079"
 			(at 336.55 185.42 0)
 			(effects
 				(font
@@ -28212,7 +28316,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR088")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -28228,7 +28332,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "803f905b-eb67-4867-afc8-7208ce1bae2d")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR092"
 			(at 374.65 74.93 0)
 			(effects
 				(font
@@ -28280,7 +28384,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0101")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -28296,7 +28400,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8056a177-dad9-461e-bc8e-421755715dac")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR056"
 			(at 259.08 118.11 0)
 			(effects
 				(font
@@ -28347,7 +28451,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR061")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -28362,7 +28466,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8086f35e-014e-412d-9c22-10082e148cb6")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR085"
 			(at 358.14 190.5 0)
 			(effects
 				(font
@@ -28413,7 +28517,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR094")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -28421,7 +28525,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 64.77 260.35 0)
+		(at 58.42 260.35 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28430,8 +28534,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80c430e5-528c-4e6e-b8b0-d2d087460ada")
-		(property "Reference" "#PWR08"
-			(at 64.77 266.7 0)
+		(property "Reference" "#PWR07"
+			(at 58.42 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28440,7 +28544,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 265.43 0)
+			(at 58.42 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28449,7 +28553,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 260.35 0)
+			(at 58.42 260.35 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -28459,7 +28563,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 260.35 0)
+			(at 58.42 260.35 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -28469,7 +28573,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 64.77 260.35 0)
+			(at 58.42 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28483,7 +28587,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR08")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -28568,7 +28672,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8408d167-29f5-436f-b906-0a50a098eba7")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR076"
 			(at 332.74 54.61 0)
 			(effects
 				(font
@@ -28618,7 +28722,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR085")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -28717,15 +28821,15 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 113.03 265.43 180)
+		(at 110.49 265.43 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "89a6f37f-4f39-4c68-bb8b-474812ef0b9e")
-		(property "Reference" "#PWR028"
-			(at 113.03 261.62 0)
+		(property "Reference" "#PWR016"
+			(at 110.49 261.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -28734,7 +28838,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 113.03 269.24 0)
+			(at 110.49 269.24 0)
 			(effects
 				(font
 					(size 1 1)
@@ -28742,7 +28846,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 265.43 0)
+			(at 110.49 265.43 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -28752,7 +28856,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 265.43 0)
+			(at 110.49 265.43 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -28762,7 +28866,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 113.03 265.43 0)
+			(at 110.49 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28776,7 +28880,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR028")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -28784,7 +28888,7 @@
 	)
 	(symbol
 		(lib_id "power:+8V")
-		(at 133.35 265.43 0)
+		(at 130.81 265.43 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28792,8 +28896,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "89cdb1d0-bbd8-4c03-907d-1eccef24ac64")
-		(property "Reference" "#PWR01"
-			(at 133.35 261.62 0)
+		(property "Reference" "#PWR023"
+			(at 130.81 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28802,7 +28906,7 @@
 			)
 		)
 		(property "Value" "+8V"
-			(at 133.35 269.24 0)
+			(at 130.81 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28810,7 +28914,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 265.43 0)
+			(at 130.81 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28819,7 +28923,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 265.43 0)
+			(at 130.81 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28828,7 +28932,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+8V\""
-			(at 133.35 265.43 0)
+			(at 130.81 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28842,7 +28946,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR01")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -28858,7 +28962,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "89e6a717-2dce-4dbb-ba6c-d968b4d734be")
-		(property "Reference" "R24"
+		(property "Reference" "R16"
 			(at 267.97 252.73 0)
 			(effects
 				(font
@@ -28912,7 +29016,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R24")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -28997,7 +29101,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c13b999-965b-4839-898d-923a2e7755ac")
-		(property "Reference" "R12"
+		(property "Reference" "R6"
 			(at 140.97 103.505 0)
 			(effects
 				(font
@@ -29075,7 +29179,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R12")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -29090,7 +29194,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c18b7dd-8718-4a65-8432-7d79476c9349")
-		(property "Reference" "C10"
+		(property "Reference" "C7"
 			(at 149.225 103.505 0)
 			(effects
 				(font
@@ -29144,7 +29248,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C10")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -29159,7 +29263,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c794302-5143-4b61-94de-a003d47ed731")
-		(property "Reference" "R18"
+		(property "Reference" "R10"
 			(at 208.28 100.965 0)
 			(effects
 				(font
@@ -29237,7 +29341,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R18")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -29319,7 +29423,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d1ca4e1-df32-46ad-b719-b953e86bbd7a")
-		(property "Reference" "C14"
+		(property "Reference" "C11"
 			(at 220.345 178.435 0)
 			(effects
 				(font
@@ -29373,7 +29477,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C14")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -29389,7 +29493,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e512b45-da88-4e1c-ad3e-6d6731dcf806")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR041"
 			(at 209.55 116.84 0)
 			(effects
 				(font
@@ -29440,7 +29544,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR045")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -29455,7 +29559,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8f29a6a0-857f-4af6-b836-11e08add02e9")
-		(property "Reference" "R39"
+		(property "Reference" "R31"
 			(at 391.795 104.14 0)
 			(effects
 				(font
@@ -29542,7 +29646,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R39")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -29557,7 +29661,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8feb8cf9-88ca-456b-9a25-2a9374943bc6")
-		(property "Reference" "R37"
+		(property "Reference" "R29"
 			(at 389.255 54.61 0)
 			(effects
 				(font
@@ -29642,7 +29746,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R37")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -29658,7 +29762,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "921fa6ef-e9b7-4d30-b186-5aeacb7ff4c1")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR031"
 			(at 148.59 228.6 0)
 			(effects
 				(font
@@ -29709,7 +29813,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR034")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -29800,7 +29904,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "92eeeaa8-47ee-4700-9824-8eada05dfb8d")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR017"
 			(at 111.76 186.69 0)
 			(effects
 				(font
@@ -29851,7 +29955,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR019")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -29867,7 +29971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92f204d1-159d-43f4-a96b-4d75bdfb8b3f")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR0103"
 			(at 407.67 237.49 0)
 			(effects
 				(font
@@ -29918,7 +30022,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0112")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -29933,7 +30037,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "953e1f32-b8db-4728-92be-4635eca360dc")
-		(property "Reference" "C8"
+		(property "Reference" "C6"
 			(at 130.175 102.235 0)
 			(effects
 				(font
@@ -30011,7 +30115,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C8")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -30026,7 +30130,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "95daa889-a655-4cae-8bc7-fa87fb509cfd")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR090"
 			(at 372.11 185.42 0)
 			(effects
 				(font
@@ -30077,7 +30181,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR099")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -30183,7 +30287,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9a58d6d0-0698-4ccb-890b-b4207ba5af0b")
-		(property "Reference" "C18"
+		(property "Reference" "C15"
 			(at 268.605 260.985 0)
 			(effects
 				(font
@@ -30237,7 +30341,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C18")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -30253,7 +30357,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9b585d9c-919a-4422-8fed-971bc2427062")
-		(property "Reference" "C2"
+		(property "Reference" "C1"
 			(at 81.915 104.775 0)
 			(effects
 				(font
@@ -30307,7 +30411,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C2")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -30322,7 +30426,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9c380b03-7932-4cc8-9dfc-267ae90ea445")
-		(property "Reference" "R22"
+		(property "Reference" "R14"
 			(at 220.98 66.675 90)
 			(effects
 				(font
@@ -30374,7 +30478,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R22")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -30533,7 +30637,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9eb2e2a3-a97e-4ceb-a45b-016db0f19cab")
-		(property "Reference" "C21"
+		(property "Reference" "C18"
 			(at 278.765 104.775 0)
 			(effects
 				(font
@@ -30587,7 +30691,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C21")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -30602,7 +30706,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a18f2635-0033-445e-a170-20126c506d17")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR036"
 			(at 165.1 265.43 0)
 			(effects
 				(font
@@ -30653,7 +30757,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR074")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -30668,7 +30772,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a1a18a7c-380a-4cb6-b588-9b10f4c4afc0")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR070"
 			(at 320.04 102.87 0)
 			(effects
 				(font
@@ -30718,7 +30822,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR079")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -30734,7 +30838,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2e09d7d-fca9-4b07-a7a3-aca5460049a9")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR078"
 			(at 327.66 115.57 0)
 			(effects
 				(font
@@ -30785,7 +30889,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR087")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -30801,7 +30905,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a319c137-9010-49e7-b89d-5f1d7e8bbc7a")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR047"
 			(at 220.98 265.43 0)
 			(effects
 				(font
@@ -30854,7 +30958,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR053")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -30869,7 +30973,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a3a8b19e-180a-451e-94e3-5eff0b890be1")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR080"
 			(at 341.63 69.85 0)
 			(effects
 				(font
@@ -30919,7 +31023,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR089")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -30935,7 +31039,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a5d5c625-e9b5-41ca-9fee-c32c6fcaa4ad")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR054"
 			(at 248.92 264.16 0)
 			(effects
 				(font
@@ -30988,7 +31092,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR059")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -31219,7 +31323,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aaab2a09-68ba-4282-8e7a-b02de8332dd3")
-		(property "Reference" "R14"
+		(property "Reference" "R8"
 			(at 161.29 67.945 0)
 			(effects
 				(font
@@ -31297,7 +31401,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R14")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -31313,7 +31417,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ab799783-8373-407a-b289-407e01756326")
-		(property "Reference" "#PWR0109"
+		(property "Reference" "#PWR0100"
 			(at 397.51 54.61 0)
 			(effects
 				(font
@@ -31365,7 +31469,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0109")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -31380,7 +31484,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "abdb6110-426b-4311-93aa-3260d48771c1")
-		(property "Reference" "C15"
+		(property "Reference" "C12"
 			(at 238.76 260.985 0)
 			(effects
 				(font
@@ -31434,7 +31538,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C15")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -31449,7 +31553,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad3d349d-bfdb-4e07-81e7-eb18be7ff422")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR021"
 			(at 130.81 59.69 0)
 			(effects
 				(font
@@ -31499,7 +31603,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR023")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -31701,7 +31805,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ae6dc094-ce61-4d3a-92a3-35243846ffb0")
-		(property "Reference" "R7"
+		(property "Reference" "R4"
 			(at 99.06 108.585 0)
 			(effects
 				(font
@@ -31779,7 +31883,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R7")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -31795,7 +31899,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "af65563a-db60-4ba5-bb3a-bedc429470c0")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR025"
 			(at 133.35 228.6 0)
 			(effects
 				(font
@@ -31846,7 +31950,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR026")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -31861,7 +31965,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b0f81543-aeff-479d-ab86-fa1cc9a594ff")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR068"
 			(at 314.96 276.86 0)
 			(effects
 				(font
@@ -31912,7 +32016,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR077")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -31928,7 +32032,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2260b45-0143-4d6c-9477-ff730aa36cd8")
-		(property "Reference" "#PWR0108"
+		(property "Reference" "#PWR099"
 			(at 393.7 128.27 0)
 			(effects
 				(font
@@ -31979,7 +32083,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0108")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -31994,7 +32098,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b26ff78e-e8de-4b5d-872b-3b8881ba899a")
-		(property "Reference" "C27"
+		(property "Reference" "C24"
 			(at 368.935 102.235 0)
 			(effects
 				(font
@@ -32048,7 +32152,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C27")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -32063,7 +32167,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2993b89-f179-4778-9dd8-2f024e13c55d")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR057"
 			(at 257.81 104.14 0)
 			(effects
 				(font
@@ -32114,7 +32218,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR063")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -32335,7 +32439,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5187c9b-64db-4a2f-aa67-e7f969a5663a")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR053"
 			(at 248.92 232.41 0)
 			(effects
 				(font
@@ -32386,7 +32490,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR058")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -32401,7 +32505,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b5f48ebc-c85f-42ad-8a31-6f7c5e65e9e9")
-		(property "Reference" "C20"
+		(property "Reference" "C17"
 			(at 271.145 104.775 0)
 			(effects
 				(font
@@ -32455,7 +32559,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C20")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -32470,7 +32574,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b751d96a-3c7c-41c7-931a-eaef8c2e0fb1")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR075"
 			(at 326.39 116.84 0)
 			(effects
 				(font
@@ -32520,7 +32624,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR084")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -32601,7 +32705,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b9536aba-7a9e-4655-a5ff-abb1bf4dd5d5")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR067"
 			(at 314.96 226.06 0)
 			(effects
 				(font
@@ -32651,7 +32755,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR076")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -33117,7 +33221,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 69.85 260.35 0)
+		(at 63.5 260.35 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -33126,8 +33230,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0d6551f-1a72-40fc-997d-54c85dfeb290")
-		(property "Reference" "#PWR09"
-			(at 69.85 266.7 0)
+		(property "Reference" "#PWR08"
+			(at 63.5 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33136,7 +33240,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 69.85 265.43 0)
+			(at 63.5 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33145,7 +33249,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 260.35 0)
+			(at 63.5 260.35 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -33155,7 +33259,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 260.35 0)
+			(at 63.5 260.35 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -33165,7 +33269,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 69.85 260.35 0)
+			(at 63.5 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33179,7 +33283,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR09")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -33194,7 +33298,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c0dc2ec2-de6a-4741-9472-0fd4a609e06b")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR081"
 			(at 341.63 226.06 0)
 			(effects
 				(font
@@ -33244,7 +33348,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR090")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -33336,7 +33440,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c1ecb172-517b-4097-b77f-fc8445700255")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR043"
 			(at 214.63 104.14 0)
 			(effects
 				(font
@@ -33386,7 +33490,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR047")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -33402,7 +33506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c24df2a5-0e6e-4ca0-be84-c7d7d009f29d")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR073"
 			(at 325.12 77.47 0)
 			(effects
 				(font
@@ -33453,7 +33557,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR082")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -33468,7 +33572,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c4e2e7cf-696d-4004-9c6d-21e3cbb630fd")
-		(property "Reference" "C5"
+		(property "Reference" "C3"
 			(at 113.665 177.165 0)
 			(effects
 				(font
@@ -33522,7 +33626,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C5")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -33537,7 +33641,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ca42a909-2026-4545-9286-c8d85933e2e8")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR069"
 			(at 322.58 190.5 0)
 			(effects
 				(font
@@ -33588,7 +33692,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR078")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -33603,7 +33707,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ca50d491-6d6b-42cf-a143-11f2f423db1d")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR062"
 			(at 271.78 60.96 0)
 			(effects
 				(font
@@ -33653,7 +33757,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR068")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -33669,7 +33773,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb055d90-463f-4cdd-a7a4-cca42de86013")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR082"
 			(at 344.17 137.16 0)
 			(effects
 				(font
@@ -33720,7 +33824,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR091")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -33736,7 +33840,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd86f1a3-68cb-43e8-855e-d71fc2031a0c")
-		(property "Reference" "#PWR0110"
+		(property "Reference" "#PWR0101"
 			(at 397.51 74.93 0)
 			(effects
 				(font
@@ -33788,7 +33892,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0110")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -33796,15 +33900,15 @@
 	)
 	(symbol
 		(lib_id "gps-compass_sch:FFC2B28-12-G")
-		(at 125.73 250.19 90)
+		(at 123.19 250.19 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "ce1c0c0c-b835-4d6e-a94d-2c55dc64a4b2")
-		(property "Reference" "J5"
-			(at 146.05 267.97 0)
+		(property "Reference" "J3"
+			(at 146.05 253.365 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33812,7 +33916,7 @@
 			)
 		)
 		(property "Value" "FFC2B28-12-G"
-			(at 147.955 261.62 0)
+			(at 147.955 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33820,7 +33924,7 @@
 			)
 		)
 		(property "Footprint" "gps-compass_brd:GCT_FFC2B28-12-G"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33830,7 +33934,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33839,7 +33943,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33848,7 +33952,7 @@
 			)
 		)
 		(property "MF" "Global Connector Technology"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33858,7 +33962,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.75mm"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33868,7 +33972,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33878,7 +33982,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33888,7 +33992,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/FFC2B28-12-G/Global+Connector+Technology/view-part/?ref=eda"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33898,7 +34002,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33908,7 +34012,7 @@
 			)
 		)
 		(property "PARTREV" "A"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33918,7 +34022,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/FFC2B28-12-G/Global+Connector+Technology/view-part/?ref=snap"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33928,7 +34032,7 @@
 			)
 		)
 		(property "MP" "FFC2B28-12-G"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33938,7 +34042,7 @@
 			)
 		)
 		(property "Description_1" "12 Position FFC, FPC Connector Contacts, Top and Bottom 0.020 (0.50mm) Surface Mount, Right Angle"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33948,7 +34052,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33958,7 +34062,7 @@
 			)
 		)
 		(property "MANUFACTURER" "GCT"
-			(at 125.73 250.19 0)
+			(at 123.19 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34012,7 +34116,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "J5")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -34027,7 +34131,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ce306e2c-7a27-4353-93a9-6ea3ad6fe6e7")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR035"
 			(at 168.91 49.53 0)
 			(effects
 				(font
@@ -34077,7 +34181,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR039")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -34092,7 +34196,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cea53b0f-f2bc-4c56-bb3a-82dec09fb481")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR052"
 			(at 245.11 114.3 0)
 			(effects
 				(font
@@ -34143,7 +34247,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR057")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -34159,7 +34263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cec3d7fd-b9f1-4660-b34f-523f1e29f830")
-		(property "Reference" "#PWR0106"
+		(property "Reference" "#PWR097"
 			(at 386.08 74.93 0)
 			(effects
 				(font
@@ -34211,7 +34315,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0106")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -34294,7 +34398,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d04a45af-e24d-495f-9d02-9c3d83991902")
-		(property "Reference" "#PWR0100"
+		(property "Reference" "#PWR091"
 			(at 374.65 54.61 0)
 			(effects
 				(font
@@ -34344,7 +34448,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0100")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -34359,7 +34463,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d30b7b0c-b00d-4b22-ada8-0f3732aba4fd")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR015"
 			(at 113.03 196.85 0)
 			(effects
 				(font
@@ -34410,7 +34514,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR018")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -34425,7 +34529,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d6c98ec5-2c6c-469e-8ca5-16376380f8d0")
-		(property "Reference" "#PWR0107"
+		(property "Reference" "#PWR098"
 			(at 392.43 190.5 0)
 			(effects
 				(font
@@ -34476,7 +34580,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0107")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -34492,7 +34596,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d8b1b77b-ddac-4767-9556-9ff3c71ed2ca")
-		(property "Reference" "C23"
+		(property "Reference" "C20"
 			(at 324.485 102.235 0)
 			(effects
 				(font
@@ -34546,7 +34650,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C23")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -34562,7 +34666,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "da051229-8609-4bd5-8a9f-a88c19f341ed")
-		(property "Reference" "R23"
+		(property "Reference" "R15"
 			(at 238.76 252.73 0)
 			(effects
 				(font
@@ -34616,7 +34720,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R23")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -34631,7 +34735,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dbbc8d23-d23d-434b-afb7-8c3d118f69d1")
-		(property "Reference" "C24"
+		(property "Reference" "C21"
 			(at 360.045 103.505 0)
 			(effects
 				(font
@@ -34685,7 +34789,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C24")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -34701,7 +34805,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd2c3a9d-f6e8-452e-9047-2c73c17d87c7")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR059"
 			(at 264.16 271.78 0)
 			(effects
 				(font
@@ -34754,7 +34858,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR065")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -34904,7 +35008,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dfe06531-f5d8-4aa9-ab99-19ebc12dee2d")
-		(property "Reference" "J4"
+		(property "Reference" "J5"
 			(at 180.34 41.275 0)
 			(effects
 				(font
@@ -35120,7 +35224,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "J4")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -35135,7 +35239,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e0ae6fb5-1f19-4569-8254-ec79cca1dd9c")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR040"
 			(at 209.55 101.6 0)
 			(effects
 				(font
@@ -35185,7 +35289,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR044")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -35200,7 +35304,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e10bee97-53ca-493a-be07-0a31dff8d9a0")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR030"
 			(at 148.59 215.9 0)
 			(effects
 				(font
@@ -35250,7 +35354,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR033")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -35265,7 +35369,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e17c3e5d-3997-467a-9422-36547427c188")
-		(property "Reference" "R13"
+		(property "Reference" "R7"
 			(at 140.97 108.585 0)
 			(effects
 				(font
@@ -35343,7 +35447,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R13")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -35358,7 +35462,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e283e09e-4bc9-48fb-9a57-a63f0bee1b39")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR039"
 			(at 191.77 265.43 0)
 			(effects
 				(font
@@ -35408,7 +35512,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR072")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -35423,7 +35527,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e2aa49dd-5349-48d4-889c-20a03fc928a4")
-		(property "Reference" "#PWR0111"
+		(property "Reference" "#PWR0102"
 			(at 406.4 185.42 0)
 			(effects
 				(font
@@ -35474,7 +35578,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0111")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -35489,7 +35593,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e2f6bfd5-f527-4d43-937f-5f308cfb06e7")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR01"
 			(at 52.07 190.5 0)
 			(effects
 				(font
@@ -35540,7 +35644,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR02")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -35556,7 +35660,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e3879bb2-433f-40b7-ae3e-82d18b660feb")
-		(property "Reference" "R30"
+		(property "Reference" "R22"
 			(at 356.9274 108.9725 90)
 			(effects
 				(font
@@ -35608,7 +35712,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R30")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -35623,7 +35727,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e51cff79-18a3-4726-95ce-3eee8f163bca")
-		(property "Reference" "R26"
+		(property "Reference" "R18"
 			(at 326.39 64.77 0)
 			(effects
 				(font
@@ -35677,7 +35781,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R26")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -35766,7 +35870,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e58f91d4-e0d9-4065-9656-724ba436fd93")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR046"
 			(at 219.71 58.42 0)
 			(effects
 				(font
@@ -35818,7 +35922,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR050")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -35833,7 +35937,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e8253283-ee87-4e23-acbc-31ef099bca1e")
-		(property "Reference" "SW9"
+		(property "Reference" "SW2"
 			(at 256.54 251.46 0)
 			(effects
 				(font
@@ -35887,7 +35991,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "SW9")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -35903,7 +36007,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea7697d9-38aa-4125-9713-52ceacbed3ec")
-		(property "Reference" "#PWR0103"
+		(property "Reference" "#PWR094"
 			(at 386.08 257.81 0)
 			(effects
 				(font
@@ -35954,7 +36058,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0103")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -36101,7 +36205,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb119758-1d3c-4063-8c9b-402f56273e6c")
-		(property "Reference" "R19"
+		(property "Reference" "R11"
 			(at 208.28 108.585 0)
 			(effects
 				(font
@@ -36179,7 +36283,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R19")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -36194,7 +36298,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb90b9de-4f6c-4727-9b0a-cfae52f15556")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR072"
 			(at 323.85 226.06 0)
 			(effects
 				(font
@@ -36244,7 +36348,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR081")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -36260,7 +36364,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec53236f-4daf-48fb-a4e6-0c087732bfed")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR086"
 			(at 359.41 132.08 0)
 			(effects
 				(font
@@ -36311,7 +36415,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR095")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -36327,7 +36431,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ecf1e9e6-de6a-44c5-aa0e-9ad454d4591f")
-		(property "Reference" "#PWR0102"
+		(property "Reference" "#PWR093"
 			(at 374.65 111.76 0)
 			(effects
 				(font
@@ -36378,7 +36482,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR0102")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -36393,7 +36497,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ed82f956-ad1b-49c2-9ed7-28f9c6930777")
-		(property "Reference" "C28"
+		(property "Reference" "C25"
 			(at 370.205 122.555 0)
 			(effects
 				(font
@@ -36447,7 +36551,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C28")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -36462,7 +36566,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef20a997-432f-4d3c-9660-b17c3048e5eb")
-		(property "Reference" "R6"
+		(property "Reference" "R3"
 			(at 99.06 103.505 0)
 			(effects
 				(font
@@ -36540,7 +36644,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R6")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -36622,7 +36726,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f15b83ef-20b2-42da-8470-5b7d6e7771c3")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR066"
 			(at 313.69 62.23 0)
 			(effects
 				(font
@@ -36672,7 +36776,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR075")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -36687,7 +36791,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f248ffbb-3459-477f-b680-46b51f0e063e")
-		(property "Reference" "R44"
+		(property "Reference" "R36"
 			(at 401.32 225.425 0)
 			(effects
 				(font
@@ -36774,7 +36878,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R44")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -36789,7 +36893,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f80dcba8-eb83-4bcc-8ef8-922f57dd7f70")
-		(property "Reference" "C11"
+		(property "Reference" "C8"
 			(at 156.845 103.505 0)
 			(effects
 				(font
@@ -36843,7 +36947,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C11")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -36877,7 +36981,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "gps-compass_brd:CEM-1203_Buzzer"
+		(property "Footprint" "inset:AST0827MW-03BTRQ_MAL"
 			(at 402.59 220.345 90)
 			(effects
 				(font
@@ -36928,7 +37032,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f8e0319c-6c0e-471a-ad9f-a18acdf78966")
-		(property "Reference" "C22"
+		(property "Reference" "C19"
 			(at 286.385 104.775 0)
 			(effects
 				(font
@@ -36982,7 +37086,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C22")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -36998,7 +37102,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa927c36-4573-41fe-a483-0c34e91008af")
-		(property "Reference" "R20"
+		(property "Reference" "R12"
 			(at 213.36 48.895 90)
 			(effects
 				(font
@@ -37050,7 +37154,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "R20")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -37065,7 +37169,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fac7df74-6949-46f6-99c4-2b81d2caa80d")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR028"
 			(at 143.51 186.69 0)
 			(effects
 				(font
@@ -37116,7 +37220,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR031")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -37132,7 +37236,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fb8c0b83-b580-4a3e-a238-7949092d0b26")
-		(property "Reference" "J7"
+		(property "Reference" "J4"
 			(at 182.88 246.38 90)
 			(effects
 				(font
@@ -37208,7 +37312,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "J7")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -37296,7 +37400,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fd378e20-1baa-451e-bfbd-cb72ef8f493e")
-		(property "Reference" "C16"
+		(property "Reference" "C13"
 			(at 252.095 107.315 0)
 			(effects
 				(font
@@ -37350,7 +37454,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "C16")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -37507,7 +37611,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ff4117c1-7075-4b36-bb51-1c3b25be58ee")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR084"
 			(at 353.06 72.39 0)
 			(effects
 				(font
@@ -37557,7 +37661,7 @@
 		(instances
 			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "#PWR093")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)

@@ -463,4 +463,15 @@
 		(uuid "176f7764-5f4c-4392-abf8-8072fe4c55b6")
 	)
 	(embedded_fonts no)
+	(model "C:/Users/MenMe/GitHub/GPS-Compass/libs/gps-compass_3d/FFC2B28-12-G.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )
