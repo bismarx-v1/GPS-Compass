@@ -1797,7 +1797,7 @@
 		)
 		(uuid "8a886c9e-ff2d-4488-a730-146879138190")
 	)
-	(text "IO BUTTONS"
+	(text "FFC"
 		(exclude_from_sim no)
 		(at 31.115 52.705 0)
 		(effects
@@ -4101,7 +4101,7 @@
 		(dnp no)
 		(uuid "5e2e4f15-cd71-47dd-abc8-7c793567e8f0")
 		(property "Reference" "J3"
-			(at 69.85 83.8201 0)
+			(at 54.61 106.045 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4110,7 +4110,7 @@
 			)
 		)
 		(property "Value" "FFC2B28-12-G"
-			(at 69.85 81.2801 0)
+			(at 54.61 103.505 0)
 			(effects
 				(font
 					(size 1.27 1.27)

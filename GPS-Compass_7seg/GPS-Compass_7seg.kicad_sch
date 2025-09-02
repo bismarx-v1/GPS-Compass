@@ -2629,13 +2629,13 @@
 		(uuid "653e325b-0392-41cb-b12c-f04ee26c689c")
 	)
 	(junction
-		(at 125.73 118.11)
+		(at 125.73 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf14a4fc-5822-4703-b615-2d7091c0ab68")
 	)
 	(junction
-		(at 123.19 118.11)
+		(at 123.19 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9bff238-d671-48ef-9c4a-219e0daf5da1")
@@ -2647,11 +2647,11 @@
 		(uuid "dddd43ae-ba96-4107-904e-eb2ea38bb7f2")
 	)
 	(no_connect
-		(at 97.79 116.84)
+		(at 97.79 121.92)
 		(uuid "62b0975d-9f61-4117-8e52-330495ff2e63")
 	)
 	(no_connect
-		(at 102.87 116.84)
+		(at 102.87 121.92)
 		(uuid "732377eb-e8a7-4a30-a027-792b7b3f4ed3")
 	)
 	(no_connect
@@ -2667,7 +2667,7 @@
 		(uuid "b04d9f15-8eaa-4377-9b03-a82007a62178")
 	)
 	(no_connect
-		(at 100.33 116.84)
+		(at 100.33 121.92)
 		(uuid "c0bdcaa2-f52d-4e10-a3de-cf4d30d67a1c")
 	)
 	(no_connect
@@ -2675,7 +2675,7 @@
 		(uuid "c5a4ac5c-d41d-4ba3-b1d4-866bc66c5c66")
 	)
 	(no_connect
-		(at 130.81 116.84)
+		(at 130.81 121.92)
 		(uuid "cf653c06-bb79-4919-99d4-773af13b3531")
 	)
 	(no_connect
@@ -2698,7 +2698,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 118.11) (xy 123.19 118.11)
+			(xy 125.73 123.19) (xy 123.19 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2758,7 +2758,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 118.11) (xy 123.19 116.84)
+			(xy 123.19 123.19) (xy 123.19 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2808,7 +2808,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 116.84) (xy 110.49 118.11)
+			(xy 110.49 121.92) (xy 110.49 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2818,7 +2818,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 119.38) (xy 125.73 118.11)
+			(xy 125.73 124.46) (xy 125.73 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2828,7 +2828,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 118.11) (xy 125.73 116.84)
+			(xy 125.73 123.19) (xy 125.73 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2858,7 +2858,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 116.84) (xy 115.57 118.11)
+			(xy 115.57 121.92) (xy 115.57 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2868,7 +2868,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 118.11) (xy 120.65 118.11)
+			(xy 123.19 123.19) (xy 120.65 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2958,7 +2958,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 118.11) (xy 120.65 116.84)
+			(xy 120.65 123.19) (xy 120.65 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3028,7 +3028,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 116.84) (xy 105.41 118.11)
+			(xy 105.41 121.92) (xy 105.41 123.19)
 		)
 		(stroke
 			(width 0)
@@ -5297,6 +5297,24 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AA=="
 		)
 	)
@@ -5350,7 +5368,7 @@
 	)
 	(global_label "MOSI"
 		(shape input)
-		(at 118.11 116.84 270)
+		(at 118.11 121.92 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5362,7 +5380,7 @@
 		)
 		(uuid "0f791f19-e10e-411e-a553-7f43aa17f5a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.11 122.2148 90)
+			(at 118.11 127.2948 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5518,7 +5536,7 @@
 	)
 	(global_label "~{CS}"
 		(shape input)
-		(at 107.95 116.84 270)
+		(at 107.95 121.92 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5530,7 +5548,7 @@
 		)
 		(uuid "58db3cab-89c4-4ae5-b244-bf51fbaaf5d4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.95 120.7152 90)
+			(at 107.95 125.7952 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5614,7 +5632,7 @@
 	)
 	(global_label "CLK"
 		(shape input)
-		(at 113.03 116.84 270)
+		(at 113.03 121.92 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5626,7 +5644,7 @@
 		)
 		(uuid "8d8fd57b-4ebf-4ed2-b1dc-869f61aad505")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.03 121.5671 90)
+			(at 113.03 126.6471 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6178,7 +6196,7 @@
 	)
 	(symbol
 		(lib_id "gps-compass_sch:FFC2B28-12-G")
-		(at 113.03 106.68 90)
+		(at 113.03 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6187,7 +6205,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d3105b5-1310-4130-b2f6-43d4ef9d463a")
 		(property "Reference" "J2"
-			(at 114.3 96.52 90)
+			(at 114.3 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6195,7 +6213,7 @@
 			)
 		)
 		(property "Value" "FFC2B28-12-G"
-			(at 114.3 99.06 90)
+			(at 114.3 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6203,7 +6221,7 @@
 			)
 		)
 		(property "Footprint" "gps-compass_brd:GCT_FFC2B28-12-G"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6213,7 +6231,7 @@
 			)
 		)
 		(property "Datasheet" "https://cz.mouser.com/ProductDetail/GCT/FFC2B28-12-G?qs=KUoIvG%2F9Ilb3Lmj8zxhxfA%3D%3D"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6222,7 +6240,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6231,7 +6249,7 @@
 			)
 		)
 		(property "MF" "Global Connector Technology"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6241,7 +6259,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.75mm"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6251,7 +6269,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6261,7 +6279,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6271,7 +6289,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/FFC2B28-12-G/Global+Connector+Technology/view-part/?ref=eda"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6281,7 +6299,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6291,7 +6309,7 @@
 			)
 		)
 		(property "PARTREV" "A"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6301,7 +6319,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/FFC2B28-12-G/Global+Connector+Technology/view-part/?ref=snap"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6311,7 +6329,7 @@
 			)
 		)
 		(property "MP" "FFC2B28-12-G"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6321,7 +6339,7 @@
 			)
 		)
 		(property "Description_1" "12 Position FFC, FPC Connector Contacts, Top and Bottom 0.020 (0.50mm) Surface Mount, Right Angle"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6331,7 +6349,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6341,7 +6359,7 @@
 			)
 		)
 		(property "MANUFACTURER" "GCT"
-			(at 113.03 106.68 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6403,7 +6421,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 110.49 118.11 0)
+		(at 110.49 123.19 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6413,7 +6431,7 @@
 		(fields_autoplaced yes)
 		(uuid "80c430e5-528c-4e6e-b8b0-d2d087460ada")
 		(property "Reference" "#PWR08"
-			(at 110.49 124.46 0)
+			(at 110.49 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6422,7 +6440,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.49 123.19 0)
+			(at 110.49 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6431,7 +6449,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 118.11 0)
+			(at 110.49 123.19 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -6441,7 +6459,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 118.11 0)
+			(at 110.49 123.19 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -6451,7 +6469,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 110.49 118.11 0)
+			(at 110.49 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6811,7 +6829,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 115.57 118.11 0)
+		(at 115.57 123.19 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6821,7 +6839,7 @@
 		(fields_autoplaced yes)
 		(uuid "c0d6551f-1a72-40fc-997d-54c85dfeb290")
 		(property "Reference" "#PWR09"
-			(at 115.57 124.46 0)
+			(at 115.57 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6830,7 +6848,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 115.57 123.19 0)
+			(at 115.57 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6839,7 +6857,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 118.11 0)
+			(at 115.57 123.19 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -6849,7 +6867,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 118.11 0)
+			(at 115.57 123.19 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -6859,7 +6877,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 118.11 0)
+			(at 115.57 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6952,7 +6970,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 125.73 119.38 180)
+		(at 125.73 124.46 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6960,7 +6978,7 @@
 		(dnp no)
 		(uuid "c44e69a1-29b6-447a-9c58-cf295a9e0275")
 		(property "Reference" "#PWR03"
-			(at 125.73 115.57 0)
+			(at 125.73 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6969,7 +6987,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 125.73 123.19 0)
+			(at 125.73 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6977,7 +6995,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 119.38 0)
+			(at 125.73 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6986,7 +7004,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 119.38 0)
+			(at 125.73 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6995,7 +7013,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 125.73 119.38 0)
+			(at 125.73 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7329,7 +7347,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 105.41 118.11 0)
+		(at 105.41 123.19 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7339,7 +7357,7 @@
 		(fields_autoplaced yes)
 		(uuid "f8f86e46-4b8f-430b-bbe2-58a8ec1837ac")
 		(property "Reference" "#PWR02"
-			(at 105.41 124.46 0)
+			(at 105.41 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7348,7 +7366,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 105.41 123.19 0)
+			(at 105.41 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7357,7 +7375,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 118.11 0)
+			(at 105.41 123.19 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -7367,7 +7385,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 118.11 0)
+			(at 105.41 123.19 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -7377,7 +7395,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 105.41 118.11 0)
+			(at 105.41 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
