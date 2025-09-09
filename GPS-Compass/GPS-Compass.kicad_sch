@@ -9633,7 +9633,7 @@
 	)
 	(rectangle
 		(start 300.99 163.195)
-		(end 427.355 281.305)
+		(end 427.355 281.94)
 		(stroke
 			(width 1)
 			(type solid)
@@ -9851,7 +9851,7 @@
 		)
 		(uuid "4d1134ec-f98e-4791-b23c-0eeecf98e87d")
 	)
-	(text "1. BUTTONS?\n2. FINISH SCHEMATIC\n3. BOARD LAYOUT\n4. \n5. CONNECTORS\n6. \n7."
+	(text "1. FUEL GAUGE\n2. LiPo/Li-Ion\n3. \n4. \n5. \n6. \n7."
 		(exclude_from_sim no)
 		(at 19.685 307.975 0)
 		(effects
@@ -10122,6 +10122,16 @@
 			)
 		)
 		(uuid "bbd41f87-4274-49aa-ad56-f7d03405a3a1")
+	)
+	(text "https://cz.mouser.com/ProductDetail/Texas-Instruments/BQ25895MRTWR?qs=uNh9J9Y3wTe%2F%252BmcQbu7CLA%3D%3D"
+		(exclude_from_sim no)
+		(at 361.95 144.145 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "be7bdf17-df3c-4464-a0dc-8374e4f8651e")
 	)
 	(text "probs not meant to be connected to the MCU"
 		(exclude_from_sim no)
@@ -11025,16 +11035,6 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 59.69) (xy 325.12 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17e91265-8cd2-46e2-bc16-dd6c3531c193")
-	)
-	(wire
-		(pts
 			(xy 355.6 101.6) (xy 358.14 101.6)
 		)
 		(stroke
@@ -11525,7 +11525,7 @@
 	)
 	(wire
 		(pts
-			(xy 313.69 59.69) (xy 318.77 59.69)
+			(xy 318.77 59.69) (xy 325.12 59.69)
 		)
 		(stroke
 			(width 0)
@@ -12748,7 +12748,7 @@
 	)
 	(wire
 		(pts
-			(xy 313.69 59.69) (xy 313.69 58.42)
+			(xy 318.77 59.69) (xy 318.77 58.42)
 		)
 		(stroke
 			(width 0)
@@ -13910,7 +13910,7 @@
 		(uuid "ff6749da-6a20-40c4-b21a-44dba64d32a7")
 	)
 	(image
-		(at -70.104 42.926)
+		(at -61.849 206.121)
 		(scale 0.414908)
 		(uuid "72f4c946-0685-43e4-96a0-1bd0f734db56")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAh4AAAH+CAIAAABcDZACAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
@@ -17959,7 +17959,7 @@
 		)
 	)
 	(image
-		(at -72.771 111.76)
+		(at 494.919 116.84)
 		(scale 0.27793)
 		(uuid "a9927908-c9c7-48c0-9bf3-75252f60e1f4")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAsgAAAJLCAIAAAB17fdXAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
@@ -25212,73 +25212,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Small_Open")
-		(at 321.31 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "4854e94d-abe1-41c9-81f9-f4f78f91d0d7")
-		(property "Reference" "JP5"
-			(at 321.31 55.245 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "Jumper"
-			(at 321.31 57.15 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 321.31 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 321.31 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, small symbol, open"
-			(at 321.31 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8c7dda9c-abf6-4a8a-abc1-d73eca3e021d")
-		)
-		(pin "2"
-			(uuid "9a2ad029-0b29-4ac4-9934-270d15fde2a8")
-		)
-		(instances
-			(project "GPS-Compass"
-				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
-					(reference "JP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 55.88 198.12 90)
 		(mirror x)
@@ -26581,7 +26514,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XH_S4B-XH-SM4-TB_1x04-1MP_P2.50mm_Horizontal"
 			(at 115.57 195.58 0)
 			(effects
 				(font
@@ -36776,7 +36709,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 313.69 58.42 0)
+		(at 318.77 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -36784,7 +36717,7 @@
 		(dnp no)
 		(uuid "f15b83ef-20b2-42da-8470-5b7d6e7771c3")
 		(property "Reference" "#PWR066"
-			(at 313.69 62.23 0)
+			(at 318.77 62.23 0)
 			(effects
 				(font
 					(size 1 1)
@@ -36793,7 +36726,7 @@
 			)
 		)
 		(property "Value" "USB_VBUS"
-			(at 313.69 54.61 0)
+			(at 318.77 54.61 0)
 			(effects
 				(font
 					(size 1 1)
@@ -36801,7 +36734,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 313.69 58.42 0)
+			(at 318.77 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36810,7 +36743,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 313.69 58.42 0)
+			(at 318.77 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36819,7 +36752,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 313.69 58.42 0)
+			(at 318.77 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36857,7 +36790,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0R"
+		(property "Value" "220R"
 			(at 400.685 227.33 0)
 			(effects
 				(font
