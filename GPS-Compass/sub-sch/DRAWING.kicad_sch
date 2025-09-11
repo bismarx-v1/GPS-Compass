@@ -19,6 +19,19 @@
 		)
 		(uuid 00733608-fb15-4988-a11f-ce705c225193)
 	)
+	(rectangle
+		(start 153.67 111.125)
+		(end 166.37 122.555)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 132 132 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 14e96950-5559-4cf9-81d7-352e882cc07c)
+	)
 	(circle
 		(center 158.75 95.25)
 		(radius 20.3596)
@@ -468,6 +481,18 @@
 			(justify left)
 		)
 		(uuid "51a050d8-5598-4747-bcb2-deed010ce946")
+	)
+	(text "GPIO ACTIVATED FAN"
+		(exclude_from_sim no)
+		(at 160.02 110.49 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "77f9d736-8a77-4efd-8495-2f760f2cede8")
 	)
 	(text "DEBOUNCED_GPIO"
 		(exclude_from_sim no)
