@@ -1656,7 +1656,7 @@
 		)
 		(uuid "3edb4a3d-df30-4a6e-94b3-1c1984b7c2a9")
 	)
-	(text "MAIN SW"
+	(text "OTG SW"
 		(exclude_from_sim no)
 		(at 74.295 90.805 0)
 		(effects
@@ -1743,32 +1743,28 @@
 		(uuid "4d586e43-47d1-462a-bcc6-8d98614b74fc")
 	)
 	(no_connect
-		(at 101.6 105.41)
-		(uuid "bc92babe-0572-4e22-b7f6-ed95fd6ce483")
-	)
-	(no_connect
 		(at 45.72 66.04)
 		(uuid "cb7f6347-fc19-4ac8-a2b2-89babdf3af37")
 	)
 	(wire
 		(pts
-			(xy 39.37 78.74) (xy 45.72 78.74)
+			(xy 38.1 83.82) (xy 45.72 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "059c3097-8350-4b33-abda-cf071174245c")
+		(uuid "00cb41c7-278d-47b9-b91d-8427ddb1c0d7")
 	)
 	(wire
 		(pts
-			(xy 34.29 91.44) (xy 45.72 91.44)
+			(xy 38.1 91.44) (xy 45.72 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0b605808-793f-4b17-9b7f-5ebe3df456ec")
+		(uuid "04ac6cfe-7815-49a7-8646-ef26422e824a")
 	)
 	(wire
 		(pts
@@ -1822,6 +1818,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 73.66) (xy 45.72 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eca1070-55ab-4f62-a32e-25a42012b639")
+	)
+	(wire
+		(pts
 			(xy 242.57 66.04) (xy 245.11 66.04)
 		)
 		(stroke
@@ -1829,6 +1835,16 @@
 			(type default)
 		)
 		(uuid "268b8f62-5120-4b75-b168-e45a9933ab63")
+	)
+	(wire
+		(pts
+			(xy 38.1 86.36) (xy 45.72 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29ef1dfe-ee87-4ae5-90aa-5dc4ed2e3ae8")
 	)
 	(wire
 		(pts
@@ -1859,16 +1875,6 @@
 			(type default)
 		)
 		(uuid "3d592d0e-8e50-40d4-b9e7-164430d9c509")
-	)
-	(wire
-		(pts
-			(xy 39.37 96.52) (xy 45.72 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ffa0792-cb54-481a-8f48-b8210609139c")
 	)
 	(wire
 		(pts
@@ -1922,6 +1928,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 96.52) (xy 45.72 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d8c35c9-b277-4340-a2b0-ffbe71a78f43")
+	)
+	(wire
+		(pts
 			(xy 132.08 66.04) (xy 133.35 66.04)
 		)
 		(stroke
@@ -1932,13 +1948,13 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 83.82) (xy 45.72 83.82)
+			(xy 38.1 78.74) (xy 45.72 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54547a37-c2ee-4b8b-876b-b92a66827885")
+		(uuid "512eb59e-07d1-4ba3-89d6-275cb62d1598")
 	)
 	(wire
 		(pts
@@ -1959,6 +1975,16 @@
 			(type default)
 		)
 		(uuid "643fa877-125b-437b-9531-bd759f28d90f")
+	)
+	(wire
+		(pts
+			(xy 38.1 93.98) (xy 45.72 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "666f8473-1f4b-4c53-8afc-4ef1ebee2ab2")
 	)
 	(wire
 		(pts
@@ -1992,23 +2018,13 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 105.41) (xy 101.6 105.41)
+			(xy 95.25 100.33) (xy 102.87 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "77df33a1-6067-4ff1-9d8c-07bd5715e5ce")
-	)
-	(wire
-		(pts
-			(xy 39.37 76.2) (xy 45.72 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a617e3d-689a-42ab-a080-cdf2cc86bfc3")
 	)
 	(wire
 		(pts
@@ -2042,16 +2058,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 81.28) (xy 45.72 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91208797-d610-49ff-946c-cdf7f32cf2d2")
-	)
-	(wire
-		(pts
 			(xy 81.28 74.93) (xy 83.82 74.93)
 		)
 		(stroke
@@ -2062,43 +2068,23 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 93.98) (xy 45.72 93.98)
+			(xy 43.18 99.06) (xy 45.72 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9c0e1204-c2b5-44c8-90e2-96fa687ad04c")
+		(uuid "979c641c-f0d3-4a1d-be6f-1429333be2cb")
 	)
 	(wire
 		(pts
-			(xy 34.29 97.79) (xy 34.29 91.44)
+			(xy 38.1 71.12) (xy 45.72 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9cde53bd-aa5b-470f-ae02-c98520b2d0e1")
-	)
-	(wire
-		(pts
-			(xy 39.37 99.06) (xy 45.72 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b02eadbe-5ab0-4276-a66e-485f98afedf0")
-	)
-	(wire
-		(pts
-			(xy 39.37 86.36) (xy 45.72 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0a6f428-0fd8-4ed5-8c08-e4eda05593c0")
+		(uuid "9b9536b5-e555-412c-b470-18ffc711cd4c")
 	)
 	(wire
 		(pts
@@ -2132,6 +2118,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 76.2) (xy 45.72 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c366e37b-d690-4ab8-b81d-125bd8388c80")
+	)
+	(wire
+		(pts
 			(xy 179.07 66.04) (xy 186.69 66.04)
 		)
 		(stroke
@@ -2162,13 +2158,33 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 100.33) (xy 101.6 100.33)
+			(xy 95.25 105.41) (xy 102.87 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "dad347d3-5493-4e40-b209-9e43ba47a073")
+	)
+	(wire
+		(pts
+			(xy 38.1 88.9) (xy 45.72 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc13a921-ed02-4c78-a9d3-d5f89fb21325")
+	)
+	(wire
+		(pts
+			(xy 38.1 81.28) (xy 45.72 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e140282a-546b-4556-b824-69562ee01d2a")
 	)
 	(wire
 		(pts
@@ -2189,48 +2205,6 @@
 			(type default)
 		)
 		(uuid "ebd829c6-77c2-4b49-807a-e86b51e333df")
-	)
-	(wire
-		(pts
-			(xy 39.37 88.9) (xy 45.72 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee09deb8-59ff-4066-9328-a6dd4151900a")
-	)
-	(wire
-		(pts
-			(xy 39.37 73.66) (xy 45.72 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f54dda09-182d-419b-8796-301e9fb63400")
-	)
-	(wire
-		(pts
-			(xy 39.37 71.12) (xy 45.72 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f76005a3-22f6-4fae-a0f1-803f15419824")
-	)
-	(label "DBNCD_3"
-		(at 39.37 93.98 0)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "03509fd3-bbe7-44ad-bcb9-ee0ec94ad3d6")
 	)
 	(label "MSW_ON"
 		(at 101.6 60.96 180)
@@ -2256,17 +2230,17 @@
 		)
 		(uuid "0f8c91ff-7c88-4a6a-8777-4c0fb6fee5d1")
 	)
-	(label "DBNCD_2"
-		(at 39.37 88.9 0)
+	(label "SRC-MODE"
+		(at 104.14 113.03 180)
 		(effects
 			(font
 				(face "Bahnschrift")
 				(size 1 1)
 				(color 0 0 0 1)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "195489c8-cf21-4813-98b1-be42a2e8ded2")
+		(uuid "162c08ef-efaf-499d-b1ad-8eb1c8aee817")
 	)
 	(label "LED_EXT"
 		(at 171.45 105.41 0)
@@ -2292,18 +2266,6 @@
 		)
 		(uuid "230ab3dc-e996-499d-ba0f-09aec278f8e1")
 	)
-	(label "EN"
-		(at 39.37 78.74 0)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "27308671-6d6d-4f32-bc0c-bc4106742d3f")
-	)
 	(label "DB_0"
 		(at 132.08 66.04 0)
 		(effects
@@ -2315,18 +2277,6 @@
 			(justify left bottom)
 		)
 		(uuid "2a0e1cf0-0352-42a1-8976-9052f8a102f2")
-	)
-	(label "LED_EXT"
-		(at 39.37 86.36 0)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "2cfc451d-f705-427e-8403-9c9e54416503")
 	)
 	(label "DBNCD_2"
 		(at 219.71 66.04 180)
@@ -2352,8 +2302,8 @@
 		)
 		(uuid "3bd94d71-cc12-4634-ba0a-da57ffe771dc")
 	)
-	(label "OTG_ON"
-		(at 39.37 99.06 0)
+	(label "LED_EXT"
+		(at 38.1 83.82 0)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -2362,10 +2312,10 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "44dcb9f0-b9e8-4fe1-93a6-3a9bb8835413")
+		(uuid "3f3a7813-99fc-4a39-8756-d0ab460314e5")
 	)
-	(label "OTG_ON"
-		(at 104.14 113.03 180)
+	(label "SRC-MODE"
+		(at 102.87 100.33 180)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -2374,7 +2324,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "4e8f5910-329b-41af-a872-5fdb462d2897")
+		(uuid "4f8881c0-4481-45b8-818a-0bd659e105ca")
 	)
 	(label "DBNCD_3"
 		(at 252.73 66.04 180)
@@ -2388,6 +2338,18 @@
 		)
 		(uuid "5011a6ed-c41d-4bee-a243-3e4c1b29124b")
 	)
+	(label "DBNCD_3"
+		(at 38.1 88.9 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "5384e40b-6f30-4e74-86a1-533ed649e32f")
+	)
 	(label "DBNCD_1"
 		(at 186.69 66.04 180)
 		(effects
@@ -2399,6 +2361,42 @@
 			(justify right bottom)
 		)
 		(uuid "54013abf-e387-459e-86c6-3a8aa0ccac51")
+	)
+	(label "EN"
+		(at 38.1 76.2 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "541bb49e-3ec3-4626-917b-3d30c61be485")
+	)
+	(label "DBNCD_1"
+		(at 38.1 81.28 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "651fe884-f328-4a42-bef0-6f849f8935d3")
+	)
+	(label "SINK-MODE"
+		(at 38.1 93.98 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ee41c82-a86c-495f-b3fa-e5e29d1cfc30")
 	)
 	(label "DB_3"
 		(at 233.68 66.04 0)
@@ -2424,8 +2422,8 @@
 		)
 		(uuid "7f4ba88f-4f0e-4ef6-827f-b028ad4b3028")
 	)
-	(label "GNSS_RST"
-		(at 39.37 76.2 0)
+	(label "MSW_ON"
+		(at 38.1 71.12 0)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -2434,7 +2432,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "86e59097-3f81-4555-a380-5c84f03f0e65")
+		(uuid "8ab7dcdd-1e2a-46db-943c-856b05983d8b")
 	)
 	(label "MSW_ON"
 		(at 106.68 74.93 180)
@@ -2448,18 +2446,6 @@
 		)
 		(uuid "8b7aa4c4-0d6f-4bbd-b20a-3caae742bfce")
 	)
-	(label "OTG_ON"
-		(at 101.6 100.33 180)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "9420492d-c159-4920-bb4e-aa3956fccaea")
-	)
 	(label "DB_2"
 		(at 200.66 66.04 0)
 		(effects
@@ -2472,8 +2458,8 @@
 		)
 		(uuid "94f08e6a-cdf4-4db9-b811-2edb55ad2d25")
 	)
-	(label "MSW_ON"
-		(at 39.37 73.66 0)
+	(label "DBNCD_2"
+		(at 38.1 86.36 0)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -2482,19 +2468,19 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ac9e75e4-bc47-4868-8835-d896c7df31f3")
+		(uuid "b071befe-c727-42a0-af9f-3fc18018475d")
 	)
-	(label "OTG_OFF"
-		(at 100.965 105.41 180)
+	(label "GNSS_RST"
+		(at 38.1 73.66 0)
 		(effects
 			(font
 				(face "Bahnschrift")
 				(size 1 1)
 				(color 0 0 0 1)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "ad829081-08a8-4444-a0f2-1e84a1f33a08")
+		(uuid "b6c39453-09a0-4331-9f8b-063a1bf56257")
 	)
 	(label "DB_1"
 		(at 167.64 66.04 0)
@@ -2508,20 +2494,20 @@
 		)
 		(uuid "d107fcdf-da0d-4d48-a267-ae6a8d0ca46a")
 	)
-	(label "DBNCD_0"
-		(at 39.37 81.28 0)
+	(label "SINK-MODE"
+		(at 102.87 105.41 180)
 		(effects
 			(font
 				(face "Bahnschrift")
 				(size 1 1)
 				(color 0 0 0 1)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "d5bc5694-a689-4901-a8dd-b3c41285eea9")
+		(uuid "e36caefa-57c6-46db-b628-63013c819947")
 	)
-	(label "DBNCD_1"
-		(at 39.37 83.82 0)
+	(label "DBNCD_0"
+		(at 38.1 78.74 0)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -2530,7 +2516,19 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "f023a76c-6fc9-4a5c-ae06-bc6f86b9ae3c")
+		(uuid "f713a401-2dd4-493b-94cf-e5614be9a83d")
+	)
+	(label "SRC-MODE"
+		(at 38.1 91.44 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ffd7ba54-7681-4b72-9863-6e69bb4f4c95")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -3263,7 +3261,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 39.37 96.52 90)
+		(at 43.18 96.52 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3272,7 +3270,7 @@
 		(dnp no)
 		(uuid "3c096ccc-8123-4c03-b9f0-5bb474e76cd4")
 		(property "Reference" "#PWR02"
-			(at 43.18 96.52 0)
+			(at 46.99 96.52 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3281,7 +3279,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 42.545 95.25 90)
+			(at 40.005 96.52 90)
 			(effects
 				(font
 					(size 1 1)
@@ -3290,7 +3288,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 96.52 0)
+			(at 43.18 96.52 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -3300,7 +3298,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 96.52 0)
+			(at 43.18 96.52 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -3310,7 +3308,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 39.37 96.52 0)
+			(at 43.18 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3952,7 +3950,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm_Relief"
+		(property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x03_P3.6mm_D0.4mm_OD1mm_Relief"
 			(at 90.17 102.87 0)
 			(effects
 				(font
@@ -4874,75 +4872,6 @@
 			(project "GPS-Compass_UI"
 				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 34.29 97.79 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "88e013a2-326e-44f5-9d65-898a0a04897a")
-		(property "Reference" "#PWR01"
-			(at 34.29 104.14 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 34.29 102.87 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 97.79 0)
-			(effects
-				(font
-					(face "Bahnschrift")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 97.79 0)
-			(effects
-				(font
-					(face "Bahnschrift")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 34.29 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8b211797-d6e9-4ef3-9423-f35090c16b94")
-		)
-		(instances
-			(project "GPS-Compass_UI"
-				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -5878,6 +5807,75 @@
 			(project "GPS-Compass_UI"
 				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 43.18 99.06 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd98488a-9d17-4db0-bc73-492673ed20a5")
+		(property "Reference" "#PWR022"
+			(at 43.18 105.41 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 43.18 104.14 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 99.06 0)
+			(effects
+				(font
+					(face "Bahnschrift")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 99.06 0)
+			(effects
+				(font
+					(face "Bahnschrift")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 43.18 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e912457c-c3fe-4eae-a4de-f2789ffb5c59")
+		)
+		(instances
+			(project "GPS-Compass_UI"
+				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
