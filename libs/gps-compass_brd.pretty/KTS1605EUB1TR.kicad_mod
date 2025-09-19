@@ -1,0 +1,237 @@
+(footprint "KTS1605EUB1TR"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "KTS1605EUB-1-TR-1")
+	(tags "Integrated Circuit")
+	(property "Reference" "IC**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "4ea5b1dd-dbb1-4f4a-bb5b-8feace9220bb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "KTS1605EUB1TR"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3d287882-6080-4b73-8597-754e589a98dc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4f1b8ffa-868c-466c-97cb-0a7273fb7e17")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "26147d35-acaa-487e-b33e-f72becc3a2c5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1 -0.5)
+		(end -1 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ac84d0a8-0929-4c1a-b3ee-2f9e262f86a6")
+	)
+	(fp_line
+		(start -0.9 -0.5)
+		(end -0.9 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "833f2a60-4fe3-4563-9fde-61515b943e11")
+	)
+	(fp_arc
+		(start -1 -0.5)
+		(mid -0.95 -0.55)
+		(end -0.9 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "84553f3b-9786-44e0-aa54-0d5379472930")
+	)
+	(fp_arc
+		(start -0.9 -0.5)
+		(mid -0.95 -0.45)
+		(end -1 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c1ae48c4-91b2-4d8b-98a7-be94533c592b")
+	)
+	(fp_line
+		(start -1.5 -1.75)
+		(end 1.5 -1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "41d63868-49be-4094-922f-eeec0053870e")
+	)
+	(fp_line
+		(start -1.5 1.75)
+		(end -1.5 -1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "23cf3795-a014-49c5-ab74-bb526f0f1d69")
+	)
+	(fp_line
+		(start 1.5 -1.75)
+		(end 1.5 1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5ddbb852-c8c8-4223-aef4-2e7978459e20")
+	)
+	(fp_line
+		(start 1.5 1.75)
+		(end -1.5 1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2d3710d7-3ef0-484c-9a13-b40845e9c2b0")
+	)
+	(fp_line
+		(start -0.5 -0.75)
+		(end -0.5 0.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f92cdb1b-5a44-49e2-9576-3287b5e1be0c")
+	)
+	(fp_line
+		(start -0.5 0.75)
+		(end 0.5 0.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "af166015-6d60-48ea-940d-255d18287ba0")
+	)
+	(fp_line
+		(start 0.5 -0.75)
+		(end -0.5 -0.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a9c11634-723a-4dde-aef4-893b24b4d66d")
+	)
+	(fp_line
+		(start 0.5 0.75)
+		(end 0.5 -0.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0a7c6845-514c-46e0-a4f3-f17a78c298ab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "db35d9b5-7fe3-417e-8681-05b5354f11dd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "A1" smd circle
+		(at -0.25 -0.5 90)
+		(size 0.25 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "705103e3-8bde-44a4-9a60-5bf74801e34d")
+	)
+	(pad "A2" smd circle
+		(at 0.25 -0.5 90)
+		(size 0.25 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "384d6907-5c36-4879-8221-3b2799bb960e")
+	)
+	(pad "B1" smd circle
+		(at -0.25 0 90)
+		(size 0.25 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1620d90d-2e22-4518-a9a7-a96c1b8a79ec")
+	)
+	(pad "B2" smd circle
+		(at 0.25 0 90)
+		(size 0.25 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "351d9b92-b6da-47e6-83be-ed8fcd10715d")
+	)
+	(pad "C1" smd circle
+		(at -0.25 0.5 90)
+		(size 0.25 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8f45c592-7033-4f13-9a1c-92780565e3a7")
+	)
+	(pad "C2" smd circle
+		(at 0.25 0.5 90)
+		(size 0.25 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "974580ab-b428-47b8-9869-3b5fa3aa49c2")
+	)
+	(embedded_fonts no)
+	(model "C:/Users/MenMe/GitHub/GPS-Compass/libs/gps-compass_3d/KTS1605EUB-1-TR.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
