@@ -108,7 +108,6 @@
 			(psnegative no)
 			(psa4output no)
 			(plot_black_and_white yes)
-			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(plotpadnumbers no)
 			(hidednponfab no)
@@ -32255,8 +32254,7 @@
 		)
 		(polygon
 			(pts
-				(xy 139.05 123.25) (xy 98.55 123.25) (xy 98.55 93.5) (xy 98.55 93.5) (xy 138.8 93.5) (xy 139.05 93.75)
-				(xy 139.05 123.25)
+				(xy 139.05 123.25) (xy 98.55 123.25) (xy 98.55 93.5) (xy 138.8 93.5) (xy 139.05 93.75)
 			)
 		)
 		(filled_polygon

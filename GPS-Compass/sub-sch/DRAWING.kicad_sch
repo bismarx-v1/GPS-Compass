@@ -47,8 +47,8 @@
 		(uuid 374ae748-e0a6-4255-9a4e-2d3cbc6fde35)
 	)
 	(rectangle
-		(start 190.5 72.39)
-		(end 191.77 74.93)
+		(start 190.5 74.295)
+		(end 191.77 76.835)
 		(stroke
 			(width 0)
 			(type solid)
@@ -255,20 +255,6 @@
 		(uuid caa89508-96bb-4468-bdf2-8d0212eec3be)
 	)
 	(rectangle
-		(start 125.73 80.645)
-		(end 127 83.82)
-		(stroke
-			(width 0)
-			(type solid)
-			(color 132 132 132 1)
-		)
-		(fill
-			(type color)
-			(color 132 132 132 1)
-		)
-		(uuid cbf82d4f-eb00-40a2-b0d4-4af27fe4fd80)
-	)
-	(rectangle
 		(start 152.4 88.9)
 		(end 165.1 101.6)
 		(stroke
@@ -281,20 +267,6 @@
 			(color 132 132 132 1)
 		)
 		(uuid cceab2e2-a96e-4438-8186-39b780e5a3e9)
-	)
-	(rectangle
-		(start 190.5 68.58)
-		(end 191.77 72.39)
-		(stroke
-			(width 0)
-			(type solid)
-			(color 255 0 255 1)
-		)
-		(fill
-			(type color)
-			(color 255 0 255 1)
-		)
-		(uuid d43df5f7-dcfe-4e0d-bb67-0b6b1453b981)
 	)
 	(rectangle
 		(start 127 63.5)
@@ -364,9 +336,9 @@
 		)
 		(uuid "19499168-acb3-4f3b-94d0-7125c4459858")
 	)
-	(text "USB OTG CHARGER"
+	(text "USB SINK/SOURCE"
 		(exclude_from_sim no)
-		(at 111.125 76.835 0)
+		(at 111.76 77.47 0)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -376,19 +348,6 @@
 			(justify left)
 		)
 		(uuid "1e18c27d-0b2f-41ce-b03d-fb0e4f9aceb3")
-	)
-	(text "OTG_SWITCH"
-		(exclude_from_sim no)
-		(at 193.04 70.485 0)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "24a1534c-14e6-4ffb-bb43-cd47d305ede7")
 	)
 	(text "EXTERNAL_LED"
 		(exclude_from_sim no)
@@ -445,7 +404,7 @@
 	)
 	(text "POINTING ARROW"
 		(exclude_from_sim no)
-		(at 150.495 88.265 0)
+		(at 152.4 88.265 0)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -455,19 +414,6 @@
 			(justify left)
 		)
 		(uuid "4a973831-7548-4aa1-a367-493335822f79")
-	)
-	(text "MAIN USB PORT\nBATTERY CAHRGING\nDATA"
-		(exclude_from_sim no)
-		(at 111.125 82.55 0)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "51a050d8-5598-4747-bcb2-deed010ce946")
 	)
 	(text "DEBOUNCED_GPIO"
 		(exclude_from_sim no)
@@ -497,7 +443,7 @@
 	)
 	(text "OTG_LED"
 		(exclude_from_sim no)
-		(at 193.04 73.66 0)
+		(at 193.04 75.565 0)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -691,17 +637,6 @@
 			(color 255 0 0 1)
 		)
 		(uuid "28ac9a69-79c1-4ecd-8491-8e648f9b7d25")
-	)
-	(polyline
-		(pts
-			(xy 191.77 70.485) (xy 193.04 71.755)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-			(color 0 0 0 1)
-		)
-		(uuid "3249e7da-68e4-4254-9e10-ac54c4ac0ada")
 	)
 	(polyline
 		(pts

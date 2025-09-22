@@ -1548,6 +1548,19 @@
 		(uuid 8a919956-4fdb-49c8-8a71-5fd6cb960afa)
 	)
 	(rectangle
+		(start 74.295 90.17)
+		(end 108.585 118.745)
+		(stroke
+			(width 0)
+			(type dash)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9bc1c66b-f303-4675-ae24-6218babb91b8)
+	)
+	(rectangle
 		(start 23.495 52.07)
 		(end 69.215 118.745)
 		(stroke
@@ -1587,19 +1600,6 @@
 		(uuid ddbee034-a60b-41f4-8a08-7cf743236848)
 	)
 	(rectangle
-		(start 74.295 90.17)
-		(end 108.585 118.745)
-		(stroke
-			(width 0)
-			(type dash)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid f1ebbd71-9c3b-451f-9869-cd9fb2dd4900)
-	)
-	(rectangle
 		(start 163.83 90.17)
 		(end 203.2 118.745)
 		(stroke
@@ -1611,6 +1611,20 @@
 			(type none)
 		)
 		(uuid f50c235a-babe-43e9-bd67-5259a6b45f29)
+	)
+	(text "MAIN SW"
+		(exclude_from_sim no)
+		(at 74.295 90.805 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 5 5)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "09167d72-2ba5-404a-82a8-80952de92a7b")
 	)
 	(text "LED"
 		(exclude_from_sim no)
@@ -1655,20 +1669,6 @@
 			(justify left bottom)
 		)
 		(uuid "3edb4a3d-df30-4a6e-94b3-1c1984b7c2a9")
-	)
-	(text "OTG SW"
-		(exclude_from_sim no)
-		(at 74.295 90.805 0)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 5 5)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "430c7448-b760-47e8-988a-20e6c467ef47")
 	)
 	(text "MOUNTING"
 		(exclude_from_sim no)
@@ -1778,33 +1778,13 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 102.87) (xy 85.09 102.87)
+			(xy 102.87 104.14) (xy 99.06 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0f36266d-6db9-40b0-b84e-f2275123df23")
-	)
-	(wire
-		(pts
-			(xy 80.01 113.03) (xy 82.55 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "165654f2-ab05-45ca-9483-4c24d8691ea9")
-	)
-	(wire
-		(pts
-			(xy 104.14 113.03) (xy 97.79 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b3f2601-acac-4343-9812-3c19f93d73a2")
+		(uuid "0f3299ff-cc8c-4557-92f9-c71938789bc3")
 	)
 	(wire
 		(pts
@@ -1888,7 +1868,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 105.41) (xy 193.04 105.41)
+			(xy 194.31 100.33) (xy 193.04 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1928,16 +1908,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 96.52) (xy 45.72 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d8c35c9-b277-4340-a2b0-ffbe71a78f43")
-	)
-	(wire
-		(pts
 			(xy 132.08 66.04) (xy 133.35 66.04)
 		)
 		(stroke
@@ -1958,13 +1928,13 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 102.87) (xy 81.28 101.6)
+			(xy 44.45 96.52) (xy 45.72 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54cd54cd-a72e-42b3-b43b-d9f89d9f4a55")
+		(uuid "643cf843-b0e4-44b9-a768-248061df413f")
 	)
 	(wire
 		(pts
@@ -1978,7 +1948,17 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 93.98) (xy 45.72 93.98)
+			(xy 80.01 104.14) (xy 83.82 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6541b1fb-2420-4f85-9609-4d373358ece0")
+	)
+	(wire
+		(pts
+			(xy 43.18 93.98) (xy 45.72 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2015,16 +1995,6 @@
 			(type default)
 		)
 		(uuid "768eec3a-1d5d-47ed-a80b-d7f36a769e0c")
-	)
-	(wire
-		(pts
-			(xy 95.25 100.33) (xy 102.87 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77df33a1-6067-4ff1-9d8c-07bd5715e5ce")
 	)
 	(wire
 		(pts
@@ -2098,7 +2068,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 105.41) (xy 177.8 105.41)
+			(xy 171.45 100.33) (xy 177.8 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2155,16 +2125,6 @@
 			(type default)
 		)
 		(uuid "d96acc9d-0c7a-49db-a24b-d4498a628eb9")
-	)
-	(wire
-		(pts
-			(xy 95.25 105.41) (xy 102.87 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dad347d3-5493-4e40-b209-9e43ba47a073")
 	)
 	(wire
 		(pts
@@ -2230,20 +2190,8 @@
 		)
 		(uuid "0f8c91ff-7c88-4a6a-8777-4c0fb6fee5d1")
 	)
-	(label "SRC-MODE"
-		(at 104.14 113.03 180)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "162c08ef-efaf-499d-b1ad-8eb1c8aee817")
-	)
 	(label "LED_EXT"
-		(at 171.45 105.41 0)
+		(at 171.45 100.33 0)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -2277,6 +2225,18 @@
 			(justify left bottom)
 		)
 		(uuid "2a0e1cf0-0352-42a1-8976-9052f8a102f2")
+	)
+	(label "OTG"
+		(at 38.1 91.44 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "323dd6f4-bd23-4218-b644-350c0968e958")
 	)
 	(label "DBNCD_2"
 		(at 219.71 66.04 180)
@@ -2313,18 +2273,6 @@
 			(justify left bottom)
 		)
 		(uuid "3f3a7813-99fc-4a39-8756-d0ab460314e5")
-	)
-	(label "SRC-MODE"
-		(at 102.87 100.33 180)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "4f8881c0-4481-45b8-818a-0bd659e105ca")
 	)
 	(label "DBNCD_3"
 		(at 252.73 66.04 180)
@@ -2386,18 +2334,6 @@
 		)
 		(uuid "651fe884-f328-4a42-bef0-6f849f8935d3")
 	)
-	(label "SINK-MODE"
-		(at 38.1 93.98 0)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "6ee41c82-a86c-495f-b3fa-e5e29d1cfc30")
-	)
 	(label "DB_3"
 		(at 233.68 66.04 0)
 		(effects
@@ -2421,6 +2357,18 @@
 			(justify right bottom)
 		)
 		(uuid "7f4ba88f-4f0e-4ef6-827f-b028ad4b3028")
+	)
+	(label "OTG"
+		(at 80.01 104.14 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a36953e-1dba-4913-9035-c85db6d87d61")
 	)
 	(label "MSW_ON"
 		(at 38.1 71.12 0)
@@ -2494,18 +2442,6 @@
 		)
 		(uuid "d107fcdf-da0d-4d48-a267-ae6a8d0ca46a")
 	)
-	(label "SINK-MODE"
-		(at 102.87 105.41 180)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "e36caefa-57c6-46db-b628-63013c819947")
-	)
 	(label "DBNCD_0"
 		(at 38.1 78.74 0)
 		(effects
@@ -2517,18 +2453,6 @@
 			(justify left bottom)
 		)
 		(uuid "f713a401-2dd4-493b-94cf-e5614be9a83d")
-	)
-	(label "SRC-MODE"
-		(at 38.1 91.44 0)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "ffd7ba54-7681-4b72-9863-6e69bb4f4c95")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -2840,6 +2764,75 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 102.87 104.14 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "279920d9-a375-463c-9689-42fd2aad64b6")
+		(property "Reference" "#PWR01"
+			(at 102.87 110.49 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 109.22 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 104.14 0)
+			(effects
+				(font
+					(face "Bahnschrift")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 104.14 0)
+			(effects
+				(font
+					(face "Bahnschrift")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1eba4532-e911-441a-9e44-151945540dc9")
+		)
+		(instances
+			(project "GPS-Compass_UI"
+				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 162.56 66.04 0)
 		(unit 1)
@@ -2973,6 +2966,75 @@
 			(project "GPS-Compass_UI"
 				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 43.18 93.98 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ee91510-4411-4a00-9c40-a5b1139f61d0")
+		(property "Reference" "#PWR03"
+			(at 36.83 93.98 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 93.98 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 93.98 0)
+			(effects
+				(font
+					(face "Bahnschrift")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 93.98 0)
+			(effects
+				(font
+					(face "Bahnschrift")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 43.18 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e40f8a1e-64c1-496c-872e-16089633b686")
+		)
+		(instances
+			(project "GPS-Compass_UI"
+				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -3125,7 +3187,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 194.31 105.41 0)
+		(at 194.31 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3134,7 +3196,7 @@
 		(fields_autoplaced yes)
 		(uuid "38d0fa94-252d-4eb8-8f43-55008cce2e7f")
 		(property "Reference" "#PWR016"
-			(at 194.31 111.76 0)
+			(at 194.31 106.68 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3143,7 +3205,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 194.31 110.49 0)
+			(at 194.31 105.41 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3152,7 +3214,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 105.41 0)
+			(at 194.31 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3161,7 +3223,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 105.41 0)
+			(at 194.31 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3170,7 +3232,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 194.31 105.41 0)
+			(at 194.31 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3261,7 +3323,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 43.18 96.52 90)
+		(at 44.45 96.52 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3270,7 +3332,7 @@
 		(dnp no)
 		(uuid "3c096ccc-8123-4c03-b9f0-5bb474e76cd4")
 		(property "Reference" "#PWR02"
-			(at 46.99 96.52 0)
+			(at 48.26 96.52 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3279,7 +3341,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 40.005 96.52 90)
+			(at 41.275 96.52 90)
 			(effects
 				(font
 					(size 1 1)
@@ -3288,7 +3350,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 96.52 0)
+			(at 44.45 96.52 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -3298,7 +3360,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 96.52 0)
+			(at 44.45 96.52 0)
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -3308,7 +3370,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 43.18 96.52 0)
+			(at 44.45 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3642,83 +3704,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 86.36 113.03 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "49a47668-3cbf-4768-865c-4ab7b5a6635e")
-		(property "Reference" "D1"
-			(at 86.36 108.585 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 86.36 110.49 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm_Relief"
-			(at 86.36 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 86.36 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 86.36 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a074066a-e4a7-4c0c-af1c-8139393338f2")
-		)
-		(pin "2"
-			(uuid "4400a221-625b-4890-a9b4-725aba6be5ab")
-		)
-		(instances
-			(project "GPS-Compass_UI"
-				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 245.11 58.42 0)
 		(mirror y)
@@ -3920,76 +3905,6 @@
 			(project "GPS-Compass_UI"
 				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
 					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 90.17 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5a89d0cd-16fb-4270-8b68-e70d98af42b3")
-		(property "Reference" "SW2"
-			(at 90.17 94.615 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPDT"
-			(at 90.17 97.155 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x03_P3.6mm_D0.4mm_OD1mm_Relief"
-			(at 90.17 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 90.17 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 90.17 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4da36f43-3abe-4f8d-ad10-44b18960e1b9")
-		)
-		(pin "3"
-			(uuid "311e4eb3-0157-4a3f-ad01-8c00c955baad")
-		)
-		(pin "2"
-			(uuid "161d5d4e-fd71-4d1d-a31d-3607f40cddbe")
-		)
-		(instances
-			(project ""
-				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -4224,6 +4139,106 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 87.63 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "60892170-5051-467b-a279-8fd21faa23c4")
+		(property "Reference" "R2"
+			(at 87.63 99.695 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 87.63 101.6 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 87.63 105.918 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 87.63 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17633"
+			(at 87.63 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 87.63 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 87.63 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 87.63 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bcf3df1b-cfe4-4aa1-b481-dfb563c1661f")
+		)
+		(pin "2"
+			(uuid "66699e42-fd0b-4bfe-9a0f-5a16f5bc434d")
+		)
+		(instances
+			(project "GPS-Compass_UI"
+				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 245.11 62.23 0)
 		(mirror x)
 		(unit 1)
@@ -4294,7 +4309,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 181.61 105.41 90)
+		(at 181.61 100.33 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4302,7 +4317,7 @@
 		(dnp no)
 		(uuid "661c1e15-41da-4f5b-99e5-f10825dbe9ef")
 		(property "Reference" "R7"
-			(at 181.61 100.965 90)
+			(at 181.61 95.885 90)
 			(effects
 				(font
 					(size 1 1)
@@ -4310,7 +4325,7 @@
 			)
 		)
 		(property "Value" "220R"
-			(at 181.61 102.87 90)
+			(at 181.61 97.79 90)
 			(effects
 				(font
 					(size 1 1)
@@ -4318,7 +4333,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 181.61 107.188 90)
+			(at 181.61 102.108 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4327,7 +4342,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 181.61 105.41 0)
+			(at 181.61 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4336,7 +4351,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 105.41 0)
+			(at 181.61 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4345,7 +4360,7 @@
 			)
 		)
 		(property "LCSC" "C17633"
-			(at 181.61 105.41 0)
+			(at 181.61 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4354,7 +4369,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 181.61 105.41 0)
+			(at 181.61 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4362,7 +4377,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 181.61 105.41 0)
+			(at 181.61 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4370,7 +4385,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 181.61 105.41 0)
+			(at 181.61 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4387,6 +4402,82 @@
 			(project "GPS-Compass_UI"
 				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 95.25 104.14 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "663f0e67-7084-4c97-a66b-00572dca66b2")
+		(property "Reference" "D1"
+			(at 95.25 99.695 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 95.25 101.6 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm_Relief"
+			(at 95.25 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 95.25 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 95.25 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa933bf5-e642-4c4a-a13f-01bef3bc9900")
+		)
+		(pin "2"
+			(uuid "063362aa-7123-496b-83ec-3da2e7111e98")
+		)
+		(instances
+			(project "GPS-Compass_UI"
+				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -4526,75 +4617,6 @@
 			(project "GPS-Compass_UI"
 				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
 					(reference "SW7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 80.01 113.03 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6cfe6900-2ba9-40ab-a9dc-82b7f2d8ec77")
-		(property "Reference" "#PWR03"
-			(at 80.01 119.38 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 80.01 118.11 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 80.01 113.03 0)
-			(effects
-				(font
-					(face "Bahnschrift")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 80.01 113.03 0)
-			(effects
-				(font
-					(face "Bahnschrift")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 80.01 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1bbe7f77-4679-4bce-9d4e-7dd5fd1ab643")
-		)
-		(instances
-			(project "GPS-Compass_UI"
-				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -5048,7 +5070,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 189.23 105.41 180)
+		(at 189.23 100.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5056,7 +5078,7 @@
 		(dnp no)
 		(uuid "923680a1-83e8-4db7-8506-028851ddb125")
 		(property "Reference" "D3"
-			(at 189.23 100.965 0)
+			(at 189.23 95.885 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5064,7 +5086,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 189.23 102.87 0)
+			(at 189.23 97.79 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5072,7 +5094,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm_Relief"
-			(at 189.23 105.41 0)
+			(at 189.23 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5081,7 +5103,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 105.41 0)
+			(at 189.23 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5090,7 +5112,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 189.23 105.41 0)
+			(at 189.23 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5099,7 +5121,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 189.23 105.41 0)
+			(at 189.23 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5745,77 +5767,9 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 81.28 101.6 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d8e38ed1-d20e-46d6-932e-d34c1a092eba")
-		(property "Reference" "#PWR06"
-			(at 81.28 105.41 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 81.28 97.79 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(face "Bahnschrift")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(face "Bahnschrift")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b7e6c014-685a-4691-b9a9-0baec4d379fa")
-		)
-		(instances
-			(project "GPS-Compass_UI"
-				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 43.18 99.06 0)
-		(mirror y)
+		(at 43.18 99.06 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5823,7 +5777,7 @@
 		(dnp no)
 		(uuid "dd98488a-9d17-4db0-bc73-492673ed20a5")
 		(property "Reference" "#PWR022"
-			(at 43.18 105.41 0)
+			(at 36.83 99.06 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5832,7 +5786,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 43.18 104.14 90)
+			(at 38.1 99.06 90)
 			(effects
 				(font
 					(size 1 1)
@@ -5976,107 +5930,6 @@
 			(project "GPS-Compass_UI"
 				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 93.98 113.03 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e441ecb4-0b67-4620-bef9-2f88aaff53d2")
-		(property "Reference" "R2"
-			(at 93.98 108.585 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "2.2k"
-			(at 93.98 110.49 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 93.98 114.808 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17633"
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5bf70ddb-ec48-4bcd-967c-f8be68f371f2")
-		)
-		(pin "2"
-			(uuid "16484891-2b0c-4197-a135-0b2834782cc2")
-		)
-		(instances
-			(project "GPS-Compass_UI"
-				(path "/2171b68c-3635-466a-9c8f-785127caa9a5"
-					(reference "R2")
 					(unit 1)
 				)
 			)
