@@ -11886,19 +11886,6 @@
 		(uuid b5b442d9-5978-4bd3-b55c-aab9dc256f19)
 	)
 	(rectangle
-		(start 436.88 -31.115)
-		(end 463.55 -5.08)
-		(stroke
-			(width 0)
-			(type dash)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid c832d43c-75bc-49dd-b9cd-d5dba0ba3179)
-	)
-	(rectangle
 		(start 43.18 36.83)
 		(end 85.725 78.74)
 		(stroke
@@ -41077,7 +41064,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
-		(at 115.57 195.58 0)
+		(at 115.57 198.12 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -41085,7 +41073,7 @@
 		(dnp no)
 		(uuid "5dd43b3f-6c47-4e65-8060-0a9112c6cb1c")
 		(property "Reference" "J3"
-			(at 117.475 195.58 0)
+			(at 117.475 198.12 0)
 			(effects
 				(font
 					(size 1 1)
@@ -41093,7 +41081,7 @@
 			)
 		)
 		(property "Value" "Motor_conn"
-			(at 120.65 197.485 0)
+			(at 120.65 196.215 0)
 			(effects
 				(font
 					(size 1 1)
@@ -41101,7 +41089,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_S4B-XH-SM4-TB_1x04-1MP_P2.50mm_Horizontal"
-			(at 115.57 195.58 0)
+			(at 115.57 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41110,7 +41098,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 195.58 0)
+			(at 115.57 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41119,7 +41107,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 115.57 195.58 0)
+			(at 115.57 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41140,7 +41128,7 @@
 			(uuid "418b0efe-ef15-449a-a9f7-f43aeaf16c15")
 		)
 		(instances
-			(project ""
+			(project "GPS-Compass"
 				(path "/944f168e-b689-4be9-b5f1-4ef8c625b176"
 					(reference "J3")
 					(unit 1)
