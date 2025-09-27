@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,72 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "copper_edge_clearance|183778876|63701938|7655b13d-7958-4884-9061-d06cd8a0dcf2|506f4d8d-5686-4dc1-9f72-565753e8f266",
+          ""
+        ],
+        [
+          "copper_edge_clearance|202500000|51610000|c556fc6b-6edb-46b1-8a2f-84a6ed1fe709|3a324e1f-4ba0-46c5-a171-4f06405795d1",
+          ""
+        ],
+        [
+          "copper_edge_clearance|202500000|71390000|de8fefa8-a367-4267-b020-e01f5b373cb2|1d1cdcff-1f32-4768-b302-dec72372cf90",
+          ""
+        ],
+        [
+          "copper_edge_clearance|204250000|51600000|c556fc6b-6edb-46b1-8a2f-84a6ed1fe709|a35723f7-65f6-4ea7-9e6d-88fc0950d5bb",
+          ""
+        ],
+        [
+          "copper_edge_clearance|205040000|51610000|c556fc6b-6edb-46b1-8a2f-84a6ed1fe709|9a81d8dc-812b-450d-851c-41c2e570c4f0",
+          ""
+        ],
+        [
+          "copper_edge_clearance|205040000|71390000|de8fefa8-a367-4267-b020-e01f5b373cb2|7b5763f7-bb7a-4659-91b7-84c870e9c802",
+          ""
+        ],
+        [
+          "copper_edge_clearance|207580000|51610000|c556fc6b-6edb-46b1-8a2f-84a6ed1fe709|b92246f8-54ab-49f3-8df2-7eabd97225a8",
+          ""
+        ],
+        [
+          "copper_edge_clearance|207580000|71390000|de8fefa8-a367-4267-b020-e01f5b373cb2|affd0fb9-cc3a-4bd7-a0c1-cf4426423231",
+          ""
+        ],
+        [
+          "copper_edge_clearance|210120000|51610000|c556fc6b-6edb-46b1-8a2f-84a6ed1fe709|2bbd1071-d0d5-4b90-bae0-c6e7747a7b6c",
+          ""
+        ],
+        [
+          "copper_edge_clearance|210120000|71390000|de8fefa8-a367-4267-b020-e01f5b373cb2|d28487f7-c4bf-4402-ac47-398baaeb2ee1",
+          ""
+        ],
+        [
+          "copper_edge_clearance|211650000|51600000|c556fc6b-6edb-46b1-8a2f-84a6ed1fe709|fd052444-8fcd-41e1-875c-64f926262c9e",
+          ""
+        ],
+        [
+          "copper_edge_clearance|212660000|51610000|c556fc6b-6edb-46b1-8a2f-84a6ed1fe709|d6b5ea43-3605-4c66-8cde-2ad3380b2d76",
+          ""
+        ],
+        [
+          "copper_edge_clearance|212660000|71390000|de8fefa8-a367-4267-b020-e01f5b373cb2|e6777f1c-97df-4b64-8f84-0e950edf5675",
+          ""
+        ],
+        [
+          "copper_edge_clearance|215200000|51610000|c556fc6b-6edb-46b1-8a2f-84a6ed1fe709|4b2a8307-1b98-4b3b-a75d-073dcc27fb3c",
+          ""
+        ],
+        [
+          "copper_edge_clearance|215200000|71390000|de8fefa8-a367-4267-b020-e01f5b373cb2|5210a64d-3d80-4351-a0e9-6693f5fa8a2a",
+          ""
+        ],
+        [
+          "copper_edge_clearance|231800000|59200000|9c84c5a0-b413-45c3-9ea9-5b385a42544d|f8c8ea86-8386-4cf1-9e15-4923ad6afe9e",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -220,6 +285,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
         },
         {
           "diameter": 0.7,

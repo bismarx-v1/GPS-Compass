@@ -144,167 +144,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Polarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "C_Polarized_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2688,6 +2527,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 128.27) (xy 118.11 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0237c831-9b68-45fe-b4d4-eeac5a012e1e")
+	)
+	(wire
+		(pts
 			(xy 200.66 85.09) (xy 195.58 85.09)
 		)
 		(stroke
@@ -2755,6 +2604,16 @@
 			(type default)
 		)
 		(uuid "1b8bab99-0abb-49b2-a251-1a421aa3261e")
+	)
+	(wire
+		(pts
+			(xy 107.95 128.27) (xy 107.95 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "266a91d1-5f5a-4479-83b4-f5800a502722")
 	)
 	(wire
 		(pts
@@ -2925,6 +2784,16 @@
 			(type default)
 		)
 		(uuid "7a281d6b-3a13-4f04-a460-fc5df0a41e7a")
+	)
+	(wire
+		(pts
+			(xy 113.03 128.27) (xy 113.03 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a92fe82-f80e-48a9-ad9a-46fdd95996aa")
 	)
 	(wire
 		(pts
@@ -5318,6 +5187,42 @@
 			"AA=="
 		)
 	)
+	(label "MOSI"
+		(at 118.11 128.27 90)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e37034b-e668-4831-a2f9-a5987ce38790")
+	)
+	(label "~{CS}"
+		(at 107.95 128.27 90)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "aeecc13b-52d9-4cbe-860b-a05216acf2f9")
+	)
+	(label "CLK"
+		(at 113.03 128.27 90)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1f24eb0-06e6-46ae-a129-75adfa676061")
+	)
 	(global_label "DIG_2"
 		(shape input)
 		(at 200.66 105.41 0)
@@ -5362,30 +5267,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MOSI"
-		(shape input)
-		(at 118.11 121.92 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "0f791f19-e10e-411e-a553-7f43aa17f5a4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.11 127.2948 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -5534,30 +5415,6 @@
 			)
 		)
 	)
-	(global_label "~{CS}"
-		(shape input)
-		(at 107.95 121.92 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "58db3cab-89c4-4ae5-b244-bf51fbaaf5d4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.95 125.7952 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SEG_F"
 		(shape input)
 		(at 68.58 78.74 180)
@@ -5621,30 +5478,6 @@
 		(uuid "829ac615-8cb0-47d0-9c54-576c5373916b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 61.43 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CLK"
-		(shape input)
-		(at 113.03 121.92 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "8d8fd57b-4ebf-4ed2-b1dc-869f61aad505")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.03 126.6471 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6691,6 +6524,78 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 193.04 64.77 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b89268f-2856-49a8-8e41-c6686e27f717")
+		(property "Reference" "C1"
+			(at 198.12 66.675 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 198.12 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 196.85 65.7352 0)
+			(effects
+				(font
+					(face "Bahnschrift")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 64.77 0)
+			(effects
+				(font
+					(face "Bahnschrift")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8cc6d4ae-1ccf-44e2-ad2f-f2ed3518394a")
+		)
+		(pin "2"
+			(uuid "65b13528-53e6-4437-a1ba-bd625308c0ca")
+		)
+		(instances
+			(project "GPS-Compass_7seg"
+				(path "/4bca8f90-4150-41f0-a662-0d11f178f1b3"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 193.04 72.39 90)
 		(mirror x)
 		(unit 1)
@@ -6892,77 +6797,6 @@
 			(project "GPS-Compass_7seg"
 				(path "/4bca8f90-4150-41f0-a662-0d11f178f1b3"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 193.04 64.77 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c18e6820-8b71-4dd4-9cbe-6823f07b6c0a")
-		(property "Reference" "C1"
-			(at 198.12 66.675 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 198.12 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder"
-			(at 196.85 63.8048 0)
-			(effects
-				(font
-					(face "Bahnschrift")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 193.04 64.77 0)
-			(effects
-				(font
-					(face "Bahnschrift")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 193.04 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0d3f6e55-c0b5-48e9-9de8-c113d79bb68a")
-		)
-		(pin "2"
-			(uuid "6da5a212-edf7-474d-9cff-74bc7a4a743c")
-		)
-		(instances
-			(project "GPS-Compass_7seg"
-				(path "/4bca8f90-4150-41f0-a662-0d11f178f1b3"
-					(reference "C1")
 					(unit 1)
 				)
 			)
