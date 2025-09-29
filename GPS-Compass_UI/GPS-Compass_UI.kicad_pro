@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -58,20 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "copper_edge_clearance|188604000|55917000|4c3907b8-f9d3-4b8a-af2e-be49fd2a7059|df7dcd84-738a-4560-9552-f5b34cb2be34",
-          ""
-        ],
-        [
-          "copper_edge_clearance|188604000|63317000|4c3907b8-f9d3-4b8a-af2e-be49fd2a7059|29036eb3-c7e6-4223-92d9-510c0d9debc7",
-          ""
-        ],
-        [
-          "invalid_outline|206749981|148996987|13b2e87d-846d-47ae-a4c1-8d0f85f6740a|00000000-0000-0000-0000-000000000000",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -478,7 +465,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "Symbol"
+    ],
     "pinned_symbol_libs": [
       "gps-compass_sch"
     ]
