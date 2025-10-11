@@ -12360,7 +12360,7 @@
 		)
 		(uuid "4d1134ec-f98e-4791-b23c-0eeecf98e87d")
 	)
-	(text "1. Change the UI PCB\n2. \n3. add test points for charger IC\n4. \n5. \n6. \n7."
+	(text "1. Add magnetometer and decide if IMU needed\n2. Ferrite bead for motor wires\n3. Add EEPROM\n4. Add Magnetometer\n5. Add 6 axis IMU\n6. \n7."
 		(exclude_from_sim no)
 		(at 19.685 307.975 0)
 		(effects
