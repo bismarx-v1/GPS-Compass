@@ -172,14 +172,6 @@
           ""
         ],
         [
-          "courtyards_overlap|145598938|54263951|249b21fc-ff9e-4934-a04f-c1c80da9625d|656dc6cb-9974-4dfa-9b51-5cd00052ce16",
-          ""
-        ],
-        [
-          "courtyards_overlap|146021865|56205000|249b21fc-ff9e-4934-a04f-c1c80da9625d|d736935d-0787-4baf-9f31-8e0b92867be4",
-          ""
-        ],
-        [
           "courtyards_overlap|84127568|70237500|5309cdc7-1d84-49e5-866c-2d4251728d2c|718bb630-61c6-46f0-90aa-205aa6279a4d",
           ""
         ],
@@ -229,10 +221,6 @@
         ],
         [
           "starved_thermal|106250000|55050000|80e25da9-01e3-40ec-8112-9ed55e52ddfd|e404696e-0ae5-4b5c-9ebc-895d76b99999|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|138850000|57650000|80e25da9-01e3-40ec-8112-9ed55e52ddfd|3082da97-d30f-4acd-a05a-f883311edcfc|F.Cu",
           ""
         ],
         [
