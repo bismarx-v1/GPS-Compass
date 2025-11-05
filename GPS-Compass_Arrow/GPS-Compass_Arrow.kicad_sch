@@ -3823,6 +3823,12 @@
 		(uuid "6ebf6223-76d8-4e95-8d35-516b994509cf")
 	)
 	(junction
+		(at 240.03 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73893dcb-c644-47f4-b39e-c1228fc6ba8a")
+	)
+	(junction
 		(at 67.31 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4114,7 +4120,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 153.67) (xy 260.35 147.32)
+			(xy 260.35 152.4) (xy 260.35 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4264,7 +4270,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 147.32) (xy 267.97 149.86)
+			(xy 267.97 147.32) (xy 267.97 152.4)
 		)
 		(stroke
 			(width 0)
@@ -4571,6 +4577,16 @@
 			(type default)
 		)
 		(uuid "1d6920c4-1d15-465c-92b1-954e4d9a2b0e")
+	)
+	(wire
+		(pts
+			(xy 247.65 147.32) (xy 247.65 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d9022b1-9dd7-46b5-b753-69fb6f5f8b69")
 	)
 	(wire
 		(pts
@@ -4934,7 +4950,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 153.67) (xy 255.27 147.32)
+			(xy 255.27 152.4) (xy 255.27 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4971,6 +4987,16 @@
 			(type default)
 		)
 		(uuid "38dde63b-0416-4579-aaa1-d96f249f9f59")
+	)
+	(wire
+		(pts
+			(xy 240.03 152.4) (xy 242.57 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "390aa38a-905b-4a7b-8c65-a1988ef49ff6")
 	)
 	(wire
 		(pts
@@ -6534,7 +6560,17 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 153.67) (xy 250.19 147.32)
+			(xy 262.89 152.4) (xy 262.89 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99240c60-705a-41af-aed9-466032bd5a55")
+	)
+	(wire
+		(pts
+			(xy 250.19 152.4) (xy 250.19 147.32)
 		)
 		(stroke
 			(width 0)
@@ -6954,6 +6990,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 147.32) (xy 242.57 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6f5400c-4788-4df7-b2ca-615bb8b1b6ee")
+	)
+	(wire
+		(pts
 			(xy 288.29 81.28) (xy 283.21 81.28)
 		)
 		(stroke
@@ -6981,6 +7027,16 @@
 			(type default)
 		)
 		(uuid "b815dd66-3828-40bb-83b2-8689a2e32504")
+	)
+	(wire
+		(pts
+			(xy 283.8216 151.7233) (xy 283.8216 147.9133)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8dd58cd-9b75-4eea-8e2e-9e85e06d275f")
 	)
 	(wire
 		(pts
@@ -7334,6 +7390,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 147.32) (xy 265.43 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d234e640-c24c-4e86-a986-f18254653a86")
+	)
+	(wire
+		(pts
 			(xy 87.63 64.77) (xy 86.36 64.77)
 		)
 		(stroke
@@ -7481,6 +7547,16 @@
 			(type default)
 		)
 		(uuid "dcc2b77d-2b4c-45f6-8763-dc957afaee2b")
+	)
+	(wire
+		(pts
+			(xy 240.03 147.32) (xy 240.03 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd639e76-00ab-4aa5-9e12-2f4e0f097d18")
 	)
 	(wire
 		(pts
@@ -7671,6 +7747,16 @@
 			(type default)
 		)
 		(uuid "ec473318-80d0-4413-930b-0e2298205ae1")
+	)
+	(wire
+		(pts
+			(xy 245.11 152.4) (xy 245.11 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ede94b8f-25cf-4089-a1da-74458550b66d")
 	)
 	(wire
 		(pts
@@ -7924,16 +8010,6 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 147.32) (xy 247.65 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe273da6-88bb-46ec-95e0-5930de4b6306")
-	)
-	(wire
-		(pts
 			(xy 175.26 180.34) (xy 175.26 182.88)
 		)
 		(stroke
@@ -7953,6 +8029,18 @@
 			(justify right bottom)
 		)
 		(uuid "001f51ea-9776-47ec-a372-e778f4bda364")
+	)
+	(label "~{CS}"
+		(at 250.19 152.4 90)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0034a514-0054-47dc-95c9-c0636e48fc1c")
 	)
 	(label "LED_13"
 		(at 72.39 71.12 0)
@@ -8818,18 +8906,6 @@
 		)
 		(uuid "54b4c9a6-c7fd-4201-8226-8a38e3cbf9c9")
 	)
-	(label "~{CS}"
-		(at 250.19 153.67 90)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "558fb007-ae36-4ce4-92bc-77047f885b42")
-	)
 	(label "LED_10"
 		(at 72.39 52.07 0)
 		(effects
@@ -9058,6 +9134,18 @@
 		)
 		(uuid "6f09cbe0-e544-4bb1-a4e9-ad8cbc3548ea")
 	)
+	(label "LATCH"
+		(at 262.89 152.4 90)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "7087f20a-9836-4d90-bed9-08b9dd873af4")
+	)
 	(label "LED_35"
 		(at 130.81 58.42 0)
 		(effects
@@ -9153,6 +9241,18 @@
 			(justify left bottom)
 		)
 		(uuid "7af611d4-7b21-4403-bb88-c703d8c5fbb1")
+	)
+	(label "SI"
+		(at 267.97 152.4 90)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "7bba05d0-1bcb-4201-9672-2a01dafe7b17")
 	)
 	(label "LED_32"
 		(at 111.76 90.17 0)
@@ -9286,6 +9386,18 @@
 		)
 		(uuid "858d30de-20af-436d-af9a-7a5ca82e7482")
 	)
+	(label "CLK_SPI"
+		(at 247.65 152.4 90)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "8be2c09d-f7d4-45e9-a4de-5e21a8702035")
+	)
 	(label "LED_33"
 		(at 81.28 181.61 180)
 		(effects
@@ -9310,18 +9422,6 @@
 		)
 		(uuid "8c98d58e-c666-4fd5-86fd-5e568c639bd7")
 	)
-	(label "MOSI"
-		(at 260.35 153.67 90)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "8f9613a8-6d63-4b3c-a18c-d7ae8bd67fb2")
-	)
 	(label "LED_58"
 		(at 190.5 52.07 0)
 		(effects
@@ -9333,18 +9433,6 @@
 			(justify left bottom)
 		)
 		(uuid "8f992594-eab6-4e83-b425-f97d567f1a52")
-	)
-	(label "CLK"
-		(at 255.27 153.67 90)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "918abfee-8732-4f33-8569-af41999d71c9")
 	)
 	(label "LED_6"
 		(at 81.28 144.78 180)
@@ -9729,6 +9817,18 @@
 			(justify left bottom)
 		)
 		(uuid "beaf8e2b-d284-4b9f-83cb-d88f2839128c")
+	)
+	(label "MOSI"
+		(at 245.11 152.4 90)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf0ae6c7-e271-4b32-a948-44189d7ff43b")
 	)
 	(label "SEG_D"
 		(at 237.49 194.31 0)
@@ -10125,6 +10225,18 @@
 			(justify left bottom)
 		)
 		(uuid "f6cff370-c2f2-426c-ba87-518bd34cf66d")
+	)
+	(label "CLK"
+		(at 265.43 152.4 90)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa56c88d-c486-4eb9-8cbe-09a2d857591e")
 	)
 	(label "LED_18"
 		(at 92.71 52.07 0)
@@ -15400,6 +15512,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 283.8216 151.7233 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "53b21135-2566-4dae-86ac-83393aa10433")
+		(property "Reference" "#PWR051"
+			(at 283.8216 158.0733 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 283.8216 156.8033 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 283.8216 151.7233 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 283.8216 151.7233 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 283.8216 151.7233 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "643b77e5-e634-41fe-b788-d0e58c4b46b1")
+		)
+		(instances
+			(project "GPS-Compass_Arrow"
+				(path "/322b0a93-8c0b-4bfb-b11d-04a3cfa7d073"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 102.87 120.65 90)
 		(mirror x)
@@ -18801,6 +18981,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 240.03 152.4 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "894c51c7-e333-481e-97b4-b627d503e6ec")
+		(property "Reference" "#PWR052"
+			(at 240.03 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 240.03 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 240.03 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e294b31-aa2c-4e07-9a97-56d9f724e42a")
+		)
+		(instances
+			(project "GPS-Compass_Arrow"
+				(path "/322b0a93-8c0b-4bfb-b11d-04a3cfa7d073"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 177.8 83.82 90)
 		(unit 1)
@@ -21276,71 +21521,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 267.97 149.86 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c44e69a1-29b6-447a-9c58-cf295a9e0275")
-		(property "Reference" "#PWR041"
-			(at 267.97 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 267.97 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.97 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 267.97 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 267.97 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bb2fbee1-bfe0-418e-8b4d-1c0b83d4a37f")
-		)
-		(instances
-			(project "GPS-Compass_Arrow"
-				(path "/322b0a93-8c0b-4bfb-b11d-04a3cfa7d073"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 99.06 170.18 0)
 		(unit 1)
@@ -23748,6 +23928,72 @@
 			(project "GPS-Compass_Arrow"
 				(path "/322b0a93-8c0b-4bfb-b11d-04a3cfa7d073"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 273.05 151.13 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0eb0eb3-3cf6-43fc-bbab-26cf84e4afbe")
+		(property "Reference" "#PWR053"
+			(at 273.05 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 273.05 154.94 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 273.05 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd89e680-c0cf-4877-9dc4-33ac003733a8")
+		)
+		(instances
+			(project "GPS-Compass_Arrow"
+				(path "/322b0a93-8c0b-4bfb-b11d-04a3cfa7d073"
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
