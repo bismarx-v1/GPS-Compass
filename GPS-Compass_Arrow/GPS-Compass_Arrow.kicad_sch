@@ -8452,18 +8452,6 @@
 		)
 		(uuid "015c3d67-1000-4d45-93d3-4604da36cb7d")
 	)
-	(label "CLK_SPI"
-		(at 252.73 137.16 90)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "01809461-7c14-45ee-bcfa-b7246739941c")
-	)
 	(label "CLK_SR"
 		(at 165.1 143.51 0)
 		(effects
@@ -9171,6 +9159,18 @@
 			(justify right bottom)
 		)
 		(uuid "4455950f-0fb7-45c2-9a8c-aebbc307bafb")
+	)
+	(label "~{CS}_SPI"
+		(at 252.73 137.16 90)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "49cb7b80-c7ea-4058-841b-68f6224b763b")
 	)
 	(label "LED_5"
 		(at 38.1 71.12 0)
@@ -9940,18 +9940,6 @@
 		)
 		(uuid "9e2aa8b2-f119-402e-9118-8abdccaff37e")
 	)
-	(label "~{CS}_SPI"
-		(at 247.65 137.16 90)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "9f1deabc-eaf1-4c69-b8e0-a232db4ee2e7")
-	)
 	(label "LED_51"
 		(at 157.48 191.77 180)
 		(effects
@@ -10023,18 +10011,6 @@
 			(justify right bottom)
 		)
 		(uuid "a4e76f46-1214-48ba-a5e1-505ea7d17bd6")
-	)
-	(label "MOSI_SPI"
-		(at 250.19 137.16 90)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "a5883692-4081-4c33-99ee-b5f545b6c1bd")
 	)
 	(label "LED_34"
 		(at 116.84 52.07 0)
@@ -10336,6 +10312,18 @@
 		)
 		(uuid "cae33914-da74-4ecd-86a9-d4b12858dc38")
 	)
+	(label "CLK_SPI"
+		(at 250.19 137.16 90)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "cdbd9ee5-fae7-4b73-b697-520ee7ea6266")
+	)
 	(label "LED_56"
 		(at 157.48 90.17 0)
 		(effects
@@ -10455,6 +10443,18 @@
 			(justify left bottom)
 		)
 		(uuid "e3b38394-6a15-4c64-a642-6ce245dba1d8")
+	)
+	(label "MOSI_SPI"
+		(at 247.65 137.16 90)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "e430589c-0965-47c0-8f4f-990c2b8c941a")
 	)
 	(label "SIOUT_7"
 		(at 165.1 190.5 0)
