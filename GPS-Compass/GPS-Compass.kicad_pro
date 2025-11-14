@@ -96,14 +96,6 @@
           ""
         ],
         [
-          "copper_edge_clearance|153799945|83500001|c6e1f569-fe7b-4541-86f1-ceac909b9a2d|94a5230f-a513-4cd3-aeea-c1d88eae1344",
-          ""
-        ],
-        [
-          "copper_edge_clearance|153799945|83500001|c6e1f569-fe7b-4541-86f1-ceac909b9a2d|c127f2ae-4f07-4722-832b-97e2a51c8906",
-          ""
-        ],
-        [
           "copper_edge_clearance|153799947|43200002|3f8270ca-27ac-4769-ae11-11298416a722|a9519100-0457-4f10-a182-76d39107f140",
           ""
         ],
@@ -200,14 +192,6 @@
           ""
         ],
         [
-          "starved_thermal|100000000|53900000|80e25da9-01e3-40ec-8112-9ed55e52ddfd|2db8000b-8444-4365-9854-d995f83014bf|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|102200000|53900000|80e25da9-01e3-40ec-8112-9ed55e52ddfd|2db8000b-8444-4365-9854-d995f83014bf|F.Cu",
-          ""
-        ],
-        [
           "starved_thermal|102200000|56100000|80e25da9-01e3-40ec-8112-9ed55e52ddfd|2db8000b-8444-4365-9854-d995f83014bf|F.Cu",
           ""
         ],
@@ -225,14 +209,6 @@
         ],
         [
           "starved_thermal|99600000|71325000|80e25da9-01e3-40ec-8112-9ed55e52ddfd|a99f329b-45b0-4070-b2fc-e70350bff8fa|F.Cu",
-          ""
-        ],
-        [
-          "zones_intersect|106700000|55900000|67e928c1-ab57-4dd1-a390-35f64773b8c0|6174e744-7b57-4411-9bfd-85728b1450fb",
-          ""
-        ],
-        [
-          "zones_intersect|80209956|61190483|f7733cfc-0b2d-4595-bb8e-4ed0b64cd755|e54d1eb7-2efe-4ad0-af28-d621bce9e3c6",
           ""
         ]
       ],
@@ -277,15 +253,15 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
+        "text_height": "ignore",
         "text_on_edge_cuts": "error",
-        "text_thickness": "warning",
+        "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_angle": "error",
@@ -310,7 +286,7 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
+        "min_text_height": 0.2,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.0,
