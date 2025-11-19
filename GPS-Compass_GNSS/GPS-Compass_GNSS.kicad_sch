@@ -504,167 +504,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_Coaxial_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0.254 3.048 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_Coaxial_Small"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "small coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_Coaxial_Small_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.508)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Conn_Coaxial_Small_1_1"
-				(arc
-					(start 1.3484 0.0039)
-					(mid 0.327 -1.308)
-					(end -1.1916 -0.6311)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.1916 0.6311)
-					(mid 0.327 1.3081)
-					(end 1.3484 -0.0039)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "In"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "Ext"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -4200,16 +4039,6 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 78.74) (xy 269.24 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ee4b7e4-77bd-45e0-be9c-f05de2213eba")
-	)
-	(wire
-		(pts
 			(xy 130.81 104.14) (xy 120.65 104.14)
 		)
 		(stroke
@@ -4237,16 +4066,6 @@
 			(type default)
 		)
 		(uuid "9ace6375-307f-4c71-814a-9d7b7d453bd0")
-	)
-	(wire
-		(pts
-			(xy 274.32 78.74) (xy 276.86 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b63f1ad-d357-4a95-8e7c-f420f0b5b0dd")
 	)
 	(wire
 		(pts
@@ -22069,18 +21888,6 @@
 		)
 		(uuid "a3bfa71b-cb69-4d70-b05f-a4bde76e921c")
 	)
-	(label "GNSS_ANT"
-		(at 261.62 78.74 0)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "b32bc5b8-2d1f-4239-929e-9937e5948a2f")
-	)
 	(label "RF_IN"
 		(at 251.46 58.42 180)
 		(effects
@@ -22537,82 +22344,6 @@
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_Coaxial_Small")
-		(at 271.78 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "186d1943-2be7-4c70-b7ea-4f0570608503")
-		(property "Reference" "J1"
-			(at 271.78 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SMA_F"
-			(at 271.78 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Coaxial:SMA_BAT_Wireless_BWSMA-KWE-Z001"
-			(at 271.78 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cz.mouser.com/ProductDetail/GCT/RFPC-SMA27-F?qs=olJun0bQHM91tAPXMnwIxA%3D%3D&mgh=1&utm_id=20233080446&utm_source=google&utm_medium=cpc&utm_marketing_tactic=emeacorp&gad_source=1&gad_campaignid=20233099895&gclid=Cj0KCQjw-4XFBhCBARIsAAdNOkvuzMKrV7zDK5vv7-FSPWUJJdqHCrJ4hYL2HlCzdGQ66hCcIhfMdzMaAt4OEALw_wcB"
-			(at 271.78 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "small coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 271.78 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Antenna" "https://cz.mouser.com/ProductDetail/Quectel/YEGT001AA?qs=7D1LtPJG0i2rGpKrUxK5qg%3D%3D"
-			(at 271.78 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "21b74709-3719-4cfd-9bcc-d2f7229522d3")
-		)
-		(pin "1"
-			(uuid "0f50e571-d5da-4640-9381-f9955531ef11")
-		)
-		(instances
-			(project ""
-				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -25962,73 +25693,6 @@
 			(project "GPS-Compass_GNSS"
 				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
 					(reference "JP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 276.86 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "df50c7d2-9b34-428d-b7eb-f2e7954dd51d")
-		(property "Reference" "#PWR03"
-			(at 276.86 85.09 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 276.86 83.82 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 276.86 78.74 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 276.86 78.74 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 276.86 78.74 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "993243ec-fbde-4afa-a217-0b0b721857b2")
-		)
-		(instances
-			(project "GPS-Compass_GNSS"
-				(path "/9efc2ac3-9b9e-4dbc-a1ec-7bb72d70c7d1"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
