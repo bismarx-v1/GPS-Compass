@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.29
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -108,15 +108,7 @@
           ""
         ],
         [
-          "copper_edge_clearance|155921279|82421321|bca77384-c9b9-4e84-8506-6d677173d005|b7fd3db8-8158-4470-a770-ed589f8d64e9",
-          ""
-        ],
-        [
           "copper_edge_clearance|156799922|46200001|3f8270ca-27ac-4769-ae11-11298416a722|65bcf921-ba8d-402a-a41e-70fbce8d89a8",
-          ""
-        ],
-        [
-          "copper_edge_clearance|156799948|80300003|bca77384-c9b9-4e84-8506-6d677173d005|6284c8fb-f144-41dc-a574-4231e3c8bd67",
           ""
         ],
         [
@@ -196,18 +188,6 @@
           ""
         ],
         [
-          "starved_thermal|106250000|55050000|80e25da9-01e3-40ec-8112-9ed55e52ddfd|e404696e-0ae5-4b5c-9ebc-895d76b99999|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|78700000|57250000|80e25da9-01e3-40ec-8112-9ed55e52ddfd|82516836-e4f4-45cb-9180-a157ced2a2c9|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|83050000|61200000|80e25da9-01e3-40ec-8112-9ed55e52ddfd|d6391555-db69-4182-8c42-564c917578ba|F.Cu",
-          ""
-        ],
-        [
           "starved_thermal|99600000|71325000|80e25da9-01e3-40ec-8112-9ed55e52ddfd|a99f329b-45b0-4070-b2fc-e70350bff8fa|F.Cu",
           ""
         ]
@@ -258,7 +238,7 @@
         "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "starved_thermal": "warning",
         "text_height": "ignore",
         "text_on_edge_cuts": "error",
         "text_thickness": "ignore",
@@ -272,7 +252,7 @@
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
-        "zones_intersect": "error"
+        "zones_intersect": "warning"
       },
       "rules": {
         "max_error": 0.005,

@@ -765,7 +765,7 @@
 			(at 1.8 2.975 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "38af1d98-0ec0-48f3-85b3-db2ce20dad14")
+			(uuid "fea72803-7b4f-41c7-a75a-e2d2ed028a14")
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -838,7 +838,7 @@
 		(property "Value" "RESET"
 			(at 1.8 2.975 90)
 			(layer "F.Fab")
-			(uuid "d048b0d1-6e02-4265-a431-e0efe3412623")
+			(uuid "7cd9a570-847f-4942-b5b1-149e41928a52")
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -951,7 +951,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "93ed3e5b-012c-4871-bcd9-cdfb89b1c1f2")
+			(uuid "1c0f07ee-f307-4677-b42f-0a2414e57cab")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -964,7 +964,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2a5e5591-7492-47b0-a2b2-b6fd6f26fede")
+			(uuid "00556182-7b0f-43a2-b3e5-55cf07e94aaa")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7578,7 +7578,7 @@
 		(property "Reference" "J4"
 			(at -0.013 -2.032 90)
 			(layer "F.SilkS")
-			(uuid "641c17bb-17d9-4a6a-87f0-bf745b3dff1b")
+			(uuid "e5679a81-54ac-4eb3-b6b6-1b58d42eb41c")
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -7614,7 +7614,7 @@
 		(property "Value" "Conn_01x10_Socket"
 			(at 4.375 11.425 0)
 			(layer "F.Fab")
-			(uuid "ce5d075a-9c63-4738-b67e-eb4ed2494dbc")
+			(uuid "2063bcc7-5ac0-4405-8ee3-191fc7e3d6f2")
 			(effects
 				(font
 					(face "Bahnschrift")
@@ -7891,7 +7891,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f032c0b0-bdbd-4745-8cc2-8bb0e1d06937")
+			(uuid "8f340e45-660a-4187-b82a-75be24fcb44b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7904,7 +7904,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "26b1dd30-9ed5-4707-a730-b9a99da953ba")
+			(uuid "4d4031eb-d179-4947-970f-456d7959de4d")
 			(effects
 				(font
 					(size 1.27 1.27)
