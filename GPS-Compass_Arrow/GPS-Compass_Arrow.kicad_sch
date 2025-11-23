@@ -14360,7 +14360,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M2.5"
+		(property "Value" "M3"
 			(at 269.24 163.8299 0)
 			(effects
 				(font
@@ -14369,7 +14369,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 266.7 163.83 0)
 			(effects
 				(font
@@ -25311,7 +25311,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M2.5"
+		(property "Value" "M3"
 			(at 279.4 163.8299 0)
 			(effects
 				(font
@@ -25320,7 +25320,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 276.86 163.83 0)
 			(effects
 				(font

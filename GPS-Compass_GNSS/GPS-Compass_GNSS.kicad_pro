@@ -526,7 +526,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../Mechanical/GPS-Compass_GNSS.step",
+      "step": "../Mechanical/PCB_3D_models/GPS-Compass_GNSS.step",
       "svg": "",
       "vrml": ""
     },

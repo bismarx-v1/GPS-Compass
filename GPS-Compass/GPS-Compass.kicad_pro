@@ -669,7 +669,7 @@
       "plot": "../Mechanical/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "GPS-Compass3.step",
+      "step": "../Mechanical/PCB_3D_models/GPS-Compass.step",
       "svg": "",
       "vrml": ""
     },

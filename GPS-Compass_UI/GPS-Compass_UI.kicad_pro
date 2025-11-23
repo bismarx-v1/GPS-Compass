@@ -517,7 +517,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../Mechanical/GPS-Compass_UI.step",
+      "step": "../Mechanical/PCB_3D_models/GPS-Compass_UI.step",
       "svg": "",
       "vrml": ""
     },

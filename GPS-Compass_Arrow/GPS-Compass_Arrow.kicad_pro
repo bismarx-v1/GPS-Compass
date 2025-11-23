@@ -521,7 +521,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../Mechanical/GPS-Compass_Arrow.step",
+      "step": "../Mechanical/PCB_3D_models/GPS-Compass_Arrow.step",
       "svg": "",
       "vrml": ""
     },
