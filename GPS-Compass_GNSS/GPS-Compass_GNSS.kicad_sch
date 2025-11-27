@@ -3443,6 +3443,16 @@
 		)
 		(uuid "8453a8ec-ff2f-4017-bc21-df6fb1f870b8")
 	)
+	(text "https://cz.mouser.com/ProductDetail/Quectel/YCGO005AA?qs=7D1LtPJG0i2jU0GyBGV%252BDQ%3D%3D"
+		(exclude_from_sim no)
+		(at 327.025 78.105 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "94299562-1594-4f89-b5e8-8e28cb385ffb")
+	)
 	(text "RF AMPLIFIER + SAW FL"
 		(exclude_from_sim no)
 		(at 154.94 37.465 0)
