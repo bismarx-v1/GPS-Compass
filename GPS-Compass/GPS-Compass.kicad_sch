@@ -69031,7 +69031,7 @@
 				)
 			)
 		)
-		(property "Value" "2,2u"
+		(property "Value" "2.2u"
 			(at 245.11 129.54 90)
 			(effects
 				(font
@@ -72471,7 +72471,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2uH"
+		(property "Value" "2.2u"
 			(at 160.02 99.695 90)
 			(effects
 				(font
@@ -72488,7 +72488,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cz.mouser.com/ProductDetail/ABRACON/AOTA-B201610S1R0MT?qs=Imq1NPwxi75ztn1ipxdt%2Fw%3D%3D"
+		(property "Datasheet" "https://cz.mouser.com/ProductDetail/ABRACON/AOTA-B201610S2R2MT?qs=Imq1NPwxi750U0%2F%2F0upQgg%3D%3D"
 			(at 160.02 101.6 0)
 			(effects
 				(font
