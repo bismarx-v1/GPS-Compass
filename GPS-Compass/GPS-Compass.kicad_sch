@@ -69039,7 +69039,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Murata_DFE201610P"
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
 			(at 245.11 132.08 0)
 			(effects
 				(font
@@ -69048,7 +69048,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cz.mouser.com/ProductDetail/Murata-Electronics/DFE201612P-2R2M%3dP2?qs=KuGPmAKtFKVNMN7yh%2Fl7jg%3D%3D"
+		(property "Datasheet" "https://cz.mouser.com/ProductDetail/ABRACON/AOTA-B252010S2R2MT?qs=1Kr7Jg1SGW8H59B6i%252B4XUg%3D%3D"
 			(at 245.11 132.08 0)
 			(effects
 				(font
@@ -70474,7 +70474,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2K"
+		(property "Value" "2.2k"
 			(at 143.51 55.88 90)
 			(effects
 				(font
@@ -72479,7 +72479,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Walsin_WLFM201609x"
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
 			(at 160.02 101.6 0)
 			(effects
 				(font
@@ -75003,7 +75003,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps61322.pdf"
+		(property "Datasheet" "https://cz.mouser.com/ProductDetail/Texas-Instruments/TPS613222ADBVR?qs=W0yvOO0ixfE4d69WXsn8NQ%3D%3D"
 			(at 260.35 138.43 0)
 			(effects
 				(font
