@@ -62696,7 +62696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.kinet-ic.com/uploads/KTS1605-04e.pdf"
+		(property "Datasheet" "https://cz.mouser.com/ProductDetail/Kinetic-Technologies/KTS1605EUB-1-TR?qs=lc2O%252BfHJPVYRBzZg%252BJBegw%3D%3D"
 			(at 215.9 246.99 0)
 			(effects
 				(font
@@ -71344,7 +71344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/FUSB302B-D.PDF"
+		(property "Datasheet" "https://cz.mouser.com/ProductDetail/onsemi-Fairchild/FUSB302B11MPX?qs=jFK2DQXLaBwFFZq6iARIyw%3D%3D"
 			(at 168.91 18.034 0)
 			(effects
 				(font
