@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 1.2,
-          "width": 1.5
+          "drill": 0.3,
+          "height": 0.5,
+          "width": 0.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -148,47 +148,7 @@
           ""
         ],
         [
-          "courtyards_overlap|84127568|70237500|5309cdc7-1d84-49e5-866c-2d4251728d2c|718bb630-61c6-46f0-90aa-205aa6279a4d",
-          ""
-        ],
-        [
           "courtyards_overlap|88248938|83013951|5a627794-7dfa-4d12-9a6f-5bcf4eb03d77|c3777a3d-7e85-4ff3-bc27-579912b2dd80",
-          ""
-        ],
-        [
-          "courtyards_overlap|88877568|70237500|45206a8f-57f4-46b1-8d69-613af0f6cf89|7c722972-3db3-427a-9c7d-06a56ae2f9fc",
-          ""
-        ],
-        [
-          "courtyards_overlap|90773950|83013951|a8268178-7dea-461e-a3fb-57ba6a3054c2|c3777a3d-7e85-4ff3-bc27-579912b2dd80",
-          ""
-        ],
-        [
-          "courtyards_overlap|93627568|70237500|b489d37b-007e-46c0-8515-1d1806a6cfab|fb4f4e9e-c470-44a9-a83a-580eb7178117",
-          ""
-        ],
-        [
-          "hole_clearance|77930000|60350000|3c123e81-1e21-44be-9e56-0a6abcb1de10|53409365-27fb-409f-bfdf-d4afe40ad82d",
-          ""
-        ],
-        [
-          "hole_clearance|77930000|60550000|3c123e81-1e21-44be-9e56-0a6abcb1de10|9ead307f-ff43-45a9-bbd1-53b0faf98c4c",
-          ""
-        ],
-        [
-          "hole_clearance|77930000|65950000|8934ea9e-bef1-4f2f-851d-11c8754a2e3a|aa5cb017-1f3a-4e33-a462-18f3fb8161dc",
-          ""
-        ],
-        [
-          "hole_clearance|77930000|66150000|8934ea9e-bef1-4f2f-851d-11c8754a2e3a|8ae3e914-d62b-4cb5-a160-6291dd467468",
-          ""
-        ],
-        [
-          "starved_thermal|102200000|56100000|80e25da9-01e3-40ec-8112-9ed55e52ddfd|2db8000b-8444-4365-9854-d995f83014bf|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|99600000|71325000|80e25da9-01e3-40ec-8112-9ed55e52ddfd|a99f329b-45b0-4070-b2fc-e70350bff8fa|F.Cu",
           ""
         ]
       ],
