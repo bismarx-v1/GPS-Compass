@@ -4128,6 +4128,10 @@
 		(uuid "2c5a172f-78b1-49ac-bfeb-47ca9ff56788")
 	)
 	(no_connect
+		(at 125.73 152.4)
+		(uuid "30e49f54-9604-40f0-8ef2-b3810892a594")
+	)
+	(no_connect
 		(at 170.18 204.47)
 		(uuid "31eab63b-5074-44d8-8c33-6f519b915e14")
 	)
@@ -4162,10 +4166,6 @@
 	(no_connect
 		(at 39.37 204.47)
 		(uuid "ca62245c-59d9-4ce3-8e96-772fd2bd7bce")
-	)
-	(no_connect
-		(at 170.18 201.93)
-		(uuid "cad8f6dd-da07-4e37-8222-725306a53ec0")
 	)
 	(no_connect
 		(at 274.32 82.55)
@@ -5407,6 +5407,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 201.93) (xy 170.18 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52ec829f-8bc9-4cc4-86eb-15f262fd0e22")
+	)
+	(wire
+		(pts
 			(xy 120.65 138.43) (xy 125.73 138.43)
 		)
 		(stroke
@@ -5814,16 +5824,6 @@
 			(type default)
 		)
 		(uuid "6ad40b2a-afaf-4d22-b16b-b4eb43482d7d")
-	)
-	(wire
-		(pts
-			(xy 120.65 152.4) (xy 125.73 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ad7965a-44ae-4017-ac92-29fda7ef41c9")
 	)
 	(wire
 		(pts
@@ -8728,7 +8728,7 @@
 		)
 		(uuid "1b8b8157-7bf0-4131-9298-6ec18cf2e377")
 	)
-	(label "SIOUT_6"
+	(label "SIOUT_3"
 		(at 120.65 190.5 0)
 		(effects
 			(font
@@ -8787,18 +8787,6 @@
 			(justify left bottom)
 		)
 		(uuid "1f7918b6-529f-440a-a37b-6f2ec5045fda")
-	)
-	(label "SIOUT_2"
-		(at 120.65 140.97 0)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "1fa9db1c-ddae-44ea-a00c-d16bbfd9a301")
 	)
 	(label "LED_44"
 		(at 137.16 64.77 0)
@@ -9016,6 +9004,18 @@
 		)
 		(uuid "2fda7086-2e08-46a5-b837-02944d8fb9f7")
 	)
+	(label "SIOUT_7"
+		(at 120.65 140.97 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "346b3c4c-c2c2-4b90-9e2e-db5e28764123")
+	)
 	(label "LED_28"
 		(at 97.79 64.77 0)
 		(effects
@@ -9052,7 +9052,7 @@
 		)
 		(uuid "37f97c55-7c5c-497e-a513-ecddc326d29a")
 	)
-	(label "SIOUT_5"
+	(label "SIOUT_2"
 		(at 34.29 201.93 0)
 		(effects
 			(font
@@ -9123,6 +9123,18 @@
 			(justify left bottom)
 		)
 		(uuid "3fa70c93-01af-426f-be5a-93981d65ef12")
+	)
+	(label "SIOUT_5"
+		(at 34.29 140.97 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "416f9e73-c19d-4001-8ba9-ade377b69e02")
 	)
 	(label "SEG_G"
 		(at 223.52 212.09 0)
@@ -9195,6 +9207,18 @@
 			(justify right bottom)
 		)
 		(uuid "49eebbe0-d05e-4a8f-a034-fe9143210f7e")
+	)
+	(label "SI_SR"
+		(at 165.1 140.97 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a3bd704-cdc6-444d-bae3-9a20c8763308")
 	)
 	(label "LED_63"
 		(at 176.53 83.82 0)
@@ -9316,7 +9340,7 @@
 		)
 		(uuid "579151f8-98c6-45d6-b14c-d2b4bca82eae")
 	)
-	(label "SIOUT_1"
+	(label "SIOUT_6"
 		(at 78.74 140.97 0)
 		(effects
 			(font
@@ -9364,7 +9388,7 @@
 		)
 		(uuid "5bbfc4c5-5418-47be-9bdd-2fa90b0eb2a9")
 	)
-	(label "SIOUT_1"
+	(label "SIOUT_6"
 		(at 34.29 152.4 0)
 		(effects
 			(font
@@ -9448,7 +9472,7 @@
 		)
 		(uuid "6501b352-1bdb-4b55-bdf9-fde7bb4f3179")
 	)
-	(label "SIOUT_6"
+	(label "SIOUT_3"
 		(at 78.74 201.93 0)
 		(effects
 			(font
@@ -9496,7 +9520,7 @@
 		)
 		(uuid "689e9d1b-08b1-4f8e-8ede-034f27f3c484")
 	)
-	(label "SIOUT_2"
+	(label "SIOUT_7"
 		(at 78.74 152.4 0)
 		(effects
 			(font
@@ -9508,8 +9532,8 @@
 		)
 		(uuid "6ac2a7fe-cfa7-4174-baf9-9703721f904a")
 	)
-	(label "SIOUT_3"
-		(at 120.65 152.4 0)
+	(label "SIOUT_5"
+		(at 165.1 201.93 0)
 		(effects
 			(font
 				(face "Bahnschrift")
@@ -9518,7 +9542,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "6c656231-70f3-466e-b34d-673fdfa38daa")
+		(uuid "6b5e9060-7b89-4ce0-823a-5f5c3a6a167d")
 	)
 	(label "LED_43"
 		(at 115.57 191.77 180)
@@ -9784,18 +9808,6 @@
 		)
 		(uuid "8c5e7c79-082f-490e-a718-8161e7a18623")
 	)
-	(label "SIOUT_3"
-		(at 165.1 140.97 0)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "8c98d58e-c666-4fd5-86fd-5e568c639bd7")
-	)
 	(label "LED_58"
 		(at 176.53 52.07 0)
 		(effects
@@ -9856,7 +9868,7 @@
 		)
 		(uuid "95ab5bfc-8a79-4352-9d5d-92a6f75066a5")
 	)
-	(label "SIOUT_4"
+	(label "SIOUT_1"
 		(at 34.29 190.5 0)
 		(effects
 			(font
@@ -10060,7 +10072,7 @@
 		)
 		(uuid "ad9d39dc-2cb6-4588-bd0c-32494ba1c12b")
 	)
-	(label "SIOUT_5"
+	(label "SIOUT_2"
 		(at 78.74 190.5 0)
 		(effects
 			(font
@@ -10456,7 +10468,7 @@
 		)
 		(uuid "e430589c-0965-47c0-8f4f-990c2b8c941a")
 	)
-	(label "SIOUT_7"
+	(label "SIOUT_4"
 		(at 165.1 190.5 0)
 		(effects
 			(font
@@ -10468,7 +10480,7 @@
 		)
 		(uuid "e52787aa-2ad5-4754-b34f-be8392a569b5")
 	)
-	(label "SIOUT_7"
+	(label "SIOUT_4"
 		(at 120.65 201.93 0)
 		(effects
 			(font
@@ -10503,18 +10515,6 @@
 			(justify left bottom)
 		)
 		(uuid "ed2df332-8fc5-4225-a57c-4ae82add662d")
-	)
-	(label "SI_SR"
-		(at 34.29 140.97 0)
-		(effects
-			(font
-				(face "Bahnschrift")
-				(size 1 1)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "ed335caf-3aef-44c2-bb68-ed633fbfc9c8")
 	)
 	(label "SEG_G"
 		(at 275.59 59.69 180)
@@ -10564,7 +10564,7 @@
 		)
 		(uuid "f166166e-94d4-489c-8d23-d8d2bf0fe656")
 	)
-	(label "SIOUT_4"
+	(label "SIOUT_1"
 		(at 165.1 152.4 0)
 		(effects
 			(font
