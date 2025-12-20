@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Super cool website for entering a GPS position.
+  </title>
+</head>
+
+<body>
+  <h1>Enter position:<br></h1>
+  <div style="display: inline-grid; grid-template-columns: auto auto; font-family: monospace; font-size: 150%;">
+    <div style="display: inline-grid; grid-template-columns: auto auto;">
+      <div>
+        <input type="number" style="width: 200px;" value="0" id="latBox" min="0"
+          oninput="sliderFunc('latBox', 'latSlider')"> <br>
+        <input type="range" style="width: 200px;" value="0" id="latSlider" step="0.00001" min="0" max="180"
+          oninput="sliderFunc('latSlider', 'latBox')">
+      </div>
+      <div style="display: inline-grid; grid-template-columns: auto auto;">
+        <select name="lat" id="lat">
+          <option value="n">N</option>
+          <option value="s">S</option>
+        </select>
+      </div>
+    </div>
+    <div style="display: inline-grid; grid-template-columns: auto auto;">
+      <div>
+        <input type="number" style="width: 200px;" value="0" id="lonBox" min="0"
+          oninput="sliderFunc('lonBox', 'lonSlider')"> <br>
+        <input type="range" style="width: 200px;" value="0" id="lonSlider" step="0.00001" min="0" max="180"
+          oninput="sliderFunc('lonSlider', 'lonBox')">
+      </div>
+        <div style="display: inline-grid; grid-template-columns: auto auto;">
+          <select name="lat" id="lat">
+          <option value="e">E</option>
+          <option value="w">W</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div>
+    <input type="button" value="Take me there pwease.">
+  </div>
+
+  <div style="font-size: 20%; position: fixed; bottom: 10px; right: 10px;">
+    - RNS
+  </div>
+
+  <script>
+    function sliderFunc(inputIn, inputOut) {
+      var val = document.getElementById(inputIn).value
+      // document.getElementById(inputOut).value = Math.round((Math.abs(val) * scale)).toString()
+      document.getElementById(inputOut).value = Math.abs(val).toFixed(5).toString()
+    }
+  </script>
+</body>
+
+</html>
