@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-#define TP 38
+#define TP 10
 #define LED 37
 #define SRCLK 10
 #define SER 12 
