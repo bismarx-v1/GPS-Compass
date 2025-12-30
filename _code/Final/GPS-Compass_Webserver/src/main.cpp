@@ -19,7 +19,6 @@ void setup() {
 
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, LOW); //sets the LED off on boot
-
   WiFi.softAP(ssid, password); //this thingy creates the access point
 
   Serial.print("AP IP address: ");
