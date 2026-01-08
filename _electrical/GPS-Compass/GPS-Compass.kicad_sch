@@ -10411,17 +10411,6 @@
 		)
 		(uuid "3f3e504e-4c62-4a9b-a27c-0482829e6350")
 	)
-	(text "pinout checked"
-		(exclude_from_sim no)
-		(at 162.56 151.13 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "40729353-d782-46c5-b408-78a2e394c2b8")
-	)
 	(text "EEPROM"
 		(exclude_from_sim no)
 		(at 273.685 221.615 0)
@@ -10659,17 +10648,6 @@
 		)
 		(uuid "851479ce-6f8d-458c-aab5-6c8b46fba7fa")
 	)
-	(text "pinout checked"
-		(exclude_from_sim no)
-		(at 220.345 64.135 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "88ab835f-9b4d-4c2e-9b93-cda5342c9bac")
-	)
 	(text "MCU and IMU"
 		(exclude_from_sim no)
 		(at 27.305 172.72 0)
@@ -10769,15 +10747,16 @@
 		)
 		(uuid "aed90d3a-641d-43a2-b368-ab2081f96114")
 	)
-	(text "USE REGS TO CHANGE LIMIT"
+	(text "possibly too little capacitance and indcutunce"
 		(exclude_from_sim no)
-		(at 144.78 142.875 0)
+		(at 263.525 109.22 0)
 		(effects
 			(font
-				(size 1 1)
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(uuid "b159c818-6fc0-4df3-8cd6-0484e08fc757")
+		(uuid "bc98b702-712c-4451-89fb-1f1f84971990")
 	)
 	(text "https://cz.mouser.com/ProductDetail/Texas-Instruments/BQ25895MRTWR?qs=uNh9J9Y3wTe%2F%252BmcQbu7CLA%3D%3D"
 		(exclude_from_sim no)
@@ -10855,17 +10834,6 @@
 		)
 		(uuid "dad27a8b-06a4-4841-99f8-21c734c878ec")
 	)
-	(text "pinout checked"
-		(exclude_from_sim no)
-		(at 179.07 64.77 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e0a51cdf-a753-4659-89f1-0d5fdcc0cc6c")
-	)
 	(text "GNSS CONN."
 		(exclude_from_sim no)
 		(at 273.685 184.785 0)
@@ -10894,28 +10862,6 @@
 			(justify left bottom)
 		)
 		(uuid "e62e3651-c8fd-451c-842c-12e38115124a")
-	)
-	(text "pinout checked"
-		(exclude_from_sim no)
-		(at 237.8823 109.3718 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e6704a7b-b082-459c-9579-2157836e8ad0")
-	)
-	(text "pinout checked"
-		(exclude_from_sim no)
-		(at 288.29 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f12c7108-f0bf-42a2-a0e0-120ed7b93149")
 	)
 	(text "Typically these can be used, but you need to make sure they are \nnot in the wrong state during boot.\n\ngpio.0 Boot Mode. Weak pullup during reset. \n(Boot Mode 0=Boot from Flash, 1=Download)\ngpio.3 JTAG Mode. Weak pull down during reset. \n(JTAG Config)\ngpio.45 SPI voltage. Weak pull down during reset. \n(SPI Voltage 0=3.3v 1=1.8v)\ngpio.46 Boot mode. Weak pull down during reset. \n(Enabling/Disabling ROM Messages Print During Booting)"
 		(exclude_from_sim no)
@@ -13236,16 +13182,6 @@
 		)
 		(uuid "8580f3e4-410f-4694-ac9b-749998a55a4e")
 	)
-	(polyline
-		(pts
-			(xy 252.095 69.85) (xy 256.54 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85d0153c-0736-460e-b098-de67bab00b43")
-	)
 	(wire
 		(pts
 			(xy 95.25 121.92) (xy 97.79 121.92)
@@ -13479,7 +13415,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 92.71) (xy 287.02 92.71)
+			(xy 278.13 92.71) (xy 287.02 92.71)
 		)
 		(stroke
 			(width 0)
@@ -13747,16 +13683,6 @@
 		)
 		(uuid "b1c3b92c-c4b1-4adb-a490-3a6e9c191749")
 	)
-	(polyline
-		(pts
-			(xy 191.77 77.47) (xy 196.215 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2541583-1a8d-48c2-b373-9ea85fd445ee")
-	)
 	(wire
 		(pts
 			(xy 152.4 52.07) (xy 154.94 52.07)
@@ -13819,7 +13745,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 92.71) (xy 269.24 92.71)
+			(xy 261.62 92.71) (xy 270.51 92.71)
 		)
 		(stroke
 			(width 0)
@@ -14046,16 +13972,6 @@
 			(type default)
 		)
 		(uuid "c20e6fd0-5b6f-4a12-a295-40a6345d4124")
-	)
-	(polyline
-		(pts
-			(xy 123.825 69.85) (xy 128.27 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2349d15-d69d-450a-9551-997e1e3c572f")
 	)
 	(wire
 		(pts
@@ -14528,16 +14444,6 @@
 			(type default)
 		)
 		(uuid "e2595ca1-f893-4585-badf-aae7e30bd09e")
-	)
-	(polyline
-		(pts
-			(xy 198.755 69.85) (xy 203.2 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e387cb51-5446-4494-b626-0b72d7836501")
 	)
 	(wire
 		(pts
@@ -65114,7 +65020,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 273.05 92.71 90)
+		(at 274.32 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -65122,7 +65028,7 @@
 		(dnp no)
 		(uuid "88c7b353-803d-437e-8e8e-9c7b4d42c20a")
 		(property "Reference" "L3"
-			(at 273.05 88.265 90)
+			(at 274.32 88.265 90)
 			(effects
 				(font
 					(size 1 1)
@@ -65130,7 +65036,7 @@
 			)
 		)
 		(property "Value" "1.5u"
-			(at 273.05 90.17 90)
+			(at 274.32 90.17 90)
 			(effects
 				(font
 					(size 1 1)
@@ -65138,7 +65044,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_Vishay_IHLP-1212"
-			(at 273.05 92.71 0)
+			(at 274.32 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65147,7 +65053,7 @@
 			)
 		)
 		(property "Datasheet" "https://cz.mouser.com/ProductDetail/Vishay-Dale/IHLP1212BZEV1R5M5A?qs=BJlw7L4Cy7%2FLPKyjRWwgFw%3D%3D"
-			(at 273.05 92.71 0)
+			(at 274.32 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65156,7 +65062,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 273.05 92.71 0)
+			(at 274.32 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65165,7 +65071,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 273.05 92.71 0)
+			(at 274.32 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65173,7 +65079,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 273.05 92.71 0)
+			(at 274.32 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65181,7 +65087,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 273.05 92.71 0)
+			(at 274.32 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65189,7 +65095,7 @@
 			)
 		)
 		(property "Comment" ""
-			(at 273.05 92.71 90)
+			(at 274.32 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)

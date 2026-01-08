@@ -1,6 +1,7 @@
 #include <WiFi.h>
 #include <Arduino.h>
 #include "webpage.h"
+#include "esp_system.h"
 
 //WiFi Access Point credentials
 const char* ssid     = "GPS-Compass";
