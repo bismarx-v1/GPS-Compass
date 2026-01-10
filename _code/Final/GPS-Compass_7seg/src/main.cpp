@@ -1,10 +1,9 @@
 #include <Arduino.h>
 
 #define GPIO_SPI_CS_DRIVER 10
-#define GPIO_SPI_CLK 11
-#define GPIO_SPI_MOSI 12
-
-float distance_float = 99999.0;
+#define GPIO_SPI_CLK 12
+#define GPIO_SPI_MOSI 11
+float distance_float = 123.0;
 int distance = round(distance_float);
 
 struct max7219Registers {
@@ -25,7 +24,7 @@ struct max7219Registers {
   const uint8_t digitArray[8] = {digit0, digit1, digit2, digit3, digit4, digit5, digit6, digit7};
 
   // This array maps the registers to the digits in the segment array. Index is array index, number is digit register.
-  const uint8_t digitIndexArray[8] = {7,6,5,4,3,2,1,0}; // edit with new display (3digit)
+  const uint8_t digitIndexArray[8] = {0,1,2,3,4,5,6,7}; // edit with new display (3digit)
 
   /**
 	 *  -A-

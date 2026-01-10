@@ -1,19 +1,17 @@
 #include <Arduino.h>
+#define CLK_SR 40 //SCK
+#define SI_SR 39 //SER
+#define LATCH_SR 21 //RCK
 
-#define TP 10
-#define LED 37
-#define SRCLK 10
-#define SER 12 
-#define RCLK 11
-
+long long mask = 0;
 
 // Send out one bit.
 void shift_bit(bool bit) {
-  digitalWrite(SER, bit);
+  digitalWrite(SI_SR, bit);
   delayMicroseconds(1); 
-  digitalWrite(SRCLK,1);
+  digitalWrite(CLK_SR,1);
   delayMicroseconds(1); 
-  digitalWrite(SRCLK,0);
+  digitalWrite(CLK_SR,0);
   delayMicroseconds(1);
 }
 
@@ -27,33 +25,25 @@ void shift_byte(char chomp) {
 // Send out one byte eight times (64 bits).
 void shift_8byte(long long nom) {
   for(long long byte_index = 0; byte_index < 8; byte_index++){
-    // shift_byte((char)((nom >> (byte_index * 8)) & 0b11111111));
     shift_byte(nom >> (byte_index * 8));
   }
-  
 }
 
 void triggerBuffers() {
-  digitalWrite(RCLK,1);
+  digitalWrite(LATCH_SR,1);
   delayMicroseconds(1); 
-  digitalWrite(RCLK,0);
+  digitalWrite(LATCH_SR,0);
   delayMicroseconds(1);
 }
 
 void setup() {
-  pinMode(LED, OUTPUT);
-  pinMode(SRCLK, OUTPUT);
-  pinMode(SER, OUTPUT);
-  pinMode(RCLK, OUTPUT);
-  pinMode(TP, OUTPUT);
-  digitalWrite(TP, HIGH);
+  pinMode(CLK_SR, OUTPUT);
+  pinMode(SI_SR, OUTPUT);
+  pinMode(LATCH_SR, OUTPUT);
   Serial.begin(115200);
   Serial.print("Start: ");
   Serial.println(micros());
-  shift_8byte(0xf035000000000000);  // Send 64 bits.
-  // shift_byte(0b00110101);
-  // shift_byte(202);
-  
+  shift_8byte(mask);  // Send 64 bits.
   
   triggerBuffers();
   Serial.print("End: ");
@@ -65,8 +55,7 @@ void setup() {
 
 void loop() {
   static unsigned long long displayVal = 0;
-  digitalWrite(LED, HIGH);
-  shift_8byte(0xf035000000000000);
+  shift_8byte(mask);
   triggerBuffers();
 
   if(displayVal < (unsigned long long)-1) {
@@ -74,7 +63,4 @@ void loop() {
   } else {
     displayVal = 0;
   }
-
-  digitalWrite(LED, LOW);
-  delay(1000);
 }
