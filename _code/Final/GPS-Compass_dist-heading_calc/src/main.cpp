@@ -212,10 +212,13 @@ void displayDigit(uint8_t pos, uint8_t num, uint8_t decimalPoint) {
   segmentsArrayObjGlobal[pos] = maxRegisters.numberCharArray[num % 10] | 0b10000000 * decimalPoint;
 }
 
-
+#include "bq25895m.h" // HERE
+Bq25895m bq25895mObj; // HERE
 
 void setup() {
   Serial.begin(115200);
+
+  bq25895mObj.setup(); // HERE
   
 
   // initialize shift register pins
@@ -331,5 +334,6 @@ void loop() {
     }
 
   // wait so serial output is not constant
-  delay(5000);
+  delay(100);
+  heading += 2;
 }
