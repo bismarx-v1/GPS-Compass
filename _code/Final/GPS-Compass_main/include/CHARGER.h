@@ -1,11 +1,11 @@
+#ifndef CHARGER_H
+#define CHARGER_H
+
+#include <Arduino.h>
 #include <Wire.h>
+#include "GPIO_MAP.h"
 
-
-#define IIC_SDA 6
-#define IIC_SCL 7
-#define IIC_BQ_ADDR 0x6a
-
-
+#define I2C_CHRGR_ADDR 0x6a
 
 class Bq25895m {
 private:
@@ -30,26 +30,26 @@ public:
 
 
 void Bq25895m::setup() {
-    if(!Wire.begin(IIC_SDA, IIC_SCL, 40000)) {while (1) {log_e("Wire err: begin.");}}
+    if(!Wire.begin(SDA_I2C, SCL_I2C, 40000)) {while (1) {log_e("Wire err: begin.");}}
 
     setCurrent(CURR_1A5);  
 
 }
 
 uint8_t Bq25895m::regSet(RegAddr reg, uint8_t val) {
-    Wire.beginTransmission(IIC_BQ_ADDR);
+    Wire.beginTransmission(I2C_CHRGR_ADDR);
     Wire.write(reg);
     Wire.write(val);
     return Wire.endTransmission();
 }
 
 uint8_t Bq25895m::regGet(RegAddr reg, uint8_t &val) {
-    Wire.beginTransmission(IIC_BQ_ADDR);
+    Wire.beginTransmission(I2C_CHRGR_ADDR);
     Wire.write(reg);
     uint8_t tmp = Wire.endTransmission(false);
     if(tmp != 0) {return tmp;}
 
-    Wire.requestFrom(IIC_BQ_ADDR, sizeof(uint8_t));
+    Wire.requestFrom(I2C_CHRGR_ADDR, sizeof(uint8_t));
     val = Wire.read();
     return Wire.endTransmission();
 }
@@ -60,3 +60,5 @@ void Bq25895m::setCurrent(CurrentOption option) {
     regVal = (regVal & ~CurrentOption::MASK) | (option & CurrentOption::MASK);
     if(regErr = regSet(REG00, regVal)) {while (1) {log_e("Wire err: regSet: %u.", regErr);}}
 }
+
+#endif // CHARGER_H

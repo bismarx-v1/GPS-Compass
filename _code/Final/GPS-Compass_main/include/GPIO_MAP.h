@@ -1,12 +1,12 @@
-#ifndef GPIO_MAP
-#define GPIO_MAP
+#ifndef GPIO_MAP_H
+#define GPIO_MAP_H
 
 enum GPIO_PINS {
     INT_IMU     = 2,  // IMU interrupt
     OTG         = 4,  // USB On-The-Go
     INT_CHRG    = 5,  // Charger interrupt
-    SDA         = 6,  // I2C Data
-    SCL         = 7,  // I2C Clock
+    SDA_I2C     = 6,  // I2C Data
+    SCL_I2C     = 7,  // I2C Clock
     GNSS_WKP    = 8,  // GNSS Wake-up
     LED_IO9     = 9,  // User LED
     CS_SPI      = 10, // SPI Chip Select
@@ -32,4 +32,4 @@ enum GPIO_PINS {
     FREE_IO48   = 48, // Free General Purpose IO
 };
 
-#endif
+#endif // GPIO_MAP_H
