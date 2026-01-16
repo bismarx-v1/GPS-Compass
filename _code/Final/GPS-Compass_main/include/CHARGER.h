@@ -23,16 +23,19 @@ private:
     uint8_t regSet(RegAddr, uint8_t);
     uint8_t regGet(RegAddr, uint8_t&);
     void setCurrent(CurrentOption);
-
+    
 public:
     void setup();
 };
 
 
 void Bq25895m::setup() {
+    pinMode(DSEL, INPUT);
+    pinMode(INT_CHRG, INPUT);
+    pinMode(STAT, INPUT);
     if(!Wire.begin(SDA_I2C, SCL_I2C, 40000)) {while (1) {log_e("Wire err: begin.");}}
 
-    setCurrent(CURR_1A5);  
+    setCurrent(CURR_1A5);
 
 }
 
