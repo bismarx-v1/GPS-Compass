@@ -1,6 +1,6 @@
 #include <Arduino.h>
-#define LED_PIN 13
-#define IO42 42
+#define LED_PIN 47
+#define IO42 48
 
 // LED blink on ESP32-S3 pin 21
 const unsigned long ON_MS = 500;
