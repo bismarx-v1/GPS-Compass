@@ -170,7 +170,7 @@ private:
   // .-D-. (p)
   //
   // pABCDEFG
-  struct Segments {
+  struct Segments { //idk
     bool point:1;
     bool top:1;
     bool topRight:1;
@@ -180,7 +180,7 @@ private:
     bool topLeft:1;
     bool centre:1;
 
-    uint8_t segmentsToInt() {
+    uint8_t segmentsToInt() { //idk
       uint8_t ret;
       ret |= point    << 7;
       ret |= top      << 6;
@@ -193,7 +193,7 @@ private:
       return ret;
     }
 
-    inline void intToSegments(uint8_t val) {
+    inline void intToSegments(uint8_t val) { // idk
       point     = (val >> 7) & 1;
       top       = (val >> 6) & 1;
       topRight  = (val >> 5) & 1;
@@ -252,7 +252,7 @@ private:
 
   void spiSend(DriverRegisters, uint8_t);
   
-public:
+public: //idk
   typedef uint8_t OneDigit;
   typedef uint8_t DigitPos;
 
