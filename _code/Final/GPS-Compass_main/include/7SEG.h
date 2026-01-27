@@ -2,7 +2,7 @@
 #define SEVEN_SEG_H
 
 #include <Arduino.h>
-#if 0
+#if 1
 #include "GPIO_MAP.h"
 
 // =====================
@@ -122,7 +122,7 @@ static inline void displayDigit(uint8_t pos, uint8_t num, uint8_t decimalPoint) 
 
 
 
-
+#if 0
 //#define DIGIT_COUNT 3
 
 
@@ -331,4 +331,5 @@ void Display::flush() {
   }
 }
 
+#endif
 #endif // 7SEG_H

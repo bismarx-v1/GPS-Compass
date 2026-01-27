@@ -4,13 +4,14 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include "GPIO_MAP.h"
+#include "SHARED_TYPES.h"
 
 unsigned long long mask = 0ULL;
 
-const float lat_user = 50.1023364; // Users latitude
-const float lon_user = 14.4444372; // Users longitude
-const float lat_target = 50.12480503508704; // Targets latitude
-const float lon_target = 14.50216610940226; // Targets longitude
+// const float compass_lat = 50.1023364; // Users latitude
+// const float compass_lon = 14.4444372; // Users longitude
+// const float target_lat = 50.12480503508704; // Targets latitude
+// const float target_lon = 14.50216610940226; // Targets longitude
 float heading = 0.0; // Heading in degrees, info from BNO055
 
 // North LED blinking state
@@ -30,13 +31,14 @@ double radToDeg(double radians) {
     return radians * (180.0 / PI);
 }
 
-float distance_calc() {
+
+float distance_calc(Position compass, Position target) {
   // Haversine formula
   const float R = 6371e3; // earths radius, metres
-  const float phi1 = lat_user * PI/180; // phi, lambda in radians
-  const float phi2 = lat_target * PI/180;
-  const float delta_phi = (lat_target-lat_user) * PI/180;
-  const float delta_lambda = (lon_target-lon_user) * PI/180;
+  const float phi1 = compass.lat * PI/180; // phi, lambda in radians
+  const float phi2 = target.lat * PI/180;
+  const float delta_phi = (target.lat-compass.lat) * PI/180;
+  const float delta_lambda = (target.lon-compass.lon) * PI/180;
 
   const float a = sin(delta_phi/2) * sin(delta_phi/2) + cos(phi1) * cos(phi2) * sin(delta_lambda/2) * sin(delta_lambda/2);
   const float c = 2 * atan2(sqrt(a), sqrt(1-a)); // angular distance in radians
@@ -66,10 +68,10 @@ void printMask(unsigned long long led_mask) {
     Serial.println();
 }
 
-double bearingToTarget(float lat1, float lon1, float lat2, float lon2) { //angle from north to target
-    double phi1 = degToRad(lat1);
-    double phi2 = degToRad(lat2);
-    double delta_lambda = degToRad(lon2 - lon1);
+double bearingToTarget(Position compass, Position target) { //angle from north to target
+    double phi1 = degToRad(compass.lat);
+    double phi2 = degToRad(target.lat);
+    double delta_lambda = degToRad(target.lon - compass.lon);
 
     double y = sin(delta_lambda) * cos(phi2);
     double x = cos(phi1)*sin(phi2) - sin(phi1)*cos(phi2)*cos(delta_lambda);
