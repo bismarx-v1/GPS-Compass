@@ -1,8 +1,6 @@
 #ifndef _GNSS_H
 #define _GNSS_H
 
-
-
 #include <Arduino.h>
 #include "GPIO_MAP.h"
 #include "SHARED_TYPES.h"
@@ -14,7 +12,6 @@ const uint16_t gnss_buffer_size = 676;
 
 HardwareSerial Serial_GNSS(2);
 void gnss_setup() {
-
     Serial_GNSS.begin(
         9600,                // Baud rate (adjust if needed)
         SERIAL_8N1,
@@ -23,6 +20,24 @@ void gnss_setup() {
     );
 
     Serial.setRxBufferSize(gnss_buffer_size * 3);
+
+    // TODO:
+    // - Change configuration
+    // - Save configuration to NVM
+    // Will these be useful?: $PSTMSETPAR, $PSTMGETPAR, $PSTMSAVEPAR, $PSTMRESTOREPAR, $PSTMSRR
+    //
+    // Docs:
+    // > For example if the UART baud rate would change, the following commands should be sent by the Host:
+    //   1. $PSTMSETPAR,3102,0x9
+    //   2. $PSTMSAVEPAR
+    //   3. $PSTMSRR
+    //   Where:
+    //   1. $PSTMSETPAR changes the UART's baudrate;
+    //   2. $PSTMSAVEPAR saves the whole configuration;
+    //   3. $PSTMSRR restarts the Teseo Module to guarantee that the change made is effective;
+
+    Serial_GNSS.print("$PSTMGETPAR 3201");  // Default: 0x00980056
+    Serial_GNSS.print("$PSTMGETPAR 3228");  // Default: 0
 }
 
 
