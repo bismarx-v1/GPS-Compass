@@ -1,5 +1,5 @@
-#ifndef _SHARED_TYPES_H
-#define _SHARED_TYPES_H
+#ifndef SHARED_TYPES_H
+#define SHARED_TYPES_H
 
 struct Position {
     float lat;

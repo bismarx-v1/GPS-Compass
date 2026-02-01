@@ -28,7 +28,7 @@ void shift_8byte(unsigned long long nom) {
   }
 }
 
-void triggerBuffers() {
+void triggerBuffers() { //sends data to the output pins
   digitalWrite(LATCH_SR, HIGH);
   delayMicroseconds(1); 
   digitalWrite(LATCH_SR, LOW);

@@ -6,8 +6,6 @@
 #include "GPIO_MAP.h"
 #include "SHARED_TYPES.h"
 
-unsigned long long mask = 0ULL;
-
 // const float compass_lat = 50.1023364; // Users latitude
 // const float compass_lon = 14.4444372; // Users longitude
 // const float target_lat = 50.12480503508704; // Targets latitude
@@ -31,6 +29,11 @@ double radToDeg(double radians) {
     return radians * (180.0 / PI);
 }
 
+double normalize_angle(double angle) {
+    while (angle < 0) angle += 360.0;
+    while (angle >= 360.0) angle -= 360.0;
+    return angle;
+  };
 
 float distance_calc(Position compass, Position target) {
   // Haversine formula
@@ -46,14 +49,11 @@ float distance_calc(Position compass, Position target) {
   return distance;
 }
 
-unsigned long long angleToLedMask(double angleDeg, int &ledIndexOut) {
-    while (angleDeg < 0) angleDeg += 360.0;
-    while (angleDeg >= 360.0) angleDeg -= 360.0;
-
+unsigned long long angleToLedMask(double angleDeg) {
+    angleDeg = normalize_angle(angleDeg);
     const double DEG_PER_LED = 360.0 / 64.0;
     int ledIndex_logical = (int)((angleDeg + DEG_PER_LED / 2) / DEG_PER_LED) % 64;
     int ledIndex = (ledIndex_logical + 23) % 64; // Shift to match physical wiring
-    ledIndexOut = ledIndex;
     return (1ULL << ledIndex);
 }
 

@@ -1,14 +1,12 @@
-#ifndef _GNSS_H
-#define _GNSS_H
+#ifndef GNSS_H
+#define GNSS_H
 
 #include <Arduino.h>
 #include "GPIO_MAP.h"
 #include "SHARED_TYPES.h"
 
-
-
-char gnss_buffer[gnss_buffer_size];
 const uint16_t gnss_buffer_size = 676;
+char gnss_buffer[gnss_buffer_size];
 
 HardwareSerial Serial_GNSS(2);
 void gnss_setup() {
@@ -39,9 +37,6 @@ void gnss_setup() {
     Serial_GNSS.print("$PSTMGETPAR 3201");  // Default: 0x00980056
     Serial_GNSS.print("$PSTMGETPAR 3228");  // Default: 0
 }
-
-
-
 
 int8_t parseSign(char sign) {
     switch(sign) {
@@ -110,8 +105,8 @@ Position gnss_parseData(const char* data) {
 
 
 enum GnssError {
-    OKI,
-    EWWOW,
+    GNSS_OKI,
+    GNSS_EWWOW,
 };
 
 struct GnssRetStruct {
@@ -121,7 +116,7 @@ struct GnssRetStruct {
 
 GnssRetStruct gnss_update() {
     GnssRetStruct gnssReturn;
-    gnssReturn.error = EWWOW;
+    gnssReturn.error = GNSS_EWWOW;
 
     if(Serial_GNSS.available() < gnss_buffer_size) {
         return gnssReturn;
@@ -133,7 +128,7 @@ GnssRetStruct gnss_update() {
         Serial_GNSS.flush();
     }
 
-    gnssReturn.error = OKI;
+    gnssReturn.error = GNSS_OKI;
     gnssReturn.position = gnss_parseData(rowPtr);
     return gnssReturn; 
 }

@@ -1,7 +1,6 @@
 #include <WiFi.h>
 #include <Arduino.h>
 #include "webpage.h"
-#include "esp_system.h"
 #include "SHARED_TYPES.h"
 
 //WiFi Access Point credentials
