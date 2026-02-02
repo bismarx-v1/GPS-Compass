@@ -10265,17 +10265,6 @@
 		)
 		(uuid "0dc7741f-376e-4986-8a1c-58937fcb7717")
 	)
-	(text "1) Uvod\n2) Obsah\n3) Koncept\n4-7) Popis realizace\n8) Zaver - splneni veci"
-		(exclude_from_sim no)
-		(at 494.665 294.64 0)
-		(effects
-			(font
-				(size 3 3)
-			)
-			(justify left)
-		)
-		(uuid "0f7fecda-e8dd-4d03-afa9-1eb35f485844")
-	)
 	(text "ESD PROTECTION"
 		(exclude_from_sim no)
 		(at 76.2 119.38 0)
@@ -10451,6 +10440,17 @@
 			(justify left bottom)
 		)
 		(uuid "464fae92-af9d-4067-af6c-34ed55880512")
+	)
+	(text "I2C Addr.: 0x28"
+		(exclude_from_sim no)
+		(at 151.765 250.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49562f8b-189a-495d-91e9-2fd8734dea36")
 	)
 	(text "MAIN SW"
 		(exclude_from_sim no)
@@ -10648,6 +10648,17 @@
 		)
 		(uuid "851479ce-6f8d-458c-aab5-6c8b46fba7fa")
 	)
+	(text "I2C Addr.: 0x6A"
+		(exclude_from_sim no)
+		(at 114.935 149.225 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c917dc1-f50c-4e46-8644-ec699a11e152")
+	)
 	(text "MCU and IMU"
 		(exclude_from_sim no)
 		(at 27.305 172.72 0)
@@ -10758,16 +10769,6 @@
 		)
 		(uuid "bc98b702-712c-4451-89fb-1f1f84971990")
 	)
-	(text "https://cz.mouser.com/ProductDetail/Texas-Instruments/BQ25895MRTWR?qs=uNh9J9Y3wTe%2F%252BmcQbu7CLA%3D%3D"
-		(exclude_from_sim no)
-		(at 581.66 146.685 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "be7bdf17-df3c-4464-a0dc-8374e4f8651e")
-	)
 	(text "TESTING POINTS"
 		(exclude_from_sim no)
 		(at 335.28 73.025 0)
@@ -10782,6 +10783,17 @@
 			(justify left bottom)
 		)
 		(uuid "c0e19141-8b4e-4de9-8a93-391ece9ff831")
+	)
+	(text "I2C Addr.: 0x25"
+		(exclude_from_sim no)
+		(at 180.34 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c86f1a3d-a2d1-4a69-8858-3a2fba3d1102")
 	)
 	(text "Memory: 128kbit\nMa freq.: 1MHz\nVin: 1.6-5.5V\nAccess time: 450ns\nMax supply curr.: 1mA "
 		(exclude_from_sim no)
