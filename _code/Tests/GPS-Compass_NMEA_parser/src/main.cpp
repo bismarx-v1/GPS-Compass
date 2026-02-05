@@ -4,9 +4,11 @@
 #define GNSS_RX 44
 #define GNSS_TX 43
 
-void onRmcUpdate(nmea::RmcData const);
-void onGgaUpdate(nmea::GgaData const);
+// Forward declarations
+void onRmcUpdate(nmea::RmcData const rmc);
+void onGgaUpdate(nmea::GgaData const gga);
 
+// Parser instance
 ArduinoNmeaParser parser(onRmcUpdate, onGgaUpdate);
 
 void setup()
@@ -27,41 +29,56 @@ void loop()
     parser.encode((char)Serial1.read());
   }
 }
+
+/* ================= CALLBACKS ================= */
+
 void onRmcUpdate(nmea::RmcData const rmc)
 {
   Serial.print("RMC ");
 
-  if      (rmc.source == nmea::RmcSource::GPS)     Serial.print("GPS");
-  else if (rmc.source == nmea::RmcSource::GLONASS) Serial.print("GLONASS");
-  else if (rmc.source == nmea::RmcSource::Galileo) Serial.print("Galileo");
-  else if (rmc.source == nmea::RmcSource::GNSS)    Serial.print("GNSS");
-  else if (rmc.source == nmea::RmcSource::BDS)     Serial.print("BDS");
-
-  Serial.print(" ");
   Serial.print(rmc.time_utc.hour);
   Serial.print(":");
   Serial.print(rmc.time_utc.minute);
   Serial.print(":");
   Serial.print(rmc.time_utc.second);
-  Serial.print(".");
-  Serial.print(rmc.time_utc.microsecond);
-  Serial.print(rmc.is_valid ? "A" : "V");
-  Serial.print(" Lat:");
-  Serial.print(rmc.latitude, 6);
-  Serial.print(" Lon:");
-  Serial.print(rmc.longitude, 6);
-  Serial.print(" Speed:");
-  Serial.print(rmc.speed, 2);
-  Serial.print(" Course:");
-  Serial.print(rmc.course, 2);
-  Serial.print(" MagVar:");
-  Serial.print(rmc.magnetic_variation, 2);
-  Serial.print(" Date:");
-  Serial.print(rmc.date.day);
-  Serial.print("/");
-  Serial.print(rmc.date.month);
-  Serial.print("/");
-  Serial.print(rmc.date.year);
-  Serial.println();
 
+  Serial.print(rmc.is_valid ? " A " : " V ");
+
+  if (rmc.is_valid) {
+    Serial.print("Lat=");
+    Serial.print(rmc.latitude, 6);
+    Serial.print(" Lon=");
+    Serial.print(rmc.longitude, 6);
+    Serial.print(" Speed=");
+    Serial.print(rmc.speed);
+    Serial.print(" Course=");
+    Serial.print(rmc.course);
+  }
+
+  Serial.println();
+}
+
+void onGgaUpdate(nmea::GgaData const gga)
+{
+  Serial.print("GGA ");
+
+  Serial.print(gga.time_utc.hour);
+  Serial.print(":");
+  Serial.print(gga.time_utc.minute);
+  Serial.print(":");
+  Serial.print(gga.time_utc.second);
+
+  if (gga.fix_quality != nmea::FixQuality::Invalid) {
+    Serial.print(" Fix=");
+    Serial.print((int)gga.fix_quality);
+    Serial.print(" Sats=");
+    Serial.print(gga.num_satellites);
+    Serial.print(" HDOP=");
+    Serial.print(gga.hdop);
+    Serial.print(" Alt=");
+    Serial.print(gga.altitude);
+    Serial.print("m");
+  }
+
+  Serial.println();
 }
