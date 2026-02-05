@@ -1,25 +1,25 @@
 #include <Arduino.h>
-#define LED_PIN 47
-#define IO42 48
+#define IO09 9
+#define IO13 13
 
 // LED blink on ESP32-S3 pin 21
 const unsigned long ON_MS = 500;
 const unsigned long OFF_MS = 500;
 
 void setup() {
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(IO42, OUTPUT);
-  digitalWrite(LED_PIN, LOW);
-  digitalWrite(IO42, HIGH);
+  pinMode(IO09, OUTPUT);
+  pinMode(IO13, OUTPUT);
+  digitalWrite(IO09, LOW);
+  digitalWrite(IO13, HIGH);
 }
 
 void loop() {
-  digitalWrite(LED_PIN, HIGH);
+  digitalWrite(IO09, HIGH);
   delay(ON_MS);
-  digitalWrite(LED_PIN, LOW);
+  digitalWrite(IO09, LOW);
   delay(OFF_MS);
-  digitalWrite(IO42, HIGH);
+  digitalWrite(IO13, HIGH);
   delay(ON_MS);
-  digitalWrite(IO42, LOW);
+  digitalWrite(IO13, LOW);
   delay(OFF_MS);
 }

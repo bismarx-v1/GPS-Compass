@@ -1,0 +1,35 @@
+name: Unit Tests
+
+on:
+  pull_request:
+    # Only run workflow if a file in these paths is modified
+    paths:
+      - '.github/workflows/unit-tests.yml'
+      - 'extras/test/**'
+      - 'src/**'
+
+  push:
+    paths:
+      - '.github/workflows/unit-tests.yml'
+      - 'extras/test/**'
+      - 'src/**'
+
+jobs:
+  test:
+    name: Run unit tests
+    runs-on: ubuntu-latest
+
+    env:
+      COVERAGE_DATA_PATH: extras/coverage-data/coverage.info
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - uses: arduino/cpp-test-action@main
+        with:
+          runtime-path: extras/test/build/bin/testNmeaParser
+          coverage-data-path: ${{ env.COVERAGE_DATA_PATH }}
+          coverage-exclude-paths: |
+            - '*/extras/test/*'
+            - '/usr/*'
