@@ -1,9 +1,10 @@
 #include <Arduino.h>
 
-#define GPIO_SPI_CS_DRIVER 10
-#define GPIO_SPI_CLK 12
-#define GPIO_SPI_MOSI 11
-float distance_float = 123.0;
+#define CS_SPI 10
+#define CLK_SPI 12
+#define MOSI_SPI 11
+
+float distance_float = 124.0;
 int distance = round(distance_float);
 
 struct max7219Registers {
@@ -45,10 +46,10 @@ uint8_t          segmentsArrayObjGlobal[8];
 max7219Registers maxRegisters;
 
 void spiSend(uint8_t reg, uint8_t val) {
-  digitalWrite(GPIO_SPI_CS_DRIVER, 0);
-  shiftOut(GPIO_SPI_MOSI, GPIO_SPI_CLK, MSBFIRST, reg);
-  shiftOut(GPIO_SPI_MOSI, GPIO_SPI_CLK, MSBFIRST, val);
-  digitalWrite(GPIO_SPI_CS_DRIVER, 1);
+  digitalWrite(CS_SPI, 0);
+  shiftOut(MOSI_SPI, CLK_SPI, MSBFIRST, reg);
+  shiftOut(MOSI_SPI, CLK_SPI, MSBFIRST, val);
+  digitalWrite(CS_SPI, 1);
 }
 
 void clearSpi() {
@@ -63,12 +64,12 @@ void clearSpi() {
 }
 
 void display_setup() {
-  pinMode(GPIO_SPI_CS_DRIVER, OUTPUT);
-  pinMode(GPIO_SPI_CLK, OUTPUT);
-  pinMode(GPIO_SPI_MOSI, OUTPUT);
-  digitalWrite(GPIO_SPI_MOSI, 0);
-  digitalWrite(GPIO_SPI_CLK, 0);
-  digitalWrite(GPIO_SPI_CS_DRIVER, 1);
+  pinMode(CS_SPI, OUTPUT);
+  pinMode(CLK_SPI, OUTPUT);
+  pinMode(MOSI_SPI, OUTPUT);
+  digitalWrite(MOSI_SPI, 0);
+  digitalWrite(CLK_SPI, 0);
+  digitalWrite(CS_SPI, 1);
 
   spiSend(maxRegisters.shutdown, 1);     // Exit shutdown.
   spiSend(maxRegisters.testMode, 0);     // Tet mode off.
@@ -96,41 +97,57 @@ void displayDigit(uint8_t pos, uint8_t num, uint8_t decimalPoint) {
   segmentsArrayObjGlobal[pos] = maxRegisters.numberCharArray[num % 10] | 0b10000000 * decimalPoint;
 }
 
+ void convertDistanceToBuffer(uint32_t distance)
+{
+    // Clear used digits (0–2)
+    segmentsArrayObjGlobal[0] = 0;
+    segmentsArrayObjGlobal[1] = 0;
+    segmentsArrayObjGlobal[2] = 0;
+
+    // 1000m – 9999m  →  X.X km
+    if (distance > 999 && distance < 10000)
+    {
+        uint32_t temp = distance / 10;
+
+        displayDigit(2, temp % 10, 0);
+        displayDigit(1, (temp / 10) % 10, 0);
+        displayDigit(0, temp / 100, 1);
+    }
+
+    // 10000m – 99999m  →  XX.X km
+    else if (distance > 9999 && distance < 100000)
+    {
+        uint32_t temp = distance / 100;
+
+        displayDigit(2, temp % 10, 0);
+        displayDigit(1, (temp / 10) % 10, 1);
+        displayDigit(0, temp / 100, 0);
+    }
+
+    // >= 100000m  →  XXX km
+    else if (distance >= 100000)
+    {
+        uint32_t temp = distance / 1000;
+
+        displayDigit(2, temp % 10, 1);
+        displayDigit(1, (temp / 10) % 10, 0);
+        displayDigit(0, temp / 100, 0);
+    }
+
+    // < 1000m → meters
+    else
+    {
+        displayDigit(2, distance % 10, 0);
+        displayDigit(1, (distance / 10) % 10, 0);
+        displayDigit(0, distance / 100, 0);
+    }
+}
+
 void setup() {
   display_setup();
 }
-//ternary operator in C++s
+
 void loop() {
-  if(distance > 999 && distance < 10000) { //eg: 1000m = 1.0km
-    int distance_temp = distance / 10; // Convert to kilometers.
-    displayDigit(2, distance_temp % 10, 0);
-    displayDigit(1, distance_temp % 100 / 10, 0);
-    displayDigit(0, distance_temp / 100, 1);
-    push();
-  }
-
-  //1000m   = 1.,0,0
-  //10000m  = 1,0.,0
-  //100000m = 1,0,0.
-
-  else if(distance >  9999 && distance < 100000) { //eg: 10000m = 10.0km
-    int distance_temp = distance / 100; // Convert to kilometers.
-    displayDigit(2, distance_temp % 10, 0);
-    displayDigit(1, distance_temp % 100 / 10, 1);
-    displayDigit(0, distance_temp / 100, 0);
-    push();
-  }
-  else if(distance > 99999) {
-    int distance_temp = distance / 1000; // Convert to kilometers.
-    displayDigit(2, distance_temp % 10, 1);
-    displayDigit(1, distance_temp % 100 / 10, 0);
-    displayDigit(0, distance_temp / 100, 0);
-    push();
-  }
-  else {
-    displayDigit(2, distance % 10, 0); //meters
-    displayDigit(1, distance % 100 / 10, 0);
-    displayDigit(0, distance / 100, 0);
-    push();
-    }
+  convertDistanceToBuffer(distance);
+  push();
 }
