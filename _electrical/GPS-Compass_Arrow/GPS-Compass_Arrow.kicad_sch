@@ -3668,17 +3668,6 @@
 		)
 		(uuid "71e7250f-75b6-4ea5-8866-ebd52165814d")
 	)
-	(text "1) Uvod\n2) Obsah\n3) Koncept\n4-7) Popis realizace\n8) Zaver - splneni veci"
-		(exclude_from_sim no)
-		(at 30.48 240.665 0)
-		(effects
-			(font
-				(size 3 3)
-			)
-			(justify left)
-		)
-		(uuid "7c8b2c4f-c981-4ee0-9a52-e5bdedf1aeeb")
-	)
 	(text "CONNECTORS"
 		(exclude_from_sim no)
 		(at 217.805 109.855 0)
@@ -8106,7 +8095,7 @@
 		(uuid "fec79d66-2b91-4502-bf15-c3a31c9c1203")
 	)
 	(image
-		(at 355.6 118.11)
+		(at -66.675 116.205)
 		(uuid "74506709-a4dc-4979-a4c8-0aa3f3be5ef1")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAf4AAAFGCAYAAACL9v09AAAABHNCSVQICAgIfAhkiAAAIABJREFU"
 			"eJzs3XlUVVXjxvFvIFevTIIIgoACouAEOKE4m2maU86m9qZl+ZqVpjY7VDZp08/K10Yrs0FzTDPN"

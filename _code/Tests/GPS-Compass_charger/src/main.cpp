@@ -12,7 +12,14 @@
 // ==========================
 // Register Definitions
 // ==========================
-#define REG00 0x00
+
+#define REG02 0x02 //ADC control reg
+#define REG00 0x00 //current control reg
+#define REG0E 0x0E //battery monitoring reg
+#define REG03 0x03 //OTG config reg 
+#define REG12 0x12 //charge current reg
+#define REG10 0x10 //temperature monitoring reg
+
 #define CURRENT_MASK 0b00111111
 
 // Predefined current settings (REG00 values)
@@ -46,6 +53,61 @@ uint8_t regGet(uint8_t reg, uint8_t &val)
     return 0;
 }
 
+float charger_readBatteryVoltage()
+{
+    uint8_t regVal;
+    uint8_t err;
+
+    err = regGet(REG0E, regVal);
+    if (err)
+        return -1.0;   // error indicator
+
+    uint8_t vbatBits = regVal & 0x7F;   // bits 6:0
+
+    float voltage = 2.304 + (vbatBits * 0.020);
+
+    return voltage;
+}
+
+float charger_readChargeCurrent()
+{
+    uint8_t regVal;
+    uint8_t err;
+
+    err = regGet(REG12, regVal);
+    if (err)
+        return -1.0;   // error indicator
+
+    uint8_t ichgBits = regVal & 0x7F;   // bits 6:0
+
+    float current = ichgBits * 50.0;    // 50mA per step
+
+    return current;
+}
+
+// float charger_readBatteryTemp()
+// {
+//     uint8_t regVal;
+//     uint8_t err;
+
+//     err = regGet(REG10, regVal);
+//     if (err)
+//         return -100.0; // error indicator
+
+//     uint8_t tsBits = regVal & 0x7F;             // bits 6:0
+//     float tspct = 0.21 + tsBits * 0.00465;     // 21% + 0.465% per bit
+
+//     float V_TS = tspct * 4.8;                // TS pin voltage
+
+//     // Compute NTC resistance
+//     float R_NTC = (V_TS * (5230 + 30100) - 4.8 * 30100) / (4.8 - V_TS);
+
+//     // Beta equation
+//     float tempK = 1.0 / (1.0 / 298.15 + (1.0 / 3950) * log(R_NTC / 10000));
+//     float tempC = tempK - 273.15;
+
+//     return tempC;
+// }
 
 // ==========================
 // Charging Current Control
@@ -69,11 +131,11 @@ void charger_setCurrentRaw(uint8_t option)
 // Optional: easier API (amps selection)
 void charger_setCurrentAmp(float current)
 {
-    if (current <= 0.5f)
+    if (current <= 0.5)
         charger_setCurrentRaw(CURR_0_5A);
-    else if (current <= 1.0f)
+    else if (current <= 1.0)
         charger_setCurrentRaw(CURR_1A);
-    else if (current <= 1.5f)
+    else if (current <= 1.5)
         charger_setCurrentRaw(CURR_1_5A);
     else
         charger_setCurrentRaw(CURR_2A);
@@ -96,7 +158,7 @@ void charger_setup()
     }
 
     // Default current
-    charger_setCurrentRaw(CURR_1A);
+    charger_setCurrentRaw(CURR_0_5A);
 }
 
 
@@ -116,9 +178,39 @@ void setup()
     Serial.println("Charger Setup Complete.");
 
     // Example: Change current from main
-    charger_setCurrentAmp(CURR_0_5A);
+    charger_setCurrentAmp(1.0);
+    regSet(REG02, 0b11110001); // Enable ADC, set to battery voltage mode
+    regSet(REG03, 0b00011110); // Disable OTG mode, set SYS_MIN_VOLT to 3.7V
+
 }
 
 void loop()
 {
+    float vbat = charger_readBatteryVoltage();
+    float ichg = charger_readChargeCurrent();
+    //float temp = charger_readBatteryTemp();
+
+    if (vbat > 0)
+    {
+        Serial.print("Battery Voltage: ");
+        Serial.print(vbat, 3);
+        Serial.println(" V");
+    }
+    else
+    {
+        Serial.println("Voltage read error.");
+    }
+
+    if (ichg >= 0)
+    {
+        Serial.print("Charge Current: ");
+        Serial.print(ichg);
+        Serial.println(" mA");
+    }
+    else
+    {
+        Serial.println("ICHG read error");
+    }
+
+    delay(1000);
 }

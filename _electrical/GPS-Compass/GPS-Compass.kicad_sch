@@ -10373,7 +10373,7 @@
 		)
 		(uuid "351e4c40-42f5-4893-abd8-e15e1b798e13")
 	)
-	(text "I2C ADRESS + GPIO TIES"
+	(text "I2C ADDR."
 		(exclude_from_sim no)
 		(at 36.83 226.695 0)
 		(effects
@@ -10497,7 +10497,7 @@
 		)
 		(uuid "4d1134ec-f98e-4791-b23c-0eeecf98e87d")
 	)
-	(text "1. Shift register pins check\n2. UI pin pinout fix\n3. \n4. \n5. STAT - charging in progress silkscreen\n6.\n7. "
+	(text "1. \n2. \n3. \n4. \n5. \n6.\n7. "
 		(exclude_from_sim no)
 		(at 19.685 307.975 0)
 		(effects
@@ -10768,6 +10768,19 @@
 			(justify left bottom)
 		)
 		(uuid "bc98b702-712c-4451-89fb-1f1f84971990")
+	)
+	(text "IMU: 0x28\nEEPROM: 0x50\nUSB CTRL: 0x25\nCHARGER: 0x6A"
+		(exclude_from_sim no)
+		(at 38.1 241.3 0)
+		(effects
+			(font
+				(face "Bahnschrift")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "bcd97ef9-8a0f-4ff2-9576-4adb8063fa24")
 	)
 	(text "TESTING POINTS"
 		(exclude_from_sim no)

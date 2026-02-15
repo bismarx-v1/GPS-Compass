@@ -104,13 +104,30 @@ const char webpage[] PROGMEM = R"rawliteral(
     <textarea id="pasteBox" rows="5" style="width:100%; font-size:16px; padding:8px; box-sizing:border-box;" placeholder="Paste coordinates here:"></textarea><br>
     <input type="button" style="margin-top:8px;" value="Apply to inputs (works only for decimal input)" onclick="applyPaste()">
   </div>
-<div>
-  <h2>LED Control (GPIO 2)</h2>
+<hr style="margin-top:40px; margin-bottom:20px;">
+
+<h2>Battery Status</h2>
+
+<div id="batteryContainer" style="display:flex; gap:40px; flex-wrap:wrap; font-size:18px;">
+  
+  <div>
+    <b>Battery Voltage</b><br>
+    <span id="batVoltage">--</span> V<br>
+    <span id="batPercent">--</span> %
+  </div>
+
+  <div>
+    <b>Charging Current</b><br>
+    <span id="chargeCurrent">--</span> mA
+  </div>
+
+  <div>
+    <b>Temperature</b><br>
+    <span id="temperature">--</span> °C
+  </div>
+
 </div>
-<div>
-  <input type="button" value="LED ON" onclick="fetch('/led?state=1')">
-  <input type="button" value="LED OFF" onclick="fetch('/led?state=0')">
-</div>
+
 <style>
   .dropdown {
     font-family: Verdana;
@@ -276,7 +293,7 @@ const char webpage[] PROGMEM = R"rawliteral(
       return '';
     }
 
-    function checkBoxRange(boxId, axis) {
+	function checkBoxRange(boxId, axis) {
       var el = document.getElementById(boxId);
       var v = parseFloat(el.value);
       if (!isFinite(v)) {
@@ -291,6 +308,26 @@ const char webpage[] PROGMEM = R"rawliteral(
         alert((axis === 'lat' ? 'Latitude' : 'Longitude') + ' must be between 0 and ' + max + '. Value adjusted.');
       }
     }
-  </script>
+    
+	function updateBatteryStatus(voltage, current, temp) {
+  		document.getElementById("batVoltage").innerText = voltage.toFixed(2);
+  		var percent = ((voltage - 3.0) / (4.2 - 3.0)) * 100;
+  		percent = Math.max(0, Math.min(100, percent));
+  		document.getElementById("batPercent").innerText = percent.toFixed(0);
+  		document.getElementById("batBar").style.width = percent + "%";
+  		document.getElementById("chargeCurrent").innerText = current.toFixed(0);
+  		document.getElementById("temperature").innerText = temp.toFixed(1);
+}
+	function fetchBattery() {
+  		fetch('/battery')
+    	.then(response => response.json())
+    	.then(data => {
+     	updateBatteryStatus(data.voltage, data.current, data.temperature);
+    	})
+    	.catch(() => {});
+}
+
+setInterval(fetchBattery, 5000);
+</script>
 )rawliteral";
 /* ============================================================ */
