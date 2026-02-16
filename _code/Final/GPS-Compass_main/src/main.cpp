@@ -27,6 +27,10 @@ void setup() {
 void loop() { 
   convertDistanceToBuffer(distance);
   push();
-  charger_monitor();
+  //charger_monitor();
   web_loop();
+  uint8_t raw;
+  regGet(REG0E, raw);
+  Serial.printf("0x%02x (%u) (0%o)\n", raw, raw, raw);
+  delay(1000);
 }

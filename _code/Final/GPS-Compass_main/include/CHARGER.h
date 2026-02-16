@@ -133,14 +133,15 @@ void charger_setCurrentRaw(uint8_t option)
 void charger_setup()
 {
 
-    if (!Wire.begin(SDA_I2C, SCL_I2C, 40000))
+    if (!Wire.begin(SDA_I2C, SCL_I2C, 100000))
     {
         while (1);
     }
 
     // Default current
     charger_setCurrentRaw(CURR_0_5A);
-    regSet(REG02, 0b11110001); // Enable ADC, set to battery voltage mode
+    regSet(REG02, 0b11110001);
+    delay(100); // Enable ADC
     regSet(REG03, 0b00011110); // Disable OTG mode, set SYS_MIN_VOLT to 3.7V
 }
 
@@ -149,6 +150,7 @@ void charger_monitor()
     float vbat = charger_readBatteryVoltage();
     float ichg = charger_readChargeCurrent();
     //float temp = charger_readBatteryTemp();
+
 
     if (vbat > 0)
     {

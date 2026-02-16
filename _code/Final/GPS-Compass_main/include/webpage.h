@@ -309,25 +309,35 @@ const char webpage[] PROGMEM = R"rawliteral(
       }
     }
     
-	function updateBatteryStatus(voltage, current, temp) {
+	function updateBatteryStatus(voltage, percent, current, temp) {
   		document.getElementById("batVoltage").innerText = voltage.toFixed(2);
-  		var percent = ((voltage - 3.0) / (4.2 - 3.0)) * 100;
+
   		percent = Math.max(0, Math.min(100, percent));
   		document.getElementById("batPercent").innerText = percent.toFixed(0);
   		document.getElementById("batBar").style.width = percent + "%";
+
   		document.getElementById("chargeCurrent").innerText = current.toFixed(0);
-  		document.getElementById("temperature").innerText = temp.toFixed(1);
-}
+
+  		if (temp !== undefined) {
+    	document.getElementById("temperature").innerText = temp.toFixed(1);
+  		}
+	}
 	function fetchBattery() {
-  		fetch('/battery')
-    	.then(response => response.json())
-    	.then(data => {
-     	updateBatteryStatus(data.voltage, data.current, data.temperature);
-    	})
-    	.catch(() => {});
+  	fetch('/battery')
+    .then(response => response.json())
+    .then(data => {
+      updateBatteryStatus(
+        data.voltage,
+        data.percentage,
+        data.current,
+  //      data.temperature
+      );
+    })
+    .catch(() => {});
 }
 
-setInterval(fetchBattery, 5000);
+
+setInterval(fetchBattery, 3000);
 </script>
 )rawliteral";
 /* ============================================================ */

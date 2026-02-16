@@ -46,20 +46,21 @@ Position web_loop() {
   pos.lat = 0.0f;
   pos.lon = 0.0f;
 
-  WiFiClient client = server.available();
-  Serial.println("client:");
-  Serial.println(client);
-  if (!client) return pos;
+WiFiClient client = server.available();
+if (!client) return pos;
 
-  String request = "";
-  // Read first HTTP line
-   while (client.connected()) {
-    if (client.available()) {
-      char c = client.read();
-      request += c;
-      if (c == '\n') break;
-    }
-  }
+client.setTimeout(2);
+String request = client.readStringUntil('\r');
+
+if (request.length() == 0) {
+  client.stop();
+  return pos;
+}
+
+if (request.length() == 0) {
+  client.stop();
+  return pos;
+}
 
   /* ===================== COORDS ENDPOINT ===================== */
   if (request.indexOf("GET /coords?") >= 0) {
