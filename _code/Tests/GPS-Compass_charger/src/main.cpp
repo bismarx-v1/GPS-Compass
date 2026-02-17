@@ -152,7 +152,7 @@ void charger_setup()
     pinMode(INT_CHRG, INPUT);
     pinMode(STAT, INPUT);
 
-    if (!Wire.begin(SDA_I2C, SCL_I2C, 40000))
+    if (!Wire.begin(SDA_I2C, SCL_I2C, 400000))
     {
         while (1);
     }
@@ -180,7 +180,7 @@ void setup()
     // Example: Change current from main
     charger_setCurrentAmp(1.0);
     regSet(REG02, 0b11110001); // Enable ADC, set to battery voltage mode
-    regSet(REG03, 0b00011110); // Disable OTG mode, set SYS_MIN_VOLT to 3.7V
+    //regSet(REG03, 0b00011110); // Disable OTG mode, set SYS_MIN_VOLT to 3.7V
 
 }
 
@@ -211,6 +211,8 @@ void loop()
     {
         Serial.println("ICHG read error");
     }
-
-    delay(1000);
+    uint8_t raw;
+    regGet(REG0E, raw);
+    Serial.printf("0x%02x (%u) (0%o)\n", raw, raw, raw);
+    delay(250);
 }

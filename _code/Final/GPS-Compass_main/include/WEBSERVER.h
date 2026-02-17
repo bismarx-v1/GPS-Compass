@@ -10,6 +10,9 @@ const char* password = "bismarx123";
 
 float lat, lon;
 
+extern float g_vbat;
+extern float g_ichg;
+
 WiFiServer server(80);
 
 /* ===================== SETUP ===================== */
@@ -87,19 +90,17 @@ if (request.length() == 0) {
   }
 
   /* ===================== BATTERY ENDPOINT ===================== */
-  if (request.indexOf("GET /battery") >= 0) {
-
-    float vbat = charger_readBatteryVoltage();
-    float ichg = charger_readChargeCurrent();
-
-    float percent = (vbat / 4.2f) * 100.0f;
+  if (request.indexOf("GET /battery") >= 0)
+{
+    float percent = (g_vbat / 4.2f) * 100.0f;
     percent = constrain(percent, 0.0f, 100.0f);
 
     String json = "{";
-    json += "\"voltage\":" + String(vbat, 2) + ",";
+    json += "\"voltage\":" + String(g_vbat, 2) + ",";
     json += "\"percentage\":" + String(percent, 0) + ",";
-    json += "\"current\":" + String(ichg, 0);
+    json += "\"current\":" + String(g_ichg, 0);
     json += "}";
+
 
     client.println("HTTP/1.1 200 OK");
     client.println("Content-Type: application/json");

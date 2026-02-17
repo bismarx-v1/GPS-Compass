@@ -46,8 +46,12 @@ inline uint8_t regGet(uint8_t reg, uint8_t &val)
     uint8_t err = Wire.endTransmission(false);
     if (err != 0) return err;
 
-    Wire.requestFrom(I2C_CHRGR_ADDR, 1);
+    uint8_t bytes = Wire.requestFrom(I2C_CHRGR_ADDR, (uint8_t)1);
+    if (bytes != 1)
+        return 4;   // custom error
+
     val = Wire.read();
+
     return 0;
 }
 
@@ -83,29 +87,29 @@ float charger_readChargeCurrent()
     return current;
 }
 
-// float charger_readBatteryTemp()
-// {
-//     uint8_t regVal;
-//     uint8_t err;
+ float charger_readBatteryTemp()
+ {
+     uint8_t regVal;
+     uint8_t err;
 
-//     err = regGet(REG10, regVal);
-//     if (err)
-//         return -100.0; // error indicator
+     err = regGet(REG10, regVal);
+     if (err)
+         return -100.0; // error indicator
 
-//     uint8_t tsBits = regVal & 0x7F;             // bits 6:0
-//     float tspct = 0.21 + tsBits * 0.00465;     // 21% + 0.465% per bit
+     uint8_t tsBits = regVal & 0x7F;             // bits 6:0
+     float tspct = 0.21 + tsBits * 0.00465;     // 21% + 0.465% per bit
 
-//     float V_TS = tspct * 4.8;                // TS pin voltage
+     float V_TS = tspct * 4.8;                // TS pin voltage
 
-//     // Compute NTC resistance
-//     float R_NTC = (V_TS * (5230 + 30100) - 4.8 * 30100) / (4.8 - V_TS);
+     // Compute NTC resistance
+     float R_NTC = (V_TS * (5230 + 30100) - 4.8 * 30100) / (4.8 - V_TS);
 
-//     // Beta equation
-//     float tempK = 1.0 / (1.0 / 298.15 + (1.0 / 3950) * log(R_NTC / 10000));
-//     float tempC = tempK - 273.15;
+     // Beta equation
+     float tempK = 1.0 / (1.0 / 298.15 + (1.0 / 3950) * log(R_NTC / 10000));
+     float tempC = tempK - 273.15;
 
-//     return tempC;
-// }
+     return tempC;
+ }
 
 // ==========================
 // Charging Current Control
@@ -140,8 +144,8 @@ void charger_setup()
 
     // Default current
     charger_setCurrentRaw(CURR_0_5A);
-    regSet(REG02, 0b11110001);
-    delay(100); // Enable ADC
+    regSet(REG02, 0b11110001); // Enable ADC
+    delay(100); 
     regSet(REG03, 0b00011110); // Disable OTG mode, set SYS_MIN_VOLT to 3.7V
 }
 

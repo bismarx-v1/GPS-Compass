@@ -7,6 +7,8 @@
 float distance_float = 123.0;
 int distance = round(distance_float);
 
+float g_vbat = 0;
+float g_ichg = 0;
 
 void setup() {
   Serial.begin(115200);
@@ -24,13 +26,19 @@ void setup() {
 
 }
 
-void loop() { 
+
+void loop() {
+
+  g_vbat = charger_readBatteryVoltage();
+  g_ichg = charger_readChargeCurrent();
+  
+  web_loop();
   convertDistanceToBuffer(distance);
   push();
   //charger_monitor();
-  web_loop();
+  
   uint8_t raw;
   regGet(REG0E, raw);
   Serial.printf("0x%02x (%u) (0%o)\n", raw, raw, raw);
-  delay(1000);
+  delay(500);
 }
