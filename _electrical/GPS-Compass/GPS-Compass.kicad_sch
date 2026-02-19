@@ -10769,9 +10769,9 @@
 		)
 		(uuid "bc98b702-712c-4451-89fb-1f1f84971990")
 	)
-	(text "IMU: 0x28\nEEPROM: 0x50\nUSB CTRL: 0x25\nCHARGER: 0x6A"
+	(text "BNO055:   0x28\nEEPROM:  0x50\nFUSB302  0x25\nBQ2589:   0x6A\nGNSS:      0x3A"
 		(exclude_from_sim no)
-		(at 38.1 241.3 0)
+		(at 38.735 245.11 0)
 		(effects
 			(font
 				(face "Bahnschrift")

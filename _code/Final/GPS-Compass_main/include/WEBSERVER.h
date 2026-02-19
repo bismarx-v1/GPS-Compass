@@ -1,3 +1,6 @@
+#ifndef WEBSERVER_H
+#define WEBSERVER_H
+
 #include <WiFi.h>
 #include <Arduino.h>
 #include "webpage.h"
@@ -6,12 +9,14 @@
 
 // WiFi Access Point credentials
 const char* ssid     = "GPS-Compass";
-const char* password = "bismarx123";
-
-float lat, lon;
+const char* password = "bismarx123";  
 
 extern float g_vbat;
 extern float g_ichg;
+
+/* ================= TARGET POSITION ================= */
+
+Position target_position = {0.0f, 0.0f};
 
 WiFiServer server(80);
 
@@ -43,6 +48,7 @@ void parseCoords(const char* request, float& lat, float& lon) {
 }
 
 /* ===================== MAIN WEB LOOP ===================== */
+
 Position web_loop() {
 
   Position pos;
@@ -68,10 +74,13 @@ if (request.length() == 0) {
   /* ===================== COORDS ENDPOINT ===================== */
   if (request.indexOf("GET /coords?") >= 0) {
 
+    float lat = 0.0f;
+    float lon = 0.0f;
+
     parseCoords(request.c_str(), lat, lon);
 
-    pos.lat = lat;
-    pos.lon = lon;
+    target_position.lat = lat;
+    target_position.lon = lon;
 
     Serial.println("Received Coordinates:");
     Serial.print("Latitude: ");
@@ -87,7 +96,7 @@ if (request.length() == 0) {
 
     client.stop();
     return pos;
-  }
+}
 
   /* ===================== BATTERY ENDPOINT ===================== */
   if (request.indexOf("GET /battery") >= 0)
@@ -122,3 +131,5 @@ if (request.length() == 0) {
   client.stop();
   return pos;
 }
+
+#endif
