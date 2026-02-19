@@ -1,9 +1,6 @@
-
-
 #include <Arduino.h>
 #include "7SEG.h"
 #include "CHARGER.h"
-HardwareSerial GNSS(0);
 #include "GNSS_NMEA.h"
 #include "WEBSERVER.h"
 #include "GPIO_MAP.h"
