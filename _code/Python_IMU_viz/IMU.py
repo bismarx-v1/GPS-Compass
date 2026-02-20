@@ -1,31 +1,29 @@
 import serial
 import os
 import sys
+import time
+import numpy as np
 from vedo import Mesh, Plotter, Text2D
 
 # --- CONFIG ---
 SERIAL_PORT = 'COM3'
 BAUD_RATE = 115200
-FILENAME = "GPS-Compass.obj"
+FILENAME = "GPS-Compass2.obj"
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_PATH, FILENAME)
+UPDATE_INTERVAL = 0.05
 
-# --- GLOBAL VARIABLES FOR TARE ---
-q_offset = [1.0, 0.0, 0.0, 0.0]
-current_raw = [1.0, 0.0, 0.0, 0.0]
+# --- GLOBALS ---
+euler_offset = [0.0, 0.0, 0.0]
+current_euler = [0.0, 0.0, 0.0]
+last_update = 0.0
 
-def quat_inverse(q):
-    return [q[0], -q[1], -q[2], -q[3]]
-
-def quat_mult(q1, q2):
-    w1, x1, y1, z1 = q1
-    w2, x2, y2, z2 = q2
-    return [
-        w1*w2 - x1*x2 - y1*y2 - z1*z2,
-        w1*x2 + x1*w2 + y1*z2 - z1*y2,
-        w1*y2 - x1*z2 + y1*w2 + z1*x2,
-        w1*z2 + x1*y2 - y1*x2 + z1*w2
-    ]
+def euler_to_matrix(roll, pitch, yaw):
+    r, p, y = np.radians([roll, pitch, yaw])
+    Rx = np.array([[1,0,0],[0,np.cos(r),-np.sin(r)],[0,np.sin(r),np.cos(r)]])
+    Ry = np.array([[np.cos(p),0,np.sin(p)],[0,1,0],[-np.sin(p),0,np.cos(p)]])
+    Rz = np.array([[np.cos(y),-np.sin(y),0],[np.sin(y),np.cos(y),0],[0,0,1]])
+    return Rz @ Ry @ Rx
 
 # --- SERIAL SETUP ---
 try:
@@ -44,6 +42,8 @@ if not os.path.exists(MODEL_PATH):
     sys.exit()
 
 model = Mesh(MODEL_PATH).c('gold')
+original_pts = model.vertices.copy()
+
 try:
     model.add_shadow()
 except Exception:
@@ -53,30 +53,51 @@ msg = Text2D("Initializing...", pos='top-left', c='black', font='VictorMono')
 
 # --- KEYBOARD CALLBACK ---
 def on_key(event):
-    global q_offset
-    if event.key == 'z':
-        q_offset = quat_inverse(current_raw)
+    global euler_offset
+    if event.keypress in ('z', 'Z'):
+        euler_offset = current_euler.copy()
         print("\n>>> SENSOR ZEROED <<<\n")
 
 # --- TIMER CALLBACK ---
 def loop_func(event):
-    global current_raw
-    if ser.in_waiting > 0:
-        try:
+    global current_euler, last_update
+
+    now = time.time()
+
+    latest_line = None
+    try:
+        while ser.in_waiting > 0:
             line = ser.readline().decode('ascii', errors='ignore').strip()
-            if line:
-                print(f"RAW: {line}")
-            if "Quaternion:" in line:
-                payload = line.split(":")[1].split(",")
-                current_raw = [float(p.strip()) for p in payload]
-                q_display = quat_mult(q_offset, current_raw)
-                model.orientation(q_display)
-                w, x, y, z = q_display
-                new_info = f" LIVE DATA (Press 'z' to Zero) \n W: {w:+.4f}\n X: {x:+.4f}\n Y: {y:+.4f}\n Z: {z:+.4f}"
-                msg.text(new_info)
-                plt.render()
+            if "Euler:" in line:
+                latest_line = line
+    except Exception:
+        pass
+
+    if latest_line:
+        print(f"RAW: {latest_line}")
+        try:
+            payload = latest_line.split(":")[1].split(",")
+            current_euler = [float(p.strip()) for p in payload]
         except Exception:
             pass
+
+    if now - last_update < UPDATE_INTERVAL:
+        return
+    last_update = now
+
+    roll  = current_euler[0] - euler_offset[0]
+    pitch = current_euler[1] - euler_offset[1]
+    yaw   = current_euler[2] - euler_offset[2]
+
+    R = euler_to_matrix(pitch, roll, yaw)
+    model.vertices = (R @ original_pts.T).T
+
+    new_info = (f" LIVE DATA (Press 'z' to Zero)\n"
+                f" Roll:  {roll:+.2f}°\n"
+                f" Pitch: {pitch:+.2f}°\n"
+                f" Yaw:   {yaw:+.2f}°")
+    msg.text(new_info)
+    plt.render()
 
 # --- REGISTER CALLBACKS & LAUNCH ---
 plt.add_callback('key press', on_key)

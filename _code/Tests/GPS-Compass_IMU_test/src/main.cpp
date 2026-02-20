@@ -7,14 +7,12 @@
 #define SDA_PIN 6 
 #define SCL_PIN 7 
 
-// Explicitly pass &Wire to guarantee it uses your custom pins
 Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28, &Wire); 
 
 void setup() {
   Serial.begin(115200);
-
   Wire.begin(SDA_PIN, SCL_PIN, 100000); 
-  delay(3000); 
+  delay(500); 
 
   if (!bno.begin()) {
     Serial.println("BNO055 not found!");
@@ -23,22 +21,16 @@ void setup() {
 }
 
 void loop() {
-  // Get Quaternion data directly
-  imu::Quaternion quat = bno.getQuat();
+  // Get Euler angles (in degrees)
+  imu::Vector<3> euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
   
-  // Format exactly as the Python script expects: "Quaternion: w, x, y, z"
-  Serial.print("Quaternion: ");
-  Serial.print(quat.w(), 4);
+  // X = Yaw (Heading), Y = Roll, Z = Pitch
+  Serial.print("Euler: ");
+  Serial.print(euler.x(), 2);
   Serial.print(", ");
-  Serial.print(quat.x(), 4);
+  Serial.print(euler.y(), 2);
   Serial.print(", ");
-  Serial.print(quat.y(), 4);
-  Serial.print(", ");
-  Serial.println(quat.z(), 4);
+  Serial.println(euler.z(), 2);
 
-  // 20ms delay gives a smooth 50 FPS for 3D rendering
   delay(20); 
 }
-
-//cd C:\Users\MenMe\Documents\GitHub\GPS-Compass\_code\Python_IMU_viz
-//IMU.py
