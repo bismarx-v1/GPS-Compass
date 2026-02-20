@@ -34,3 +34,5 @@ void loop() {
 
   delay(20); 
 }
+
+//cd C:\Users\MenMe\Documents\GitHub\GPS-Compass\_code\Python_IMU_viz
