@@ -9,6 +9,8 @@
 float g_vbat = 0;
 float g_ichg = 0;
 
+unsigned long lastPrint = 0;
+
 void setup() {
   Serial.begin(115200);
   delay(1000);
@@ -24,66 +26,46 @@ void setup() {
 
 }
 
-
 void loop() {
 
   g_vbat = charger_readBatteryVoltage();
   g_ichg = charger_readChargeCurrent();
 
-  web_loop();        // updates target_position
-  /* ================= RAW + PARSE ================= */
-
-while (GNSS.available()) {
-    char c = GNSS.read();
-
-    Serial.write(c);            // RAW output
-    gnss_parser.encode(c);      // Parse RMC/GGA
-    gnss_parse_gsv(c);          // Parse GSV
-}
+  web_loop();                 // updates target_position
+  gnss_update();              // updates teseoGPS object with latest NMEA data
+  gnss_checkSerialBridge();   // allows sending commands via Serial Monitor
 
   /* ================= NAVIGATION ================= */
-  float distance_float = distance_to_target();     // from DIST_CALC
+  float distance_float = distance_to_target();     
   int distance = round(distance_float);
-  double bearing = bearing_to_target();      // from DIST_CALC
-
-    /* ================= SERIAL OUTPUT ================= */
-
-  Serial.println("---- NAV DATA ----");
-
-  Serial.print("Current Lat: ");
-  Serial.println(compass_lat, 6);
-
-  Serial.print("Current Lon: ");
-  Serial.println(compass_lon, 6);
-
-  Serial.print("Target Lat: ");
-  Serial.println(target_position.lat, 6);
-
-  Serial.print("Target Lon: ");
-  Serial.println(target_position.lon, 6);
-
-  Serial.print("Distance (m): ");
-  Serial.println(distance_float);
-
-  Serial.print("Bearing (deg): ");
-  Serial.println(bearing);
-
-  Serial.print("Satellites Used (GGA): ");
-  Serial.println(compass_satellites_used);
-
-  Serial.print("Satellites In View (GSV): ");
-  Serial.println(compass_satellites_in_view);
-
-  Serial.println("------------------");
-  delay(1000);  // Update every second
-  Serial.print("Available: ");
-  Serial.println(GNSS.available());
-
-
+  double bearing = bearing_to_target();           
+  
   /* ================= DISPLAY ================= */
-
   convertDistanceToBuffer(distance);
   push();
+
+    if (millis() - lastPrint > 2000) {
+        lastPrint = millis();
+        
+        Serial.println("--- System Status ---");
+        charger_monitor();
+        gnss_monitor(); 
+        Serial.print("Distance: ");
+        Serial.print(distance);
+        Serial.print("m, Bearing: ");
+        Serial.print(bearing);
+        Serial.println("deg");
+
+        // Example of accessing the variables directly in main:
+        if (gnss_hasFix()) {
+            double compass_lat = gnss_getLatitude();
+            double compass_lon = gnss_getLongitude();
+            Serial.print("Current Position: ");
+            Serial.print(compass_lat, 6);
+            Serial.print(", ");
+            Serial.println(compass_lon, 6);
+        }
+    }
 
 }
 

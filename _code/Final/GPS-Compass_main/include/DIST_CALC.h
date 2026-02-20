@@ -6,6 +6,9 @@
 #include "WEBSERVER.h"
 #include "SHARED_TYPES.h"
 
+float compass_lat = gnss_getLatitude();
+float compass_lon = gnss_getLongitude();
+
 /* ================= HELPERS ================= */
 
 inline double degToRad(double degrees) {

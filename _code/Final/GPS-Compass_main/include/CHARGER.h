@@ -137,7 +137,7 @@ void charger_setCurrentRaw(uint8_t option)
 void charger_setup()
 {
 
-    if (!Wire.begin(SDA_I2C, SCL_I2C, 100000))
+    if (!Wire.begin(SDA_I2C, SCL_I2C, 400000))
     {
         while (1);
     }

@@ -5,7 +5,6 @@
 #include <Wire.h>
 #include <TinyGPS++.h>
 #include "GPIO_MAP.h"
-// #include <GPIO_MAP.h> // Uncomment if you have your pins defined here
 
 // ==========================
 // Hardware Definitions
@@ -13,8 +12,6 @@
 #define I2C_GNSS_ADDR   0x3A  
 #define REG_NMEA_STREAM 0xFF  
 #define TESEO_DUMMY     0xFF  
-
-// If not defined in GPIO_MAP.h, define them here for ESP32-S3
 
 
 /* * REFERENCE: CONFIGURATION COMMANDS (Permanent/Parametric)
@@ -41,6 +38,7 @@
  * $PSTMCFGGEOFENCE : Geofencing Configuration
  * $PSTMCFGGEOCIR   : Geofencing Circle Configuration
  * $PSTMCFGCONST    : Allow enable/disable all the GNSS constellations
+ 
  * * REFERENCE: GNSS MANAGEMENT COMMANDS (Executables/Actions)
  * --------------------------------------------------------
  * $PSTMINITGPS           : Initialize GPS position and time
@@ -93,6 +91,11 @@
 // The TinyGPS++ object that will parse the NMEA data
 static TinyGPSPlus teseoGPS;
 
+// Custom extractors for "Satellites in View" (Field 3 of the GSV sentences)
+// The Teseo module separates these by constellation
+static TinyGPSCustom gpsSatsInView(teseoGPS, "GPGSV", 3);
+static TinyGPSCustom gloSatsInView(teseoGPS, "GLGSV", 3);
+static TinyGPSCustom galSatsInView(teseoGPS, "GAGSV", 3);
 
 // ==========================
 // Low Level I2C / Core Functions
@@ -183,7 +186,6 @@ inline void gnss_checkSerialBridge()
 // ==========================
 
 inline bool gnss_hasFix() {
-    // Valid location means the module has a 2D or 3D fix
     return teseoGPS.location.isValid();
 }
 
@@ -199,8 +201,18 @@ inline double gnss_getAltitude() {
     return teseoGPS.altitude.meters();
 }
 
-inline uint32_t gnss_getSatellites() {
+inline uint32_t gnss_getSatellitesInUse() {
+    // Native TinyGPS++ function (from GGA sentence)
     return teseoGPS.satellites.value();
+}
+
+inline uint32_t gnss_getSatellitesInView() {
+    // Sum the valid values from our custom GSV extractors
+    uint32_t totalView = 0;
+    if (gpsSatsInView.isValid()) totalView += atoi(gpsSatsInView.value());
+    if (gloSatsInView.isValid()) totalView += atoi(gloSatsInView.value());
+    if (galSatsInView.isValid()) totalView += atoi(galSatsInView.value());
+    return totalView;
 }
 
 inline double gnss_getSpeedKmph() {
@@ -213,8 +225,6 @@ inline double gnss_getSpeedKmph() {
 
 inline void gnss_setup() 
 {
-    // Assuming Wire.begin() might be called in your main or charger setup.
-    // If not, it's safe to call it multiple times, but let's ensure it's running.
     Wire.begin(SDA_I2C, SCL_I2C);
     Wire.setClock(400000); // 400kHz fast mode
 
@@ -235,14 +245,17 @@ inline void gnss_monitor()
         Serial.print(gnss_getLongitude(), 6);
         Serial.print(" | Alt: ");
         Serial.print(gnss_getAltitude());
-        Serial.print("m | Sats: ");
-        Serial.println(gnss_getSatellites());
+        Serial.print("m | Sats In Use: ");
+        Serial.print(gnss_getSatellitesInUse());
+        Serial.print(" | Sats In View: ");
+        Serial.println(gnss_getSatellitesInView());
     } 
     else 
     {
-        Serial.print("Searching for satellites... Found: ");
-        Serial.println(gnss_getSatellites());
+        Serial.print("Searching for satellites... In Use: ");
+        Serial.print(gnss_getSatellitesInUse());
+        Serial.print(" | In View: ");
+        Serial.println(gnss_getSatellitesInView());
     }
 }
-
 #endif // TESEO_GNSS_H

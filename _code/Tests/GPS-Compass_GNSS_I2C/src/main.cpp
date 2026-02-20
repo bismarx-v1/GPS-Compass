@@ -2,117 +2,197 @@
 #include <Wire.h>
 
 // ==========================
-// CONFIGURATION
+// Hardware & Register Definitions
 // ==========================
 #define I2C_GNSS_ADDR   0x3A  
-#define REG_NMEA_STREAM 0xFF
-#define TESEO_DUMMY     0xFF
+#define SDA_PIN         6     
+#define SCL_PIN         7     
+#define REG_NMEA_STREAM 0xFF  
+#define TESEO_DUMMY     0xFF  
 
-// Use -1 to tell the ESP32 to use its "Default" hardware pins
-// For most ESP32s, this is SDA=21, SCL=22. For S3/C3, it varies.
-#define SDA_PIN -1 
-#define SCL_PIN -1 
+/* * REFERENCE: CONFIGURATION COMMANDS (Permanent/Parametric)
+ * --------------------------------------------------------
+ * $PSTMSETPAR      : Set System Parameter in the configuration data block
+ * $PSTMGETPAR      : Get System Parameter from configuration data block
+ * $PSTMSAVEPAR     : Save System Parameters in the GNSS backup memory
+ * $PSTMRESTOREPAR  : Restore System Parameters (Factory Settings)
+ * $PSTMCFGPORT     : Char Port Configuration
+ * $PSTMCFGMSGL     : Message List Configuration
+ * $PSTMCFGGNSS     : GNSS Algorithm Configuration
+ * $PSTMCFGSBAS     : SBAS Algorithm Configuration
+ * $PSTMCFGPPSGEN   : PPS General Configuration
+ * $PSTMCFGPPSSAT   : PPS Satellite Related Configuration
+ * $PSTMCFGPPSPUL   : PPS Pulse Related Configuration
+ * $PSTMCFGPOSHOLD  : Configure the Position hold
+ * $PSTMCFGTRAIM    : Traim Configuration
+ * $PSTMCFGSATCOMP  : Configure the PPS with general settings
+ * $PSTMCFGLPA      : Configure the Low Power Algorithm
+ * $PSTMCFGAGPS     : Assisted GNSS Configuration
+ * $PSTMCFGAJM      : Anti-Jamming Configuration
+ * $PSTMCFGODO      : Odometer Configuration
+ * $PSTMCFGLOG      : Logger Configuration
+ * $PSTMCFGGEOFENCE : Geofencing Configuration
+ * $PSTMCFGGEOCIR   : Geofencing Circle Configuration
+ * $PSTMCFGCONST    : Allow enable/disable all the GNSS constellations
+ * 
+ * 
+ * REFERENCE: GNSS MANAGEMENT COMMANDS (Executables/Actions)
+ * --------------------------------------------------------
+ * $PSTMINITGPS           : Initialize GPS position and time
+ * $PSTMINITTIME          : Initialize time only
+ * $PSTMINITFRQ           : Initialize center frequency
+ * $PSTMSETRANGE          : Set frequency range for satellite searching
+ * $PSTMCLREPHS           : Clear all ephemeris
+ * $PSTMDUMPEPHEMS        : Dump Ephemeris data
+ * $PSTMEPHEM             : Load Ephemeris data
+ * $PSTMCLRALMS           : Clear all almanacs
+ * $PSTMDUMPALMANAC       : Dump Almanacs data
+ * $PSTMALMANAC           : Load Almanacs data
+ * $PSTMCOLD              : Perform COLD start
+ * $PSTMWARM              : Perform WARM start
+ * $PSTMHOT               : Perform HOT start
+ * $PSTMSRR               : System Reset (Software Reboot)
+ * $PSTMGPSRESET          : Reset the GPS engine
+ * $PSTMGPSSUSPEND        : Suspend GPS engine
+ * $PSTMGPSRESTART        : Restart GPS engine
+ * $PSTMGNSSINV           : Invalidate the GNSS fix status
+ * $PSTMTIMEINV           : Invalidate the GPS time
+ * $PSTMGETSWVER          : Provide the GPS library version string
+ * $PSTMSBASONOFF         : Enable/Disable the SBAS activity
+ * $PSTMSBASSERVICE       : Set the SBAS service
+ * $PSTMSBASSAT           : Set the SBAS satellite's ID
+ * $PSTMSBASM             : Send a SBAS frame
+ * $PSTMRFTESTON          : Enable the RF test mode
+ * $PSTMRFTESTOFF         : Disable the RF test mode
+ * $PSTMGETALGO           : Get FDE algorithm ON/OFF status
+ * $PSTMSETALGO           : Set FDE algorithm ON/OFF status
+ * $PSTMGETRTCTIME        : Get the current RTC time
+ * $PSTMDATUMSELECT       : Set a geodetic local datum different from WGS84
+ * $PSTMDATUMSETPARAM     : Set parameters for datum transformations
+ * $PSTMENABLEPOSITIONHOLD: Set status and position for Position Hold
+ * $PSTMSETCONSTMASK      : Set GNSS constellation mask
+ * $PSTMNOTCH             : Set the ANF operation mode
+ * $PSTMLOWPOWERONOFF     : Set low power algorithm parameters
+ * $PSTMNMEAREQUEST       : Send NMEA messages according to input list
+ * $PSTMFORCESTANDBY      : Force platform to standby mode
+ * $PSTMIONOPARAMS        : Upload iono packet into NVM
+ * $PSTMGALILEOGGTO       : Program Galileo broadcast GGTO
+ * $PSTMGALILEODUMPGGTO   : Dump broadcast GGTO
+ * $PSTMSETTHTRK          : Configure CN0/Elevation for tracking
+ * $PSTMSETTHPOS          : Configure CN0/Elevation for positioning
+ */
 
 // ==========================
-// TOOL: I2C SCANNER
+// Communication Functions
 // ==========================
-// This helps verify if the module is actually "alive" on the bus
-void scanI2CBus() {
-    Serial.println("\nScanning I2C Bus...");
-    byte error, address;
-    int nDevices = 0;
 
-    for (address = 1; address < 127; address++) {
-        Wire.beginTransmission(address);
-        error = Wire.endTransmission();
+uint8_t calculateChecksum(const char* str) {
+    uint8_t checksum = 0;
+    while (*str) checksum ^= *str++;
+    return checksum;
+}
 
-        if (error == 0) {
-            Serial.print("Device found at address 0x");
-            if (address < 16) Serial.print("0");
-            Serial.print(address, HEX);
-            if (address == I2C_GNSS_ADDR) Serial.println(" (Teseo GNSS!)");
-            else Serial.println();
-            nDevices++;
-        }
+// Low-level write to Register 0xFF
+void gnss_sendRaw(const char* msg) {
+    Wire.beginTransmission(I2C_GNSS_ADDR);
+    Wire.write(REG_NMEA_STREAM); 
+    Wire.write((uint8_t*)msg, strlen(msg));
+    
+    // Ensure standard NMEA termination
+    if (msg[strlen(msg)-1] != '\n') {
+        Wire.write('\r');
+        Wire.write('\n');
     }
-    if (nDevices == 0) Serial.println("No I2C devices found. CHECK WIRING!");
-    else Serial.println("Scan complete.\n");
+    
+    uint8_t error = Wire.endTransmission();
+    if (error != 0) {
+        Serial.print("[I2C Error: "); Serial.print(error); Serial.println("]");
+    }
+}
+
+// High-level: adds $, *, CS, and line endings
+void gnss_executeCommand(const char* cmdBody) {
+    char fullMsg[128];
+    uint8_t cs = calculateChecksum(cmdBody);
+    sprintf(fullMsg, "$%s*%02X\r\n", cmdBody, cs);
+    gnss_sendRaw(fullMsg);
 }
 
 // ==========================
-// GNSS FUNCTIONS
+// Bridge & Stream Logic
 // ==========================
 
-void gnss_sendCommand(const char* rawCommand) {
-    char fullBuffer[128];
-    
-    // Calculate NMEA Checksum (XOR)
-    uint8_t checksum = 0;
-    for (int i = 0; i < strlen(rawCommand); i++) {
-        checksum ^= rawCommand[i];
-    }
+void checkSerialBridge() {
+    if (Serial.available()) {
+        String input = Serial.readStringUntil('\n');
+        input.trim();
 
-    // Format the command: $CMD*CS\r\n
-    sprintf(fullBuffer, "$%s*%02X\r\n", rawCommand, checksum);
-
-    Serial.print("Sending: "); Serial.print(fullBuffer);
-
-    Wire.beginTransmission(I2C_GNSS_ADDR);
-    Wire.write(REG_NMEA_STREAM); // Register index 0xFF [Section 2.3.2.3]
-    Wire.write((const uint8_t*)fullBuffer, strlen(fullBuffer));
-    
-    uint8_t error = Wire.endTransmission();
-    
-    if (error != 0) {
-        Serial.print("Transmission Error: "); Serial.println(error);
-    } else {
-        Serial.println("Sent successfully.");
+        if (input.length() > 0) {
+            // If it's a full pasted command with $...*CS
+            if (input.startsWith("$")) {
+                Serial.print("Bridge -> Sending Raw: ");
+                Serial.println(input);
+                gnss_sendRaw(input.c_str());
+            } 
+            // If it's just the command text (e.g. PSTMSRR)
+            else {
+                Serial.print("Bridge -> Executing: ");
+                Serial.println(input);
+                gnss_executeCommand(input.c_str());
+            }
+        }
     }
 }
 
 void gnss_readStream() {
-    // Request data from stream register [Section 2.3.2.1]
-    uint8_t count = Wire.requestFrom(I2C_GNSS_ADDR, 32);
-    
-    while (Wire.available()) {
-        uint8_t c = Wire.read();
-        // Skip 0xFF (Idle) and 0x00 (Padding)
-        if (c != TESEO_DUMMY && c != 0x00) {
-            Serial.write((char)c);
+    uint8_t bytesReceived = Wire.requestFrom(I2C_GNSS_ADDR, 32);
+    if (bytesReceived > 0) {
+        while (Wire.available()) {
+            uint8_t c = Wire.read();
+            if (c != TESEO_DUMMY && c != 0x00) {
+                Serial.write((char)c);
+            }
         }
     }
 }
 
 // ==========================
-// MAIN SETUP & LOOP
+// Setup and Main Loop
 // ==========================
 
 void setup() {
     Serial.begin(115200);
     while (!Serial);
-    delay(1000); 
 
-    Serial.println("--- Teseo-LIV3R Debug Initialized ---");
+    Wire.begin(SDA_PIN, SCL_PIN);
+    Wire.setClock(400000);
+    Wire.setTimeOut(100);
 
-    // Initialize I2C using default pins
-    // If you are on a custom board, replace -1 with your specific Pin numbers
-    if (!Wire.begin(SDA_PIN, SCL_PIN)) {
-        Serial.println("CRITICAL: Wire.begin failed! Check if pins are valid.");
-        while (1); // Stop here if I2C fails
-    }
+    delay(1000); // Allow some time for the GNSS module to power up
+    Serial.println("\n--- Teseo-LIV3R System Initializing ---");
 
-    // Run the scanner to confirm hardware connection
-    scanI2CBus();
-
-    // Configuration Commands
-    // PSTMSETPAR,1303,1.0 sets the fix rate to 1Hz [Table 159]
-    gnss_sendCommand("PSTMSETPAR,1303,1.0");
+    // --- STARTUP CONFIGURATION ---
+    // These run once at boot to ensure the module is in the correct state.
+    Serial.println("Applying Startup Config...");
     
-    // PSTMSRR performs a System Reset to apply changes [Section 10.2.1]
-    gnss_sendCommand("PSTMSRR");
+    //gnss_executeCommand("PSTMSETCONSTMASK,15"); // Use all satellites
+    //gnss_executeCommand("PSTMSETPAR,1303,1.0"); // 1Hz fix rate
+    
+    // Optional: Uncomment below to make these settings survive a power cycle
+    // gnss_executeCommand("PSTMSAVEPAR"); 
+    // gnss_executeCommand("PSTMSRR"); 
+    // delay(2000); 
+
+    Serial.println("Startup Config applied. Serial Bridge Active.");
+    Serial.println("Usage: Paste full commands starting with $ or type command names like PSTMSRR.\n");
 }
 
 void loop() {
+    // 1. Check for manual commands from Serial Monitor
+    checkSerialBridge();
+
+    // 2. Continually read the NMEA stream
     gnss_readStream();
-    delay(10);
+
+    delay(5);
 }
