@@ -3,7 +3,6 @@
 
 /* ===================== EMBEDDED WEBPAGE ===================== */
 const char webpage[] PROGMEM = R"rawliteral(
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -114,11 +113,6 @@ const char webpage[] PROGMEM = R"rawliteral(
     <b>Battery Voltage</b><br>
     <span id="batVoltage">--</span> V<br>
     <span id="batPercent">--</span> %
-  </div>
-
-  <div>
-    <b>Charging Current</b><br>
-    <span id="chargeCurrent">--</span> mA
   </div>
 
   <div>
@@ -309,33 +303,26 @@ const char webpage[] PROGMEM = R"rawliteral(
       }
     }
     
-	function updateBatteryStatus(voltage, percent, current, temp) {
-  		document.getElementById("batVoltage").innerText = voltage.toFixed(2);
+  function updateBatteryStatus(voltage, percent, temp) {
+      document.getElementById("batVoltage").innerText = voltage;
+      document.getElementById("batPercent").innerText = percent;
 
-  		percent = Math.max(0, Math.min(100, percent));
-  		document.getElementById("batPercent").innerText = percent.toFixed(0);
-  		document.getElementById("batBar").style.width = percent + "%";
-
-  		document.getElementById("chargeCurrent").innerText = current.toFixed(0);
-
-  		if (temp !== undefined) {
-    	document.getElementById("temperature").innerText = temp.toFixed(1);
-  		}
-	}
-	function fetchBattery() {
-  	fetch('/battery')
-    .then(response => response.json())
-    .then(data => {
-      updateBatteryStatus(
-        data.voltage,
-        data.percentage,
-        data.current,
-  //      data.temperature
-      );
-    })
-    .catch(() => {});
-}
-
+      if (temp !== undefined) {
+        document.getElementById("temperature").innerText = temp;
+      }
+    }
+  function fetchBattery() {
+      fetch('/battery')
+      .then(response => response.json())
+      .then(data => {
+        updateBatteryStatus(
+            data.voltage,
+            data.percentage,
+            data.temperature // Now correctly passed as the 3rd argument
+        );
+      })
+      .catch(() => {});
+    }
 
 setInterval(fetchBattery, 3000);
 </script>

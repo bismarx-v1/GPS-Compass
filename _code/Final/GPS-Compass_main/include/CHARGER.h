@@ -4,6 +4,7 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include <GPIO_MAP.h>
+#include <math.h>
 
 #define I2C_CHRGR_ADDR 0x6A
 
@@ -87,30 +88,28 @@ float charger_readChargeCurrent()
     return current;
 }
 
-//  float charger_readBatteryTemp()
-//  {
-//      uint8_t regVal;
-//      uint8_t err;
 
-//      err = regGet(REG10, regVal);
-//      if (err)
-//          return -100.0; // error indicator
 
-//      uint8_t tsBits = regVal & 0x7F;             // bits 6:0
-//      float tspct = 0.21 + tsBits * 0.00465;     // 21% + 0.465% per bit
+float charger_readBatteryTemp()
+{
+    uint8_t regVal;
+    uint8_t err;
 
-//      float V_TS = tspct * 4.8;                // TS pin voltage
+    err = regGet(REG10, regVal);
+    if (err)
+        return -100.0; // error indicator
 
-//      // Compute NTC resistance
-//      float R_NTC = (V_TS * (5230 + 30100) - 4.8 * 30100) / (4.8 - V_TS);
+    uint8_t tsBits = regVal & 0x7F;             
+    float tspct = 0.21f + (tsBits * 0.00465f);  // 21% + 0.465% per bit 
+    float Rp = (tspct * 5230.0f) / (1.0f - tspct);
+    float R_NTC = 1.0f / ((1.0f / Rp) - (1.0f / 30100.0f));
 
-//      // Beta equation
-//      float tempK = 1.0 / (1.0 / 298.15 + (1.0 / 3950) * log(R_NTC / 10000));
-//      float tempC = tempK - 273.15;
+    //Beta = 3950
+    float tempK = 1.0f / (1.0f / 298.15f + (1.0f / 3950.0f) * log(R_NTC / 10000.0f));
+    float tempC = tempK - 273.15f;
 
-//      return tempC;
-//  }
-
+    return tempC;
+}
 // ==========================
 // Charging Current Control
 // ==========================
@@ -137,11 +136,6 @@ void charger_setCurrentRaw(uint8_t option)
 void charger_setup()
 {
 
-    if (!Wire.begin(SDA_I2C, SCL_I2C, 400000))
-    {
-        while (1);
-    }
-
     // Default current
     charger_setCurrentRaw(CURR_0_5A);
     regSet(REG02, 0b11110001); // Enable ADC
@@ -149,36 +143,21 @@ void charger_setup()
     regSet(REG03, 0b00011110); // Disable OTG mode, set SYS_MIN_VOLT to 3.7V
 }
 
-void charger_monitor()
+inline void charger_monitor() //debug monitor
 {
     float vbat = charger_readBatteryVoltage();
     float ichg = charger_readChargeCurrent();
-    //float temp = charger_readBatteryTemp();
+    float temp = charger_readBatteryTemp();
 
+    Serial.print("Battery: ");
+    Serial.print(vbat, 3);
+    Serial.print(" V  |  Charge: ");
+    Serial.print(ichg, 0);
+    Serial.print(" mA  |  Temp: ");
+    Serial.print(temp, 1);
+    Serial.println(" C");
 
-    if (vbat > 0)
-    {
-        Serial.print("Battery Voltage: ");
-        Serial.print(vbat, 3);
-        Serial.println(" V");
-    }
-    else
-    {
-        Serial.println("Voltage read error.");
-    }
-
-    if (ichg >= 0)
-    {
-        Serial.print("Charge Current: ");
-        Serial.print(ichg);
-        Serial.println(" mA");
-    }
-    else
-    {
-        Serial.println("ICHG read error");
-    }
-
-    delay(1000);
+    delay(100);
 }
 
 #endif

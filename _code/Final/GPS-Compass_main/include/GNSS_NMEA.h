@@ -189,15 +189,15 @@ inline bool gnss_hasFix() {
     return teseoGPS.location.isValid();
 }
 
-inline double gnss_getLatitude() {
+inline double gnss_getLat() {
     return teseoGPS.location.lat();
 }
 
-inline double gnss_getLongitude() {
+inline double gnss_getLon() {
     return teseoGPS.location.lng();
 }
 
-inline double gnss_getAltitude() {
+inline double gnss_getAlt() {
     return teseoGPS.altitude.meters();
 }
 
@@ -225,11 +225,6 @@ inline double gnss_getSpeedKmph() {
 
 inline void gnss_setup() 
 {
-    Wire.begin(SDA_I2C, SCL_I2C);
-    Wire.setClock(400000); // 400kHz fast mode
-
-    delay(500); // Give module time to wake up
-
     // Apply standard baseline configurations
     gnss_executeCommand("PSTMSETCONSTMASK,15"); // Use all satellites
     gnss_executeCommand("PSTMSETPAR,1303,1.0"); // 1Hz fix rate
@@ -240,11 +235,11 @@ inline void gnss_monitor()
     if (gnss_hasFix()) 
     {
         Serial.print("GNSS Fix -> Lat: ");
-        Serial.print(gnss_getLatitude(), 6);
+        Serial.print(gnss_getLat(), 6);
         Serial.print(" | Lon: ");
-        Serial.print(gnss_getLongitude(), 6);
+        Serial.print(gnss_getLon(), 6);
         Serial.print(" | Alt: ");
-        Serial.print(gnss_getAltitude());
+        Serial.print(gnss_getAlt());
         Serial.print("m | Sats In Use: ");
         Serial.print(gnss_getSatellitesInUse());
         Serial.print(" | Sats In View: ");

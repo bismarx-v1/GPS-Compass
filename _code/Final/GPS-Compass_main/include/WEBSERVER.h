@@ -2,134 +2,52 @@
 #define WEBSERVER_H
 
 #include <WiFi.h>
-#include <Arduino.h>
 #include "webpage.h"
-#include "CHARGER.h"
-#include "SHARED_TYPES.h"
+#include "SYSTEM_STATE.h" 
 
-// WiFi Access Point credentials
 const char* ssid     = "GPS-Compass";
 const char* password = "bismarx123";  
 
-extern float g_vbat;
-extern float g_ichg;
-
-/* ================= TARGET POSITION ================= */
-
-Position target_position = {0.0f, 0.0f};
-
 WiFiServer server(80);
 
-/* ===================== SETUP ===================== */
 void web_setup() {
   WiFi.softAP(ssid, password);
-  Serial.print("AP IP address: ");
-  Serial.println(WiFi.softAPIP());
   server.begin();
 }
 
-/* ===================== PARSE COORDS ===================== */
 void parseCoords(const char* request, float& lat, float& lon) {
-  lat = 0.0f;
-  lon = 0.0f;
-
-  const char* latPointer = strstr(request, "lat=");
-  const char* lonPointer = strstr(request, "lon=");
-
-  if (latPointer) {
-    latPointer += 4;
-    lat = strtof(latPointer, nullptr);
-  }
-
-  if (lonPointer) {
-    lonPointer += 4;
-    lon = strtof(lonPointer, nullptr);
-  }
+  const char* latPtr = strstr(request, "lat=");
+  const char* lonPtr = strstr(request, "lon=");
+  lat = latPtr ? strtof(latPtr + 4, nullptr) : 0.0f;
+  lon = lonPtr ? strtof(lonPtr + 4, nullptr) : 0.0f;
 }
 
-/* ===================== MAIN WEB LOOP ===================== */
+void web_loop() {
+    WiFiClient client = server.available();
+    if (!client) return;
 
-Position web_loop() {
+    client.setTimeout(10); 
+    String request = client.readStringUntil('\r');
+    client.flush();
 
-  Position pos;
-  pos.lat = 0.0f;
-  pos.lon = 0.0f;
+    if (request.indexOf("GET /coords?") >= 0) {
+        parseCoords(request.c_str(), target_position.lat, target_position.lon);
+        client.print("HTTP/1.1 200 OK\r\n\r\nOK");
+    }
+    else if (request.indexOf("GET /battery") >= 0) {
+        float percent = constrain(((sys.vbat - 3.3f) / (4.2f - 3.3f)) * 100.0f, 0, 100);
+        
+        // Build JSON payload including temperature
+        String json = "{ \"voltage\":" + String(sys.vbat, 2) + 
+                      ", \"percentage\":" + String(percent, 0) + 
+                      ", \"temperature\":" + String(sys.temp, 1) + " }";
 
-WiFiClient client = server.available();
-if (!client) return pos;
-
-client.setTimeout(2);
-String request = client.readStringUntil('\r');
-
-if (request.length() == 0) {
-  client.stop();
-  return pos;
-}
-
-if (request.length() == 0) {
-  client.stop();
-  return pos;
-}
-
-  /* ===================== COORDS ENDPOINT ===================== */
-  if (request.indexOf("GET /coords?") >= 0) {
-
-    float lat = 0.0f;
-    float lon = 0.0f;
-
-    parseCoords(request.c_str(), lat, lon);
-
-    target_position.lat = lat;
-    target_position.lon = lon;
-
-    Serial.println("Received Coordinates:");
-    Serial.print("Latitude: ");
-    Serial.println(lat, 4);
-    Serial.print("Longitude: ");
-    Serial.println(lon, 4);
-
-    client.println("HTTP/1.1 200 OK");
-    client.println("Content-Type: text/plain");
-    client.println("Connection: close");
-    client.println();
-    client.println("OK");
-
+        client.print("HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n" + json);
+    }
+    else {
+        client.print("HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n" + String(webpage));
+    }
     client.stop();
-    return pos;
-}
-
-  /* ===================== BATTERY ENDPOINT ===================== */
-  if (request.indexOf("GET /battery") >= 0)
-{
-    float percent = (g_vbat / 4.2f) * 100.0f;
-    percent = constrain(percent, 0.0f, 100.0f);
-
-    String json = "{";
-    json += "\"voltage\":" + String(g_vbat, 2) + ",";
-    json += "\"percentage\":" + String(percent, 0) + ",";
-    json += "\"current\":" + String(g_ichg, 0);
-    json += "}";
-
-
-    client.println("HTTP/1.1 200 OK");
-    client.println("Content-Type: application/json");
-    client.println("Connection: close");
-    client.println();
-    client.println(json);
-
-    client.stop();
-    return pos;
-  }
-
-  /* ===================== DEFAULT: SERVE WEBPAGE ===================== */
-  client.println("HTTP/1.1 200 OK");
-  client.println("Content-Type: text/html; charset=UTF-8");
-  client.println("Connection: close");
-  client.println();
-  client.println(webpage);
-
-  client.stop();
-  return pos;
 }
 
 #endif

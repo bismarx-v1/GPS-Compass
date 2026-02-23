@@ -4,10 +4,13 @@
 #include <Arduino.h>
 #include "GNSS_NMEA.h"
 #include "WEBSERVER.h"
-#include "SHARED_TYPES.h"
+#include "SYSTEM_STATE.h"
 
-float compass_lat = gnss_getLatitude();
-float compass_lon = gnss_getLongitude();
+float compass_lat = 50.102361; //test coords
+float compass_lon = 14.444472;
+
+//float compass_lat = gnss_getLat();
+//float compass_lon = gnss_getLon();
 
 /* ================= HELPERS ================= */
 
