@@ -6,7 +6,7 @@ import numpy as np
 from vedo import Mesh, Plotter, Text2D
 
 # --- CONFIG ---
-SERIAL_PORT = 'COM3'
+SERIAL_PORT = 'COM6' #//COM3 for notebook
 BAUD_RATE = 115200
 FILENAME = "GPS-Compass2.obj"
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
