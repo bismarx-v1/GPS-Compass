@@ -6,11 +6,8 @@
 #include "WEBSERVER.h"
 #include "SYSTEM_STATE.h"
 
-float compass_lat = 50.102361; //test coords
-float compass_lon = 14.444472;
-
-//float compass_lat = gnss_getLat();
-//float compass_lon = gnss_getLon();
+// float current_lat = 50.102361; //test coords
+// float current_lon = 14.444472;
 
 /* ================= HELPERS ================= */
 
@@ -25,13 +22,16 @@ inline double radToDeg(double radians) {
 /* ================= DISTANCE TO TARGET ================= */
 
 inline float distance_to_target() {
+    // 1. Fetch current coordinates dynamically every time function is called
+    float current_lat = gnss_getLat();
+    float current_lon = gnss_getLon();
 
-    const float R = 6371e3;
+    const float R = 6371e3; // Earth radius in meters
 
-    const float phi1 = compass_lat * PI/180;
+    const float phi1 = current_lat * PI/180;
     const float phi2 = target_position.lat * PI/180;
-    const float delta_phi = (target_position.lat - compass_lat) * PI/180;
-    const float delta_lambda = (target_position.lon - compass_lon) * PI/180;
+    const float delta_phi = (target_position.lat - current_lat) * PI/180;
+    const float delta_lambda = (target_position.lon - current_lon) * PI/180;
 
     const float a =
         sin(delta_phi/2) * sin(delta_phi/2) +
@@ -43,15 +43,15 @@ inline float distance_to_target() {
     return R * c;
 }
 
-
 /* ================= BEARING ================= */
 
 inline double bearing_to_target() {
+    float current_lat = gnss_getLat();
+    float current_lon = gnss_getLon();
 
-    double phi1 = degToRad(compass_lat);
+    double phi1 = degToRad(current_lat);
     double phi2 = degToRad(target_position.lat);
-    double delta_lambda =
-        degToRad(target_position.lon - compass_lon);
+    double delta_lambda = degToRad(target_position.lon - current_lon);
 
     double y = sin(delta_lambda) * cos(phi2);
     double x = cos(phi1)*sin(phi2) -
@@ -60,7 +60,9 @@ inline double bearing_to_target() {
     double theta = atan2(y, x);
     double bearing = radToDeg(theta);
 
-    if (bearing < 0) bearing += 360.0;
+    if (bearing < 0) {
+        bearing += 360.0;
+    }
 
     return bearing;
 }

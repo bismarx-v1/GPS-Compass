@@ -21,7 +21,7 @@ enum GPIO_PINS {
     LATCH_SR    = 21, // Latch Shift Register
     DBNCD_0     = 35, // Debounced Input 0
     DBNCD_1     = 36, // Debounced Input 1
-    LED_EXT     = 37, // External LED
+    LED_EXT     = 37, // External LED (Actually used as a button)
     DBNCD_2     = 38, // Debounced Input 2
     SI_SR       = 39, // Shift register serial input
     CLK_SR      = 40, // Shift register clock

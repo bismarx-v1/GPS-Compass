@@ -12,7 +12,7 @@
 // Configuration
 // ==========================
 
-#define BNO055_I2C_ADDR 0x28
+#define BNO055_I2C_ADDR 0x29
 //#define BNO055_ID       55 // Default ID is 0xA0
 
 

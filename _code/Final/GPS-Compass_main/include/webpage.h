@@ -3,6 +3,7 @@
 
 /* ===================== EMBEDDED WEBPAGE ===================== */
 const char webpage[] PROGMEM = R"rawliteral(
+
 <html>
 <head>
   <meta charset="UTF-8">
@@ -91,7 +92,12 @@ const char webpage[] PROGMEM = R"rawliteral(
   </div>
 </div>
 </div>
-
+<div style="margin-bottom:15px; padding:10px; border-radius:5px;">
+    <label for="recentCoords"><b>Recently used coordinates:</b></label>
+    <select id="recentCoords" class="dropdown" style="margin-top:5px;" onchange="loadSelectedRecent()">
+      <option value="">- SELECT RECENT -</option>
+    </select>
+  </div>
 <div> <br>
     	<input type="button" value="UPLOAD COORDINATES" onclick="upload_coords()">
     <p id="status"></p>
@@ -121,7 +127,14 @@ const char webpage[] PROGMEM = R"rawliteral(
   </div>
 
 </div>
+<hr style="margin-top:40px; margin-bottom:20px;">
 
+<div style="text-align: center; margin-bottom: 40px;">
+  <button onclick="goToSleep()" style="background-color: #d9534f; color: white; padding: 15px 30px; font-size: 18px; border: none; border-radius: 5px; cursor: pointer;">
+    ENTER LIGHT SLEEP
+  </button>
+  <p style="color: #d9534f; font-size: 12px; margin-top: 8px;">*Device will wake up on physical button press</p>
+</div>
 <style>
   .dropdown {
     font-family: Verdana;
@@ -165,9 +178,12 @@ const char webpage[] PROGMEM = R"rawliteral(
             if (document.getElementById('lat').value === 's') lat = -Math.abs(lat);
             if (document.getElementById('lon').value === 'w') lon = -Math.abs(lon);
           }
-          var lat_string = lat.toFixed(4);
-          var lon_string = lon.toFixed(4);
-          fetch('/coords?lat=' + lat_string + '&lon=' + lon_string)
+        var lat_string = lat.toFixed(4);
+        var lon_string = lon.toFixed(4);
+      
+        saveToRecents(lat, lon); 
+
+      fetch('/coords?lat=' + lat_string + '&lon=' + lon_string)
           .then(() => {
             document.getElementById('status').innerText = 'Sent: lat=' + lat_string + ', lon=' + lon_string;
           })
@@ -260,6 +276,7 @@ const char webpage[] PROGMEM = R"rawliteral(
       if (sel) {
         if (sel.value === undefined) sel.value = '';
       }
+      updateRecentsDropdown();
     });
 
     function applyPaste() {
@@ -324,6 +341,75 @@ const char webpage[] PROGMEM = R"rawliteral(
       .catch(() => {});
     }
 
+  function goToSleep() {
+  if (confirm("Are you sure you want to put the device into Sleep mode?")) {
+    fetch('/sleep')
+      .then(() => {
+        document.body.innerHTML = "<h1 style='text-align:center; margin-top:100px;'>System is now asleep.</h1><p style='text-align:center;'>You can close this tab. Wake the device using the physical button.</p>";
+      })
+      .catch(err => alert("Error sending sleep command. Check connection."));
+  }
+}
+const MAX_RECENTS = 5;
+
+    function saveToRecents(lat, lon) {
+      let recents = JSON.parse(localStorage.getItem('recentCoords') || '[]');
+      const newCoord = { 
+        lat: parseFloat(lat).toFixed(4), 
+        lon: parseFloat(lon).toFixed(4) 
+      };
+      
+      // Remove if it already exists to move it to the top
+      recents = recents.filter(c => c.lat !== newCoord.lat || c.lon !== newCoord.lon);
+      
+      recents.unshift(newCoord); // Add to the beginning of the array
+      if (recents.length > MAX_RECENTS) recents.pop(); // Keep only the last 5
+      
+      localStorage.setItem('recentCoords', JSON.stringify(recents));
+      updateRecentsDropdown();
+    }
+
+    function updateRecentsDropdown() {
+      const dropdown = document.getElementById('recentCoords');
+      if (!dropdown) return;
+      
+      let recents = JSON.parse(localStorage.getItem('recentCoords') || '[]');
+      dropdown.innerHTML = '<option value="">- SELECT RECENT -</option>';
+      
+      recents.forEach((c, index) => {
+        let opt = document.createElement('option');
+        opt.value = index;
+        opt.text = c.lat + ', ' + c.lon;
+        dropdown.appendChild(opt);
+      });
+    }
+
+    function loadSelectedRecent() {
+      const dropdown = document.getElementById('recentCoords');
+      if (dropdown.value === "") return;
+      
+      let recents = JSON.parse(localStorage.getItem('recentCoords') || '[]');
+      let coord = recents[dropdown.value];
+      
+      if (coord) {
+        // Set Decimal Boxes
+        document.getElementById('latBox').value = Math.abs(coord.lat).toFixed(4);
+        document.getElementById('lonBox').value = Math.abs(coord.lon).toFixed(4);
+        
+        // Set Hemisphere Dropdowns
+        document.getElementById('lat').value = (coord.lat < 0) ? 's' : 'n';
+        document.getElementById('lon').value = (coord.lon < 0) ? 'w' : 'e';
+        
+        // Force Decimal Mode for visibility
+        document.getElementById('inputMode').value = 'decimal';
+        toggleInputMode();
+        
+        // Update outputs and slider linkages
+        updateDecimalOutput();
+        sliderFunc('latBox', 'latSlider');
+        sliderFunc('lonBox', 'lonSlider');
+      }
+    }
 setInterval(fetchBattery, 3000);
 </script>
 )rawliteral";
