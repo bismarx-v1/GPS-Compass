@@ -3,10 +3,11 @@ import os
 import sys
 import time
 import numpy as np
+from scipy.spatial.transform import Rotation as R_sci
 from vedo import Mesh, Plotter, Text2D
 
 # --- CONFIG ---
-SERIAL_PORT = 'COM6' #//COM3 for notebook
+SERIAL_PORT = 'COM6' 
 BAUD_RATE = 115200
 FILENAME = "GPS-Compass2.obj"
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -14,16 +15,9 @@ MODEL_PATH = os.path.join(BASE_PATH, FILENAME)
 UPDATE_INTERVAL = 0.05
 
 # --- GLOBALS ---
-euler_offset = [0.0, 0.0, 0.0]
-current_euler = [0.0, 0.0, 0.0]
+quat_offset = R_sci.from_quat([0.0, 0.0, 0.0, 1.0]) 
+current_quat = R_sci.from_quat([0.0, 0.0, 0.0, 1.0])
 last_update = 0.0
-
-def euler_to_matrix(roll, pitch, yaw):
-    r, p, y = np.radians([roll, pitch, yaw])
-    Rx = np.array([[1,0,0],[0,np.cos(r),-np.sin(r)],[0,np.sin(r),np.cos(r)]])
-    Ry = np.array([[np.cos(p),0,np.sin(p)],[0,1,0],[-np.sin(p),0,np.cos(p)]])
-    Rz = np.array([[np.cos(y),-np.sin(y),0],[np.sin(y),np.cos(y),0],[0,0,1]])
-    return Rz @ Ry @ Rx
 
 # --- SERIAL SETUP ---
 try:
@@ -53,44 +47,55 @@ msg = Text2D("Initializing...", pos='top-left', c='black', font='VictorMono')
 
 # --- KEYBOARD CALLBACK ---
 def on_key(event):
-    global euler_offset
+    global quat_offset, current_quat
     if event.keypress in ('z', 'Z'):
-        euler_offset = current_euler.copy()
+        quat_offset = current_quat
         print("\n>>> SENSOR ZEROED <<<\n")
 
 # --- TIMER CALLBACK ---
 def loop_func(event):
-    global current_euler, last_update
+    global current_quat, last_update
 
     now = time.time()
-
     latest_line = None
+    
     try:
         while ser.in_waiting > 0:
             line = ser.readline().decode('ascii', errors='ignore').strip()
-            if "Euler:" in line:
+            if "Quat:" in line:
                 latest_line = line
     except Exception:
         pass
 
     if latest_line:
-        print(f"RAW: {latest_line}")
         try:
+            # Expected Arduino output: "Quat: w, x, y, z"
             payload = latest_line.split(":")[1].split(",")
-            current_euler = [float(p.strip()) for p in payload]
-        except Exception:
-            pass
+            w, x, y, z = [float(p.strip()) for p in payload]
+            
+            # OUTPUT TO TERMINAL
+            print(f"QUAT DATA -> W: {w:+.4f} X: {x:+.4f} Y: {y:+.4f} Z: {z:+.4f}")
+            sys.stdout.flush() 
+
+            # scipy expects [x, y, z, w]
+            current_quat = R_sci.from_quat([-y, z, -x, w])
+        except Exception as e:
+            print(f"Parse error: {e}")
 
     if now - last_update < UPDATE_INTERVAL:
         return
     last_update = now
 
-    roll  = current_euler[0] - euler_offset[0]
-    pitch = current_euler[1] - euler_offset[1]
-    yaw   = current_euler[2] - euler_offset[2]
+    # Relative rotation calculation
+    relative_quat = quat_offset.inv() * current_quat
 
-    R = euler_to_matrix(pitch, roll, yaw)
+    # Apply rotation matrix to model
+    R = relative_quat.as_matrix()
     model.vertices = (R @ original_pts.T).T
+
+    # Calculate Euler for UI display
+    euler_display = relative_quat.as_euler('xyz', degrees=True)
+    roll, pitch, yaw = euler_display
 
     new_info = (f" LIVE DATA (Press 'z' to Zero)\n"
                 f" Roll:  {roll:+.2f}°\n"

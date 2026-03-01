@@ -7,7 +7,7 @@
 #define SDA_PIN 6 
 #define SCL_PIN 7 
 
-Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28, &Wire); 
+Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x29, &Wire); 
 
 void setup() {
   Serial.begin(115200);
@@ -21,18 +21,22 @@ void setup() {
 }
 
 void loop() {
-  // Get Euler angles (in degrees)
-  imu::Vector<3> euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
+  // Get Quaternions directly from the sensor hardware
+  imu::Quaternion quat = bno.getQuat();
   
-  // X = Yaw (Heading), Y = Roll, Z = Pitch
-  Serial.print("Euler: ");
-  Serial.print(euler.x(), 2);
+  // Print in the format expected by the Python parser
+  Serial.print("Quat: ");
+  Serial.print(quat.w(), 4);
   Serial.print(", ");
-  Serial.print(euler.y(), 2);
+  Serial.print(quat.x(), 4);
   Serial.print(", ");
-  Serial.println(euler.z(), 2);
+  Serial.print(quat.y(), 4);
+  Serial.print(", ");
+  Serial.println(quat.z(), 4);
 
   delay(20); 
 }
 
 //cd C:\Users\MenMe\Documents\GitHub\GPS-Compass\_code\Python_IMU_viz
+//cd C:\Users\MenMe\GitHub\GPS-Compass\_code\IMU_vis
+//cd C:\Users\MenMe\GitHub\GPS-Compass\_code\IMU_vis\Python_IMU_vis
