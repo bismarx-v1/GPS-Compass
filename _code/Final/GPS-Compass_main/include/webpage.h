@@ -99,7 +99,7 @@ const char webpage[] PROGMEM = R"rawliteral(
     </select>
   </div>
 <div> <br>
-    	<input type="button" value="UPLOAD COORDINATES" onclick="upload_coords()">
+        <input type="button" value="UPLOAD COORDINATES" onclick="upload_coords()">
     <p id="status"></p>
   <p id="decimal_output"></p>
   <p id="dms_output"></p>
@@ -109,6 +109,28 @@ const char webpage[] PROGMEM = R"rawliteral(
     <textarea id="pasteBox" rows="5" style="width:100%; font-size:16px; padding:8px; box-sizing:border-box;" placeholder="Paste coordinates here:"></textarea><br>
     <input type="button" style="margin-top:8px;" value="Apply to inputs (works only for decimal input)" onclick="applyPaste()">
   </div>
+
+<hr style="margin-top:40px; margin-bottom:20px;">
+<h2>GNSS Status</h2>
+<div id="gnssContainer" style="display:flex; gap:40px; flex-wrap:wrap; font-size:18px;">
+  <div>
+    <b>Fix Status</b><br>
+    <span id="gnssFix" style="font-weight:bold; color:#d9534f;">No Fix</span>
+  </div>
+  <div>
+    <b>Satellites in View</b><br>
+    <span id="gnssSats">--</span>
+  </div>
+  <div>
+    <b>Altitude</b><br>
+    <span id="gnssAlt">--</span> m
+  </div>
+  <div>
+    <b>Current Position</b><br>
+    <span style="font-size:14px;">Lat: <span id="gnssLat">--</span></span><br>
+    <span style="font-size:14px;">Lon: <span id="gnssLon">--</span></span>
+  </div>
+</div>
 <hr style="margin-top:40px; margin-bottom:20px;">
 
 <h2>Battery Status</h2>
@@ -180,7 +202,7 @@ const char webpage[] PROGMEM = R"rawliteral(
           }
         var lat_string = lat.toFixed(4);
         var lon_string = lon.toFixed(4);
-      
+        
         saveToRecents(lat, lon); 
 
       fetch('/coords?lat=' + lat_string + '&lon=' + lon_string)
@@ -304,7 +326,7 @@ const char webpage[] PROGMEM = R"rawliteral(
       return '';
     }
 
-	function checkBoxRange(boxId, axis) {
+    function checkBoxRange(boxId, axis) {
       var el = document.getElementById(boxId);
       var v = parseFloat(el.value);
       if (!isFinite(v)) {
@@ -328,6 +350,7 @@ const char webpage[] PROGMEM = R"rawliteral(
         document.getElementById("temperature").innerText = temp;
       }
     }
+    
   function fetchBattery() {
       fetch('/battery')
       .then(response => response.json())
@@ -335,11 +358,34 @@ const char webpage[] PROGMEM = R"rawliteral(
         updateBatteryStatus(
             data.voltage,
             data.percentage,
-            data.temperature // Now correctly passed as the 3rd argument
+            data.temperature
         );
       })
       .catch(() => {});
     }
+
+  // --- NEW GNSS FETCH FUNCTION ---
+  function fetchGNSS() {
+      fetch('/gnss')
+      .then(response => response.json())
+      .then(data => {
+          const fixEl = document.getElementById("gnssFix");
+          if (data.fix === true || data.fix === "true") {
+              fixEl.innerText = "Active";
+              fixEl.style.color = "#5cb85c"; // Green
+          } else {
+              fixEl.innerText = "No Fix";
+              fixEl.style.color = "#d9534f"; // Red
+          }
+          
+          document.getElementById("gnssSats").innerText = data.sats_view;
+          document.getElementById("gnssAlt").innerText = data.alt;
+          document.getElementById("gnssLat").innerText = data.lat;
+          document.getElementById("gnssLon").innerText = data.lon;
+      })
+      .catch(() => {});
+  }
+  // -------------------------------
 
   function goToSleep() {
   if (confirm("Are you sure you want to put the device into Sleep mode?")) {
@@ -410,7 +456,11 @@ const MAX_RECENTS = 5;
         sliderFunc('lonBox', 'lonSlider');
       }
     }
+    
 setInterval(fetchBattery, 3000);
+setInterval(fetchGNSS, 2000); // Polling GNSS data every 2 seconds
 </script>
+</body>
+</html>
 )rawliteral";
 /* ============================================================ */

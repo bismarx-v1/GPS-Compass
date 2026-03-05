@@ -26,6 +26,11 @@ struct MonitorState {
     const unsigned long INTERVAL = 3000;
 };
 
+// Blink Control
+bool triggerBlink = false;
+int blinkStep = 0;           // 3 blinks = 6 state changes (ON-OFF-ON-OFF-ON-OFF)
+unsigned long lastBlinkStep = 0;
+const int BLINK_DURATION = 150; // ms per blink state
 
 // Declarations (Promises to the compiler)
 extern HardwareData sys;

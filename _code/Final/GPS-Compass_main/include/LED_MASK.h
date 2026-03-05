@@ -54,6 +54,10 @@ inline uint64_t getTargetMask(float heading, float bearing)
     return angleToLedMask(relativeAngle, targetLedIndex);
 }
 
+inline uint64_t getCheckerboardMask() {
+    return 0xAAAAAAAAAAAAAAAAULL; 
+}
+
 // ==========================
 // Debugging
 // ==========================

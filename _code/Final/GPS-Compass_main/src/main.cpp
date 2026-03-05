@@ -30,8 +30,11 @@ void printSerialMenu() {
   Serial.println(" [p] -> Position (Current Lat/Lon, Target)");
   Serial.println(" [w] -> Webserver Status");
   Serial.println(" [g] -> GNSS Monitor (Fix, Satellites)");
+  Serial.println(" [i] -> IMU Monitor (Heading, Calibration)");
   Serial.println(" [s] -> Sleep Mode (Light Sleep)");
+  Serial.println(" [c] -> Save IMU Calibration to EEPROM");
   Serial.println(" [e] -> Exit / Stop active monitor");
+  Serial.println(" [?] or [h] -> Print this menu");
   Serial.println("========================================\n");
 }
 
@@ -60,15 +63,23 @@ void runPeriodicMonitor() {
             Serial.print("IP: ");
             Serial.println(WiFi.softAPIP());
         }
-        // ADDED 'g' mode handler here
         else if (mon.mode == 'g') {
             gnss_monitor(); 
         }
-        
+        else if (mon.mode == 'i') {
+            imu_monitor();
+        }
+        else if (mon.mode == 'c') {
+            Serial.println("Save Calibration.");
+            imu_saveCalibration();
+        }
+        else {
+            Serial.println("Unknown mode. Press [?] or [h] for help.");
+        }
         Serial.println("------------------");
     }
 }
-
+ 
 
 void enterLightSleep() {
   Serial.println("\nEntering Light Sleep...");
@@ -103,7 +114,7 @@ void handleSerialCommands() {
 
     switch (incomingByte) {
       // ADD 'g' to the active mode cases
-      case 'm': case 'd': case 'p': case 'w': case 'g': 
+      case 'm': case 'd': case 'p': case 'w': case 'g': case 'i': case 'c':
         mon.mode = incomingByte; 
         Serial.printf(">> Mode Set: [%c]\n", mon.mode);
         mon.lastPrint = millis() - mon.INTERVAL; // Force immediate print
@@ -204,15 +215,30 @@ sys.lastButtonState = currentButtonState;
   convertDistanceToBuffer(distance);
   push();
 
-  // 4. LED Matrix Updates
-  if (millis() - ui.lastNorthToggle >= ui.NORTH_BLINK_INTERVAL) {
-    ui.lastNorthToggle = millis();
-    ui.northLedState = !ui.northLedState;
-}
+uint64_t finalMask = 0ULL;
 
-  uint64_t finalMask = getNorthMask(heading, ui.northLedState) | getTargetMask(heading, (float)bearing);
-  shift_8byte(finalMask);
-  triggerBuffers();
+    if (triggerBlink) {
+        // Handle Blink Timing
+        if (millis() - lastBlinkStep >= BLINK_DURATION) {
+            lastBlinkStep = millis();
+            blinkStep--;
+            if (blinkStep <= 0) triggerBlink = false;
+        }
+
+        // Apply Checkerboard Mask on odd steps, Empty on even
+        finalMask = (blinkStep % 2 != 0) ? getCheckerboardMask() : 0ULL;
+    } 
+    else {
+        // Normal Navigation Logic
+        float heading = imu_getHeading();
+        bool northState = (millis() % 1000 < 500); // 1Hz Blink
+        
+        finalMask = getNorthMask(heading, northState) | 
+                    getTargetMask(heading, bearing_to_target());
+    }
+
+    shift_8byte(finalMask);
+    triggerBuffers();
 
   // 5. Outputs
   runPeriodicMonitor();
