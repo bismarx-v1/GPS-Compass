@@ -46,6 +46,7 @@ inline float distance_to_target() {
 /* ================= BEARING ================= */
 
 inline double bearing_to_target() {
+    
     float current_lat = gnss_getLat();
     float current_lon = gnss_getLon();
 

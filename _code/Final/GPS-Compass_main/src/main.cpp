@@ -18,7 +18,7 @@
 HardwareData sys; 
 Position target_position;
 MonitorState mon;
-UIState ui; // Initialize the new UI struct
+UIState ui; 
 
 // --- Helper Functions ---
 void printSerialMenu() {
@@ -207,38 +207,47 @@ sys.lastButtonState = currentButtonState;
   gnss_update();               
   gnss_checkSerialBridge();    
 
-  // 3. Navigation Calculations
+ // 3. Navigation Calculations & GNSS Check
+  bool hasFix = gnss_hasFix();
   float heading = imu_getHeading();
-  double bearing = bearing_to_target(); 
-  int distance = (int)round(distance_to_target()); 
-  
-  convertDistanceToBuffer(distance);
-  push();
+  bool northState = (millis() % 1000 < 500); // 1Hz Blink
 
-uint64_t finalMask = 0ULL;
+  if (!hasFix) {
+    
+    segmentsArrayObjGlobal[0] = 0b00000001; // '-' (Segment G)
+    segmentsArrayObjGlobal[1] = 0b00000001; // '-' (Segment G)
+    segmentsArrayObjGlobal[2] = 0b00000001; // '-' (Segment G)
+    push();
 
-    if (triggerBlink) {
-        // Handle Blink Timing
-        if (millis() - lastBlinkStep >= BLINK_DURATION) {
-            lastBlinkStep = millis();
-            blinkStep--;
-            if (blinkStep <= 0) triggerBlink = false;
-        }
+  } else {
+      int distance = (int)round(distance_to_target()); 
+      convertDistanceToBuffer(distance);
+      push();
+  }
 
-        // Apply Checkerboard Mask on odd steps, Empty on even
-        finalMask = (blinkStep % 2 != 0) ? getCheckerboardMask() : 0ULL;
-    } 
-    else {
-        // Normal Navigation Logic
-        float heading = imu_getHeading();
-        bool northState = (millis() % 1000 < 500); // 1Hz Blink
-        
-        finalMask = getNorthMask(heading, northState) | 
-                    getTargetMask(heading, bearing_to_target());
-    }
+  uint64_t finalMask = 0ULL;
 
-    shift_8byte(finalMask);
-    triggerBuffers();
+  if (triggerBlink) {
+      // Handle Blink Timing
+      if (millis() - lastBlinkStep >= BLINK_DURATION) {
+          lastBlinkStep = millis();
+          blinkStep--;
+          if (blinkStep <= 0) triggerBlink = false;
+      }
+      finalMask = (blinkStep % 2 != 0) ? getCheckerboardMask() : 0ULL;
+  } 
+  else if (!hasFix) {
+      // No GNSS Fix: Only show North LED (Heading)
+      finalMask = getNorthMask(heading, northState);
+  }
+  else {
+      // Normal Navigation Logic: North + Target Bearing
+      finalMask = getNorthMask(heading, northState) | 
+                  getTargetMask(heading, bearing_to_target());
+  }
+
+  shift_8byte(finalMask);
+  triggerBuffers();
 
   // 5. Outputs
   runPeriodicMonitor();
