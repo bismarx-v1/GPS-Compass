@@ -8,55 +8,16 @@
 #include <utility/imumaths.h>
 #include <Wire.h>
 #include "GPIO_MAP.h"
-#include "EEPROM.h"
 
 // ==========================
 // Configuration
 // ==========================
 
 #define BNO055_I2C_ADDR 0x29
-#define EEPROM_CALIB_ADDR 0x0010
-#define CALIB_MAGIC 0xACE1 // ID to verify valid data
 
 //#define BNO055_ID       55 // Default ID is 0xA0
 
 static Adafruit_BNO055 bno = Adafruit_BNO055(BNO055_ID, BNO055_I2C_ADDR, &Wire);
-
-struct BNO_Calib_Profile {
-    uint16_t magic;
-    adafruit_bno055_offsets_t offsets;
-};
-
-// ==========================
-// Calibration Storage
-// ==========================
-
-inline void imu_saveCalibration() {
-    BNO_Calib_Profile profile;
-    profile.magic = CALIB_MAGIC;
-    
-    // Get offsets from sensor hardware
-    if (bno.getSensorOffsets(profile.offsets)) {
-        eepromWrite(EEPROM_CALIB_ADDR, profile);
-        Serial.println("IMU: Calibration profile saved to EEPROM.");
-    }
-}
-
-inline bool imu_loadCalibration() {
-    BNO_Calib_Profile profile;
-    eepromRead(EEPROM_CALIB_ADDR, profile);
-
-    // Check if the EEPROM actually contains valid data
-    if (profile.magic != CALIB_MAGIC) {
-        Serial.println("IMU: No valid calibration found in EEPROM.");
-        return false;
-    }
-
-    // Apply the offsets to the BNO055
-    bno.setSensorOffsets(profile.offsets);
-    Serial.println("IMU: Calibration profile restored.");
-    return true;
-}
 
 // ==========================
 // Core IMU Functions
@@ -107,8 +68,6 @@ inline void imu_setup()
         Serial.println("BNO055 Init Failed");
         while (1);
     }
-
-    imu_loadCalibration();
 
     delay(100);
 }

@@ -71,7 +71,7 @@ void runPeriodicMonitor() {
         }
         else if (mon.mode == 'c') {
             Serial.println("Save Calibration.");
-            imu_saveCalibration();
+            //imu_saveCalibration();
         }
         else {
             Serial.println("Unknown mode. Press [?] or [h] for help.");

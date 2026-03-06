@@ -5,7 +5,7 @@
 #include "webpage.h"
 #include "SYSTEM_STATE.h" 
 #include "EEPROM.h" 
-#include "GNSS_NMEA.h" // <-- ADDED: Access to GNSS functions
+#include "GNSS_NMEA.h"
 
 extern void enterLightSleep(); 
 
