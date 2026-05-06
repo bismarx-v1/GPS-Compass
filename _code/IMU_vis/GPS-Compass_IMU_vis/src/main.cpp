@@ -40,3 +40,6 @@ void loop() {
 //cd C:\Users\MenMe\Documents\GitHub\GPS-Compass\_code\Python_IMU_viz
 //cd C:\Users\MenMe\GitHub\GPS-Compass\_code\IMU_vis
 //cd C:\Users\MenMe\GitHub\GPS-Compass\_code\IMU_vis\Python_IMU_vis
+//cd C:\Users\MenMe\Documents\GitHub\GPS-Compass\_code\IMU_vis
+//cd C:\Users\MenMe\Documents\GitHub\GPS-Compass\_code\IMU_vis
+//cd C:\Users\MenMe\Documents\GitHub\GPS-Compass\_code\IMU_vis\Python_IMU_vis

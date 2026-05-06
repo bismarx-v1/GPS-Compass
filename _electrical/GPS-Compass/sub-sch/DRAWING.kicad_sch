@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "0016b6fa-97a4-4f7f-97a7-9da8f7063c76")
 	(paper "A4")
 	(lib_symbols)
@@ -17,7 +17,7 @@
 			(type color)
 			(color 0 0 132 1)
 		)
-		(uuid 00733608-fb15-4988-a11f-ce705c225193)
+		(uuid "00733608-fb15-4988-a11f-ce705c225193")
 	)
 	(rectangle
 		(start 174.625 86.995)
@@ -31,7 +31,7 @@
 			(type color)
 			(color 0 194 0 1)
 		)
-		(uuid 066efc3f-b8da-47b1-bbe5-e159ea30da75)
+		(uuid "066efc3f-b8da-47b1-bbe5-e159ea30da75")
 	)
 	(circle
 		(center 149.86 127)
@@ -45,7 +45,7 @@
 			(type color)
 			(color 255 0 0 1)
 		)
-		(uuid 14e96f95-18d0-40d1-bebb-b25805a7425b)
+		(uuid "14e96f95-18d0-40d1-bebb-b25805a7425b")
 	)
 	(rectangle
 		(start 174.625 101.6)
@@ -59,7 +59,7 @@
 			(type color)
 			(color 0 0 255 1)
 		)
-		(uuid 1687ff94-d60f-40a0-8d2e-c4bf2fec3eaf)
+		(uuid "1687ff94-d60f-40a0-8d2e-c4bf2fec3eaf")
 	)
 	(rectangle
 		(start 174.625 84.455)
@@ -73,7 +73,7 @@
 			(type color)
 			(color 0 255 255 1)
 		)
-		(uuid 18a9c238-bef8-49a8-8625-183449f20e71)
+		(uuid "18a9c238-bef8-49a8-8625-183449f20e71")
 	)
 	(rectangle
 		(start 172.72 -36.83)
@@ -87,7 +87,7 @@
 			(type color)
 			(color 0 0 132 1)
 		)
-		(uuid 1bfbe1cb-9012-41cc-ad31-1b6998db8d0e)
+		(uuid "1bfbe1cb-9012-41cc-ad31-1b6998db8d0e")
 	)
 	(circle
 		(center 43.942 -36.322)
@@ -100,7 +100,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 271394da-d5db-457c-bf45-44ba6b973ad6)
+		(uuid "271394da-d5db-457c-bf45-44ba6b973ad6")
 	)
 	(rectangle
 		(start 106.045 112.395)
@@ -114,7 +114,7 @@
 			(type color)
 			(color 255 255 0 1)
 		)
-		(uuid 2d829a31-f4e4-49fb-96c1-187726cff78d)
+		(uuid "2d829a31-f4e4-49fb-96c1-187726cff78d")
 	)
 	(circle
 		(center 140.335 -36.195)
@@ -128,7 +128,7 @@
 			(type color)
 			(color 72 72 72 1)
 		)
-		(uuid 2dd1c5a6-e1b9-4439-b03b-dba014a4fe6e)
+		(uuid "2dd1c5a6-e1b9-4439-b03b-dba014a4fe6e")
 	)
 	(rectangle
 		(start 10.922 -56.007)
@@ -142,7 +142,7 @@
 			(type color)
 			(color 132 132 132 1)
 		)
-		(uuid 374ae748-e0a6-4255-9a4e-2d3cbc6fde35)
+		(uuid "374ae748-e0a6-4255-9a4e-2d3cbc6fde35")
 	)
 	(circle
 		(center 140.335 -36.195)
@@ -155,7 +155,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 39f4ccb9-d7c5-4cae-8cc7-cfd8c287a41f)
+		(uuid "39f4ccb9-d7c5-4cae-8cc7-cfd8c287a41f")
 	)
 	(rectangle
 		(start 55.372 -64.897)
@@ -169,7 +169,7 @@
 			(type color)
 			(color 0 0 0 1)
 		)
-		(uuid 3ae6b466-3ce0-4118-b3ca-6d699f747bec)
+		(uuid "3ae6b466-3ce0-4118-b3ca-6d699f747bec")
 	)
 	(rectangle
 		(start 75.692 -57.277)
@@ -183,7 +183,7 @@
 			(type color)
 			(color 0 194 0 1)
 		)
-		(uuid 3feb3802-cd97-4d3f-baa1-1a75502e54aa)
+		(uuid "3feb3802-cd97-4d3f-baa1-1a75502e54aa")
 	)
 	(rectangle
 		(start 172.72 -40.64)
@@ -197,7 +197,7 @@
 			(type color)
 			(color 0 0 132 1)
 		)
-		(uuid 42c2193b-f31c-48f0-8d4a-822db10c3e78)
+		(uuid "42c2193b-f31c-48f0-8d4a-822db10c3e78")
 	)
 	(rectangle
 		(start 104.775 112.395)
@@ -211,7 +211,7 @@
 			(type color)
 			(color 0 0 0 1)
 		)
-		(uuid 4f8bb8c1-3469-4c02-b947-4705ed4c8e43)
+		(uuid "4f8bb8c1-3469-4c02-b947-4705ed4c8e43")
 	)
 	(circle
 		(center 138.43 127)
@@ -225,7 +225,7 @@
 			(type color)
 			(color 255 0 0 1)
 		)
-		(uuid 50a6866a-efae-4f82-9524-eb30423dd49d)
+		(uuid "50a6866a-efae-4f82-9524-eb30423dd49d")
 	)
 	(circle
 		(center 147.955 -7.62)
@@ -239,7 +239,7 @@
 			(type color)
 			(color 255 0 0 1)
 		)
-		(uuid 510f1887-c591-4c58-b169-51ca3f5f5155)
+		(uuid "510f1887-c591-4c58-b169-51ca3f5f5155")
 	)
 	(rectangle
 		(start 172.72 -21.59)
@@ -253,7 +253,7 @@
 			(type color)
 			(color 0 255 255 1)
 		)
-		(uuid 5449cb0b-3a2f-41e3-82ad-46c670593709)
+		(uuid "5449cb0b-3a2f-41e3-82ad-46c670593709")
 	)
 	(rectangle
 		(start 174.625 97.79)
@@ -267,7 +267,7 @@
 			(type color)
 			(color 0 0 132 1)
 		)
-		(uuid 5a3c723f-f0bb-4937-8043-43e666c40e67)
+		(uuid "5a3c723f-f0bb-4937-8043-43e666c40e67")
 	)
 	(rectangle
 		(start 101.6 165.735)
@@ -280,7 +280,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 5aebeb65-0be5-474d-a818-9cf7e7daaf29)
+		(uuid "5aebeb65-0be5-474d-a818-9cf7e7daaf29")
 	)
 	(rectangle
 		(start 15.367 -64.262)
@@ -294,7 +294,7 @@
 			(type color)
 			(color 0 0 0 1)
 		)
-		(uuid 5e66ef56-32d5-4b82-8043-3f13e91f3e75)
+		(uuid "5e66ef56-32d5-4b82-8043-3f13e91f3e75")
 	)
 	(circle
 		(center 142.24 -7.62)
@@ -308,7 +308,7 @@
 			(type color)
 			(color 255 0 0 1)
 		)
-		(uuid 68dd57a8-e608-489d-8191-0e37390a3158)
+		(uuid "68dd57a8-e608-489d-8191-0e37390a3158")
 	)
 	(rectangle
 		(start 135.255 70.485)
@@ -322,7 +322,7 @@
 			(type color)
 			(color 0 0 0 1)
 		)
-		(uuid 6b3a1d67-cbfe-4f9f-974d-90bfb415804b)
+		(uuid "6b3a1d67-cbfe-4f9f-974d-90bfb415804b")
 	)
 	(rectangle
 		(start 107.95 84.328)
@@ -336,7 +336,7 @@
 			(type color)
 			(color 132 132 132 1)
 		)
-		(uuid 6ca9a4e6-7387-4ef8-8dd1-e86145e268fb)
+		(uuid "6ca9a4e6-7387-4ef8-8dd1-e86145e268fb")
 	)
 	(circle
 		(center 71.247 -57.277)
@@ -350,7 +350,7 @@
 			(type color)
 			(color 255 0 0 1)
 		)
-		(uuid 71b5994b-422c-44f5-b667-859e1b030b70)
+		(uuid "71b5994b-422c-44f5-b667-859e1b030b70")
 	)
 	(rectangle
 		(start 75.692 -45.847)
@@ -364,7 +364,7 @@
 			(type color)
 			(color 0 0 255 1)
 		)
-		(uuid 7bcf9cc4-7ead-4e2c-bf80-745b7ca45a17)
+		(uuid "7bcf9cc4-7ead-4e2c-bf80-745b7ca45a17")
 	)
 	(circle
 		(center 136.525 -7.62)
@@ -378,7 +378,7 @@
 			(type color)
 			(color 255 0 0 1)
 		)
-		(uuid 7bf00ed1-9545-4303-8d65-47bdcd163e86)
+		(uuid "7bf00ed1-9545-4303-8d65-47bdcd163e86")
 	)
 	(circle
 		(center 59.817 -57.277)
@@ -392,7 +392,7 @@
 			(type color)
 			(color 255 0 0 1)
 		)
-		(uuid 7daa633a-744b-4490-a421-bf5235c0d363)
+		(uuid "7daa633a-744b-4490-a421-bf5235c0d363")
 	)
 	(rectangle
 		(start 106.045 -50.292)
@@ -406,7 +406,7 @@
 			(type color)
 			(color 132 132 132 1)
 		)
-		(uuid 82eeb68f-acb1-4ecf-a447-5f692496d9b8)
+		(uuid "82eeb68f-acb1-4ecf-a447-5f692496d9b8")
 	)
 	(circle
 		(center 144.145 127)
@@ -420,7 +420,7 @@
 			(type color)
 			(color 255 0 0 1)
 		)
-		(uuid 8301470e-6db2-41ec-8b5c-ab89926ecb84)
+		(uuid "8301470e-6db2-41ec-8b5c-ab89926ecb84")
 	)
 	(rectangle
 		(start 26.67 165.735)
@@ -433,7 +433,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 84156c63-b263-4cb2-baa0-c4330a33ada9)
+		(uuid "84156c63-b263-4cb2-baa0-c4330a33ada9")
 	)
 	(rectangle
 		(start 75.692 -33.147)
@@ -447,7 +447,7 @@
 			(type color)
 			(color 0 255 255 1)
 		)
-		(uuid 8fcc93f7-e140-4241-9d80-9c4784037325)
+		(uuid "8fcc93f7-e140-4241-9d80-9c4784037325")
 	)
 	(rectangle
 		(start 75.692 -49.657)
@@ -461,7 +461,7 @@
 			(type color)
 			(color 0 0 132 1)
 		)
-		(uuid 9643b898-f7d4-4c65-bb6a-ace3aa4efe92)
+		(uuid "9643b898-f7d4-4c65-bb6a-ace3aa4efe92")
 	)
 	(rectangle
 		(start 104.14 -22.225)
@@ -475,7 +475,7 @@
 			(type color)
 			(color 255 255 0 1)
 		)
-		(uuid 98e1327b-26f5-470c-b4e0-78945cc1e7b5)
+		(uuid "98e1327b-26f5-470c-b4e0-78945cc1e7b5")
 	)
 	(rectangle
 		(start 174.625 93.98)
@@ -489,7 +489,7 @@
 			(type color)
 			(color 0 0 132 1)
 		)
-		(uuid 99022b37-f84d-438f-b1b3-04fbd28de589)
+		(uuid "99022b37-f84d-438f-b1b3-04fbd28de589")
 	)
 	(rectangle
 		(start 172.72 -47.625)
@@ -503,7 +503,7 @@
 			(type color)
 			(color 0 194 0 1)
 		)
-		(uuid 9c338099-052c-4a78-8bbc-c9b6840216e3)
+		(uuid "9c338099-052c-4a78-8bbc-c9b6840216e3")
 	)
 	(rectangle
 		(start 9.017 -8.382)
@@ -517,7 +517,7 @@
 			(type color)
 			(color 255 255 0 1)
 		)
-		(uuid 9ce69b6d-c791-40ef-a20c-90ffb7d4f41b)
+		(uuid "9ce69b6d-c791-40ef-a20c-90ffb7d4f41b")
 	)
 	(rectangle
 		(start 174.625 109.22)
@@ -531,7 +531,7 @@
 			(type color)
 			(color 0 0 132 1)
 		)
-		(uuid 9eef0aff-4407-4a71-978d-3e6d965829d7)
+		(uuid "9eef0aff-4407-4a71-978d-3e6d965829d7")
 	)
 	(rectangle
 		(start 131.1275 86.995)
@@ -545,7 +545,7 @@
 			(type color)
 			(color 132 132 132 1)
 		)
-		(uuid a08201a4-7072-4982-9c27-11b0213ba825)
+		(uuid "a08201a4-7072-4982-9c27-11b0213ba825")
 	)
 	(rectangle
 		(start 172.72 -29.21)
@@ -559,7 +559,7 @@
 			(type color)
 			(color 0 0 132 1)
 		)
-		(uuid aadd0a34-c405-4ac7-9a71-fe0f1f348e3b)
+		(uuid "aadd0a34-c405-4ac7-9a71-fe0f1f348e3b")
 	)
 	(rectangle
 		(start 172.72 -33.02)
@@ -573,7 +573,7 @@
 			(type color)
 			(color 0 0 255 1)
 		)
-		(uuid acdd9571-5bd5-4cbd-9e6f-07e2a5c05d80)
+		(uuid "acdd9571-5bd5-4cbd-9e6f-07e2a5c05d80")
 	)
 	(rectangle
 		(start 172.72 -50.165)
@@ -587,7 +587,7 @@
 			(type color)
 			(color 0 255 255 1)
 		)
-		(uuid ad0b7846-1384-40e0-be2f-0c401fd81f0a)
+		(uuid "ad0b7846-1384-40e0-be2f-0c401fd81f0a")
 	)
 	(rectangle
 		(start 75.692 -14.097)
@@ -601,7 +601,7 @@
 			(type color)
 			(color 255 0 255 1)
 		)
-		(uuid afb4fb39-99cb-47c3-87fa-7c09be056731)
+		(uuid "afb4fb39-99cb-47c3-87fa-7c09be056731")
 	)
 	(rectangle
 		(start 75.692 -16.637)
@@ -615,7 +615,7 @@
 			(type color)
 			(color 0 194 0 1)
 		)
-		(uuid b239eab6-7fb9-47fd-be28-4ba7d8144ca0)
+		(uuid "b239eab6-7fb9-47fd-be28-4ba7d8144ca0")
 	)
 	(rectangle
 		(start 75.692 -38.227)
@@ -629,7 +629,7 @@
 			(type color)
 			(color 0 0 132 1)
 		)
-		(uuid b24d5f3f-8171-4c24-ba01-3d4e53528c8a)
+		(uuid "b24d5f3f-8171-4c24-ba01-3d4e53528c8a")
 	)
 	(rectangle
 		(start 102.87 -22.225)
@@ -643,7 +643,7 @@
 			(type color)
 			(color 0 0 0 1)
 		)
-		(uuid be02ce5e-2f0f-4358-bb4d-3f7afa3c36f6)
+		(uuid "be02ce5e-2f0f-4358-bb4d-3f7afa3c36f6")
 	)
 	(circle
 		(center 65.532 -57.277)
@@ -657,7 +657,7 @@
 			(type color)
 			(color 255 0 0 1)
 		)
-		(uuid c43830c7-315f-4e37-a694-974e6eaf5e27)
+		(uuid "c43830c7-315f-4e37-a694-974e6eaf5e27")
 	)
 	(rectangle
 		(start 133.35 -64.135)
@@ -671,7 +671,7 @@
 			(type color)
 			(color 0 0 0 1)
 		)
-		(uuid c7c6c906-ff4b-4585-b466-0e8a78ed54f2)
+		(uuid "c7c6c906-ff4b-4585-b466-0e8a78ed54f2")
 	)
 	(rectangle
 		(start 174.625 89.535)
@@ -685,7 +685,7 @@
 			(type color)
 			(color 255 0 255 1)
 		)
-		(uuid c85f15e6-c894-43fa-909a-bf3025edd386)
+		(uuid "c85f15e6-c894-43fa-909a-bf3025edd386")
 	)
 	(rectangle
 		(start 75.692 -26.797)
@@ -699,7 +699,7 @@
 			(type color)
 			(color 0 255 255 1)
 		)
-		(uuid caa89508-96bb-4468-bdf2-8d0212eec3be)
+		(uuid "caa89508-96bb-4468-bdf2-8d0212eec3be")
 	)
 	(rectangle
 		(start 37.592 -42.672)
@@ -713,7 +713,7 @@
 			(type color)
 			(color 132 132 132 1)
 		)
-		(uuid cceab2e2-a96e-4438-8186-39b780e5a3e9)
+		(uuid "cceab2e2-a96e-4438-8186-39b780e5a3e9")
 	)
 	(rectangle
 		(start 172.72 -45.085)
@@ -727,7 +727,7 @@
 			(type color)
 			(color 255 0 255 1)
 		)
-		(uuid cfa0f2f5-79b9-4c8b-a744-38a8b92bfc9e)
+		(uuid "cfa0f2f5-79b9-4c8b-a744-38a8b92bfc9e")
 	)
 	(rectangle
 		(start 133.985 -42.545)
@@ -741,7 +741,7 @@
 			(type color)
 			(color 132 132 132 1)
 		)
-		(uuid d0706a7f-c1d1-4247-a6e1-3bcdffdfd1b2)
+		(uuid "d0706a7f-c1d1-4247-a6e1-3bcdffdfd1b2")
 	)
 	(rectangle
 		(start 174.625 113.03)
@@ -755,7 +755,7 @@
 			(type color)
 			(color 0 255 255 1)
 		)
-		(uuid d366cd07-7a8e-4d95-9e29-63dbe2d0eeca)
+		(uuid "d366cd07-7a8e-4d95-9e29-63dbe2d0eeca")
 	)
 	(rectangle
 		(start 172.72 -25.4)
@@ -769,7 +769,7 @@
 			(type color)
 			(color 0 0 132 1)
 		)
-		(uuid e1bdbbdb-0884-47a1-a500-a05c8373ec3f)
+		(uuid "e1bdbbdb-0884-47a1-a500-a05c8373ec3f")
 	)
 	(rectangle
 		(start 174.625 105.41)
@@ -783,7 +783,7 @@
 			(type color)
 			(color 0 0 132 1)
 		)
-		(uuid e1fab21b-5cf7-40eb-8da8-da0193a4f4de)
+		(uuid "e1fab21b-5cf7-40eb-8da8-da0193a4f4de")
 	)
 	(rectangle
 		(start 12.192 -68.072)
@@ -796,7 +796,7 @@
 		(fill
 			(type none)
 		)
-		(uuid e2693014-770a-4f09-9eb5-a116f1b788af)
+		(uuid "e2693014-770a-4f09-9eb5-a116f1b788af")
 	)
 	(rectangle
 		(start 132.08 -15.24)
@@ -810,7 +810,7 @@
 			(type color)
 			(color 0 0 0 1)
 		)
-		(uuid e566bba8-f9ea-4bcf-8a36-06e1d0d5b4d5)
+		(uuid "e566bba8-f9ea-4bcf-8a36-06e1d0d5b4d5")
 	)
 	(rectangle
 		(start 133.985 119.38)
@@ -824,7 +824,7 @@
 			(type color)
 			(color 0 0 0 1)
 		)
-		(uuid e677773e-4b39-41b7-95e5-0dc20a75f27a)
+		(uuid "e677773e-4b39-41b7-95e5-0dc20a75f27a")
 	)
 	(circle
 		(center 43.942 -36.322)
@@ -838,7 +838,7 @@
 			(type color)
 			(color 72 72 72 1)
 		)
-		(uuid f52bbf9a-e32a-4881-b7f3-1f8b48844e8d)
+		(uuid "f52bbf9a-e32a-4881-b7f3-1f8b48844e8d")
 	)
 	(rectangle
 		(start 75.692 -42.037)
@@ -852,7 +852,7 @@
 			(type color)
 			(color 0 0 132 1)
 		)
-		(uuid fdae2368-6afb-49f7-9a0e-76e5da430eda)
+		(uuid "fdae2368-6afb-49f7-9a0e-76e5da430eda")
 	)
 	(text "DEBOUNCED_GPIO"
 		(exclude_from_sim no)

@@ -2,7 +2,7 @@
 #include <Arduino.h>
 
 void setup() {
-  Wire.begin(6, 7); //SDA, SCL
+  Wire.begin(36, 35); //SDA, SCL
   Serial.begin(115200);
   Serial.println("\nI2C Scanner");
 }

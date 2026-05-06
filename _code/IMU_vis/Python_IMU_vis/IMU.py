@@ -7,7 +7,7 @@ from scipy.spatial.transform import Rotation as R_sci
 from vedo import Mesh, Plotter, Text2D
 
 # --- CONFIG ---
-SERIAL_PORT = 'COM6' 
+SERIAL_PORT = 'COM7' 
 BAUD_RATE = 115200
 FILENAME = "GPS-Compass2.obj"
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
