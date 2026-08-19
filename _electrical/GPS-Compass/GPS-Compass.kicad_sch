@@ -10727,7 +10727,7 @@
 	)
 	(rectangle
 		(start 380.365 184.15)
-		(end 429.26 212.725)
+		(end 428.625 212.725)
 		(stroke
 			(width 0)
 			(type dash)
@@ -69718,7 +69718,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9a58d6d0-0698-4ccb-890b-b4207ba5af0b")
 		(property "Reference" "C28"
 			(at 410.845 239.395 0)

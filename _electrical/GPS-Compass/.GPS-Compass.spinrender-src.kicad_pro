@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.3,
+          "height": 0.5,
+          "width": 0.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -78,7 +78,63 @@
       ],
       "drc_exclusions": [
         [
-          "courtyards_overlap|104007439|131386296|713d29e6-337e-46a0-b71f-b1c3c01e00f1|f3de0706-9e68-4308-8784-a1b8ed6ff3ad",
+          "clearance|107937500|71325000|2cbea6ca-79d0-4be5-8c93-bb19ff4f4225|d5d02a54-3deb-4664-a8d7-e71123d93c0f",
+          ""
+        ],
+        [
+          "clearance|108262500|69900000|a6aa048d-a4d5-4a3b-ad75-e1f37de4edee|097400a6-a9b2-46c4-b5bb-072a7387f1d6",
+          ""
+        ],
+        [
+          "clearance|108437500|71325000|d5d02a54-3deb-4664-a8d7-e71123d93c0f|42c91d8c-e839-47f8-9f7d-ca30b39934ad",
+          ""
+        ],
+        [
+          "clearance|108762500|69900000|977a0ebc-b6ba-4783-8a1a-cac01d105c8d|a6aa048d-a4d5-4a3b-ad75-e1f37de4edee",
+          ""
+        ],
+        [
+          "copper_edge_clearance|111799949|91600001|70409323-5af7-4ba1-85bb-0e8d6279de1c|9d4769ab-d895-40e4-8ae2-5c8ab7918f74",
+          ""
+        ],
+        [
+          "copper_edge_clearance|153799947|43200002|3f8270ca-27ac-4769-ae11-11298416a722|a9519100-0457-4f10-a182-76d39107f140",
+          ""
+        ],
+        [
+          "copper_edge_clearance|153941778|43003148|3f8270ca-27ac-4769-ae11-11298416a722|9916abad-e8c4-4de4-8a06-683c755ac8d1",
+          ""
+        ],
+        [
+          "copper_edge_clearance|155921261|44078700|3f8270ca-27ac-4769-ae11-11298416a722|b2369ed3-f417-4c01-9058-394917efb831",
+          ""
+        ],
+        [
+          "copper_edge_clearance|156799922|46200001|3f8270ca-27ac-4769-ae11-11298416a722|65bcf921-ba8d-402a-a41e-70fbce8d89a8",
+          ""
+        ],
+        [
+          "copper_edge_clearance|74499947|46200000|28d42986-8179-42f9-a051-e45f9ee9ee5d|3cfc458e-4a80-4e5b-82a0-8117b6a3cdb1",
+          ""
+        ],
+        [
+          "copper_edge_clearance|75578684|44078659|6f73c0a4-6cf0-4a52-97e8-aec328cbba5f|ab4bed39-65a6-42db-9cf3-4837a4a6012d",
+          ""
+        ],
+        [
+          "copper_edge_clearance|77699945|91600001|0fd6dbb2-cede-413a-b724-e6aa79b1e95a|e45c7121-dd1d-473b-a5d9-d4fce5aeaf68",
+          ""
+        ],
+        [
+          "copper_edge_clearance|77699945|91600001|0fd6dbb2-cede-413a-b724-e6aa79b1e95a|f6a4836d-a8f0-42d0-bf47-3b5fb8995cd0",
+          ""
+        ],
+        [
+          "copper_edge_clearance|77700000|43000001|10446fec-bce7-4b97-834e-d4611158c3b3|259eb28a-4c78-4d74-8b9d-34c6ed2673ab",
+          ""
+        ],
+        [
+          "copper_edge_clearance|77700000|43000001|10446fec-bce7-4b97-834e-d4611158c3b3|b0d776c4-8149-40d8-93ad-7eeb7cd2665e",
           ""
         ]
       ],
@@ -125,15 +181,15 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "warning",
-        "text_height": "warning",
+        "text_height": "ignore",
         "text_on_edge_cuts": "error",
-        "text_thickness": "warning",
+        "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_angle": "error",
@@ -147,7 +203,7 @@
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
-        "zones_intersect": "error"
+        "zones_intersect": "warning"
       },
       "rules": {
         "max_error": 0.005,
@@ -161,7 +217,7 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
+        "min_text_height": 0.2,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.0,
@@ -216,7 +272,11 @@
       ],
       "track_widths": [
         0.0,
-        0.25
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        2.54
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -250,6 +310,14 @@
           "drill": 0.0
         },
         {
+          "diameter": 0.4,
+          "drill": 0.25
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
+        },
+        {
           "diameter": 0.7,
           "drill": 0.3
         }
@@ -265,7 +333,18 @@
       "mpn": "",
       "sch_revision": ""
     },
-    "layer_pairs": [],
+    "layer_pairs": [
+      {
+        "bottomLayer": 2,
+        "enabled": true,
+        "topLayer": 0
+      },
+      {
+        "bottomLayer": 6,
+        "enabled": true,
+        "topLayer": 4
+      }
+    ],
     "layer_presets": [],
     "viewports": []
   },
@@ -466,37 +545,41 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
-      "endpoint_off_grid": "warning",
+      "endpoint_off_grid": "error",
       "extra_units": "error",
-      "footprint_filter": "ignore",
+      "field_name_whitespace": "warning",
+      "footprint_filter": "warning",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
-      "global_label_dangling": "warning",
+      "global_label_dangling": "error",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "warning",
+      "lib_symbol_mismatch": "ignore",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
       "missing_unit": "warning",
       "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
-      "no_connect_connected": "warning",
+      "no_connect_connected": "error",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
+      "pin_to_pin": "error",
+      "power_pin_not_driven": "warning",
       "same_local_global_label": "warning",
-      "similar_label_and_power": "warning",
-      "similar_labels": "warning",
-      "similar_power": "warning",
+      "similar_label_and_power": "error",
+      "similar_labels": "error",
+      "similar_power": "error",
       "simulation_model_issue": "ignore",
       "single_global_label": "error",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
-      "unconnected_wire_endpoint": "warning",
+      "unconnected_wire_endpoint": "error",
       "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -505,14 +588,15 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "Symbol"
+      "gps-compass_brd"
     ],
     "pinned_symbol_libs": [
-      "gps-compass_sch"
+      "gps-compass_sch",
+      "sumec_sch_lib"
     ]
   },
   "meta": {
-    "filename": "GPS-Compass_UI.kicad_pro",
+    "filename": ".GPS-Compass.spinrender-src.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -549,10 +633,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../Mechanical/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../Mechanical/PCB_3D_models/GPS-Compass_UI.step",
+      "step": "../Mechanical/PCB_3D_models/GPS-Compass.step",
       "svg": "",
       "vrml": ""
     },
@@ -560,7 +644,11 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
+    "bom_export_filename": "GPS-Compass.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -622,12 +710,228 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Part Number",
+          "name": "Arrow Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Price/Stock",
+          "name": "Arrow Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DESCRIPTION",
+          "name": "DESCRIPTION",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Testing Part Number",
+          "name": "Mouser Testing Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Testing Price/Stock",
+          "name": "Mouser Testing Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PACKAGE",
+          "name": "PACKAGE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PRICE",
+          "name": "PRICE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PURCHASE-URL",
+          "name": "PURCHASE-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purchase-URL",
+          "name": "Purchase-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PN",
+          "name": "SNAPEDA_PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pin",
+          "name": "Sim.Pin",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "AVAILABILITY",
+          "name": "AVAILABILITY",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Comment",
+          "name": "Comment",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -639,6 +943,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -662,6 +967,7 @@
     "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -673,16 +979,22 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "GPS-Compass_UI.kicad_sch",
-        "name": "GPS-Compass_UI",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "filename": "GPS-Compass.kicad_sch",
+        "name": "GPS-Compass",
+        "uuid": "944f168e-b689-4be9-b5f1-4ef8c625b176"
       }
-    ]
+    ],
+    "used_designators": "SW5",
+    "variants": []
   },
   "sheets": [
     [
-      "2171b68c-3635-466a-9c8f-785127caa9a5",
-      "Root"
+      "944f168e-b689-4be9-b5f1-4ef8c625b176",
+      "GPS-Compass"
+    ],
+    [
+      "bcb9a85f-0a4b-40b1-ac4f-cb54b4755a67",
+      "TECHNICAL DRAWING"
     ]
   ],
   "text_variables": {},
