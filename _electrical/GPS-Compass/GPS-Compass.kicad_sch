@@ -14786,7 +14786,7 @@
 	)
 	(wire
 		(pts
-			(xy 407.67 99.06) (xy 400.05 99.06)
+			(xy 406.4 99.06) (xy 400.05 99.06)
 		)
 		(stroke
 			(width 0)
@@ -56355,7 +56355,7 @@
 		(uuid "e5d87325-1416-457d-9f5d-6087baaa2e3f")
 	)
 	(label "INT_UCON"
-		(at 407.67 99.06 180)
+		(at 406.4 99.06 180)
 		(effects
 			(font
 				(face "Bahnschrift")
